@@ -1,0 +1,92 @@
+<gexf xmlns:viz="http://www.gexf.net/1.1draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.gephi.org/gexf/1.1draft" xmlns:ns0="xsi" version="1.1" ns0:schemaLocation="http://www.gephi.org/gexf/1.1draft http://gephi.org/gexf/1.1draft.xsd">
+  <meta lastmodified="2017-11-23T05:00:01.899922">
+    <creator>lifesaver</creator>
+    <description>A Web network</description>
+  </meta>
+  <graph defaultedgetype="undirected" label="A Web network" mode="static">
+    <attributes class="node" mode="dynamic"/>
+    <attributes class="node" mode="static">
+      <attribute id="0" title="name" type="string">
+        <default>true</default>
+      </attribute>
+      <attribute id="1" title="modularity_class" type="string">
+        <default>true</default>
+      </attribute>
+    </attributes>
+    <attributes class="edge" mode="dynamic"/>
+    <attributes class="edge" mode="static"/>
+    <nodes>
+      <node id="1279" label="alberto">
+        <attvalues>
+          <attvalue for="0" value="alberto"/>
+          <attvalue for="1" value="1"/>
+        </attvalues>
+      </node>
+      <node id="875" label="davisein">
+        <attvalues>
+          <attvalue for="0" value="davisein"/>
+          <attvalue for="1" value="1"/>
+        </attvalues>
+      </node>
+      <node id="707" label="jamiep">
+        <attvalues>
+          <attvalue for="0" value="jamiep"/>
+          <attvalue for="1" value="0"/>
+        </attvalues>
+      </node>
+      <node id="2855" label="alogoc">
+        <attvalues>
+          <attvalue for="0" value="alogoc"/>
+          <attvalue for="1" value="3"/>
+        </attvalues>
+      </node>
+      <node id="712" label="ariel">
+        <attvalues>
+          <attvalue for="0" value="ariel"/>
+          <attvalue for="1" value="1"/>
+        </attvalues>
+      </node>
+      <node id="644" label="gurvinder">
+        <attvalues>
+          <attvalue for="0" value="gurvinder"/>
+          <attvalue for="1" value="2"/>
+        </attvalues>
+      </node>
+      <node id="4357" label="osanjuan">
+        <attvalues>
+          <attvalue for="0" value="osanjuan"/>
+          <attvalue for="1" value="3"/>
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="1" source="1279" target="712" weight="1">
+        <attvalues/>
+      </edge>
+      <edge id="0" source="712" target="1279" weight="1">
+        <attvalues/>
+      </edge>
+      <edge id="3" source="4357" target="707" weight="1">
+        <attvalues/>
+      </edge>
+      <edge id="2" source="2855" target="4357" weight="1">
+        <attvalues/>
+      </edge>
+      <edge id="5" source="707" target="4357" weight="1">
+        <attvalues/>
+      </edge>
+      <edge id="4" source="4357" target="644" weight="1">
+        <attvalues/>
+      </edge>
+      <edge id="7" source="644" target="4357" weight="1">
+        <attvalues/>
+      </edge>
+      <edge id="6" source="875" target="2855" weight="1">
+        <attvalues/>
+      </edge>
+      <edge id="8" source="4357" target="2855" weight="1">
+        <attvalues/>
+      </edge>
+    </edges>
+  </graph>
+</gexf>
