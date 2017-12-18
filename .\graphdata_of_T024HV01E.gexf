@@ -1,0 +1,565 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.gephi.org/gexf/1.2draft" xmlns:ns0="xsi" version="1.2" ns0:schemaLocation="http://www.gephi.org/gexf/1.1draft http://gephi.org/gexf/1.2draft.xsd">
+  <meta lastmodified="2017-12-18">
+    <creator>Gephi.org</creator>
+    <description>A Web network</description>
+  </meta>
+  <graph defaultedgetype="directed" label="A Web network" mode="static" timeformat="double">
+    <attributes class="node" mode="static">
+      <attribute id="Channel" title="channel" type="String"/>
+      <attribute id="Team" title="team" type="String"/>
+      <attribute id="Weight" title="weight" type="float"/>
+    </attributes>
+    <attributes class="edge" mode="static">
+      <attribute id="Channel" title="channel" type="String">
+        <default>None</default>
+      </attribute>
+      <attribute id="Date" title="date" type="float">
+        <default>None</default>
+      </attribute>
+      <attribute id="Message" title="message" type="String">
+        <default>None</default>
+      </attribute>
+      <attribute id="Team" title="team" type="String">
+        <default>None</default>
+      </attribute>
+      <attribute id="Weight" title="weight" type="float">
+        <default>0</default>
+      </attribute>
+    </attributes>
+    <nodes>
+      <node id="U024HV01G" label="cheeaun">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="92"/>
+        </attvalues>
+      </node>
+      <node id="U03TDFRDV" label="miccheng">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="90"/>
+        </attvalues>
+      </node>
+      <node id="U03TE6FCK" label="laktek">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="52"/>
+        </attvalues>
+      </node>
+      <node id="U03TFPD9Q" label="llun">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="24"/>
+        </attvalues>
+      </node>
+      <node id="U03TGDLU6" label="fadhli">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="4"/>
+        </attvalues>
+      </node>
+      <node id="U03TH8V80" label="valentine">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="23"/>
+        </attvalues>
+      </node>
+      <node id="U040C9Z3L" label="sebdeckers">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="18"/>
+        </attvalues>
+      </node>
+      <node id="U040GS257" label="soareschen">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="0"/>
+        </attvalues>
+      </node>
+      <node id="U044B7WQQ" label="notthetup">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="6"/>
+        </attvalues>
+      </node>
+      <node id="U04D2679Y" label="chernjie">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="32"/>
+        </attvalues>
+      </node>
+      <node id="U06FGEH17" label="nathania">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="94"/>
+        </attvalues>
+      </node>
+      <node id="U07AU4ZGV" label="cliener">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="79"/>
+        </attvalues>
+      </node>
+      <node id="U08C27F5Y" label="avery">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="74"/>
+        </attvalues>
+      </node>
+      <node id="U08C7KLCD" label="sevresbabylone">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="52"/>
+        </attvalues>
+      </node>
+      <node id="U08KNFE1J" label="timothy">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="81"/>
+        </attvalues>
+      </node>
+      <node id="U08QM5V5W" label="just.ken">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="66"/>
+        </attvalues>
+      </node>
+      <node id="U095ZTPSA" label="aqilahmisuary">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="66"/>
+        </attvalues>
+      </node>
+      <node id="U09F8C39T" label="whatevergeek">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="61"/>
+        </attvalues>
+      </node>
+      <node id="U0A8B7GBY" label="yangzai">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="86"/>
+        </attvalues>
+      </node>
+      <node id="U0A8BGP97" label="markfull">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="54"/>
+        </attvalues>
+      </node>
+      <node id="U0ACL3VC1" label="cherietanjy">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="82"/>
+        </attvalues>
+      </node>
+      <node id="U0DKKB4JG" label="rebeccapazos">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="50"/>
+        </attvalues>
+      </node>
+      <node id="U0ET6PD36" label="martijn">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="64"/>
+        </attvalues>
+      </node>
+      <node id="U0J0GU03Y" label="ongmin">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="41"/>
+        </attvalues>
+      </node>
+      <node id="U0K7F0S7P" label="ketsugi">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="41"/>
+        </attvalues>
+      </node>
+      <node id="U0LTUK1MG" label="tjjjwxzq">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="86"/>
+        </attvalues>
+      </node>
+      <node id="U0R49D6TG" label="vp">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="2"/>
+        </attvalues>
+      </node>
+      <node id="U0V8SRB4N" label="stanley_nguyen">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="22"/>
+        </attvalues>
+      </node>
+      <node id="U0W3YEAQN" label="weimankow">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="63"/>
+        </attvalues>
+      </node>
+      <node id="U0YDWPJSJ" label="sohpingting">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="24"/>
+        </attvalues>
+      </node>
+      <node id="U10MV5WVB" label="yingkh-slack">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="17"/>
+        </attvalues>
+      </node>
+      <node id="U10S3E011" label="dinar">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="74"/>
+        </attvalues>
+      </node>
+      <node id="U117KHX52" label="xintian">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="49"/>
+        </attvalues>
+      </node>
+      <node id="U11PUB0AH" label="jamie">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="27"/>
+        </attvalues>
+      </node>
+      <node id="U12F4ET32" label="salie">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="34"/>
+        </attvalues>
+      </node>
+      <node id="U13NC3V26" label="draco">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="95"/>
+        </attvalues>
+      </node>
+      <node id="U13PQJZ0" label="Null"/>
+      <node id="U13PQJZ0F" label="meowlivia_">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="85"/>
+        </attvalues>
+      </node>
+      <node id="U13R1DC9W" label="kyle">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="64"/>
+        </attvalues>
+      </node>
+      <node id="U142JK2JD" label="sheldon">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="32"/>
+        </attvalues>
+      </node>
+      <node id="U156N4ZFT" label="thetlinthu">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="65"/>
+        </attvalues>
+      </node>
+      <node id="U170CS332" label="chunzhu">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="32"/>
+        </attvalues>
+      </node>
+      <node id="U17HM6QDV" label="erniesg">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="65"/>
+        </attvalues>
+      </node>
+      <node id="U18724HPE" label="fupuchu">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="56"/>
+        </attvalues>
+      </node>
+      <node id="U1ABNUN7M" label="sneakertack">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="76"/>
+        </attvalues>
+      </node>
+      <node id="U1AEDMT0X" label="aaronng">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="19"/>
+        </attvalues>
+      </node>
+      <node id="U1BLHHYC8" label="kevin.liu">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="97"/>
+        </attvalues>
+      </node>
+      <node id="U1CB2N4UA" label="esther">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="49"/>
+        </attvalues>
+      </node>
+      <node id="U1CELJUVC" label="xy">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="72"/>
+        </attvalues>
+      </node>
+      <node id="U1CEZRZEW" label="michaellee8848">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="5"/>
+        </attvalues>
+      </node>
+      <node id="U1CKUNN03" label="heliumlife">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="92"/>
+        </attvalues>
+      </node>
+      <node id="U1DFD14VB" label="xuefeng-huang">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="95"/>
+        </attvalues>
+      </node>
+      <node id="U1DJL2WBW" label="jim">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="80"/>
+        </attvalues>
+      </node>
+      <node id="U1LQ1QBHR" label="k4ml">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="27"/>
+        </attvalues>
+      </node>
+      <node id="U1LUUNU3B" label="mmahinay">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="32"/>
+        </attvalues>
+      </node>
+      <node id="U1M0Z8W5P" label="johnsjo">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="53"/>
+        </attvalues>
+      </node>
+      <node id="U1RHPF200" label="aqilah_misuary">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="71"/>
+        </attvalues>
+      </node>
+      <node id="U1VM6DCUU" label="dillydallyking">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="71"/>
+        </attvalues>
+      </node>
+      <node id="U1W043X4G" label="teethmarks">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="49"/>
+        </attvalues>
+      </node>
+      <node id="U1WBCCP2A" label="tommyroberson">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="67"/>
+        </attvalues>
+      </node>
+      <node id="U1WMVK1CJ" label="sheshbabu">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="35"/>
+        </attvalues>
+      </node>
+      <node id="U1WRTLAQ3" label="giaphua">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="45"/>
+        </attvalues>
+      </node>
+      <node id="U1YSWD1GQ" label="shindosensei">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="55"/>
+        </attvalues>
+      </node>
+      <node id="U24PMV022" label="woohuiren">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="82"/>
+        </attvalues>
+      </node>
+      <node id="U26LGE1PE" label="dommmm">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="45"/>
+        </attvalues>
+      </node>
+      <node id="U2LHYN9UY" label="evontay">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="47"/>
+        </attvalues>
+      </node>
+      <node id="U2LUNSLUT" label="rench00">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="95"/>
+        </attvalues>
+      </node>
+      <node id="U2RNBNALC" label="min">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="75"/>
+        </attvalues>
+      </node>
+      <node id="U3AHQ1BAQ" label="lisatjide">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="50"/>
+        </attvalues>
+      </node>
+      <node id="U3C9YG7BR" label="mcxjc">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="72"/>
+        </attvalues>
+      </node>
+      <node id="U3FLWUVFB" label="sumolincoln">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="35"/>
+        </attvalues>
+      </node>
+      <node id="U3KNZN8P2" label="robincher">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="30"/>
+        </attvalues>
+      </node>
+      <node id="U3QRGH7B2" label="chihhui">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="39"/>
+        </attvalues>
+      </node>
+      <node id="U5DDHRV6X" label="105ron">
+        <attvalues>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+          <attvalue for="Weight" value="61"/>
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="U13PQJZ0FU13PQJZ00" source="U13PQJZ0F" target="U13PQJZ0" weight="-0.25">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U13PQJZ0F&gt; set the channel topic: Next Milo-Dino session: [undefined]&#10;Our collection of learning journals for future reference!&#10; &lt;http://codepen.io/collection/XRPJPG/&gt;&#10; &lt;https://www.notion.so/Chapter-9-APIs-220f3ad899704afe8a4708c0de1c91f9&gt;"/>
+          <attvalue for="Weight" value="-0.25"/>
+          <attvalue for="Date" value="1512207380.00004"/>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+        </attvalues>
+      </edge>
+      <edge id="U13PQJZ0FU13PQJZ01" source="U13PQJZ0F" target="U13PQJZ0" weight="-0.25">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U13PQJZ0F&gt; set the channel topic: Next Milo-Dino session: [undefined]&#10;Our collection of learning journals for future reference!&#10; &lt;http://codepen.io/collection/XRPJPG/&gt;&#10; &lt;https://www.notion.so/Chapter-9-APIs-220f3ad899704afe8a4708c0de1c91f9&gt;"/>
+          <attvalue for="Weight" value="-0.25"/>
+          <attvalue for="Date" value="1512207380.00004"/>
+          <attvalue for="Channel" value="milo-dinosaur"/>
+          <attvalue for="Team" value="Kopi.JS"/>
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

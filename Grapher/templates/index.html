@@ -54,7 +54,8 @@
     <script src="/assets/pace/pace.min.js"></script>
 
     <script src="{% static 'demo.js' %}"></script>
-
+    <script type="text/javascript" src="{% static 'GraphParser.js' %}"></script>
+    <script type="text/javascript" src="{% static 'infomation_getter.js' %}"></script>
     <!-- Custom styling -->
     <style>
         .page-header-form .input-group-addon,
@@ -258,22 +259,22 @@
                             <br>
                             <h5 class="m-t-0">Channel</h5>
                             <div class="m-b-2">
-                                <select class="form-control select2-info select2-example" multiple
+                                <select class="form-control select2-info select2-example xiaxieyige" multiple
                                         style="width: 100%">
-                                    <optgroup label="Channel 1-5">
-                                        <option value="c1">Channel1</option>
-                                        <option value="c2">Channel2</option>
-                                        <option value="c3" selected>Channel3</option>
-                                        <option value="c4">Channel4</option>
-                                        <option value="c5">Channel5</option>
+                                    <optgroup id="channel_group"  label="Channel 1-5">
+{#                                        <option value="c1">Channel1</option>#}
+{#                                        <option value="c2">Channel2</option>#}
+{#                                        <option value="c3" selected>Channel3</option>#}
+{#                                        <option value="c4">Channel4</option>#}
+{#                                        <option value="c5">Channel5</option>#}
                                     </optgroup>
-                                    <optgroup label="Pacific Time Zone">
-                                        <option value="c6">Channel6</option>
-                                        <option value="c7" selected>Channel7</option>
-                                        <option value="c8">Channel8</option>
-                                        <option value="c9">Channel9</option>
-                                        <option value="c10">Channel10</option>
-                                    </optgroup>
+                                    {#                                    <optgroup label="Pacific Time Zone">#}
+                                    {#                                        <option value="c6">Channel6</option>#}
+                                    {#                                        <option value="c7" selected>Channel7</option>#}
+                                    {#                                        <option value="c8">Channel8</option>#}
+                                    {#                                        <option value="c9">Channel9</option>#}
+                                    {#                                        <option value="c10">Channel10</option>#}
+                                    {#                                    </optgroup>#}
                                 </select>
                             </div>
                             <br>
@@ -348,14 +349,14 @@
 
     <!--Main Frame Nav Bar-->
     <ul class="nav nav-tabs nav-tabs-simple">
-        <li>
-            <a href="#drag" data-toggle="tab">Draggable</a>
+        <li class="active">
+            <a id="draggable_li" data-toggle="tab">Draggable</a>
         </li>
         <li>
-            <a href="#organized" data-toggle="tab">Organized</a>
+            <a id="Organized_li" data-toggle="tab">Organized</a>
         </li>
         <li>
-            <a href="#cir" data-toggle="tab">Circular</a>
+            <a id="Circular_li" data-toggle="tab">Circular</a>
         </li>
     </ul>
 
@@ -370,232 +371,172 @@
                         <script type="text/javascript" src="/assets/js/jquery.js"></script>
                         <script type="text/javascript" src="/assets/js/dataTool.js"></script>
                         <script type="text/javascript">
-                            var dom = document.getElementById("main");
-                            var myChart = echarts.init(dom);
-                            var app = {};
-                            option = null;
-                            app.title = 'MainFrame';
-                            myChart.showLoading();
-                            var target = '/assets/les-miserables.gexf'
-                            $.get(target, function (xml) {
-                                myChart.hideLoading();
-                                var graph = echarts.dataTool.gexf.parse(xml);
-                                var categories = [];
-                                for (var i = 0; i < 9; i++) {
-                                    categories[i] = {
-                                        name: 'Channel ' + (i + 1)
-                                    };
-                                }
-                                graph.nodes.forEach(function (node) {
-                                    node.itemStyle = null;
-                                    node.symbolSize = 10;
-                                    node.value = 'Channel X';
-                                    node.category = node.attributes.modularity_class;
-                                    // Use random x, y
-                                    node.x = node.y = null;
-                                    node.draggable = true;
-                                });
-                                option = {
-                                    title: {
-                                        text: '',
-                                        subtext: '',
-                                        top: 'bottom',
-                                        left: 'right'
-                                    },
-                                    tooltip: {},
-                                    legend: [{
-                                        // selectedMode: 'single',
-                                        data: categories.map(function (a) {
-                                            return a.name;
-                                        })
-                                    }],
-                                    animation: false,
-                                    series: [
-                                        {
-                                            name: '',
-                                            type: 'graph',
-                                            layout: 'force',
-                                            data: graph.nodes,
-                                            links: graph.links,
-                                            categories: categories,
-                                            roam: true,
-                                            label: {
-                                                normal: {
-                                                    position: 'right'
-                                                }
-                                            },
-                                            force: {
-                                                repulsion: 100
-                                            }
-                                        }
-                                    ]
-                                };
-
-                                myChart.setOption(option);
-                            }, 'xml');
-                            ;
-                            if (option && typeof option === "object") {
-                                myChart.setOption(option, true);
-                            }
+                            draw('123');
+                            console.log('Drawed')
                         </script>
                     </div>
                 </div>
-                <div class="tab-pane fade in active" id="organized">
-                    <div class="row">
-                        <div id="mai" style="height: 700px;color: #B3B3B3"></div>
-                        <script type="text/javascript">
-                            var dom1 = document.getElementById("mai");
-                            var myChart1 = echarts.init(dom1);
-                            var app = {};
-                            option = null;
-                            app.title = 'MainFrame2';
-                            myChart1.showLoading();
-                            $.get('/assets/les-miserables.gexf', function (xml) {
-                                myChart1.hideLoading();
-                                var graph = echarts.dataTool.gexf.parse(xml);
-                                var categories = [];
-                                for (var i = 0; i < 9; i++) {
-                                    categories[i] = {
-                                        name: 'Channel' + (i + 1)
-                                    };
-                                }
-                                graph.nodes.forEach(function (node) {
-                                    node.itemStyle = null;
-                                    node.value = node.symbolSize;
-                                    node.symbolSize /= 1.5;
-                                    node.label = {
-                                        normal: {
-                                            show: node.symbolSize > 30
-                                        }
-                                    };
-                                    node.category = node.attributes.modularity_class;
-                                });
-                                option = {
-                                    title: {
-                                        top: 'bottom',
-                                        left: 'right'
-                                    },
-                                    tooltip: {},
-                                    legend: [{
-                                        // selectedMode: 'single',
-                                        data: categories.map(function (a) {
-                                            return a.name;
-                                        })
-                                    }],
-                                    animationDuration: 1500,
-                                    animationEasingUpdate: 'quinticInOut',
-                                    series: [
-                                        {
-                                            name: 'Les Miserables',
-                                            type: 'graph',
-                                            layout: 'none',
-                                            data: graph.nodes,
-                                            links: graph.links,
-                                            categories: categories,
-                                            roam: true,
-                                            label: {
-                                                normal: {
-                                                    position: 'right',
-                                                    formatter: '{b}'
-                                                }
-                                            },
-                                            lineStyle: {
-                                                normal: {
-                                                    color: 'source',
-                                                    curveness: 0.3
-                                                }
-                                            }
-                                        }
-                                    ]
-                                };
-                                myChart1.setOption(option);
-                            }, 'xml');
-                            if (option && typeof option === "object") {
-                                myChart1.setOption(option, true);
-                            }
-                        </script>
-                    </div>
-                </div>
-                <div class="tab-pane fade in active" id="cir">
-                    <div class="row">
-                        <div id="ma" style="height: 700px;color: #B3B3B3"></div>
-                        <script type="text/javascript">
-                            var dom2 = document.getElementById("ma");
-                            var myChart2 = echarts.init(dom2);
-                            var app = {};
-                            option = null;
-                            app.title = 'MainFrame';
-                            myChart2.showLoading();
-                            $.get('/assets/les-miserables.gexf', function (xml) {
-                                myChart2.hideLoading();
-                                var graph = echarts.dataTool.gexf.parse(xml);
-                                var categories = [];
-                                for (var i = 0; i < 9; i++) {
-                                    categories[i] = {
-                                        name: 'Channel ' + (i + 1)
-                                    };
-                                }
-                                graph.nodes.forEach(function (node) {
-                                    node.itemStyle = null;
-                                    node.value = node.symbolSize;
-                                    node.symbolSize /= 1.5;
-                                    node.label = {
-                                        normal: {
-                                            show: node.symbolSize > 10
-                                        }
-                                    };
-                                    node.category = node.attributes.modularity_class;
-                                });
-                                option = {
-                                    title: {
-                                        top: 'bottom',
-                                        left: 'right'
-                                    },
-                                    tooltip: {},
-                                    legend: [{
-                                        // selectedMode: 'single',
-                                        data: categories.map(function (a) {
-                                            return a.name;
-                                        })
-                                    }],
-                                    animationDurationUpdate: 1500,
-                                    animationEasingUpdate: 'quinticInOut',
-                                    series: [
-                                        {
-                                            name: 'Les Miserables',
-                                            type: 'graph',
-                                            layout: 'circular',
-                                            circular: {
-                                                rotateLabel: true
-                                            },
-                                            data: graph.nodes,
-                                            links: graph.links,
-                                            categories: categories,
-                                            roam: true,
-                                            label: {
-                                                normal: {
-                                                    position: 'right',
-                                                    formatter: '{b}'
-                                                }
-                                            },
-                                            lineStyle: {
-                                                normal: {
-                                                    color: 'source',
-                                                    curveness: 0.3
-                                                }
-                                            }
-                                        }
-                                    ]
-                                };
-                                myChart2.setOption(option);
-                            }, 'xml');
-                            if (option && typeof option === "object") {
-                                myChart2.setOption(option, true);
-                            }
-                        </script>
-                    </div>
-                </div>
+                {#                <div class="tab-pane fade" id="organized">#}
+                {#                    <div class="row">#}
+                {#                        <div id="mai" style="height: 700px;color: #B3B3B3"></div>#}
+                {#                        <script type="text/javascript">#}
+                {#                            console.log('loaded')#}
+                {#                            var dom1 = document.getElementById("mai");#}
+                {#                            var myChart1 = echarts.init(dom1);#}
+                {#                            var app = {};#}
+                {#                            option = null;#}
+                {#                            app.title = 'MainFrame2';#}
+                {#                            myChart1.showLoading();#}
+                {#                            $.get('/assets/les-miserables.gexf', function (xml) {#}
+                {#                                myChart1.hideLoading();#}
+                {#                                var graph = echarts.dataTool.gexf.parse(xml);#}
+                {#                                var categories = [];#}
+                {#                                for (var i = 0; i < 9; i++) {#}
+                {#                                    categories[i] = {#}
+                {#                                        name: 'Channel' + (i + 1)#}
+                {#                                    };#}
+                {#                                }#}
+                {#                                graph.nodes.forEach(function (node) {#}
+                {#                                    node.itemStyle = null;#}
+                {#                                    node.value = node.symbolSize;#}
+                {#                                    node.symbolSize /= 1.5;#}
+                {#                                    node.label = {#}
+                {#                                        normal: {#}
+                {#                                            show: node.symbolSize > 30#}
+                {#                                        }#}
+                {#                                    };#}
+                {#                                    node.category = node.attributes.modularity_class;#}
+                {#                                });#}
+                {#                                option = {#}
+                {#                                    title: {#}
+                {#                                        top: 'bottom',#}
+                {#                                        left: 'right'#}
+                {#                                    },#}
+                {#                                    tooltip: {},#}
+                {#                                    legend: [{#}
+                {#                                        // selectedMode: 'single',#}
+                {#                                        data: categories.map(function (a) {#}
+                {#                                            return a.name;#}
+                {#                                        })#}
+                {#                                    }],#}
+                {#                                    animationDuration: 1500,#}
+                {#                                    animationEasingUpdate: 'quinticInOut',#}
+                {#                                    series: [#}
+                {#                                        {#}
+                {#                                            name: 'Les Miserables',#}
+                {#                                            type: 'graph',#}
+                {#                                            layout: 'none',#}
+                {#                                            data: graph.nodes,#}
+                {#                                            links: graph.links,#}
+                {#                                            categories: categories,#}
+                {#                                            roam: true,#}
+                {#                                            label: {#}
+                {#                                                normal: {#}
+                {#                                                    position: 'right',#}
+                {#                                                    formatter: '{b}'#}
+                {#                                                }#}
+                {#                                            },#}
+                {#                                            lineStyle: {#}
+                {#                                                normal: {#}
+                {#                                                    color: 'source',#}
+                {#                                                    curveness: 0.3#}
+                {#                                                }#}
+                {#                                            }#}
+                {#                                        }#}
+                {#                                    ]#}
+                {#                                };#}
+                {#                                myChart1.setOption(option);#}
+                {#                            }, 'xml');#}
+                {#                            if (option && typeof option === "object") {#}
+                {#                                myChart1.setOption(option, true);#}
+                {#                            }#}
+                {#                        </script>#}
+                {#                    </div>#}
+                {#                </div>#}
+                {#                <div class="tab-pane fade" id="cir">#}
+                {#                    <div class="row">#}
+                {#                        <div id="ma" style="height: 700px;color: #B3B3B3"></div>#}
+                {#                        <script type="text/javascript">#}
+                {#                            var dom2 = document.getElementById("ma");#}
+                {#                            var myChart2 = echarts.init(dom2);#}
+                {#                            var app = {};#}
+                {#                            option = null;#}
+                {#                            app.title = 'MainFrame';#}
+                {#                            myChart2.showLoading();#}
+                {#                            $.get('/assets/les-miserables.gexf', function (xml) {#}
+                {#                                myChart2.hideLoading();#}
+                {#                                var graph = echarts.dataTool.gexf.parse(xml);#}
+                {#                                var categories = [];#}
+                {#                                for (var i = 0; i < 9; i++) {#}
+                {#                                    categories[i] = {#}
+                {#                                        name: 'Channel ' + (i + 1)#}
+                {#                                    };#}
+                {#                                }#}
+                {#                                graph.nodes.forEach(function (node) {#}
+                {#                                    node.itemStyle = null;#}
+                {#                                    node.value = node.symbolSize;#}
+                {#                                    node.symbolSize /= 1.5;#}
+                {#                                    node.label = {#}
+                {#                                        normal: {#}
+                {#                                            show: node.symbolSize > 10#}
+                {#                                        }#}
+                {#                                    };#}
+                {#                                    node.category = node.attributes.modularity_class;#}
+                {#                                });#}
+                {#                                option = {#}
+                {#                                    title: {#}
+                {#                                        top: 'bottom',#}
+                {#                                        left: 'right'#}
+                {#                                    },#}
+                {#                                    tooltip: {},#}
+                {#                                    legend: [{#}
+                {#                                        // selectedMode: 'single',#}
+                {#                                        data: categories.map(function (a) {#}
+                {#                                            return a.name;#}
+                {#                                        })#}
+                {#                                    }],#}
+                {#                                    animationDurationUpdate: 1500,#}
+                {#                                    animationEasingUpdate: 'quinticInOut',#}
+                {#                                    series: [#}
+                {#                                        {#}
+                {#                                            name: 'Les Miserables',#}
+                {#                                            type: 'graph',#}
+                {#                                            layout: 'circular',#}
+                {#                                            circular: {#}
+                {#                                                rotateLabel: true#}
+                {#                                            },#}
+                {#                                            data: graph.nodes,#}
+                {#                                            links: graph.links,#}
+                {#                                            categories: categories,#}
+                {#                                            roam: true,#}
+                {#                                            label: {#}
+                {#                                                normal: {#}
+                {#                                                    position: 'right',#}
+                {#                                                    formatter: '{b}'#}
+                {#                                                }#}
+                {#                                            },#}
+                {#                                            lineStyle: {#}
+                {#                                                normal: {#}
+                {#                                                    color: 'source',#}
+                {#                                                    curveness: 0.3#}
+                {#                                                }#}
+                {#                                            }#}
+                {#                                        }#}
+                {#                                    ]#}
+                {#                                };#}
+                {#                                myChart2.setOption(option);#}
+                {#                            }, 'xml');#}
+                {#                            if (option && typeof option === "object") {#}
+                {#                                myChart2.setOption(option, true);#}
+                {#                            }#}
+                {##}
+                {##}
+                {##}
+                {#                        </script>#}
+                {#                    </div>#}
+                {#                </div>#}
             </div>
+
 
             <div class="px-sidebar-right" id="sidebar-v" style="position: absolute; z-index: 10;" data-width="300">
                 <div class="px-sidebar-content">
@@ -605,7 +546,8 @@
                     <div class="col-md-12">
                         <div class="page-profile-v2-subheader page-block p-y-3" style="width:299px;height:299px;">
                             <div class="text-xs-center"><img src="{% static '3.png' %}" alt=""
-                                                             class="page-profile-v2-avatar border-round" style="width:200px;height:200px;"></div>
+                                                             class="page-profile-v2-avatar border-round"
+                                                             style="width:200px;height:200px;"></div>
                             <h1 class="font-size-24 text-xs-center m-y-1">Xun Lu</h1>
                             <h3 class="m-t-0 m-b-1 text-xs-center text-muted font-weight-normal">@neversaidthat</h3>
                         </div>
@@ -666,26 +608,26 @@
                                 <span class="panel-title">People</span>
                             </div>
                             <br>
-                        <div class="col-md-6">
-                            <div class="panel panel-transparent">
-                                <div class="text-xs-center"><img src="/assets/1.jpg" alt=""
-                                                                 class="page-profile-v2-avatar border-round"
-                                                                 style="width:100px;height:100px;"></div>
-                                <h1 class="font-size-18 text-xs-center m-y-1">Doge One</h1>
-                                <h3 class="font-size-18 m-t-0 m-b-1 text-xs-center text-muted font-weight-normal">
-                                    @lookinat</h3>
+                            <div class="col-md-6">
+                                <div class="panel panel-transparent">
+                                    <div class="text-xs-center"><img src="/assets/1.jpg" alt=""
+                                                                     class="page-profile-v2-avatar border-round"
+                                                                     style="width:100px;height:100px;"></div>
+                                    <h1 class="font-size-18 text-xs-center m-y-1">Doge One</h1>
+                                    <h3 class="font-size-18 m-t-0 m-b-1 text-xs-center text-muted font-weight-normal">
+                                        @lookinat</h3>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="panel panel-transparent">
-                                <div class="text-xs-center"><img src="/assets/2.jpg" alt=""
-                                                                 class="page-profile-v2-avatar border-round"
-                                                                 style="width:100px;height:100px;"></div>
-                                <h1 class="font-size-18 text-xs-center m-y-1">Doge two</h1>
-                                <h3 class="font-size-18 m-t-0 m-b-1 text-xs-center text-muted font-weight-normal">
-                                    @coolestdog</h3>
+                            <div class="col-md-6">
+                                <div class="panel panel-transparent">
+                                    <div class="text-xs-center"><img src="/assets/2.jpg" alt=""
+                                                                     class="page-profile-v2-avatar border-round"
+                                                                     style="width:100px;height:100px;"></div>
+                                    <h1 class="font-size-18 text-xs-center m-y-1">Doge two</h1>
+                                    <h3 class="font-size-18 m-t-0 m-b-1 text-xs-center text-muted font-weight-normal">
+                                        @coolestdog</h3>
+                                </div>
                             </div>
-                        </div>
                         </div>
                         <br>
                         <div class="panel panel-transparent">
@@ -1015,14 +957,14 @@
 <script src="/assets/js/pixeladmin.min.js"></script>
 
 <script>
-// -------------------------------------------------------------------------
-// Initialize DEMO sidebar
+    // -------------------------------------------------------------------------
+    // Initialize DEMO sidebar
 
-$(function () {
-pxDemo.initializeDemoSidebar();
-$('#px-demo-sidebar').pxSidebar();
-pxDemo.initializeDemo();
-});
+    $(function () {
+        pxDemo.initializeDemoSidebar();
+        $('#px-demo-sidebar').pxSidebar();
+        pxDemo.initializeDemo();
+    });
 </script>
 
 <script type="text/javascript">
@@ -1166,5 +1108,7 @@ pxDemo.initializeDemo();
     });
 
 </script>
+
+
 </body>
 </html>
