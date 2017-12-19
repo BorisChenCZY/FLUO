@@ -23,6 +23,8 @@ def convert(team,channels_list,graph='mention_based_graph_info',user = 'read_dat
     from textblob import TextBlob
     import random
     import pymysql
+    import pandas as pd
+
     try:
         con = pymysql.Connect(
             host=host,  # 远程登录主机的ip地址
@@ -36,78 +38,148 @@ def convert(team,channels_list,graph='mention_based_graph_info',user = 'read_dat
     except pymysql.Error as e:
         print("Error %d: %s" % (e.args[0], e.args[1]))
 
-    gexf = Gexf("Gephi.org", "A Web network")
+    result=dict()
 
-    output = gexf.addGraph("directed", "static", "A Web network")
+    for channel_file in channels_list:
 
-    # channel_list=list()
-    people_id = dict()
-    teams_id = dict()
-    channels_id = dict()
-    people_channel_relation_id = dict()
-    team_channel_relation_id = dict()
-    channel_team_relation_id = dict()
-    id_list = ['channels', 'teams', 'people', 'people_channel_relation', 'team_channel_relation']
-    for id in id_list:
-        cur.execute('select * from ' + id)
-        data = cur.fetchall()
-        if id == 'team_channel_relation':
-            for i in data:
-                channel_team_relation_id[i[1]] = i[0]
-        for i in data:
-            exec(id + '_id[\'' + i[0] + '\']=i[1]')
+        gexf = Gexf("Gephi.org", "A Web network")
 
-    channel_node = output.addNodeAttribute(force_id="Channel", title="channel", type="String")
-    team_node = output.addNodeAttribute(force_id="Team", title="team", type="String")
-    weight_node = output.addNodeAttribute(force_id="Weight", title="weight", type="float")
+        output = gexf.addGraph("directed", "static", "A Web network")
 
-    for tem_id in people_id.keys():
-        # tem_id=p[0]
-        # print(people_id[tem_id])
-        tem_name = people_id[tem_id]
-        tem_channel = people_channel_relation_id[tem_id]
-        tem_team = channel_team_relation_id[tem_channel]
-        if tem_team==team and tem_channel in channels_list:
-            tmp_node = output.addNode(tem_id, tem_name)
-            tmp_node.addAttribute(channel_node, channels_id[tem_channel])
-            tmp_node.addAttribute(team_node, teams_id[tem_team])
-            tmp_node.addAttribute(weight_node, str(int(100 * random.random())))
-
-    msg_att = output.addEdgeAttribute(force_id="Message", title="message", type='String', defaultValue='None')
-    weight_att = output.addEdgeAttribute(force_id="Weight", title="weight", type='float', defaultValue='0')
-    date_att = output.addEdgeAttribute(force_id="Date", title="date", type='float', defaultValue='None')
-    channel_att = output.addEdgeAttribute(force_id="Channel", title="channel", type='String', defaultValue='None')
-    team_att = output.addEdgeAttribute(force_id="Team", title="team", type='String', defaultValue='None')
-
-    cur.execute('select * from ' + graph)
-    data = cur.fetchall()
-    cc=0
-    for tem_m in data:
-        sender, receiver, text, channel_id, team_id, ts = tem_m
-        if team_id == team and channel_id in channels_list:
-            blob = TextBlob(text)
-            weight = str(blob.sentiment.polarity)
-            # weight = str(10 * random.random())
-            try:
-                tem_edge = output.addEdge(sender + receiver+str(cc), sender, receiver, weight=weight)
-            except Exception:
-                # continue  # todo change it !
-                tmp_node = output.addNode(receiver, 'Null')
-                tem_edge = output.addEdge(sender + receiver+str(cc), sender, receiver, weight=weight)
-
-            cc=cc+1
-            tem_edge.addAttribute(msg_att, text)
-            tem_edge.addAttribute(weight_att, weight)
-            tem_edge.addAttribute(date_att, str(ts))
-            tem_edge.addAttribute(channel_att, channels_id[channel_id])
-            tem_edge.addAttribute(team_att, teams_id[team_id])
+        cur.execute('select * from people_channel_relation where channel_id = \'' + channel_file + '\' ')
+        person_and_channel = cur.fetchall()
 
 
-    output_file = open("./test.gexf", "wb")
-    gexf.write(output_file)
-    output_file.close()
-    with open("./test.gexf", 'rb') as f:
-        return f.read().decode('utf-8')
+        if len(person_and_channel)==0:
+            result[channel_file]=""
+
+        else:
+
+            person_and_channel = list(map(list, zip(*person_and_channel)))
+            person = person_and_channel[0][:]
+            channel = person_and_channel[1][:]
+            person_and_channel = {'person': person, 'channel': channel}
+            person_and_channel = pd.DataFrame(person_and_channel)
+            del person
+            del channel
+
+            cur.execute('select * from team_channel_relation ')
+            team_to_channel = cur.fetchall()
+            team_to_channel = list(map(list, zip(*team_to_channel)))
+            team = team_to_channel[0][:]
+            channel = team_to_channel[1][:]
+            team_to_channel = {'team': team, 'channel': channel}
+            team_to_channel = pd.DataFrame(team_to_channel)
+            del team
+            del channel
+
+            person_list = person_and_channel['person']
+
+            # print(person_and_channel)
+
+            channel_node = output.addNodeAttribute(force_id="Channel", title="channel", type="String")
+            team_node = output.addNodeAttribute(force_id="Team", title="team", type="String")
+            weight_node = output.addNodeAttribute(force_id="Weight", title="weight", type="float")
+
+            people_id = dict()
+            id_list = ['people']
+            for id in id_list:
+                cur.execute('select * from ' + id)
+                data = cur.fetchall()
+                for i in data:
+                    exec(id + '_id[\'' + i[0] + '\']=i[1]')
+
+            person_set = set(person_list)
+            person_to_channel = []
+            for tem_person in person_set:
+                cur.execute('select * from people_channel_relation where people_id = \'' + tem_person + '\' ')
+
+                person_to_channel = person_to_channel + list(cur.fetchall())
+
+            person_to_channel = list(map(list, zip(*person_to_channel)))
+            person = person_to_channel[0][:]
+            channel = person_to_channel[1][:]
+            person_to_channel = {'person': person, 'channel': channel}
+            person_to_channel = pd.DataFrame(person_to_channel)
+
+            # print(person_to_channel)
+
+
+
+
+
+            cc = 0
+            num2333 = len(person_set)
+            for tem_id in person_set:
+                print(cc / num2333)
+                try:
+                    tem_name = people_id[tem_id]
+                except KeyError:
+                    tem_name = "Null"
+
+                tem_channel_list = set(person_to_channel[person_to_channel['person'] == tem_id]['channel'])
+
+                tmp_node = output.addNode(tem_id, tem_name)
+                tmp_node.addAttribute(weight_node, str(int(100 * random.random())))
+                tem_team_list = set()
+                for tem_channel in tem_channel_list:
+                    # cur.execute('select team_id from team_channel_relation where channel_id = \'' + tem_channel + '\'')
+                    # tem_team_list = cur.fetchall()
+                    tem_team_list = tem_team_list | set(
+                        team_to_channel[team_to_channel['channel'] == tem_channel]['team'])
+                for tem_team in tem_team_list:
+                    tmp_node.addAttribute(team_node, tem_team)
+
+                for tem_channel in tem_channel_list:
+                    tmp_node.addAttribute(channel_node, tem_channel)
+
+                cc = cc + 1
+
+            m = 'mention_based_graph_info'
+            cur.execute('select * from ' + m + ' where channel_id = \'' + channel_file + '\' ')
+            data = cur.fetchall()
+
+            msg_att = output.addEdgeAttribute(force_id="Message", title="message", type='String', defaultValue='None')
+            weight_att = output.addEdgeAttribute(force_id="Weight", title="weight", type='float', defaultValue='0')
+            date_att = output.addEdgeAttribute(force_id="Date", title="date", type='float', defaultValue='None')
+            channel_att = output.addEdgeAttribute(force_id="Channel", title="channel", type='String',
+                                                  defaultValue='None')
+            team_att = output.addEdgeAttribute(force_id="Team", title="team", type='String', defaultValue='None')
+            cc = 0
+            numhehe = len(data)
+            for tem_m in data:
+                print(cc / numhehe)
+                sender, receiver, text, channel_id, team_id, ts = tem_m
+                blob = TextBlob(text)
+                weight = str(blob.sentiment.polarity)
+                try:
+                    tem_edge = output.addEdge(sender + receiver + str(cc), sender, receiver, weight=weight)
+                except Exception:
+                    try:
+                        tmp_node = output.addNode(receiver, 'Null')
+                        tem_edge = output.addEdge(sender + receiver + str(cc), sender, receiver, weight=weight)
+                    except Exception:
+                        tmp_node = output.addNode(sender, 'Null')
+                        tem_edge = output.addEdge(sender + receiver + str(cc), sender, receiver, weight=weight)
+
+                cc = cc + 1
+                tem_edge.addAttribute(msg_att, text)
+                tem_edge.addAttribute(weight_att, weight)
+                tem_edge.addAttribute(date_att, str(ts))
+                tem_edge.addAttribute(team_att, team_id)
+                tem_edge.addAttribute(channel_att, channel_id)
+
+            # print(str(output))
+
+            output_file = open("./test.gexf", "wb")
+            gexf.write(output_file)
+            output_file.close()
+            with open("./test.gexf", 'rb') as f:
+                content = f.read().decode('utf-8')
+                result[channel_file] = content
+
+    return result
+
 
 
 
@@ -115,8 +187,16 @@ def convert(team,channels_list,graph='mention_based_graph_info',user = 'read_dat
 def channels(request, team):
     database_conductor = Database_conductor(True)
     team_info = {}
-    for _, channel in (database_conductor.get_channels_from_team('T09NY5SBT')):
+    for _, channel in (database_conductor.get_channels_from_team(team)):
         channel, channel_name = (database_conductor.get_channel_detail(channel)[0])
         team_info[channel] = channel_name
     print(team_info)
+    return JsonResponse(team_info)
+
+
+def teams(request):
+    database_conductor = Database_conductor(True)
+    team_info = {}
+    for id, name, domain in database_conductor.get_teams():
+        team_info[id] = {"name": name, "domain":domain}
     return JsonResponse(team_info)

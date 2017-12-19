@@ -124,7 +124,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/assets/'
-STATIC_ROOT = os.path.join(BASE_DIR, "Grapher/assets")
+STATIC_ROOT = os.path.join(BASE_DIR, "Grapher/assets/deploy")
 print(STATIC_ROOT)
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "Grapher/assets/css"),

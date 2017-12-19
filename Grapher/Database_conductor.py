@@ -163,6 +163,13 @@ class Database_conductor():
         self.cursor.execute(query)
         return self.cursor.fetchall()
 
+    def get_teams(self):
+        query = """
+                SELECT * FROM teams
+                """
+        self.cursor.execute(query)
+        return self.cursor.fetchall()
+
     def close(self):
         self.cursor.close()
         self.connector.close()

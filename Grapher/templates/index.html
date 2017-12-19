@@ -8,7 +8,7 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 
-    <title>SNA4Slack</title>
+    <title>FLUO</title>
 
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin"
           rel="stylesheet" type="text/css">
@@ -29,8 +29,8 @@
     <!-- DEMO ONLY: Load PixelAdmin core stylesheets -->
     <script>
         _pxDemo_loadStylesheet('{% static 'bootstrap.min.css' %}', 'px-demo-stylesheet-bs');
-        _pxDemo_loadStylesheet('/assets/css/pixeladmin.min.css', 'px-demo-stylesheet-core');
-        _pxDemo_loadStylesheet('/assets/css/widgets.min.css', 'px-demo-stylesheet-widgets');
+        _pxDemo_loadStylesheet('{% static 'pixeladmin.min.css' %}', 'px-demo-stylesheet-core');
+        _pxDemo_loadStylesheet('/assets/widgets.min.css', 'px-demo-stylesheet-widgets');
     </script>
 
     <!-- DEMO ONLY: Load theme -->
@@ -51,7 +51,7 @@
     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/holder/2.9.0/holder.js"></script>
 
     <!-- Pace.js -->
-    <script src="/assets/pace/pace.min.js"></script>
+    <script src="/assets/pace.min.js"></script>
 
     <script src="{% static 'demo.js' %}"></script>
     <script type="text/javascript" src="{% static 'GraphParser.js' %}"></script>
@@ -69,94 +69,94 @@
 <body>
 
 <!--Left Side Navigation Bar-->
-<nav class="px-nav px-nav-left px-nav-collapse px-nav-off-canvas">
-    <button type="button" class="px-nav-toggle" data-toggle="px-nav">
-        <span class="px-nav-toggle-arrow"></span>
-        <span class="navbar-toggle-icon"></span>
-        <span class="px-nav-toggle-label font-size-11">HIDE MENU</span>
-    </button>
-
-    <ul class="px-nav-content">
-
-        <li class="px-nav-item px-nav-dropdown">
-            <a href="#"><i class="px-nav-icon ion-ios-pulse-strong"></i><span class="px-nav-label">Stats</span></a>
-            <ul class="px-nav-dropdown-menu">
-                <li class="px-nav-item"><a href="index.html"><span class="px-nav-label">Overview</span></a></li>
-                <li class="px-nav-item"><a href="#piechart"><span class="px-nav-label">Pie Charts</span></a>
-                </li>
-                <li class="px-nav-item"><a href="#moregragh"><span
-                        class="px-nav-label">More Graphs</span></a>
-                </li>
-                <li class="px-nav-item"><a href="#schedule"><span
-                        class="px-nav-label">Schedule</span></a>
-                </li>
-                <li class="px-nav-item"><a href="#schedule"><span class="px-nav-label">Comments</span></a>
-                </li>
-                <li class="px-nav-item"><a href="#footer"><span class="px-nav-label">Contact Us</span></a>
-                </li>
-            </ul>
-        </li>
-
-        <li class="px-nav-item">
-            <a href="#"><i class="px-nav-icon ion-cube"></i><span class="px-nav-label">Utilities</span></a>
-        </li>
-
-        <li class="px-nav-item px-nav-dropdown">
-            <a href="#"><i class="px-nav-icon ion-erlenmeyer-flask"></i><span class="px-nav-label">Filters</span></a>
-            <ul class="px-nav-dropdown-menu">
-                <li class="px-nav-item"><a href="filter.html"><span class="px-nav-label">Overview</span></a></li>
-                <li class="px-nav-item"><a href="#"><span class="px-nav-label">Date</span></a></li>
-                <li class="px-nav-item"><a href="#"><span class="px-nav-label">Channel</span></a></li>
-                <li class="px-nav-item"><a href="#"><span class="px-nav-label">Weight</span></a></li>
-                <li class="px-nav-item"><a href="#"><span class="px-nav-label">Keyword</span></a></li>
-            </ul>
-        </li>
-
-        <li class="px-nav-item px-nav-dropdown">
-            <a href="#"><i class="px-nav-icon ion-ios-keypad"></i><span class="px-nav-label">Tables</span></a>
-            <ul class="px-nav-dropdown-menu">
-                <li class="px-nav-item"><a href="#"><span class="px-nav-label">Table1</span></a></li>
-                <li class="px-nav-item"><a href="#"><span class="px-nav-label">Table2</span></a></li>
-                <li class="px-nav-item"><a href="#"><span class="px-nav-label">Table3</span></a></li>
-            </ul>
-        </li>
-
-        <li class="px-nav-item px-nav-dropdown">
-            <a href="#"><i class="px-nav-icon ion-stats-bars"></i><span class="px-nav-label">Charts</span></a>
-            <ul class="px-nav-dropdown-menu">
-                <li class="px-nav-item"><a href="#"><span class="px-nav-label">Chart1</span></a></li>
-                <li class="px-nav-item"><a href="#"><span class="px-nav-label">Chart2</span></a></li>
-                <li class="px-nav-item"><a href="#"><span class="px-nav-label">Chart3</span></a></li>
-            </ul>
-        </li>
-        <li class="px-nav-item px-nav-dropdown">
-            <a href="#"><i class="px-nav-icon ion-ios-paper"></i><span class="px-nav-label">Level</span></a>
-            <ul class="px-nav-dropdown-menu">
-                <li class="px-nav-item px-nav-dropdown"><a href="#"><span class="px-nav-label">Level2</span></a>
-                    <ul class="px-nav-dropdown-menu">
-                        <li class="px-nav-item"><a href="#"><span
-                                class="px-nav-label">level3</span></a></li>
-                    </ul>
-                </li>
-            </ul>
-        </li>
-
-        <li class="px-nav-item">
-            <a href="#" target="_blank" class="bg-success text-white b-a-0"><i
-                    class="px-nav-icon ion-social-buffer"></i><span class="px-nav-label">Docs</span></a>
-        </li>
-        <li class="px-nav-box b-t-1 p-a-2">
-            <a href="#" class="btn btn-primary btn-block btn-outline">Donate Us!</a>
-        </li>
-    </ul>
-</nav>
+{#<nav class="px-nav px-nav-left px-nav-collapse px-nav-off-canvas">#}
+{#    <button type="button" class="px-nav-toggle" data-toggle="px-nav">#}
+{#        <span class="px-nav-toggle-arrow"></span>#}
+{#        <span class="navbar-toggle-icon"></span>#}
+{#        <span class="px-nav-toggle-label font-size-11">HIDE MENU</span>#}
+{#    </button>#}
+{##}
+{#    <ul class="px-nav-content">#}
+{##}
+{#        <li class="px-nav-item px-nav-dropdown">#}
+{#            <a href="#"><i class="px-nav-icon ion-ios-pulse-strong"></i><span class="px-nav-label">Stats</span></a>#}
+{#            <ul class="px-nav-dropdown-menu">#}
+{#                <li class="px-nav-item"><a href="index.html"><span class="px-nav-label">Overview</span></a></li>#}
+{#                <li class="px-nav-item"><a href="#piechart"><span class="px-nav-label">Pie Charts</span></a>#}
+{#                </li>#}
+{#                <li class="px-nav-item"><a href="#moregragh"><span#}
+{#                        class="px-nav-label">More Graphs</span></a>#}
+{#                </li>#}
+{#                <li class="px-nav-item"><a href="#schedule"><span#}
+{#                        class="px-nav-label">Schedule</span></a>#}
+{#                </li>#}
+{#                <li class="px-nav-item"><a href="#schedule"><span class="px-nav-label">Comments</span></a>#}
+{#                </li>#}
+{#                <li class="px-nav-item"><a href="#footer"><span class="px-nav-label">Contact Us</span></a>#}
+{#                </li>#}
+{#            </ul>#}
+{#        </li>#}
+{##}
+{#        <li class="px-nav-item">#}
+{#            <a href="#"><i class="px-nav-icon ion-cube"></i><span class="px-nav-label">Utilities</span></a>#}
+{#        </li>#}
+{##}
+{#        <li class="px-nav-item px-nav-dropdown">#}
+{#            <a href="#"><i class="px-nav-icon ion-erlenmeyer-flask"></i><span class="px-nav-label">Filters</span></a>#}
+{#            <ul class="px-nav-dropdown-menu">#}
+{#                <li class="px-nav-item"><a href="filter.html"><span class="px-nav-label">Overview</span></a></li>#}
+{#                <li class="px-nav-item"><a href="#"><span class="px-nav-label">Date</span></a></li>#}
+{#                <li class="px-nav-item"><a href="#"><span class="px-nav-label">Channel</span></a></li>#}
+{#                <li class="px-nav-item"><a href="#"><span class="px-nav-label">Weight</span></a></li>#}
+{#                <li class="px-nav-item"><a href="#"><span class="px-nav-label">Keyword</span></a></li>#}
+{#            </ul>#}
+{#        </li>#}
+{##}
+{#        <li class="px-nav-item px-nav-dropdown">#}
+{#            <a href="#"><i class="px-nav-icon ion-ios-keypad"></i><span class="px-nav-label">Tables</span></a>#}
+{#            <ul class="px-nav-dropdown-menu">#}
+{#                <li class="px-nav-item"><a href="#"><span class="px-nav-label">Table1</span></a></li>#}
+{#                <li class="px-nav-item"><a href="#"><span class="px-nav-label">Table2</span></a></li>#}
+{#                <li class="px-nav-item"><a href="#"><span class="px-nav-label">Table3</span></a></li>#}
+{#            </ul>#}
+{#        </li>#}
+{##}
+{#        <li class="px-nav-item px-nav-dropdown">#}
+{#            <a href="#"><i class="px-nav-icon ion-stats-bars"></i><span class="px-nav-label">Charts</span></a>#}
+{#            <ul class="px-nav-dropdown-menu">#}
+{#                <li class="px-nav-item"><a href="#"><span class="px-nav-label">Chart1</span></a></li>#}
+{#                <li class="px-nav-item"><a href="#"><span class="px-nav-label">Chart2</span></a></li>#}
+{#                <li class="px-nav-item"><a href="#"><span class="px-nav-label">Chart3</span></a></li>#}
+{#            </ul>#}
+{#        </li>#}
+{#        <li class="px-nav-item px-nav-dropdown">#}
+{#            <a href="#"><i class="px-nav-icon ion-ios-paper"></i><span class="px-nav-label">Level</span></a>#}
+{#            <ul class="px-nav-dropdown-menu">#}
+{#                <li class="px-nav-item px-nav-dropdown"><a href="#"><span class="px-nav-label">Level2</span></a>#}
+{#                    <ul class="px-nav-dropdown-menu">#}
+{#                        <li class="px-nav-item"><a href="#"><span#}
+{#                                class="px-nav-label">level3</span></a></li>#}
+{#                    </ul>#}
+{#                </li>#}
+{#            </ul>#}
+{#        </li>#}
+{##}
+{#        <li class="px-nav-item">#}
+{#            <a href="#" target="_blank" class="bg-success text-white b-a-0"><i#}
+{#                    class="px-nav-icon ion-social-buffer"></i><span class="px-nav-label">Docs</span></a>#}
+{#        </li>#}
+{#        <li class="px-nav-box b-t-1 p-a-2">#}
+{#            <a href="#" class="btn btn-primary btn-block btn-outline">Donate Us!</a>#}
+{#        </li>#}
+{#    </ul>#}
+{#</nav>#}
 
 <!--On top Navigation Bar-->
 <nav class="navbar px-navbar">
 
     <!--Should be a LOGO-->
     <div class="navbar-header">
-        <a class="navbar-brand px-demo-brand" href="index.html">SNA4Slack</a>
+        <a class="navbar-brand px-demo-brand" href="index.html">FLUO</a>
     </div>
 
     <!--Switch of left side nav bar-->
@@ -216,20 +216,21 @@
     <!--Navigation Bar-->
     <ol class="breadcrumb page-breadcrumb">
         <li><a href="index.html">Home</a></li>
-        <li class="active">Stats</li>
+        <li class="active" id="status_bar">Stats</li>
     </ol>
 
     <!--Searching box & Filter Button-->
     <div class="page-header">
         <div class="row">
             <div class="col-md-4 text-xs-center text-md-left text-nowrap">
-                <h1><i class="page-header-icon ion-ios-pulse-strong"></i>Stats</h1>
+                <h1 id="status_bar_large"><i class="page-header-icon ion-ios-pulse-strong"></i>Stats</h1>
             </div>
 
             <hr class="page-wide-block visible-xs visible-sm">
 
             <div class="col-xs-12 width-md-auto width-lg-auto width-xl-auto pull-md-right">
-                <button type="button" class="btn btn-info btn-3d" data-toggle="collapse" href="#collapseTwo"><i
+                <button type="button" id="filter_button" class="btn btn-info btn-3d" data-toggle="collapse"
+                        href="#collapseTwo"><i
                         class="fa fa-filter"></i></button>
             </div>
 
@@ -237,7 +238,10 @@
             <form action="" class="page-header-form col-xs-12 col-md-4 pull-md-right">
                 <div class="input-group">
                     <span class="input-group-addon b-a-0 font-size-16"><i class="ion-search"></i></span>
-                    <input type="text" placeholder="Type in people..." class="form-control p-l-0 b-a-0">
+                    <select id="team_list" class="select2-info select2-example custom-radio form-control"
+                            style="width: 100%">
+                        <option value="c3" selected disabled>Please select a team</option>
+                    </select>
                 </div>
             </form>
         </div>
@@ -259,14 +263,14 @@
                             <br>
                             <h5 class="m-t-0">Channel</h5>
                             <div class="m-b-2">
-                                <select class="form-control select2-info select2-example xiaxieyige" multiple
+                                <select id="channel_group" class="form-control select2-info select2-example" multiple
                                         style="width: 100%">
-                                    <optgroup id="channel_group"  label="Channel 1-5">
-{#                                        <option value="c1">Channel1</option>#}
-{#                                        <option value="c2">Channel2</option>#}
-{#                                        <option value="c3" selected>Channel3</option>#}
-{#                                        <option value="c4">Channel4</option>#}
-{#                                        <option value="c5">Channel5</option>#}
+                                    <optgroup label="You need to select a team first">
+                                        {#                                        <option value="c1">Channel1</option>#}
+                                        {#                                        <option value="c2">Channel2</option>#}
+                                        {#                                        <option value="c3" selected>Channel3</option>#}
+                                        {#                                        <option value="c4">Channel4</option>#}
+                                        {#                                        <option value="c5">Channel5</option>#}
                                     </optgroup>
                                     {#                                    <optgroup label="Pacific Time Zone">#}
                                     {#                                        <option value="c6">Channel6</option>#}
@@ -334,8 +338,8 @@
                 </div>
                 <hr class="page-block m-t-0">
                 <div class="modal-footer">
-                    <button type="button" class="btn" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-info">Save changes</button>
+                    <button type="button" class="btn" data-dismiss="modal" onclick="$('#filter_button').click();">Close</button>
+{#                    <button type="button" class="btn btn-info" onclick="get_channels()">Save changes</button>#}
                 </div>
 
             </div>
@@ -343,9 +347,9 @@
 
     </div>
 
-    <button type="button" class="btn" data-toggle="sidebar" data-target="#sidebar-v">Vertex</button>
+    <button type="button" class="btn" data-toggle="sidebar" data-target="#sidebar-v" onclick="open('sidebar-vertex', 'sidebar-edge')">Vertex</button>
 
-    <button type="button" class="btn" data-toggle="sidebar" data-target="#sidebar-e">Edge</button>
+    <button type="button" class="btn" data-toggle="sidebar" data-target="#sidebar-e" onclick="open('sidebar-edge', 'sidebar-vertex')">Edge</button>
 
     <!--Main Frame Nav Bar-->
     <ul class="nav nav-tabs nav-tabs-simple">
@@ -367,9 +371,9 @@
                 <div class="tab-pane fade in active" id="drag">
                     <div class="row">
                         <div id="main" style="height: 700px;color: #B3B3B3"></div>
-                        <script type="text/javascript" src="/assets/js/echarts.min.js"></script>
-                        <script type="text/javascript" src="/assets/js/jquery.js"></script>
-                        <script type="text/javascript" src="/assets/js/dataTool.js"></script>
+                        <script type="text/javascript" src="/assets/echarts.min.js"></script>
+                        <script type="text/javascript" src="/assets/jquery.js"></script>
+                        <script type="text/javascript" src="/assets/dataTool.js"></script>
                         <script type="text/javascript">
                             draw('123');
                             console.log('Drawed')
@@ -538,7 +542,7 @@
             </div>
 
 
-            <div class="px-sidebar-right" id="sidebar-v" style="position: absolute; z-index: 10;" data-width="300">
+            <div class="px-sidebar-right" id="sidebar-vertex" style="position: absolute; z-index: 10;" data-width="300">
                 <div class="px-sidebar-content">
                     <div class="panel-heading p-x-1">
                         <span class="panel-title">Node Info</span>
@@ -597,7 +601,7 @@
                 </div>
             </div>
 
-            <div class="px-sidebar-right" id="sidebar-e" style="position: absolute; z-index: 10;" data-width="300">
+            <div class="px-sidebar-right" id="sidebar-edge" style="position: absolute; z-index: 10;" data-width="300">
                 <div class="px-sidebar-content">
                     <div class="panel-heading p-x-1">
                         <span class="panel-title">Link Info</span>
@@ -953,8 +957,10 @@
 
 <!-- jQuery -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="/assets/js/bootstrap.min.js"></script>
-<script src="/assets/js/pixeladmin.min.js"></script>
+
+<script src="/assets/bootstrap.min.js"></script>
+{#<script src="/assets/jquery.min.js"></script>#}
+<script src="/assets/pixeladmin.min.js"></script>
 
 <script>
     // -------------------------------------------------------------------------
@@ -1001,7 +1007,7 @@
 
     $(function () {
         $('.select2-example').select2({
-            placeholder: 'Select value',
+            placeholder: 'No team selected',
         });
     });
 
@@ -1063,8 +1069,15 @@
     // Initialize Date Range Picker
 
     $(function () {
-        $('#daterange-1').daterangepicker();
-
+        {#$('#daterange-1').daterangepicker();#}
+        $('#daterange-1').daterangepicker({
+            "autoApply": true,
+            locale: { cancelLabel: 'Clear' },
+            {#"startDate": "12/13/2017",#}
+            {#"endDate": "12/19/2017"#}
+        }, function (start, end, label) {
+            console.log("New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')");
+        });
 
     });
 
@@ -1109,6 +1122,6 @@
 
 </script>
 
-
+<script type="text/javascript" src="{% static 'init.js' %}"></script>
 </body>
 </html>

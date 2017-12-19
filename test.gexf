@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <gexf xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.gephi.org/gexf/1.2draft" xmlns:ns0="xsi" version="1.2" ns0:schemaLocation="http://www.gephi.org/gexf/1.1draft http://gephi.org/gexf/1.2draft.xsd">
-  <meta lastmodified="2017-12-18">
+  <meta lastmodified="2017-12-19">
     <creator>Gephi.org</creator>
     <description>A Web network</description>
   </meta>
@@ -33,7 +33,7 @@
         <attvalues>
           <attvalue for="Channel" value="sig-gcp"/>
           <attvalue for="Team" value="Kubernetes"/>
-          <attvalue for="Weight" value="94"/>
+          <attvalue for="Weight" value="85"/>
         </attvalues>
       </node>
       <node id="U09R2FL9" label="Null"/>
@@ -41,7 +41,7 @@
         <attvalues>
           <attvalue for="Channel" value="sig-gcp"/>
           <attvalue for="Team" value="Kubernetes"/>
-          <attvalue for="Weight" value="64"/>
+          <attvalue for="Weight" value="79"/>
         </attvalues>
       </node>
       <node id="U0ALJAVM" label="Null"/>
@@ -49,7 +49,7 @@
         <attvalues>
           <attvalue for="Channel" value="sig-gcp"/>
           <attvalue for="Team" value="Kubernetes"/>
-          <attvalue for="Weight" value="73"/>
+          <attvalue for="Weight" value="55"/>
         </attvalues>
       </node>
       <node id="U0E2KHQ1" label="Null"/>
@@ -57,21 +57,21 @@
         <attvalues>
           <attvalue for="Channel" value="sig-gcp"/>
           <attvalue for="Team" value="Kubernetes"/>
-          <attvalue for="Weight" value="30"/>
+          <attvalue for="Weight" value="37"/>
         </attvalues>
       </node>
       <node id="U0UKM380M" label="jberkus">
         <attvalues>
           <attvalue for="Channel" value="sig-gcp"/>
           <attvalue for="Team" value="Kubernetes"/>
-          <attvalue for="Weight" value="99"/>
+          <attvalue for="Weight" value="8"/>
         </attvalues>
       </node>
       <node id="U1A92LHRS" label="mikej">
         <attvalues>
           <attvalue for="Channel" value="sig-gcp"/>
           <attvalue for="Team" value="Kubernetes"/>
-          <attvalue for="Weight" value="13"/>
+          <attvalue for="Weight" value="68"/>
         </attvalues>
       </node>
       <node id="U1JCA8TG" label="Null"/>
@@ -79,7 +79,7 @@
         <attvalues>
           <attvalue for="Channel" value="sig-gcp"/>
           <attvalue for="Team" value="Kubernetes"/>
-          <attvalue for="Weight" value="6"/>
+          <attvalue for="Weight" value="96"/>
         </attvalues>
       </node>
       <node id="U1P7T516" label="Null"/>
@@ -87,7 +87,7 @@
         <attvalues>
           <attvalue for="Channel" value="sig-gcp"/>
           <attvalue for="Team" value="Kubernetes"/>
-          <attvalue for="Weight" value="68"/>
+          <attvalue for="Weight" value="13"/>
         </attvalues>
       </node>
       <node id="U22Q65CT" label="Null"/>
@@ -95,7 +95,7 @@
         <attvalues>
           <attvalue for="Channel" value="sig-gcp"/>
           <attvalue for="Team" value="Kubernetes"/>
-          <attvalue for="Weight" value="79"/>
+          <attvalue for="Weight" value="16"/>
         </attvalues>
       </node>
       <node id="U2JKQVDP" label="Null"/>
@@ -103,21 +103,21 @@
         <attvalues>
           <attvalue for="Channel" value="sig-gcp"/>
           <attvalue for="Team" value="Kubernetes"/>
-          <attvalue for="Weight" value="71"/>
+          <attvalue for="Weight" value="8"/>
         </attvalues>
       </node>
       <node id="U3CU4AJ3V" label="nickchase">
         <attvalues>
           <attvalue for="Channel" value="sig-gcp"/>
           <attvalue for="Team" value="Kubernetes"/>
-          <attvalue for="Weight" value="82"/>
+          <attvalue for="Weight" value="78"/>
         </attvalues>
       </node>
       <node id="U3EDWR9FV" label="cblecker">
         <attvalues>
           <attvalue for="Channel" value="sig-gcp"/>
           <attvalue for="Team" value="Kubernetes"/>
-          <attvalue for="Weight" value="48"/>
+          <attvalue for="Weight" value="95"/>
         </attvalues>
       </node>
       <node id="U3J5DCXK" label="Null"/>
@@ -125,21 +125,21 @@
         <attvalues>
           <attvalue for="Channel" value="sig-gcp"/>
           <attvalue for="Team" value="Kubernetes"/>
-          <attvalue for="Weight" value="52"/>
+          <attvalue for="Weight" value="95"/>
         </attvalues>
       </node>
       <node id="U3Z43PSJG" label="negz">
         <attvalues>
           <attvalue for="Channel" value="sig-gcp"/>
           <attvalue for="Team" value="Kubernetes"/>
-          <attvalue for="Weight" value="72"/>
+          <attvalue for="Weight" value="29"/>
         </attvalues>
       </node>
       <node id="U4BTD3CDV" label="radhikapc">
         <attvalues>
           <attvalue for="Channel" value="sig-gcp"/>
           <attvalue for="Team" value="Kubernetes"/>
-          <attvalue for="Weight" value="71"/>
+          <attvalue for="Weight" value="97"/>
         </attvalues>
       </node>
       <node id="U4VMZKRD" label="Null"/>
@@ -147,21 +147,21 @@
         <attvalues>
           <attvalue for="Channel" value="sig-gcp"/>
           <attvalue for="Team" value="Kubernetes"/>
-          <attvalue for="Weight" value="76"/>
+          <attvalue for="Weight" value="35"/>
         </attvalues>
       </node>
       <node id="U5CCPQG56" label="cetico">
         <attvalues>
           <attvalue for="Channel" value="sig-gcp"/>
           <attvalue for="Team" value="Kubernetes"/>
-          <attvalue for="Weight" value="47"/>
+          <attvalue for="Weight" value="80"/>
         </attvalues>
       </node>
       <node id="U5F3JLS65" label="joshfg">
         <attvalues>
           <attvalue for="Channel" value="sig-gcp"/>
           <attvalue for="Team" value="Kubernetes"/>
-          <attvalue for="Weight" value="57"/>
+          <attvalue for="Weight" value="4"/>
         </attvalues>
       </node>
       <node id="U5XJKG0Q" label="Null"/>
@@ -169,7 +169,7 @@
         <attvalues>
           <attvalue for="Channel" value="sig-gcp"/>
           <attvalue for="Team" value="Kubernetes"/>
-          <attvalue for="Weight" value="29"/>
+          <attvalue for="Weight" value="47"/>
         </attvalues>
       </node>
       <node id="U64VCBUR" label="Null"/>
@@ -177,7 +177,7 @@
         <attvalues>
           <attvalue for="Channel" value="sig-gcp"/>
           <attvalue for="Team" value="Kubernetes"/>
-          <attvalue for="Weight" value="94"/>
+          <attvalue for="Weight" value="75"/>
         </attvalues>
       </node>
       <node id="U68H8T19" label="Null"/>
@@ -185,21 +185,21 @@
         <attvalues>
           <attvalue for="Channel" value="sig-gcp"/>
           <attvalue for="Team" value="Kubernetes"/>
-          <attvalue for="Weight" value="15"/>
+          <attvalue for="Weight" value="48"/>
         </attvalues>
       </node>
       <node id="U6JV25EGY" label="andrea.giardini">
         <attvalues>
           <attvalue for="Channel" value="sig-gcp"/>
           <attvalue for="Team" value="Kubernetes"/>
-          <attvalue for="Weight" value="96"/>
+          <attvalue for="Weight" value="65"/>
         </attvalues>
       </node>
       <node id="U6K057D0C" label="zemmi">
         <attvalues>
           <attvalue for="Channel" value="sig-gcp"/>
           <attvalue for="Team" value="Kubernetes"/>
-          <attvalue for="Weight" value="85"/>
+          <attvalue for="Weight" value="24"/>
         </attvalues>
       </node>
       <node id="U6KKL4NU" label="Null"/>
@@ -207,7 +207,7 @@
         <attvalues>
           <attvalue for="Channel" value="sig-gcp"/>
           <attvalue for="Team" value="Kubernetes"/>
-          <attvalue for="Weight" value="89"/>
+          <attvalue for="Weight" value="27"/>
         </attvalues>
       </node>
       <node id="U6M9F8KS" label="Null"/>
@@ -215,14 +215,14 @@
         <attvalues>
           <attvalue for="Channel" value="sig-gcp"/>
           <attvalue for="Team" value="Kubernetes"/>
-          <attvalue for="Weight" value="55"/>
+          <attvalue for="Weight" value="80"/>
         </attvalues>
       </node>
       <node id="U75BP251Q" label="jeremy.wimsingues">
         <attvalues>
           <attvalue for="Channel" value="sig-gcp"/>
           <attvalue for="Team" value="Kubernetes"/>
-          <attvalue for="Weight" value="76"/>
+          <attvalue for="Weight" value="93"/>
         </attvalues>
       </node>
     </nodes>
