@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse, JsonResponse
 from .Database_conductor import *
+import random
 
 # Create your views here.
 def index(request):
@@ -200,3 +201,36 @@ def teams(request):
     for id, name, domain in database_conductor.get_teams():
         team_info[id] = {"name": name, "domain":domain}
     return JsonResponse(team_info)
+
+
+def get_person_info(id):
+    database_conductor = Database_conductor(True)
+    id, username, first_name, last_name, _, img_192, img_original = database_conductor.get_person(id)[0]
+    messages = []
+    for _, channel_id, text, team_id, ts in (database_conductor.get_person_messages(id)):
+        message = {'channel_id': channel_id,
+                   'channel_name': database_conductor.get_channel_detail(channel_id)[0][1],
+                   "text": text,
+                   "team_id": team_id,
+                   "ts": ts,
+                   }
+        messages.append(message)
+    weight = random.random()
+    mentions = len(database_conductor.get_mentioned(id))
+    return {
+        "id": id,
+        "username": username,
+        "first_name": first_name,
+        "last_name": last_name,
+        "img_192": img_192,
+        "img_original": img_original,
+        "messages": messages,
+        "weight": weight,
+        "mention": mentions,
+    }
+
+
+
+def person(request, id):
+    # get_person_info(id)
+    return JsonResponse(get_person_info(id))

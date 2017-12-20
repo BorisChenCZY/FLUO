@@ -12,7 +12,6 @@ $.get("/teams", function (ret) {
 $("#team_list").change(function () {
     var value = $("#team_list option:selected").val();
     var name = $("#team_list option:selected").text();
-    console.log(value);
     get_channels(value, name);
     if ($('#collapseTwo').attr('class').indexOf("in") === -1) {
         $("#filter_button").click();
@@ -33,6 +32,11 @@ $('#daterange-1').on('apply.daterangepicker', function(ev, picker) {
 });
 
 function open_sidebar(open_id, close_id) {
-    $("#"+open_id).attr('class', ['px-sidebar-right open']);
-    $("#"+close_id).attr('class', ['px-sidebar-right']);
+    if ($("#"+close_id).attr('class').indexOf('open') !== -1){
+        $('#' + close_id).pxSidebar('toggle');
+        $('#' + close_id).pxSidebar('update');
+    }
+    $('#' + open_id).pxSidebar('toggle');
+    $('#' + open_id).pxSidebar('update');
+    console.log('toggle version2')
 }

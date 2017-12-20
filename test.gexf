@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <gexf xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.gephi.org/gexf/1.2draft" xmlns:ns0="xsi" version="1.2" ns0:schemaLocation="http://www.gephi.org/gexf/1.1draft http://gephi.org/gexf/1.2draft.xsd">
-  <meta lastmodified="2017-12-19">
+  <meta lastmodified="2017-12-20">
     <creator>Gephi.org</creator>
     <description>A Web network</description>
   </meta>
@@ -31,198 +31,297 @@
       <node id="U09R02HA" label="Null"/>
       <node id="U09R02HAR" label="mikedanese">
         <attvalues>
-          <attvalue for="Channel" value="sig-gcp"/>
-          <attvalue for="Team" value="Kubernetes"/>
-          <attvalue for="Weight" value="85"/>
+          <attvalue for="Weight" value="33"/>
+          <attvalue for="Team" value="T09NY5SBT"/>
+          <attvalue for="Channel" value="C1J0BPD2M"/>
+          <attvalue for="Channel" value="C0LL8B19B"/>
+          <attvalue for="Channel" value="C09QZTRH7"/>
+          <attvalue for="Channel" value="C09R1JVU6"/>
+          <attvalue for="Channel" value="C09TP78DV"/>
+          <attvalue for="Channel" value="C09QZFCE5"/>
+          <attvalue for="Channel" value="C6WB33KNJ"/>
+          <attvalue for="Channel" value="C0SJ4AFB7"/>
+          <attvalue for="Channel" value="C1TU9EB9S"/>
+          <attvalue for="Channel" value="C09R1GTPW"/>
+          <attvalue for="Channel" value="C09R1PJR3"/>
+          <attvalue for="Channel" value="C2GL57FJ4"/>
         </attvalues>
       </node>
       <node id="U09R2FL9" label="Null"/>
       <node id="U09R2FL93" label="spiffxp">
         <attvalues>
-          <attvalue for="Channel" value="sig-gcp"/>
-          <attvalue for="Team" value="Kubernetes"/>
-          <attvalue for="Weight" value="79"/>
+          <attvalue for="Weight" value="7"/>
+          <attvalue for="Team" value="T09NY5SBT"/>
+          <attvalue for="Channel" value="C09QZTRH7"/>
+          <attvalue for="Channel" value="C20HH14P7"/>
+          <attvalue for="Channel" value="C09R1LV8S"/>
+          <attvalue for="Channel" value="C09QZFCE5"/>
+          <attvalue for="Channel" value="C6WB33KNJ"/>
+          <attvalue for="Channel" value="C1TU9EB9S"/>
+          <attvalue for="Channel" value="C09TP78DV"/>
+          <attvalue for="Channel" value="C18NZM5K9"/>
+          <attvalue for="Channel" value="C2GL57FJ4"/>
         </attvalues>
       </node>
       <node id="U0ALJAVM" label="Null"/>
       <node id="U0ALJAVMF" label="cjcullen">
         <attvalues>
-          <attvalue for="Channel" value="sig-gcp"/>
-          <attvalue for="Team" value="Kubernetes"/>
-          <attvalue for="Weight" value="55"/>
+          <attvalue for="Weight" value="25"/>
+          <attvalue for="Team" value="T09NY5SBT"/>
+          <attvalue for="Channel" value="C6WB33KNJ"/>
         </attvalues>
       </node>
       <node id="U0E2KHQ1" label="Null"/>
       <node id="U0E2KHQ13" label="fejta">
         <attvalues>
-          <attvalue for="Channel" value="sig-gcp"/>
-          <attvalue for="Team" value="Kubernetes"/>
-          <attvalue for="Weight" value="37"/>
+          <attvalue for="Weight" value="67"/>
+          <attvalue for="Team" value="T09NY5SBT"/>
+          <attvalue for="Channel" value="C09QZFCE5"/>
+          <attvalue for="Channel" value="C6WB33KNJ"/>
+          <attvalue for="Channel" value="C1TU9EB9S"/>
+          <attvalue for="Channel" value="C09TP78DV"/>
+          <attvalue for="Channel" value="C18NZM5K9"/>
+          <attvalue for="Channel" value="C09R1PJR3"/>
+          <attvalue for="Channel" value="C2GL57FJ4"/>
         </attvalues>
       </node>
       <node id="U0UKM380M" label="jberkus">
         <attvalues>
-          <attvalue for="Channel" value="sig-gcp"/>
-          <attvalue for="Team" value="Kubernetes"/>
-          <attvalue for="Weight" value="8"/>
+          <attvalue for="Weight" value="11"/>
+          <attvalue for="Team" value="T09NY5SBT"/>
+          <attvalue for="Channel" value="C1J0BPD2M"/>
+          <attvalue for="Channel" value="C18NZM5K9"/>
+          <attvalue for="Channel" value="C5HJXTT9Q"/>
+          <attvalue for="Channel" value="C09QZTRH7"/>
+          <attvalue for="Channel" value="C20HH14P7"/>
+          <attvalue for="Channel" value="C09TP78DV"/>
+          <attvalue for="Channel" value="C09QZFCE5"/>
+          <attvalue for="Channel" value="C1L57L91V"/>
+          <attvalue for="Channel" value="C6WB33KNJ"/>
+          <attvalue for="Channel" value="C1TU9EB9S"/>
+          <attvalue for="Channel" value="C09R1GTPW"/>
+          <attvalue for="Channel" value="C09R1LV8S"/>
+          <attvalue for="Channel" value="C09R1PJR3"/>
         </attvalues>
       </node>
       <node id="U1A92LHRS" label="mikej">
         <attvalues>
-          <attvalue for="Channel" value="sig-gcp"/>
-          <attvalue for="Team" value="Kubernetes"/>
-          <attvalue for="Weight" value="68"/>
+          <attvalue for="Weight" value="16"/>
+          <attvalue for="Team" value="T09NY5SBT"/>
+          <attvalue for="Channel" value="C0LL8B19B"/>
+          <attvalue for="Channel" value="C6WB33KNJ"/>
+          <attvalue for="Channel" value="C09R1GTPW"/>
+          <attvalue for="Channel" value="C18NZM5K9"/>
+          <attvalue for="Channel" value="C0XBYPBF0"/>
+          <attvalue for="Channel" value="C09R1PJR3"/>
         </attvalues>
       </node>
       <node id="U1JCA8TG" label="Null"/>
       <node id="U1JCA8TGB" label="enxebre">
         <attvalues>
-          <attvalue for="Channel" value="sig-gcp"/>
-          <attvalue for="Team" value="Kubernetes"/>
-          <attvalue for="Weight" value="96"/>
+          <attvalue for="Weight" value="98"/>
+          <attvalue for="Team" value="T09NY5SBT"/>
+          <attvalue for="Channel" value="C25QWBR71"/>
+          <attvalue for="Channel" value="C6WB33KNJ"/>
+          <attvalue for="Channel" value="C0LL8B19B"/>
+          <attvalue for="Channel" value="C18NZM5K9"/>
+          <attvalue for="Channel" value="C09R1PJR3"/>
         </attvalues>
       </node>
       <node id="U1P7T516" label="Null"/>
       <node id="U1P7T516X" label="bentheelder">
         <attvalues>
-          <attvalue for="Channel" value="sig-gcp"/>
-          <attvalue for="Team" value="Kubernetes"/>
-          <attvalue for="Weight" value="13"/>
+          <attvalue for="Weight" value="77"/>
+          <attvalue for="Team" value="T09NY5SBT"/>
+          <attvalue for="Channel" value="C1J0BPD2M"/>
+          <attvalue for="Channel" value="C6WB33KNJ"/>
+          <attvalue for="Channel" value="C1TU9EB9S"/>
         </attvalues>
       </node>
       <node id="U22Q65CT" label="Null"/>
       <node id="U22Q65CTG" label="krzyzacy">
         <attvalues>
-          <attvalue for="Channel" value="sig-gcp"/>
-          <attvalue for="Team" value="Kubernetes"/>
-          <attvalue for="Weight" value="16"/>
+          <attvalue for="Weight" value="95"/>
+          <attvalue for="Team" value="T09NY5SBT"/>
+          <attvalue for="Channel" value="C6WB33KNJ"/>
+          <attvalue for="Channel" value="C09R1PJR3"/>
+          <attvalue for="Channel" value="C1TU9EB9S"/>
         </attvalues>
       </node>
       <node id="U2JKQVDP" label="Null"/>
       <node id="U2JKQVDPW" label="bporter2387">
         <attvalues>
-          <attvalue for="Channel" value="sig-gcp"/>
-          <attvalue for="Team" value="Kubernetes"/>
-          <attvalue for="Weight" value="8"/>
+          <attvalue for="Weight" value="91"/>
+          <attvalue for="Team" value="T09NY5SBT"/>
+          <attvalue for="Channel" value="C09QZFCE5"/>
+          <attvalue for="Channel" value="C18NZM5K9"/>
+          <attvalue for="Channel" value="C20HH14P7"/>
+          <attvalue for="Channel" value="C6WB33KNJ"/>
         </attvalues>
       </node>
       <node id="U3CU4AJ3V" label="nickchase">
         <attvalues>
-          <attvalue for="Channel" value="sig-gcp"/>
-          <attvalue for="Team" value="Kubernetes"/>
-          <attvalue for="Weight" value="78"/>
+          <attvalue for="Weight" value="84"/>
+          <attvalue for="Team" value="T09NY5SBT"/>
+          <attvalue for="Channel" value="C1J0BPD2M"/>
+          <attvalue for="Channel" value="C18NZM5K9"/>
+          <attvalue for="Channel" value="C5HJXTT9Q"/>
+          <attvalue for="Channel" value="C20HH14P7"/>
+          <attvalue for="Channel" value="C09QZFCE5"/>
+          <attvalue for="Channel" value="C1L57L91V"/>
+          <attvalue for="Channel" value="C0SJ4AFB7"/>
+          <attvalue for="Channel" value="C6WB33KNJ"/>
+          <attvalue for="Channel" value="C1TU9EB9S"/>
+          <attvalue for="Channel" value="C09TP78DV"/>
+          <attvalue for="Channel" value="C09R1LV8S"/>
+          <attvalue for="Channel" value="C09R1PJR3"/>
+          <attvalue for="Channel" value="C2GL57FJ4"/>
         </attvalues>
       </node>
       <node id="U3EDWR9FV" label="cblecker">
         <attvalues>
-          <attvalue for="Channel" value="sig-gcp"/>
-          <attvalue for="Team" value="Kubernetes"/>
-          <attvalue for="Weight" value="95"/>
+          <attvalue for="Weight" value="89"/>
+          <attvalue for="Team" value="T09NY5SBT"/>
+          <attvalue for="Channel" value="C6WB33KNJ"/>
+          <attvalue for="Channel" value="C09R1PJR3"/>
+          <attvalue for="Channel" value="C1TU9EB9S"/>
         </attvalues>
       </node>
       <node id="U3J5DCXK" label="Null"/>
       <node id="U3J5DCXKL" label="cheftako">
         <attvalues>
-          <attvalue for="Channel" value="sig-gcp"/>
-          <attvalue for="Team" value="Kubernetes"/>
-          <attvalue for="Weight" value="95"/>
+          <attvalue for="Weight" value="41"/>
+          <attvalue for="Team" value="T09NY5SBT"/>
+          <attvalue for="Channel" value="C6WB33KNJ"/>
         </attvalues>
       </node>
       <node id="U3Z43PSJG" label="negz">
         <attvalues>
-          <attvalue for="Channel" value="sig-gcp"/>
-          <attvalue for="Team" value="Kubernetes"/>
-          <attvalue for="Weight" value="29"/>
+          <attvalue for="Weight" value="53"/>
+          <attvalue for="Team" value="T09NY5SBT"/>
+          <attvalue for="Channel" value="C6WB33KNJ"/>
+          <attvalue for="Channel" value="C09R1LV8S"/>
         </attvalues>
       </node>
       <node id="U4BTD3CDV" label="radhikapc">
         <attvalues>
-          <attvalue for="Channel" value="sig-gcp"/>
-          <attvalue for="Team" value="Kubernetes"/>
-          <attvalue for="Weight" value="97"/>
+          <attvalue for="Weight" value="14"/>
+          <attvalue for="Team" value="T09NY5SBT"/>
+          <attvalue for="Channel" value="C1J0BPD2M"/>
+          <attvalue for="Channel" value="C18NZM5K9"/>
+          <attvalue for="Channel" value="C0LL8B19B"/>
+          <attvalue for="Channel" value="C5HJXTT9Q"/>
+          <attvalue for="Channel" value="C09QZTRH7"/>
+          <attvalue for="Channel" value="C20HH14P7"/>
+          <attvalue for="Channel" value="C0ELB338T"/>
+          <attvalue for="Channel" value="C3E7JU85Q"/>
+          <attvalue for="Channel" value="C09R1JVU6"/>
+          <attvalue for="Channel" value="C09QZFCE5"/>
+          <attvalue for="Channel" value="C1L57L91V"/>
+          <attvalue for="Channel" value="C0SJ4AFB7"/>
+          <attvalue for="Channel" value="C1DDHDH8D"/>
+          <attvalue for="Channel" value="C6WB33KNJ"/>
+          <attvalue for="Channel" value="C1TU9EB9S"/>
+          <attvalue for="Channel" value="C09TP78DV"/>
+          <attvalue for="Channel" value="C09R1LV8S"/>
+          <attvalue for="Channel" value="C09R1PJR3"/>
+          <attvalue for="Channel" value="C2GL57FJ4"/>
         </attvalues>
       </node>
       <node id="U4VMZKRD" label="Null"/>
       <node id="U4VMZKRD0" label="abgworrall">
         <attvalues>
-          <attvalue for="Channel" value="sig-gcp"/>
-          <attvalue for="Team" value="Kubernetes"/>
-          <attvalue for="Weight" value="35"/>
+          <attvalue for="Weight" value="67"/>
+          <attvalue for="Team" value="T09NY5SBT"/>
+          <attvalue for="Channel" value="C6WB33KNJ"/>
+          <attvalue for="Channel" value="C2GL57FJ4"/>
+          <attvalue for="Channel" value="C09QZTRH7"/>
         </attvalues>
       </node>
       <node id="U5CCPQG56" label="cetico">
         <attvalues>
-          <attvalue for="Channel" value="sig-gcp"/>
-          <attvalue for="Team" value="Kubernetes"/>
-          <attvalue for="Weight" value="80"/>
+          <attvalue for="Weight" value="71"/>
+          <attvalue for="Team" value="T09NY5SBT"/>
+          <attvalue for="Channel" value="C6WB33KNJ"/>
         </attvalues>
       </node>
       <node id="U5F3JLS65" label="joshfg">
         <attvalues>
-          <attvalue for="Channel" value="sig-gcp"/>
-          <attvalue for="Team" value="Kubernetes"/>
-          <attvalue for="Weight" value="4"/>
+          <attvalue for="Weight" value="45"/>
+          <attvalue for="Team" value="T09NY5SBT"/>
+          <attvalue for="Channel" value="C6WB33KNJ"/>
+          <attvalue for="Channel" value="C18NZM5K9"/>
         </attvalues>
       </node>
       <node id="U5XJKG0Q" label="Null"/>
       <node id="U5XJKG0QG" label="nickleli">
         <attvalues>
-          <attvalue for="Channel" value="sig-gcp"/>
-          <attvalue for="Team" value="Kubernetes"/>
-          <attvalue for="Weight" value="47"/>
+          <attvalue for="Weight" value="88"/>
+          <attvalue for="Team" value="T09NY5SBT"/>
+          <attvalue for="Channel" value="C6WB33KNJ"/>
         </attvalues>
       </node>
       <node id="U64VCBUR" label="Null"/>
       <node id="U64VCBURE" label="tallclair">
         <attvalues>
-          <attvalue for="Channel" value="sig-gcp"/>
-          <attvalue for="Team" value="Kubernetes"/>
-          <attvalue for="Weight" value="75"/>
+          <attvalue for="Weight" value="21"/>
+          <attvalue for="Team" value="T09NY5SBT"/>
+          <attvalue for="Channel" value="C09QZFCE5"/>
+          <attvalue for="Channel" value="C5TC7A9AR"/>
+          <attvalue for="Channel" value="C6WB33KNJ"/>
         </attvalues>
       </node>
       <node id="U68H8T19" label="Null"/>
       <node id="U68H8T19P" label="akshay">
         <attvalues>
-          <attvalue for="Channel" value="sig-gcp"/>
-          <attvalue for="Team" value="Kubernetes"/>
-          <attvalue for="Weight" value="48"/>
+          <attvalue for="Weight" value="89"/>
+          <attvalue for="Team" value="T09NY5SBT"/>
+          <attvalue for="Channel" value="C6WB33KNJ"/>
+          <attvalue for="Channel" value="C3E7JU85Q"/>
         </attvalues>
       </node>
       <node id="U6JV25EGY" label="andrea.giardini">
         <attvalues>
-          <attvalue for="Channel" value="sig-gcp"/>
-          <attvalue for="Team" value="Kubernetes"/>
-          <attvalue for="Weight" value="65"/>
+          <attvalue for="Weight" value="50"/>
+          <attvalue for="Team" value="T09NY5SBT"/>
+          <attvalue for="Channel" value="C6WB33KNJ"/>
+          <attvalue for="Channel" value="C09R1PJR3"/>
         </attvalues>
       </node>
       <node id="U6K057D0C" label="zemmi">
         <attvalues>
-          <attvalue for="Channel" value="sig-gcp"/>
-          <attvalue for="Team" value="Kubernetes"/>
-          <attvalue for="Weight" value="24"/>
+          <attvalue for="Weight" value="5"/>
+          <attvalue for="Team" value="T09NY5SBT"/>
+          <attvalue for="Channel" value="C6WB33KNJ"/>
         </attvalues>
       </node>
       <node id="U6KKL4NU" label="Null"/>
       <node id="U6KKL4NUQ" label="erasmus74">
         <attvalues>
-          <attvalue for="Channel" value="sig-gcp"/>
-          <attvalue for="Team" value="Kubernetes"/>
-          <attvalue for="Weight" value="27"/>
+          <attvalue for="Weight" value="88"/>
+          <attvalue for="Team" value="T09NY5SBT"/>
+          <attvalue for="Channel" value="C6WB33KNJ"/>
+          <attvalue for="Channel" value="C3E7JU85Q"/>
         </attvalues>
       </node>
       <node id="U6M9F8KS" label="Null"/>
       <node id="U6M9F8KS5" label="samanthakem">
         <attvalues>
-          <attvalue for="Channel" value="sig-gcp"/>
-          <attvalue for="Team" value="Kubernetes"/>
-          <attvalue for="Weight" value="80"/>
+          <attvalue for="Weight" value="83"/>
+          <attvalue for="Team" value="T09NY5SBT"/>
+          <attvalue for="Channel" value="C6WB33KNJ"/>
+          <attvalue for="Channel" value="C5HJXTT9Q"/>
+          <attvalue for="Channel" value="C3E7JU85Q"/>
+          <attvalue for="Channel" value="C2GL57FJ4"/>
         </attvalues>
       </node>
       <node id="U75BP251Q" label="jeremy.wimsingues">
         <attvalues>
-          <attvalue for="Channel" value="sig-gcp"/>
-          <attvalue for="Team" value="Kubernetes"/>
-          <attvalue for="Weight" value="93"/>
+          <attvalue for="Weight" value="11"/>
+          <attvalue for="Team" value="T09NY5SBT"/>
+          <attvalue for="Channel" value="C09QZFCE5"/>
+          <attvalue for="Channel" value="C0LE94Q8Z"/>
+          <attvalue for="Channel" value="C6WB33KNJ"/>
         </attvalues>
       </node>
     </nodes>
@@ -232,8 +331,8 @@
           <attvalue for="Message" value="&lt;@U1P7T516X&gt; fixed in &lt;https://github.com/kubernetes/kubernetes/pull/55624&gt;"/>
           <attvalue for="Weight" value="0.1"/>
           <attvalue for="Date" value="1510699609.000125"/>
-          <attvalue for="Channel" value="sig-gcp"/>
-          <attvalue for="Team" value="Kubernetes"/>
+          <attvalue for="Team" value="T09NY5SBT"/>
+          <attvalue for="Channel" value="C6WB33KNJ"/>
         </attvalues>
       </edge>
       <edge id="U09R02HARU4VMZKRD11" source="U09R02HAR" target="U4VMZKRD" weight="-0.4">
@@ -241,8 +340,8 @@
           <attvalue for="Message" value="&lt;@U4VMZKRD0&gt; broken again"/>
           <attvalue for="Weight" value="-0.4"/>
           <attvalue for="Date" value="1510940426.000369"/>
-          <attvalue for="Channel" value="sig-gcp"/>
-          <attvalue for="Team" value="Kubernetes"/>
+          <attvalue for="Team" value="T09NY5SBT"/>
+          <attvalue for="Channel" value="C6WB33KNJ"/>
         </attvalues>
       </edge>
       <edge id="U09R02HARU4VMZKRD3" source="U09R02HAR" target="U4VMZKRD" weight="0.0">
@@ -250,8 +349,8 @@
           <attvalue for="Message" value="&lt;@U4VMZKRD0&gt; PTAL at &lt;https://github.com/kubernetes/kubernetes/pull/57052&gt;"/>
           <attvalue for="Weight" value="0.0"/>
           <attvalue for="Date" value="1513039129.000316"/>
-          <attvalue for="Channel" value="sig-gcp"/>
-          <attvalue for="Team" value="Kubernetes"/>
+          <attvalue for="Team" value="T09NY5SBT"/>
+          <attvalue for="Channel" value="C6WB33KNJ"/>
         </attvalues>
       </edge>
       <edge id="U0UKM380MU09R02HA4" source="U0UKM380M" target="U09R02HA" weight="0.0">
@@ -259,8 +358,8 @@
           <attvalue for="Message" value="&lt;@U09R02HAR&gt; &lt;@U64VCBURE&gt;"/>
           <attvalue for="Weight" value="0.0"/>
           <attvalue for="Date" value="1513038973.000206"/>
-          <attvalue for="Channel" value="sig-gcp"/>
-          <attvalue for="Team" value="Kubernetes"/>
+          <attvalue for="Team" value="T09NY5SBT"/>
+          <attvalue for="Channel" value="C6WB33KNJ"/>
         </attvalues>
       </edge>
       <edge id="U0UKM380MU64VCBUR5" source="U0UKM380M" target="U64VCBUR" weight="0.0">
@@ -268,8 +367,8 @@
           <attvalue for="Message" value="&lt;@U09R02HAR&gt; &lt;@U64VCBURE&gt;"/>
           <attvalue for="Weight" value="0.0"/>
           <attvalue for="Date" value="1513038973.000206"/>
-          <attvalue for="Channel" value="sig-gcp"/>
-          <attvalue for="Team" value="Kubernetes"/>
+          <attvalue for="Team" value="T09NY5SBT"/>
+          <attvalue for="Channel" value="C6WB33KNJ"/>
         </attvalues>
       </edge>
       <edge id="U1A92LHRSU6M9F8KS8" source="U1A92LHRS" target="U6M9F8KS" weight="0.75">
@@ -277,8 +376,8 @@
           <attvalue for="Message" value="&lt;@U6M9F8KS5&gt; &lt;#C09R1PJR3|sig-multicluster&gt; would be best for that but be warned most of us are at kubecon "/>
           <attvalue for="Weight" value="0.75"/>
           <attvalue for="Date" value="1512588053.000129"/>
-          <attvalue for="Channel" value="sig-gcp"/>
-          <attvalue for="Team" value="Kubernetes"/>
+          <attvalue for="Team" value="T09NY5SBT"/>
+          <attvalue for="Channel" value="C6WB33KNJ"/>
         </attvalues>
       </edge>
       <edge id="U1JCA8TGBU4VMZKRD21" source="U1JCA8TGB" target="U4VMZKRD" weight="0.41875">
@@ -286,8 +385,8 @@
           <attvalue for="Message" value="&lt;@U4VMZKRD0&gt; cool! please feel free to add this one &lt;https://github.com/kubernetes/kubernetes/pull/54504&gt;"/>
           <attvalue for="Weight" value="0.41875"/>
           <attvalue for="Date" value="1509089988.000189"/>
-          <attvalue for="Channel" value="sig-gcp"/>
-          <attvalue for="Team" value="Kubernetes"/>
+          <attvalue for="Team" value="T09NY5SBT"/>
+          <attvalue for="Channel" value="C6WB33KNJ"/>
         </attvalues>
       </edge>
       <edge id="U1JCA8TGBU4VMZKRD25" source="U1JCA8TGB" target="U4VMZKRD" weight="0.125">
@@ -295,8 +394,8 @@
           <attvalue for="Message" value="&lt;@U4VMZKRD0&gt; I saw several tickets and PRs but all frozen, hadnt seen that one, thanks!"/>
           <attvalue for="Weight" value="0.125"/>
           <attvalue for="Date" value="1509037469.000329"/>
-          <attvalue for="Channel" value="sig-gcp"/>
-          <attvalue for="Team" value="Kubernetes"/>
+          <attvalue for="Team" value="T09NY5SBT"/>
+          <attvalue for="Channel" value="C6WB33KNJ"/>
         </attvalues>
       </edge>
       <edge id="U3EDWR9FVU2JKQVDP6" source="U3EDWR9FV" target="U2JKQVDP" weight="0.5">
@@ -304,8 +403,8 @@
           <attvalue for="Message" value="&lt;@U2JKQVDPW&gt; You'll probably get a better response to that question in &lt;#C09R1TL6A|gke&gt; :simple_smile:"/>
           <attvalue for="Weight" value="0.5"/>
           <attvalue for="Date" value="1513015226.000356"/>
-          <attvalue for="Channel" value="sig-gcp"/>
-          <attvalue for="Team" value="Kubernetes"/>
+          <attvalue for="Team" value="T09NY5SBT"/>
+          <attvalue for="Channel" value="C6WB33KNJ"/>
         </attvalues>
       </edge>
       <edge id="U3EDWR9FVU6KKL4NU7" source="U3EDWR9FV" target="U6KKL4NU" weight="0.5">
@@ -313,8 +412,8 @@
           <attvalue for="Message" value="&lt;@U6KKL4NUQ&gt; &lt;#C09R1TL6A|gke&gt; is probably a better place for support on running clusters in GKE specifically. That said, you need to use the beta flag in gcloud to access this: `gcloud beta container clusters get-credentials sbox-1 --region us-central1 --project xyz`"/>
           <attvalue for="Weight" value="0.5"/>
           <attvalue for="Date" value="1512757790.000607"/>
-          <attvalue for="Channel" value="sig-gcp"/>
-          <attvalue for="Team" value="Kubernetes"/>
+          <attvalue for="Team" value="T09NY5SBT"/>
+          <attvalue for="Channel" value="C6WB33KNJ"/>
         </attvalues>
       </edge>
       <edge id="U4VMZKRD0U09R02HA12" source="U4VMZKRD0" target="U09R02HA" weight="0.0">
@@ -322,8 +421,8 @@
           <attvalue for="Message" value="&lt;@U09R02HAR&gt; ^^"/>
           <attvalue for="Weight" value="0.0"/>
           <attvalue for="Date" value="1510850924.000229"/>
-          <attvalue for="Channel" value="sig-gcp"/>
-          <attvalue for="Team" value="Kubernetes"/>
+          <attvalue for="Team" value="T09NY5SBT"/>
+          <attvalue for="Channel" value="C6WB33KNJ"/>
         </attvalues>
       </edge>
       <edge id="U4VMZKRD0U09R02HA9" source="U4VMZKRD0" target="U09R02HA" weight="0.2">
@@ -331,8 +430,8 @@
           <attvalue for="Message" value="&lt;@U09R02HAR&gt;, we seem to have all the GKE test jobs start failing as of 1am. The offending PR is just a test change, so it doesnt look like it was a change in the code, or in prow. Could it have been a change to the test GKE ? Can you find out why it is failing to create all the clusters, or point us to its logfiles ? Thanks "/>
           <attvalue for="Weight" value="0.2"/>
           <attvalue for="Date" value="1510942054.000418"/>
-          <attvalue for="Channel" value="sig-gcp"/>
-          <attvalue for="Team" value="Kubernetes"/>
+          <attvalue for="Team" value="T09NY5SBT"/>
+          <attvalue for="Channel" value="C6WB33KNJ"/>
         </attvalues>
       </edge>
       <edge id="U4VMZKRD0U09R2FL913" source="U4VMZKRD0" target="U09R2FL9" weight="0.0">
@@ -340,8 +439,8 @@
           <attvalue for="Message" value="&lt;@U09R2FL93&gt;, any suggestions who I can tag in sig-scaling land, to look at something ?"/>
           <attvalue for="Weight" value="0.0"/>
           <attvalue for="Date" value="1510763443.000088"/>
-          <attvalue for="Channel" value="sig-gcp"/>
-          <attvalue for="Team" value="Kubernetes"/>
+          <attvalue for="Team" value="T09NY5SBT"/>
+          <attvalue for="Channel" value="C6WB33KNJ"/>
         </attvalues>
       </edge>
       <edge id="U4VMZKRD0U09R2FL914" source="U4VMZKRD0" target="U09R2FL9" weight="0.3125">
@@ -349,8 +448,8 @@
           <attvalue for="Message" value="&lt;@U09R2FL93&gt;, Ill try and get on top of some of this stuff in the next day or two. Could you help suggest which of the (many) issues I should look at first ? the `priority/critical-urgent` ones ?"/>
           <attvalue for="Weight" value="0.3125"/>
           <attvalue for="Date" value="1510762854.000492"/>
-          <attvalue for="Channel" value="sig-gcp"/>
-          <attvalue for="Team" value="Kubernetes"/>
+          <attvalue for="Team" value="T09NY5SBT"/>
+          <attvalue for="Channel" value="C6WB33KNJ"/>
         </attvalues>
       </edge>
       <edge id="U4VMZKRD0U0E2KHQ123" source="U4VMZKRD0" target="U0E2KHQ1" weight="0.0">
@@ -358,8 +457,8 @@
           <attvalue for="Message" value="&lt;@U0E2KHQ13&gt;, all the release-foo-blocking tabs do, AFAIK - e.g. &lt;https://k8s-testgrid.appspot.com/sig-release-1.8-all#gci-gke-1.8&gt;"/>
           <attvalue for="Weight" value="0.0"/>
           <attvalue for="Date" value="1509063331.000084"/>
-          <attvalue for="Channel" value="sig-gcp"/>
-          <attvalue for="Team" value="Kubernetes"/>
+          <attvalue for="Team" value="T09NY5SBT"/>
+          <attvalue for="Channel" value="C6WB33KNJ"/>
         </attvalues>
       </edge>
       <edge id="U4VMZKRD0U0E2KHQ126" source="U4VMZKRD0" target="U0E2KHQ1" weight="0.0">
@@ -367,8 +466,8 @@
           <attvalue for="Message" value="&lt;@U0E2KHQ13&gt;, how do those sets of e2e tests relate to the GKE specific ones in release-master-blocking and friends ?"/>
           <attvalue for="Weight" value="0.0"/>
           <attvalue for="Date" value="1508976969.000134"/>
-          <attvalue for="Channel" value="sig-gcp"/>
-          <attvalue for="Team" value="Kubernetes"/>
+          <attvalue for="Team" value="T09NY5SBT"/>
+          <attvalue for="Channel" value="C6WB33KNJ"/>
         </attvalues>
       </edge>
       <edge id="U4VMZKRD0U1JCA8TG20" source="U4VMZKRD0" target="U1JCA8TG" weight="0.0">
@@ -376,8 +475,8 @@
           <attvalue for="Message" value="&lt;@U1JCA8TGB&gt;, the SIG intends to cover k8s-on-GCP as well as k8s-via-GKE"/>
           <attvalue for="Weight" value="0.0"/>
           <attvalue for="Date" value="1509117332.000242"/>
-          <attvalue for="Channel" value="sig-gcp"/>
-          <attvalue for="Team" value="Kubernetes"/>
+          <attvalue for="Team" value="T09NY5SBT"/>
+          <attvalue for="Channel" value="C6WB33KNJ"/>
         </attvalues>
       </edge>
       <edge id="U4VMZKRD0U1JCA8TG24" source="U4VMZKRD0" target="U1JCA8TG" weight="0.7">
@@ -385,8 +484,8 @@
           <attvalue for="Message" value="&lt;@U1JCA8TGB&gt;, Im halfway through doing a sweep of all issues that seemed relevant to sig-gcp, so you asked at the perfect time :slightly_smiling_face:"/>
           <attvalue for="Weight" value="0.7"/>
           <attvalue for="Date" value="1509062505.000226"/>
-          <attvalue for="Channel" value="sig-gcp"/>
-          <attvalue for="Team" value="Kubernetes"/>
+          <attvalue for="Team" value="T09NY5SBT"/>
+          <attvalue for="Channel" value="C6WB33KNJ"/>
         </attvalues>
       </edge>
       <edge id="U4VMZKRD0U22Q65CT10" source="U4VMZKRD0" target="U22Q65CT" weight="0.0">
@@ -394,8 +493,8 @@
           <attvalue for="Message" value="&lt;@U22Q65CTG&gt; ^^"/>
           <attvalue for="Weight" value="0.0"/>
           <attvalue for="Date" value="1510940842.00047"/>
-          <attvalue for="Channel" value="sig-gcp"/>
-          <attvalue for="Team" value="Kubernetes"/>
+          <attvalue for="Team" value="T09NY5SBT"/>
+          <attvalue for="Channel" value="C6WB33KNJ"/>
         </attvalues>
       </edge>
       <edge id="U4VMZKRD0U3J5DCXK18" source="U4VMZKRD0" target="U3J5DCXK" weight="-0.0625">
@@ -403,8 +502,8 @@
           <attvalue for="Message" value="hi, &lt;@U5XJKG0QG&gt; ! Im not aware of anyone working on this. &lt;@U3J5DCXKL&gt;, is this likely to show up on your cloud-provider-extraction radar ?"/>
           <attvalue for="Weight" value="-0.0625"/>
           <attvalue for="Date" value="1510188679.000321"/>
-          <attvalue for="Channel" value="sig-gcp"/>
-          <attvalue for="Team" value="Kubernetes"/>
+          <attvalue for="Team" value="T09NY5SBT"/>
+          <attvalue for="Channel" value="C6WB33KNJ"/>
         </attvalues>
       </edge>
       <edge id="U4VMZKRD0U4VMZKRD16" source="U4VMZKRD0" target="U4VMZKRD" weight="0.0">
@@ -412,8 +511,8 @@
           <attvalue for="Message" value="&lt;@U4VMZKRD0&gt; set the channel topic: :gcp: &lt;http://bit.ly/k8s-sig-gcp|bit.ly/k8s-sig-gcp&gt; :gcp:"/>
           <attvalue for="Weight" value="0.0"/>
           <attvalue for="Date" value="1510243021.000041"/>
-          <attvalue for="Channel" value="sig-gcp"/>
-          <attvalue for="Team" value="Kubernetes"/>
+          <attvalue for="Team" value="T09NY5SBT"/>
+          <attvalue for="Channel" value="C6WB33KNJ"/>
         </attvalues>
       </edge>
       <edge id="U4VMZKRD0U4VMZKRD22" source="U4VMZKRD0" target="U4VMZKRD" weight="0.0">
@@ -421,8 +520,8 @@
           <attvalue for="Message" value="&lt;@U4VMZKRD0&gt; set the channel topic: :gcp:"/>
           <attvalue for="Weight" value="0.0"/>
           <attvalue for="Date" value="1509063456.000246"/>
-          <attvalue for="Channel" value="sig-gcp"/>
-          <attvalue for="Team" value="Kubernetes"/>
+          <attvalue for="Team" value="T09NY5SBT"/>
+          <attvalue for="Channel" value="C6WB33KNJ"/>
         </attvalues>
       </edge>
       <edge id="U4VMZKRD0U5XJKG0Q17" source="U4VMZKRD0" target="U5XJKG0Q" weight="-0.0625">
@@ -430,8 +529,8 @@
           <attvalue for="Message" value="hi, &lt;@U5XJKG0QG&gt; ! Im not aware of anyone working on this. &lt;@U3J5DCXKL&gt;, is this likely to show up on your cloud-provider-extraction radar ?"/>
           <attvalue for="Weight" value="-0.0625"/>
           <attvalue for="Date" value="1510188679.000321"/>
-          <attvalue for="Channel" value="sig-gcp"/>
-          <attvalue for="Team" value="Kubernetes"/>
+          <attvalue for="Team" value="T09NY5SBT"/>
+          <attvalue for="Channel" value="C6WB33KNJ"/>
         </attvalues>
       </edge>
       <edge id="U4VMZKRD0U64VCBUR2" source="U4VMZKRD0" target="U64VCBUR" weight="0.0">
@@ -439,8 +538,8 @@
           <attvalue for="Message" value="&lt;@U64VCBURE&gt; ^^"/>
           <attvalue for="Weight" value="0.0"/>
           <attvalue for="Date" value="1513217429.000154"/>
-          <attvalue for="Channel" value="sig-gcp"/>
-          <attvalue for="Team" value="Kubernetes"/>
+          <attvalue for="Team" value="T09NY5SBT"/>
+          <attvalue for="Channel" value="C6WB33KNJ"/>
         </attvalues>
       </edge>
       <edge id="U5CCPQG56U68H8T190" source="U5CCPQG56" target="U68H8T19" weight="0.0">
@@ -448,8 +547,8 @@
           <attvalue for="Message" value="&lt;@U68H8T19P&gt; I'm not an expert, but can you use annotations?"/>
           <attvalue for="Weight" value="0.0"/>
           <attvalue for="Date" value="1513363261.000485"/>
-          <attvalue for="Channel" value="sig-gcp"/>
-          <attvalue for="Team" value="Kubernetes"/>
+          <attvalue for="Team" value="T09NY5SBT"/>
+          <attvalue for="Channel" value="C6WB33KNJ"/>
         </attvalues>
       </edge>
       <edge id="U5XJKG0QGU4VMZKRD19" source="U5XJKG0QG" target="U4VMZKRD" weight="0.25">
@@ -457,8 +556,8 @@
           <attvalue for="Message" value="Hi &lt;@U4VMZKRD0&gt;, this issue is something we are interested in as well.   Is there a fix in-flight, or can we help get one upstream?"/>
           <attvalue for="Weight" value="0.25"/>
           <attvalue for="Date" value="1510181941.000232"/>
-          <attvalue for="Channel" value="sig-gcp"/>
-          <attvalue for="Team" value="Kubernetes"/>
+          <attvalue for="Team" value="T09NY5SBT"/>
+          <attvalue for="Channel" value="C6WB33KNJ"/>
         </attvalues>
       </edge>
       <edge id="U64VCBUREU0ALJAVM1" source="U64VCBURE" target="U0ALJAVM" weight="0.0">
@@ -466,8 +565,8 @@
           <attvalue for="Message" value="&lt;@U0ALJAVMF&gt; ^^"/>
           <attvalue for="Weight" value="0.0"/>
           <attvalue for="Date" value="1513217611.000127"/>
-          <attvalue for="Channel" value="sig-gcp"/>
-          <attvalue for="Team" value="Kubernetes"/>
+          <attvalue for="Team" value="T09NY5SBT"/>
+          <attvalue for="Channel" value="C6WB33KNJ"/>
         </attvalues>
       </edge>
     </edges>

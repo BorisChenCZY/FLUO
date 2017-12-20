@@ -174,6 +174,29 @@ class Database_conductor():
         self.cursor.close()
         self.connector.close()
 
+    def get_person(self, id):
+        query = """
+        SELECT * FROM people
+        WHERE id = "{}"
+        """.format(id)
+        self.cursor.execute(query)
+        return self.cursor.fetchall()
+
+    def get_person_messages(self, id):
+        query = """
+        SELECT * FROM chat
+        WHERE user_id = "{}"
+        """.format(id)
+        self.cursor.execute(query)
+        return self.cursor.fetchall()
+
+    def get_mentioned(self, id):
+        query = """
+                SELECT * FROM mention_based_graph_info
+                WHERE receiver = "{}"
+                """.format(id)
+        self.cursor.execute(query)
+        return self.cursor.fetchall()
 
 
 

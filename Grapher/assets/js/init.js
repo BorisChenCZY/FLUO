@@ -32,6 +32,11 @@ $('#daterange-1').on('apply.daterangepicker', function(ev, picker) {
 });
 
 function open_sidebar(open_id, close_id) {
-    $("#"+open_id).attr('class', ['px-sidebar-right open']);
-    $("#"+close_id).attr('class', ['px-sidebar-right']);
+    if ($("#"+close_id).attr('class').indexOf('open') !== -1){
+        $('#' + close_id).pxSidebar('toggle');
+        $('#' + close_id).pxSidebar('update');
+    }
+    $('#' + open_id).pxSidebar('toggle');
+    $('#' + open_id).pxSidebar('update');
+    console.log('toggle version2')
 }

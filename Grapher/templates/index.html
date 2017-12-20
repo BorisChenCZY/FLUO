@@ -56,6 +56,7 @@
     <script src="{% static 'demo.js' %}"></script>
     <script type="text/javascript" src="{% static 'GraphParser.js' %}"></script>
     <script type="text/javascript" src="{% static 'infomation_getter.js' %}"></script>
+    <script type="text/javascript" src="{% static 'init.js' %}"></script>
     <!-- Custom styling -->
     <style>
         .page-header-form .input-group-addon,
@@ -347,9 +348,9 @@
 
     </div>
 
-    <button type="button" class="btn" data-toggle="sidebar" data-target="#sidebar-v" onclick="open('sidebar-vertex', 'sidebar-edge')">Vertex</button>
+    <button type="button" class="btn" data-toggle="sidebar" onclick="open_sidebar('sidebar-edge', 'sidebar-vertex')" >Vertex</button>
 
-    <button type="button" class="btn" data-toggle="sidebar" data-target="#sidebar-e" onclick="open('sidebar-edge', 'sidebar-vertex')">Edge</button>
+    <button type="button" class="btn" data-toggle="sidebar" onclick="open_sidebar('sidebar-vertex', 'sidebar-edge')" >Edge</button>
 
     <!--Main Frame Nav Bar-->
     <ul class="nav nav-tabs nav-tabs-simple">
@@ -372,11 +373,11 @@
                     <div class="row">
                         <div id="main" style="height: 700px;color: #B3B3B3"></div>
                         <script type="text/javascript" src="/assets/echarts.min.js"></script>
-                        <script type="text/javascript" src="/assets/jquery.js"></script>
+{#                        <script type="text/javascript" src="/assets/jquery.js"></script>#}
                         <script type="text/javascript" src="/assets/dataTool.js"></script>
                         <script type="text/javascript">
-                            draw('123');
-                            console.log('Drawed')
+                            {#draw('123');#}
+                            {#console.log('Drawed')#}
                         </script>
                     </div>
                 </div>
@@ -547,13 +548,13 @@
                     <div class="panel-heading p-x-1">
                         <span class="panel-title">Node Info</span>
                     </div>
-                    <div class="col-md-12">
-                        <div class="page-profile-v2-subheader page-block p-y-3" style="width:299px;height:299px;">
+                    <div class="col-md-12" id="person_profile">
+                        <div class="page-profile-v2-subheader page-block p-y-3"  style="width:299px;height:299px;">
                             <div class="text-xs-center"><img src="{% static '3.png' %}" alt=""
-                                                             class="page-profile-v2-avatar border-round"
+                                                             class="page-profile-v2-avatar border-round image"
                                                              style="width:200px;height:200px;"></div>
-                            <h1 class="font-size-24 text-xs-center m-y-1">Xun Lu</h1>
-                            <h3 class="m-t-0 m-b-1 text-xs-center text-muted font-weight-normal">@neversaidthat</h3>
+                            <h1 class="font-size-24 text-xs-center m-y-1 name">Xun Lu</h1>
+                            <h3 class="m-t-0 m-b-1 text-xs-center text-muted font-weight-normal id">@neversaidthat</h3>
                         </div>
 
                         <div class="panel panel-transparent">
@@ -561,9 +562,9 @@
                                 <span class="panel-title">Statistics</span>
                             </div>
                             <div class="list-group m-y-1">
-                                <a href="#" class="list-group-item p-x-1 b-a-0"><strong>126</strong> Messages</a>
-                                <a href="#" class="list-group-item p-x-1 b-a-0"><strong>3.75</strong> Weights</a>
-                                <a href="#" class="list-group-item p-x-1 b-a-0"><strong>73</strong> Mentions</a>
+                                <a href="#" class="list-group-item p-x-1 b-a-0 message_number"><strong>126</strong> Messages</a>
+                                <a href="#" class="list-group-item p-x-1 b-a-0 weight"><strong>3.75</strong> Weights</a>
+                                <a href="#" class="list-group-item p-x-1 b-a-0 mention_number"><strong>73</strong> Mentions</a>
                             </div>
                         </div>
 
@@ -571,32 +572,32 @@
                             <div class="panel-heading p-x-1">
                                 <span class="panel-title">Posts</span>
                             </div>
+                            <div class="message_list">
+                                <div class="widget-messages-alt-item ">
+                                    <img src="/assets/3.png" alt="" class="widget-messages-alt-avatar">
+                                    <div>Ok</div>
+                                    <div class="widget-messages-alt-description">from <a href="#">Xun Lu</a></div>
+                                    <div class="widget-messages-alt-date">09-02-2017</div>
+                                </div>
 
-                            <div class="widget-messages-alt-item">
-                                <img src="/assets/3.png" alt="" class="widget-messages-alt-avatar">
-                                Damn. I never said anything.
-                                <div class="widget-messages-alt-description">from <a href="#">Xun Lu</a></div>
-                                <div class="widget-messages-alt-date">09-02-2017</div>
-                            </div>
+                                <div class="widget-messages-alt-item">
+                                    <img src="/assets/3.png" alt="" class="widget-messages-alt-avatar">
+                                    I will finish all the assignments one day before deadline.
+                                    <div class="widget-messages-alt-description">from <a href="#">Robert Jang</a></div>
+                                    <div class="widget-messages-alt-date">08-31-2017</div>
+                                </div>
 
-                            <div class="widget-messages-alt-item">
-                                <img src="/assets/3.png" alt="" class="widget-messages-alt-avatar">
-                                I will finish all the assignments one day before deadline.
-                                <div class="widget-messages-alt-description">from <a href="#">Robert Jang</a></div>
-                                <div class="widget-messages-alt-date">08-31-2017</div>
-                            </div>
-
-                            <div class="widget-messages-alt-item">
-                                <img src="/assets/3.png" alt="" class="widget-messages-alt-avatar">
-                                I will finish all the assignments one week before deadline.
-                                <div class="widget-messages-alt-description">from <a href="#">Robert Jang</a></div>
-                                <div class="widget-messages-alt-date">08-21-2017</div>
-                            </div>
-
+                                <div class="widget-messages-alt-item">
+                                    <img src="/assets/3.png" alt="" class="widget-messages-alt-avatar">
+                                    I will finish all the assignments one week before deadline.
+                                    <div class="widget-messages-alt-description">from <a href="#">Robert Jang</a></div>
+                                    <div class="widget-messages-alt-date">08-21-2017</div>
+                                </div>
+                                </div>
                         </div>
                     </div>
                     <div class="p-a-4">
-                        <button type="button" class="btn" data-toggle="sidebar" data-target="#sidebar-v">Close</button>
+                        <button type="button" class="btn" data-toggle="sidebar" data-target="#sidebar-vertex">Close</button>
                     </div>
                 </div>
             </div>
@@ -691,7 +692,7 @@
                         </div>
                     </div>
                     <div class="p-a-4">
-                        <button type="button" class="btn" data-toggle="sidebar" data-target="#sidebar-e">Close</button>
+                        <button type="button" class="btn" data-toggle="sidebar" data-target="#sidebar-edge">Close</button>
                     </div>
                 </div>
             </div>

@@ -7,4 +7,5 @@ urlpatterns = [
     path('graph/<str:team>/<str:channels>', views.xml, name='xml'),
     path('channels/<str:team>', views.channels, name='channels'),
     path('teams/', views.teams, name='teams'),
+    path('person/<str:id>', views.person, name='person'),
 ]
