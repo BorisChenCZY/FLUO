@@ -47,15 +47,16 @@
     ];
 
     var BACKGROUNDS = [
-      '/assets/1.jpg',
-      '/assets/2.jpg',
-      '/assets/3.jpg',
-      '/assets/4.jpg',
-      '/assets/5.jpg',
-      '/assets/6.jpg',
-      '/assets/7.jpg',
-      '/assets/8.jpg',
-      '/assets/9.jpg',
+
+      GLOBAL_PATH + '1.jpg',
+      GLOBAL_PATH + '2.jpg',
+      GLOBAL_PATH + '3.jpg',
+      GLOBAL_PATH + '4.jpg',
+      GLOBAL_PATH + '5.jpg',
+      GLOBAL_PATH + '6.jpg',
+      GLOBAL_PATH + '7.jpg',
+      GLOBAL_PATH + '8.jpg',
+      GLOBAL_PATH + '9.jpg',
     ];
 
     var THEMES = [
@@ -194,7 +195,7 @@
 
       var _isDark   = themeName.indexOf('dark') !== -1;
       var _isRtl    = document.getElementsByTagName('html')[0].getAttribute('dir') === 'rtl';
-      var themePath = '/assets/' + themeName + (_isRtl ? '.rtl' : '') + '.min.css';
+      var themePath = GLOBAL_PATH + themeName + (_isRtl ? '.rtl' : '') + '.min.css';
 
       var linksToLoad = [];
 
@@ -612,7 +613,7 @@
         content += '<label class="px-demo-themes-item">';
 
           content += '<input type="radio" class="px-demo-themes-toggler" name="px-demo-current-theme" value="' + THEMES[i] + '"' + (demoSettings.theme === THEMES[i] ? ' checked' : '') + '>';
-          content += '<img src="/assets/' + THEMES[i] + '.png" class="px-demo-themes-thumbnail">';
+          content += '<img src='+GLOBAL_PATH + THEMES[i] + '.png" class="px-demo-themes-thumbnail">';
           content += '<div class="px-demo-themes-title font-weight-semibold"><span class="text-white">' + capitalizeAllLetters(THEMES[i], '-') + '</span><div class="bg-primary"></div></div>';
 
         content += '</label>';

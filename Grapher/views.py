@@ -2,6 +2,10 @@ from django.shortcuts import render
 from django.http import HttpResponse, JsonResponse
 from .Database_conductor import *
 import random
+from pprint import pprint
+import os
+
+dir_path = os.path.dirname(os.path.realpath(__file__))
 
 # Create your views here.
 def index(request):
@@ -13,13 +17,19 @@ def pic(request, dir):
     return None
 
 
-def xml(request, team, channels):
-
-    content = convert('T09NY5SBT', channels_list=['C6WB33KNJ'])
+def xml(request, team, channel):
+    path = dir_path + "/mention_based/{}_{}.gexf".format(team, channel)
+    if not os.path.isfile(path):
+        convert(team, channels_list=[channel])
+    with open(path, 'rb') as f:
+        content = f.read().decode('utf-8')
     print('converted')
     return HttpResponse(content)
 
-def convert(team,channels_list,graph='mention_based_graph_info',user = 'read_database',pwd = 'FluoBySusTech',port=3306,host = '10.20.13.209',dbname='rowdata'):
+
+# coding: utf-8
+def convert(team_name, channels_list, graph='mention_based_graph_info', user='read_database', pwd='FluoBySusTech',
+            port=3306, host='10.20.13.209', dbname='rowdata'):
     from gexf import Gexf
     from textblob import TextBlob
     import random
@@ -32,14 +42,22 @@ def convert(team,channels_list,graph='mention_based_graph_info',user = 'read_dat
             port=port,  # mysql服务器的端口
             user=user,  # mysql的用户
             passwd=pwd,  # 密码
-            db=dbname  # 需要的数据库名称
+            db=dbname,  # 需要的数据库名称
         )
         # 获取本次的游标
         cur = con.cursor()
     except pymysql.Error as e:
         print("Error %d: %s" % (e.args[0], e.args[1]))
 
-    result=dict()
+    cur.execute('select * from team_channel_relation ')
+    team_to_channel = cur.fetchall()
+    team_to_channel = list(map(list, zip(*team_to_channel)))
+    team = team_to_channel[0][:]
+    channel = team_to_channel[1][:]
+    team_to_channel = {'team': team, 'channel': channel}
+    team_to_channel = pd.DataFrame(team_to_channel)
+    del team
+    del channel
 
     for channel_file in channels_list:
 
@@ -50,9 +68,10 @@ def convert(team,channels_list,graph='mention_based_graph_info',user = 'read_dat
         cur.execute('select * from people_channel_relation where channel_id = \'' + channel_file + '\' ')
         person_and_channel = cur.fetchall()
 
-
-        if len(person_and_channel)==0:
-            result[channel_file]=""
+        if len(person_and_channel) == 0:
+            output_file = open(".\graphdata_of_" + channel_file + ".gexf", "wb")
+            gexf.write(output_file)
+            output_file.close()
 
         else:
 
@@ -64,16 +83,6 @@ def convert(team,channels_list,graph='mention_based_graph_info',user = 'read_dat
             del person
             del channel
 
-            cur.execute('select * from team_channel_relation ')
-            team_to_channel = cur.fetchall()
-            team_to_channel = list(map(list, zip(*team_to_channel)))
-            team = team_to_channel[0][:]
-            channel = team_to_channel[1][:]
-            team_to_channel = {'team': team, 'channel': channel}
-            team_to_channel = pd.DataFrame(team_to_channel)
-            del team
-            del channel
-
             person_list = person_and_channel['person']
 
             # print(person_and_channel)
@@ -83,12 +92,13 @@ def convert(team,channels_list,graph='mention_based_graph_info',user = 'read_dat
             weight_node = output.addNodeAttribute(force_id="Weight", title="weight", type="float")
 
             people_id = dict()
-            id_list = ['people']
-            for id in id_list:
-                cur.execute('select * from ' + id)
-                data = cur.fetchall()
-                for i in data:
-                    exec(id + '_id[\'' + i[0] + '\']=i[1]')
+            #            id_list = ['people']
+            #            for id in id_list:
+            #                cur.execute('select * from ' + id)
+            #                data = cur.fetchall()
+            #                for i in data:
+            #                    exec(id + '_id[\'' + i[0] + '\']=i[1]')
+            #                    print('id', id)
 
             person_set = set(person_list)
             person_to_channel = []
@@ -105,14 +115,10 @@ def convert(team,channels_list,graph='mention_based_graph_info',user = 'read_dat
 
             # print(person_to_channel)
 
-
-
-
-
             cc = 0
             num2333 = len(person_set)
             for tem_id in person_set:
-                print(cc / num2333)
+                #                print(cc / num2333)
                 try:
                     tem_name = people_id[tem_id]
                 except KeyError:
@@ -149,7 +155,7 @@ def convert(team,channels_list,graph='mention_based_graph_info',user = 'read_dat
             cc = 0
             numhehe = len(data)
             for tem_m in data:
-                print(cc / numhehe)
+                #                print(cc / numhehe)
                 sender, receiver, text, channel_id, team_id, ts = tem_m
                 blob = TextBlob(text)
                 weight = str(blob.sentiment.polarity)
@@ -170,21 +176,12 @@ def convert(team,channels_list,graph='mention_based_graph_info',user = 'read_dat
                 tem_edge.addAttribute(team_att, team_id)
                 tem_edge.addAttribute(channel_att, channel_id)
 
-            # print(str(output))
 
-            output_file = open("./test.gexf", "wb")
+            output_file = open(dir_path + "/mention_based/{}_{}.gexf".format(team_name, channel_file), "wb")
             gexf.write(output_file)
             output_file.close()
-            with open("./test.gexf", 'rb') as f:
-                content = f.read().decode('utf-8')
-                result[channel_file] = content
-
-    return result
 
 
-
-
-# convert('T024HV01E',channels_list=['C024HV01L','C08C4GYQ0'])
 def channels(request, team):
     database_conductor = Database_conductor(True)
     team_info = {}
@@ -199,7 +196,7 @@ def teams(request):
     database_conductor = Database_conductor(True)
     team_info = {}
     for id, name, domain in database_conductor.get_teams():
-        team_info[id] = {"name": name, "domain":domain}
+        team_info[id] = {"name": name, "domain": domain}
     return JsonResponse(team_info)
 
 
@@ -230,7 +227,53 @@ def get_person_info(id):
     }
 
 
+def get_edge_info(node1, node2):
+    database_conductor = Database_conductor(True)
+    id, username, first_name, last_name, _, img_192, img_original = database_conductor.get_person(node1)[0]
+    node1_basic_info = {
+        "id": id,
+        "username": username,
+        "first_name": first_name,
+        "last_name": last_name,
+        "img_192": img_192,
+        "img_original": img_original,
+    }
+    id, username, first_name, last_name, _, img_192, img_original = database_conductor.get_person(node2)[0]
+    node2_basic_info = {
+        "id": id,
+        "username": username,
+        "first_name": first_name,
+        "last_name": last_name,
+        "img_192": img_192,
+        "img_original": img_original,
+    }
+    messages = list(database_conductor.get_message_from_to(node1, node2))
+    messages += list(database_conductor.get_message_from_to(node2, node1))
+    return_messages = list()
+    for sender, receiver, text, channel_id, team_id, ts in sorted(messages, key=lambda x: x[-1]):
+        message = {
+            'sender': sender,
+            'receiver': receiver,
+            'channel_id': channel_id,
+            'channel_name': database_conductor.get_channel_detail(channel_id)[0][1],
+            "text": text,
+            "team_id": team_id,
+            "ts": ts,
+        }
+        return_messages.append(message)
+    return {
+        "node1": node1_basic_info,
+        "node2": node2_basic_info,
+        "messages": return_messages,
+    }
+
 
 def person(request, id):
     # get_person_info(id)
     return JsonResponse(get_person_info(id))
+
+
+def edge(request, node1, node2):
+    return JsonResponse(get_edge_info(node1, node2))
+
+

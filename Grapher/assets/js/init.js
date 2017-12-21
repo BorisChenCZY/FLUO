@@ -19,10 +19,22 @@ $("#team_list").change(function () {
 
 });
 
+function channel_change() {
+    var channels = []
+    var data = $('#channel_group').select2('data');
+    for (var index in data){
+        channels.push(data[index]['id'])
+    }
+    draws(current_team, channels);
+}
+
 $("#channel_group").on('select2:select', function (e) {
-    console.log(e.params.data);
+    channel_change();
 });
 
+$("#channel_group").on('select2:unselect', function (e) {
+    channel_change();
+});
 
 $('#daterange-1').on('apply.daterangepicker', function(ev, picker) {
   //do something, like clearing an input
@@ -39,4 +51,9 @@ function open_sidebar(open_id, close_id) {
     $('#' + open_id).pxSidebar('toggle');
     $('#' + open_id).pxSidebar('update');
     console.log('toggle version2')
+}
+
+
+function standby(id) {
+    document.getElementById(id).src = 'http://www.stallerdental.com/wp-content/uploads/2016/12/user-icon.png'
 }

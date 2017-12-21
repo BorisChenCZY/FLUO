@@ -198,7 +198,13 @@ class Database_conductor():
         self.cursor.execute(query)
         return self.cursor.fetchall()
 
-
+    def get_message_from_to(self, node1, node2):
+        query = """
+                        SELECT DISTINCT * FROM mention_based_graph_info
+                        WHERE sender = "{}" and receiver = "{}"
+                        """.format(node1, node2)
+        self.cursor.execute(query)
+        return self.cursor.fetchall()
 
 
 if __name__ == '__main__':

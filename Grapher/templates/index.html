@@ -3,6 +3,9 @@
 <html>
 <head>
     {% load static %}
+    <script>
+        var GLOBAL_PATH = '{{ STATIC_PATH }}';
+    </script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport"
@@ -20,7 +23,7 @@
     <script>function _pxDemo_loadStylesheet(a, b, c) {
         var c = c || decodeURIComponent((new RegExp(";\\s*" + encodeURIComponent("px-demo-theme") + "\\s*=\\s*([^;]+)\\s*;", "g").exec(";" + document.cookie + ";") || [])[1] || "clean"),
             d = "rtl" === document.getElementsByTagName("html")[0].getAttribute("dir");
-        document.write(a.replace(/^(.*?)((?:\.min)?\.css)$/, '<link href="$1' + (c.indexOf("dark") !== -1 && a.indexOf("/css/") !== -1 && a.indexOf("/themes/") === -1 ? "-dark" : "") + (!d || 0 !== a.indexOf("/assets/css") && 0 !== a.indexOf("/assets/demo") ? "" : ".rtl") + '$2" rel="stylesheet" type="text/css"' + (b ? 'class="' + b + '"' : "") + ">"))
+        document.write(a.replace(/^(.*?)((?:\.min)?\.css)$/, '<link href="$1' + (c.indexOf("dark") !== -1 && a.indexOf("/css/") !== -1 && a.indexOf("/themes/") === -1 ? "-dark" : "") + (!d || 0 !== a.indexOf(GLOBAL_PATH) && 0 !== a.indexOf(GLOBAL_PATH) ? "" : ".rtl") + '$2" rel="stylesheet" type="text/css"' + (b ? 'class="' + b + '"' : "") + ">"))
     }</script>
 
     <!-- DEMO ONLY: Set RTL direction -->
@@ -30,7 +33,7 @@
     <script>
         _pxDemo_loadStylesheet('{% static 'bootstrap.min.css' %}', 'px-demo-stylesheet-bs');
         _pxDemo_loadStylesheet('{% static 'pixeladmin.min.css' %}', 'px-demo-stylesheet-core');
-        _pxDemo_loadStylesheet('/assets/widgets.min.css', 'px-demo-stylesheet-widgets');
+        _pxDemo_loadStylesheet('{% static 'widgets.min.css' %}', 'px-demo-stylesheet-widgets');
     </script>
 
     <!-- DEMO ONLY: Load theme -->
@@ -339,8 +342,10 @@
                 </div>
                 <hr class="page-block m-t-0">
                 <div class="modal-footer">
-                    <button type="button" class="btn" data-dismiss="modal" onclick="$('#filter_button').click();">Close</button>
-{#                    <button type="button" class="btn btn-info" onclick="get_channels()">Save changes</button>#}
+                    <button type="button" class="btn" data-dismiss="modal" onclick="$('#filter_button').click();">
+                        Close
+                    </button>
+                    {#                    <button type="button" class="btn btn-info" onclick="get_channels()">Save changes</button>#}
                 </div>
 
             </div>
@@ -348,9 +353,13 @@
 
     </div>
 
-    <button type="button" class="btn" data-toggle="sidebar" onclick="open_sidebar('sidebar-edge', 'sidebar-vertex')" >Vertex</button>
+    <button type="button" class="btn" data-toggle="sidebar" onclick="open_sidebar('sidebar-edge', 'sidebar-vertex')">
+        Vertex
+    </button>
 
-    <button type="button" class="btn" data-toggle="sidebar" onclick="open_sidebar('sidebar-vertex', 'sidebar-edge')" >Edge</button>
+    <button type="button" class="btn" data-toggle="sidebar" onclick="open_sidebar('sidebar-vertex', 'sidebar-edge')">
+        Edge
+    </button>
 
     <!--Main Frame Nav Bar-->
     <ul class="nav nav-tabs nav-tabs-simple">
@@ -373,7 +382,7 @@
                     <div class="row">
                         <div id="main" style="height: 700px;color: #B3B3B3"></div>
                         <script type="text/javascript" src="/assets/echarts.min.js"></script>
-{#                        <script type="text/javascript" src="/assets/jquery.js"></script>#}
+                        {#                        <script type="text/javascript" src="/assets/jquery.js"></script>#}
                         <script type="text/javascript" src="/assets/dataTool.js"></script>
                         <script type="text/javascript">
                             {#draw('123');#}
@@ -549,7 +558,7 @@
                         <span class="panel-title">Node Info</span>
                     </div>
                     <div class="col-md-12" id="person_profile">
-                        <div class="page-profile-v2-subheader page-block p-y-3"  style="width:299px;height:299px;">
+                        <div class="page-profile-v2-subheader page-block p-y-3" style="width:299px;height:299px;">
                             <div class="text-xs-center"><img src="{% static '3.png' %}" alt=""
                                                              class="page-profile-v2-avatar border-round image"
                                                              style="width:200px;height:200px;"></div>
@@ -562,9 +571,11 @@
                                 <span class="panel-title">Statistics</span>
                             </div>
                             <div class="list-group m-y-1">
-                                <a href="#" class="list-group-item p-x-1 b-a-0 message_number"><strong>126</strong> Messages</a>
+                                <a href="#" class="list-group-item p-x-1 b-a-0 message_number"><strong>126</strong>
+                                    Messages</a>
                                 <a href="#" class="list-group-item p-x-1 b-a-0 weight"><strong>3.75</strong> Weights</a>
-                                <a href="#" class="list-group-item p-x-1 b-a-0 mention_number"><strong>73</strong> Mentions</a>
+                                <a href="#" class="list-group-item p-x-1 b-a-0 mention_number"><strong>73</strong>
+                                    Mentions</a>
                             </div>
                         </div>
 
@@ -593,11 +604,12 @@
                                     <div class="widget-messages-alt-description">from <a href="#">Robert Jang</a></div>
                                     <div class="widget-messages-alt-date">08-21-2017</div>
                                 </div>
-                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="p-a-4">
-                        <button type="button" class="btn" data-toggle="sidebar" data-target="#sidebar-vertex">Close</button>
+                        <button type="button" class="btn" data-toggle="sidebar" data-target="#sidebar-vertex">Close
+                        </button>
                     </div>
                 </div>
             </div>
@@ -607,29 +619,32 @@
                     <div class="panel-heading p-x-1">
                         <span class="panel-title">Link Info</span>
                     </div>
-                    <div class="col-md-12">
+                    <div class="col-md-12" id="edge_profile">
                         <div class="panel panel-transparent">
                             <div class="panel-heading p-x-1">
-                                <span class="panel-title">People</span>
+                                <span class="panel-title">Link</span>
                             </div>
                             <br>
                             <div class="col-md-6">
                                 <div class="panel panel-transparent">
-                                    <div class="text-xs-center"><img src="/assets/1.jpg" alt=""
-                                                                     class="page-profile-v2-avatar border-round"
-                                                                     style="width:100px;height:100px;"></div>
-                                    <h1 class="font-size-18 text-xs-center m-y-1">Doge One</h1>
-                                    <h3 class="font-size-18 m-t-0 m-b-1 text-xs-center text-muted font-weight-normal">
+                                    <div class="text-xs-center "><img id="node_1_image" src="/assets/1.jpg"
+                                                                      onerror="standby('node_1_image')"
+                                                                      class="node1_image page-profile-v2-avatar border-round"
+                                                                      style="width:100px;height:100px;"
+                                                                      alt="Picture failed"></div>
+                                    <h1 class="font-size-18 text-xs-center m-y-1 node1_name">Doge One</h1>
+                                    <h3 class="node1_id font-size-18 m-t-0 m-b-1 text-xs-center text-muted font-weight-normal">
                                         @lookinat</h3>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="panel panel-transparent">
-                                    <div class="text-xs-center"><img src="/assets/2.jpg" alt=""
-                                                                     class="page-profile-v2-avatar border-round"
+                                    <div class="text-xs-center"><img id="node_2_image" src="/assets/2.jpg"
+                                                                     onerror="standby('node_2_image')"
+                                                                     class="node2_image page-profile-v2-avatar border-round"
                                                                      style="width:100px;height:100px;"></div>
-                                    <h1 class="font-size-18 text-xs-center m-y-1">Doge two</h1>
-                                    <h3 class="font-size-18 m-t-0 m-b-1 text-xs-center text-muted font-weight-normal">
+                                    <h1 class="font-size-18 text-xs-center m-y-1 node2_name">Doge two</h1>
+                                    <h3 class="node2_id font-size-18 m-t-0 m-b-1 text-xs-center text-muted font-weight-normal">
                                         @coolestdog</h3>
                                 </div>
                             </div>
@@ -640,8 +655,9 @@
                                 <span class="panel-title">Statistics</span>
                             </div>
                             <div class="list-group m-y-1">
-                                <a href="#" class="list-group-item p-x-1 b-a-0"><strong>126</strong> Messages</a>
-                                <a href="#" class="list-group-item p-x-1 b-a-0"><strong>3.75</strong> Weights</a>
+                                <a href="#" class="list-group-item p-x-1 b-a-0 message_number"><strong>126</strong>
+                                    Messages</a>
+                                <a href="#" class="list-group-item p-x-1 b-a-0 weight"><strong>3.75</strong> Weights</a>
                             </div>
                         </div>
 
@@ -649,50 +665,53 @@
                             <div class="panel-heading p-x-1">
                                 <span class="panel-title">Posts</span>
                             </div>
-                            <div class="widget-chat-item left">
-                                <img src="/assets/1.jpg" alt="" class="widget-chat-avatar">
-                                <span class="widget-chat-date pull-right">07-24-2017</span>
-                                <div class="widget-chat-heading"><a href="#" title="">Doge One</a></div>
-                                <div class="widget-chat-text">
-                                    Wolf. Wolf. Wolf. Wolf. Wolf.
+                            <div class="message_list">
+                                <div class="widget-chat-item left">
+                                    <img src="/assets/1.jpg" alt="" class="widget-chat-avatar">
+                                    <span class="widget-chat-date pull-right">07-24-2017</span>
+                                    <div class="widget-chat-heading"><a href="#" title="">Doge One</a></div>
+                                    <div class="widget-chat-text">
+                                        Wolf. Wolf. Wolf. Wolf. Wolf.
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="widget-chat-item right">
-                                <img src="/assets/2.jpg" alt="" class="widget-chat-avatar">
-                                <span class="widget-chat-date pull-right">07-24-2017</span>
-                                <div class="widget-chat-heading"><a href="#" title="">Doge Two</a></div>
-                                <div class="widget-chat-text">
-                                    Wolf. Wolf. Wolf. Wolf.
+                                <div class="widget-chat-item right">
+                                    <img src="/assets/2.jpg" alt="" class="widget-chat-avatar">
+                                    <span class="widget-chat-date pull-right">07-24-2017</span>
+                                    <div class="widget-chat-heading"><a href="#" title="">Doge Two</a></div>
+                                    <div class="widget-chat-text">
+                                        Wolf. Wolf. Wolf. Wolf.
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="widget-chat-item left">
-                                <img src="/assets/1.jpg" alt="" class="widget-chat-avatar">
-                                <span class="widget-chat-date pull-right">07-14-2017</span>
-                                <div class="widget-chat-heading"><a href="#" title="">Doge One</a></div>
-                                <div class="widget-chat-text">
-                                    Wolf. Wolf. Wolf.
+                                <div class="widget-chat-item left">
+                                    <img src="/assets/1.jpg" alt="" class="widget-chat-avatar">
+                                    <span class="widget-chat-date pull-right">07-14-2017</span>
+                                    <div class="widget-chat-heading"><a href="#" title="">Doge One</a></div>
+                                    <div class="widget-chat-text">
+                                        Wolf. Wolf. Wolf.
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="widget-chat-item right">
-                                <img src="/assets/2.jpg" alt="" class="widget-chat-avatar">
-                                <span class="widget-chat-date pull-right">07-14-2017</span>
-                                <div class="widget-chat-heading"><a href="#" title="">Doge Two</a></div>
-                                <div class="widget-chat-text">
-                                    Wolf. Wolf.
+                                <div class="widget-chat-item right">
+                                    <img src="/assets/2.jpg" alt="" class="widget-chat-avatar">
+                                    <span class="widget-chat-date pull-right">07-14-2017</span>
+                                    <div class="widget-chat-heading"><a href="#" title="">Doge Two 21321 321 3213 213 213 123 213 12 321 </a></div>
+                                    <div class="widget-chat-text">
+                                        Wolf. Wolf.
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="widget-chat-item left">
-                                <img src="/assets/1.jpg" alt="" class="widget-chat-avatar">
-                                <span class="widget-chat-date pull-right">07-04-2017</span>
-                                <div class="widget-chat-heading"><a href="#" title="">Doge One</a></div>
-                                <div class="widget-chat-text">
-                                    Wolf.
+                                <div class="widget-chat-item left">
+                                    <img src="/assets/1.jpg" alt="" class="widget-chat-avatar">
+                                    <span class="widget-chat-date pull-right">07-04-2017</span>
+                                    <div class="widget-chat-heading"><a href="#" title="">Doge One</a></div>
+                                    <div class="widget-chat-text">
+                                        Wolf.
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="p-a-4">
-                        <button type="button" class="btn" data-toggle="sidebar" data-target="#sidebar-edge">Close</button>
+                        <button type="button" class="btn" data-toggle="sidebar" data-target="#sidebar-edge">Close
+                        </button>
                     </div>
                 </div>
             </div>
@@ -1073,7 +1092,7 @@
         {#$('#daterange-1').daterangepicker();#}
         $('#daterange-1').daterangepicker({
             "autoApply": true,
-            locale: { cancelLabel: 'Clear' },
+            locale: {cancelLabel: 'Clear'},
             {#"startDate": "12/13/2017",#}
             {#"endDate": "12/19/2017"#}
         }, function (start, end, label) {
