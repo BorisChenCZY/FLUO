@@ -75,15 +75,15 @@ WSGI_APPLICATION = 'FLUO.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'rowdata',
-        'USER': 'read_database',
-        'HOST': '10.20.13.209',
-        'PASSWORD': 'FluoBySusTech',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'rowdata',
+#         'USER': 'read_database',
+#         'HOST': '10.20.13.209',
+#         'PASSWORD': 'FluoBySusTech',
+#     }
+# }
 
 
 
