@@ -31,10 +31,14 @@ function draws(team, channels) {
                 loaded_channels[channel] = ret;
                 // console.log(loaded_channels)
                 channel_xmls.push(loaded_channels[channel])
-                // console.log(channel_xmls)
-                xmlfile=channel_xmls[0]
+                console.log("1",channel_xmls[0])
+                xmlfile=channel_xmls[0].implementation.createDocument(channel_xmls[0].namespaceURI,null,null);
+		var newNode = xmlfile.importNode(channel_xmls[0].documentElement,true);
+		xmlfile.appendChild(newNode);
+		console.log("2",xmlfile);
                 // console.log(loaded_channels[channel])
                 var obj = {};
+		console.log('notice here', channel_xmls[0])
                 obj = filter(merge(channel_xmls), conditions);
                 console.log(obj)
                 draw(obj);
@@ -42,8 +46,9 @@ function draws(team, channels) {
         } else {
             channel_xmls.push(loaded_channels[channel])
             console.log('stored', loaded_channels[channel])
-            xmlfile=channel_xmls[0]
+            
             var obj = {};
+	    console.log("notice here2", channel_xmls[0]);
             obj = filter(merge(channel_xmls), conditions);
             draw(obj);
         }
@@ -146,7 +151,7 @@ function changeidNumber(id, number) {
 // }
 //filter为一个function，传入一个xml对象以及要筛选条件，返回一个筛选后的xml对象
 function creatGraph(xmlFile) {
-    // console.log(xmlFile)
+    //console.log(xmlFile)
     var nodes = xmlFile.getElementsByTagName('node');
     var links = xmlFile.getElementsByTagName('edge');
     var graph = new Graph();
