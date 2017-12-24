@@ -4,7 +4,7 @@
 <head>
     {% load staticfiles %}
     <script>
-        var GLOBAL_PATH =  "/assets/";
+        var GLOBAL_PATH = "/assets/";
         var current_team;
         var loaded_channels = {};
 
@@ -21,6 +21,7 @@
     <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
           integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="{% static 'loader.css' %}" rel="stylesheet">
 
     <!-- DEMO ONLY: Function for the proper stylesheet loading according to the demo settings -->
     <script>function _pxDemo_loadStylesheet(a, b, c) {
@@ -60,14 +61,14 @@
     <script src="/assets/pace.min.js"></script>
     <script type="text/javascript" src="/assets/jquery.js"></script>
 
-{#    <script src="{% static 'demo.js' %}"></script>#}
-{#    <script type="text/javascript" src="{% static 'GraphParser.js' %}"></script>#}
-{#    <script type="text/javascript" src="{% static 'infomation_getter.js' %}"></script>#}
-{#    <script type="text/javascript" src="{% static 'init.js' %}"></script>#}
+    {#    <script src="{% static 'demo.js' %}"></script>#}
+    {#    <script type="text/javascript" src="{% static 'GraphParser.js' %}"></script>#}
+    {#    <script type="text/javascript" src="{% static 'infomation_getter.js' %}"></script>#}
+    {#    <script type="text/javascript" src="{% static 'init.js' %}"></script>#}
 
 
     <script src="{% static 'demo.js' %}"></script>
-    
+
 
     <!-- Custom styling -->
     <style>
@@ -362,13 +363,13 @@
 
     </div>
 
-    <button type="button" class="btn" data-toggle="sidebar" onclick="open_sidebar('sidebar-edge', 'sidebar-vertex')">
-        Vertex
-    </button>
-
-    <button type="button" class="btn" data-toggle="sidebar" onclick="open_sidebar('sidebar-vertex', 'sidebar-edge')">
-        Edge
-    </button>
+{#    <button type="button" class="btn" data-toggle="sidebar" onclick="open_sidebar('sidebar-edge', 'sidebar-vertex')">#}
+{#        Vertex#}
+{#    </button>#}
+{##}
+{#    <button type="button" class="btn" data-toggle="sidebar" onclick="open_sidebar('sidebar-vertex', 'sidebar-edge')">#}
+{#        Edge#}
+{#    </button>#}
 
     <!--Main Frame Nav Bar-->
     <ul class="nav nav-tabs nav-tabs-simple">
@@ -562,9 +563,14 @@
 
 
             <div class="px-sidebar-right" id="sidebar-vertex" style="position: absolute; z-index: 10;" data-width="300">
+                <div class="loader invisible"></div>
+                <button type="button" class="close position-relative" aria-label="Close">
+                    <span aria-hidden="true" onclick="open_sidebar('', 'sidebar-vertex')">&times;</span>
+                </button>
                 <div class="px-sidebar-content">
                     <div class="panel-heading p-x-1">
                         <span class="panel-title">Node Info</span>
+
                     </div>
                     <div class="col-md-12" id="person_profile">
                         <div class="page-profile-v2-subheader page-block p-y-3" style="width:299px;height:299px;">
@@ -617,13 +623,17 @@
                         </div>
                     </div>
                     <div class="p-a-4">
-                        <button type="button" class="btn" data-toggle="sidebar" data-target="#sidebar-vertex">Close
+                        <button type="button" class="btn" data-toggle="sidebar" data-target="#sidebar-vertex" onclick="open_sidebar('', 'sidebar-vertex')">Close
                         </button>
                     </div>
                 </div>
             </div>
 
             <div class="px-sidebar-right" id="sidebar-edge" style="position: absolute; z-index: 10;" data-width="300">
+                <div class="loader invisible"></div>
+                <button type="button" class="close position-relative" aria-label="Close">
+                    <span aria-hidden="true" onclick="open_sidebar('', 'sidebar-vertex')">&times;</span>
+                </button>
                 <div class="px-sidebar-content">
                     <div class="panel-heading p-x-1">
                         <span class="panel-title">Link Info</span>
@@ -702,7 +712,8 @@
                                 <div class="widget-chat-item right">
                                     <img src="/assets/2.jpg" alt="" class="widget-chat-avatar">
                                     <span class="widget-chat-date pull-right">07-14-2017</span>
-                                    <div class="widget-chat-heading"><a href="#" title="">Doge Two 21321 321 3213 213 213 123 213 12 321 </a></div>
+                                    <div class="widget-chat-heading"><a href="#" title="">Doge Two 21321 321 3213 213
+                                        213 123 213 12 321 </a></div>
                                     <div class="widget-chat-text">
                                         Wolf. Wolf.
                                     </div>
@@ -719,7 +730,7 @@
                         </div>
                     </div>
                     <div class="p-a-4">
-                        <button type="button" class="btn" data-toggle="sidebar" data-target="#sidebar-edge">Close
+                        <button type="button" class="btn" data-toggle="sidebar" data-target="#sidebar-edge" onclick="open_sidebar('', 'sidebar-edge')">Close
                         </button>
                     </div>
                 </div>
@@ -729,7 +740,7 @@
 
     <br>
 
-<hr class="page-block m-t-0">
+    <hr class="page-block m-t-0">
     <div id="owl-carousel-autoplay" class="owl-carousel">
         <div class="panel box">
             <div class="box-row">
@@ -1066,7 +1077,7 @@
 <script type="text/javascript" src="{% static 'infomation_getter.js' %}"></script>
 <script type="text/javascript" src="{% static 'init.js' %}"></script>
 
-    
+
 <script>
     // -------------------------------------------------------------------------
     // Initialize DEMO sidebar

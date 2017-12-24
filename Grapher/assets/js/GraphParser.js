@@ -14,12 +14,32 @@
 var t = true;
 var xmlfile;
 var s = "http://www.gephi.org/gexf/1.2draft";
+var dom = document.getElementById("main");
+var myChart = echarts.init(dom);
 
+myChart.on('click', function(param){
+    var type = param['data'].type;
+    if (type === 'node'){
+        var id = param['data'].id;
+        get_person(id);
+        open_sidebar('sidebar-vertex', 'sidebar-edge');
+    }else {
+        var source = param['data'].source;
+        var target = param['data'].target;
+        get_edge(source, target);
+        open_sidebar('sidebar-edge', 'sidebar-vertex')
+    }
+})
 
 function draws(team, channels) {
     var channel_xmls = [];
     // console.log(channels.length)
     console.log(team, channels)
+    if (channels.length === 0){
+        myChart.clear()
+        return
+    }
+    myChart.showLoading();
     for (var index = 0; index < channels.length; index++) {
         var channel = channels[index];
         // console.log(index, channel, channels.valueOf(1))
@@ -30,15 +50,24 @@ function draws(team, channels) {
             get_graph_xml(team, channel, function (ret) {
                 loaded_channels[channel] = ret;
                 channel_xmls.push(loaded_channels[channel])
-                var new_xml = merge(channel_xmls);
-                draw(new_xml, conditions)
+                if (channel_xmls.length === channels.length){
+                    console.log('finished')
+                    check_and_draw(channel_xmls)
+                }
             });
         } else {
             channel_xmls.push(loaded_channels[channel])
-            var new_xml = merge(channel_xmls);
-            draw(new_xml, conditions);
+            if (channel_xmls.length === channels.length){
+                console.log('finished')
+                    check_and_draw(channel_xmls)
+            }
         }
     }
+}
+
+function check_and_draw(channel_xmls){
+    var new_xml = merge(channel_xmls);
+    draw(new_xml, conditions)
 }
 
 function merge(channelxml_Array) {
@@ -139,8 +168,7 @@ function draw(xml, condition) {
     console.log('edge', edge_number);
     changeidNumber("#node_number", node_number);
     changeidNumber("#edge_number", edge_number);
-    var dom = document.getElementById("main");
-    var myChart = echarts.init(dom);
+
     var app = {};
     var option = null;
     app.title = 'FLUO';
@@ -160,6 +188,11 @@ function draw(xml, condition) {
         // Use random x, y
         node.x = node.y = null;
         node.draggable = true;
+        node.type = 'node';
+    });
+
+    graph.links.forEach(function (edge) {
+        edge.type = 'edge';
     });
     option = {
         title: {
@@ -201,7 +234,7 @@ function draw(xml, condition) {
     if (option && typeof option === "object") {
         myChart.setOption(option, true);
     }
-
+    myChart.hideLoading()
 
 }
 

@@ -41,6 +41,8 @@ function get_return(ret) {
 }
 
 function get_person(id) {
+    $("#person_profile").attr('class', 'col-md-12 invisible')
+    $(".loader").attr('class', 'loader visible')
     $.getJSON('/person/' + id, function (ret) {
         console.log(ret)
         var image = ret["img_192"];
@@ -69,21 +71,25 @@ function get_person(id) {
 
             date = americanDateTime(date);
 
-            messge_list += '<img src="' + image + '" class="widget-messages-alt-avatar"/>' +
+            messge_list += '<img src="' + image + '" id=\"' + ts +'\"' + '" onerror="standby(\''+ ts +'\')" class="widget-messages-alt-avatar"/>' +
                 "<div>" + text + '</div>' +
                 '<div class="widget-messages-alt-description">from <a href="#">' + channel + '</a></div>' +
                 '<div class="widget-messages-alt-date">' + date + '</div>'
             messge_list += '</div>'
         }
         $("#person_profile .message_list").html(messge_list);
+        $("#person_profile").attr('class', 'col-md-12')
+        $(".loader").attr('class', 'loader invisible')
     });
 }
 
 function get_edge(node1, node2) {
+    $("#edge_profile").attr('class', 'col-md-12 invisible')
+    $(".loader").attr('class', 'loader visible')
     $.getJSON('/edge/' + node1 + '/' + node2, function (ret) {
             console.log(ret)
-            var node1_image = ret['node1']["img_original"];
-            var node2_image = ret['node2']["img_original"];
+            var node1_image = ret['node1']["img_192"];
+            var node2_image = ret['node2']["img_192"];
 
             $("#edge_profile .node1_image").attr('src', node1_image);
             $("#edge_profile .node1_name").html(ret['node1']["first_name"] + ' ' + ret['node1']["last_name"]);
@@ -134,6 +140,8 @@ function get_edge(node1, node2) {
                 messge_list += '</div>'
             }
             $("#edge_profile .message_list").html(messge_list);
+            $("#edge_profile").attr('class', 'col-md-12')
+            $(".loader").attr('class', 'loader invisible')
         }
     )
     ;

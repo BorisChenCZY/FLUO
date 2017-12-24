@@ -68,13 +68,20 @@ function init() {
 }
 
 function open_sidebar(open_id, close_id) {
+    console.log('open', open_id, 'close', close_id)
+    if (open_id === ''){
+        $('#' + close_id).pxSidebar('toggle');
+        return;
+    }
+    if ($("#" + open_id).attr('class').indexOf('open') !== -1){
+        return
+    }
     if ($("#" + close_id).attr('class').indexOf('open') !== -1) {
         $('#' + close_id).pxSidebar('toggle');
         $('#' + close_id).pxSidebar('update');
     }
     $('#' + open_id).pxSidebar('toggle');
     $('#' + open_id).pxSidebar('update');
-    console.log('toggle version2')
 }
 
 
