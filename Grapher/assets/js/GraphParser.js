@@ -16,6 +16,7 @@ var xmlfile;
 var s = "http://www.gephi.org/gexf/1.2draft";
 var dom = document.getElementById("main");
 var myChart = echarts.init(dom);
+
 var current_graph = {};
 var max_node_weight = 0;
 var max_edge_weight = 1;
@@ -38,18 +39,23 @@ myChart.on('click', function (param) {
     }
 })
 
+function clear_draw_area() {
+
+    myChart.clear();
+    $('#easy-pie-chart-1').attr('data-max-value', 0).data('easy-pie-chart').update(0);
+    $('#easy-pie-chart-2').attr('data-max-value', 0).data('easy-pie-chart').update(0);
+    last_edge_number = undefined
+    last_node_number = undefined
+    $('.panel.box').attr('class', 'panel box invisible')
+    return
+}
 
 function draws(team, channels) {
     var channel_xmls = [];
     // console.log(team);
     // console.log(channels);
     if (channels.length === 0) {
-        myChart.clear();
-        $('#easy-pie-chart-1').attr('data-max-value', 0).data('easy-pie-chart').update(0);
-        $('#easy-pie-chart-2').attr('data-max-value', 0).data('easy-pie-chart').update(0);
-        last_edge_number = undefined
-        last_node_number = undefined
-        return
+        clear_draw_area()
     }
     myChart.showLoading();
     for (var index = 0; index < channels.length; index++) {
@@ -193,6 +199,7 @@ function draw(current_graph, conditions = '') {
     $("#bs-slider-node").slider({min: 0, max: parseInt(max_node_weight), range: [0, parseInt(max_node_weight)],})
     // $("#bs-slider-node").slider('setValue', [-1, parseInt(max_node_weight)])
     $("#bs-slider-node-div .pull-xs-right").html(max_node_weight)
+    $('.panel.box').attr('class', 'panel box')
 }
 
 function changeidNumber(id, number) {
@@ -338,9 +345,9 @@ function filter(graph, conditions) {
     for (var link in newgraph.getLinks()) {
 
         var new_edge = graph.makeEdge(newgraph.getLinks()[link])
-        console.log(new_edge.getAttribute('weight'))
-        if (new_edge.getAttribute('weight') >= conditions.edgeWeightDownLimit && new_edge.getAttribute('weight') <= new_edge.getAttribute('weight'))
-            newEdges.appendChild(new_edge);
+        // console.log(new_edge.getAttribute('weight'))
+        // if (new_edge.getAttribute('weight') >= conditions.edgeWeightDownLimit && new_edge.getAttribute('weight') <= new_edge.getAttribute('weight'))
+        newEdges.appendChild(new_edge);
 
     }
     y.parentNode.removeChild(y)

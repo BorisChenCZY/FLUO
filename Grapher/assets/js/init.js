@@ -1,4 +1,6 @@
 console.log(GLOBAL_PATH)
+
+
 var conditions = {
     // "channel": ['C4YCQ57CG', 'C6WB33KNJ'],
     "nodeWeightUpLimit": "1000",
@@ -58,6 +60,7 @@ function init() {
         var endDate = new Date(picker.endDate.format('YYYY-MM-DD'));
         conditions['dateDownLimit'] = startDate.getTime();
         conditions['dateUpLimit'] = endDate.getTime();
+        console.log(startDate.getTime(), endDate.getTime())
         draw(current_graph, conditions)
     });
 
@@ -81,6 +84,42 @@ function init() {
         draw(current_graph, conditions)
         console.log(conditions)
     })
+
+
+    $("#main>div").append($("#piechart").html())
+    $("#piechart").remove()
+    var colors = pxDemo.getRandomColors();
+
+    var config = {
+        animate: 2000,
+        scaleColor: false,
+        lineWidth: 4,
+        lineCap: 'square',
+        size: 90,
+        trackColor: 'rgba(0, 0, 0, .09)',
+        onStep: function (_from, _to, currentValue) {
+            var value = $(this.el).attr('data-max-value') * currentValue / 100;
+
+            $(this.el)
+                .find('> span')
+                .text(Math.round(value) + $(this.el).attr('data-suffix'));
+        },
+    }
+
+
+    $('#easy-pie-chart-1')
+        .attr('data-percent', 100)
+        .attr('data-max-value', 0)
+        .easyPieChart($.extend({}, config, {barColor: colors[0]}));
+
+    $('#easy-pie-chart-2')
+        .attr('data-percent', 100)
+        .attr('data-max-value', 0)
+        .easyPieChart($.extend({}, config, {barColor: colors[1]}));
+
+    // $('#easy-pie-chart-2').attr('class', )
+    $('.panel.box').attr('class', 'panel box invisible')
+
 }
 
 function open_sidebar(open_id, close_id) {
