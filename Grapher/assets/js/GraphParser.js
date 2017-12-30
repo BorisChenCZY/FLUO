@@ -47,7 +47,9 @@ function clear_draw_area() {
     last_edge_number = undefined
     last_node_number = undefined
     $('.panel.box').attr('class', 'panel box invisible')
-    return
+
+    $(".slider").slider('disable')
+
 }
 
 function draws(team, channels) {
@@ -56,8 +58,10 @@ function draws(team, channels) {
     // console.log(channels);
     if (channels.length === 0) {
         clear_draw_area()
+        return
     }
     myChart.showLoading();
+    $(".slider").slider('ensable')
     for (var index = 0; index < channels.length; index++) {
         var channel = channels[index];
         if ((jQuery.inArray(channel, Object.keys(loaded_channels))) === -1) {

@@ -143,7 +143,19 @@
     {#    </div>#}
 </nav>
 
+{#main content#}
 <div class="px-content">
+    <div class="card">
+        <div class="card-header">
+            Featured
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+
     <!--Navigation Bar-->
     {#    <ol class="breadcrumb page-breadcrumb">#}
     {#        <li><a href="index.html">Home</a></li>#}
@@ -162,7 +174,7 @@
             <div class="col-xs-12 width-md-auto width-lg-auto width-xl-auto pull-md-right">
                 <button type="button" id="filter_button" class="btn btn-info btn-3d" data-toggle="collapse"
                         href="#collapseTwo"><i
-                        class="fa fa-filter"></i></button>
+                        class="fa fa-filter"></i> Configuration</button>
             </div>
 
             <div class="m-b-2 visible-xs visible-sm clearfix"></div>
@@ -179,106 +191,110 @@
     </div>
 
     <!--Invisible Filter-->
-    <div class="row">
+    <div id="Configuration area">
+        <div class="row">
 
-        <div id="collapseTwo" class="panel-collapse collapse">
-            <div class="panel panel-info">
-                <div class="panel-heading">
-                    <i class="fa fa-filter"></i>
-                    <span class="panel-title">Filter</span>
-                </div>
+            <div id="collapseTwo" class="panel-collapse collapse">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <i class="fa fa-filter"></i>
+                        <span class="panel-title">Filter</span>
+                    </div>
 
-                <div class="panel-body">
-                    <div class="col-md-12">
-                        <div class="col-md-4">
-                            <br>
-                            <h5 class="m-t-0">Channel</h5>
-                            <div class="m-b-2">
-                                <select id="channel_group" class="form-control select2-info select2-example" multiple
-                                        style="width: 100%">
-                                    <optgroup label="You need to select a team first">
-                                        {#                                        <option value="c1">Channel1</option>#}
-                                        {#                                        <option value="c2">Channel2</option>#}
-                                        {#                                        <option value="c3" selected>Channel3</option>#}
-                                        {#                                        <option value="c4">Channel4</option>#}
-                                        {#                                        <option value="c5">Channel5</option>#}
-                                    </optgroup>
-                                    {#                                    <optgroup label="Pacific Time Zone">#}
-                                    {#                                        <option value="c6">Channel6</option>#}
-                                    {#                                        <option value="c7" selected>Channel7</option>#}
-                                    {#                                        <option value="c8">Channel8</option>#}
-                                    {#                                        <option value="c9">Channel9</option>#}
-                                    {#                                        <option value="c10">Channel10</option>#}
-                                    {#                                    </optgroup>#}
-                                </select>
+                    <div class="panel-body">
+                        <div class="col-md-12">
+                            <div class="col-md-4">
+                                <br>
+                                <h5 class="m-t-0">Channel</h5>
+                                <div class="m-b-2">
+                                    <select id="channel_group" class="form-control select2-info select2-example"
+                                            multiple
+                                            style="width: 100%">
+                                        <optgroup label="You need to select a team first">
+                                            {#                                        <option value="c1">Channel1</option>#}
+                                            {#                                        <option value="c2">Channel2</option>#}
+                                            {#                                        <option value="c3" selected>Channel3</option>#}
+                                            {#                                        <option value="c4">Channel4</option>#}
+                                            {#                                        <option value="c5">Channel5</option>#}
+                                        </optgroup>
+                                        {#                                    <optgroup label="Pacific Time Zone">#}
+                                        {#                                        <option value="c6">Channel6</option>#}
+                                        {#                                        <option value="c7" selected>Channel7</option>#}
+                                        {#                                        <option value="c8">Channel8</option>#}
+                                        {#                                        <option value="c9">Channel9</option>#}
+                                        {#                                        <option value="c10">Channel10</option>#}
+                                        {#                                    </optgroup>#}
+                                    </select>
+                                </div>
+                                <br>
+                                <h5 class="m-t-0">Keyword</h5>
+                                <input type="text" value="CSS,Html,JavaScript"
+                                       data-role="tagsinput" class="form-control">
                             </div>
-                            <br>
-                            <h5 class="m-t-0">Keyword</h5>
-                            <input type="text" value="CSS,Html,JavaScript"
-                                   data-role="tagsinput" class="form-control">
-                        </div>
-                        <div class="col-md-4">
-                            <br>
-                            <h5 class="m-t-0">Weight for Nodes</h5>
-                            <div class="clearfix" id="bs-slider-node-div">
-                                <input id="bs-slider-node" type="text" value="" data-slider-min="0"
-                                       data-slider-max="1"
-                                       data-slider-step="1" data-slider-value="[0,1]">
-                                <b class="pull-xs-left">0</b>
-                                <b class="pull-xs-right">0</b>
+                            <div class="col-md-4">
+                                <br>
+                                <h5 class="m-t-0">Weight for Nodes</h5>
+                                <div class="clearfix" id="bs-slider-node-div">
+                                    <input id="bs-slider-node" class="slider" type="text" value="" data-slider-min="0"
+                                           data-slider-max="1"
+                                           data-slider-step="1" data-slider-value="[0,1]">
+                                    <b class="pull-xs-left">0</b>
+                                    <b class="pull-xs-right">0</b>
+                                </div>
+                                <br>
+                                <h5 class="m-t-0">Weight for Edges</h5>
+                                <div class="clearfix" id="bs-slider-edge-div">
+                                    <input id="bs-slider-edge" class="slider" type="text" value="" data-slider-min="-1"
+                                           data-slider-max="1"
+                                           data-slider-step="0.1" data-slider-value="[-1,1]">
+                                    <b class="pull-xs-left">-1</b>
+                                    <b class="pull-xs-right">1</b>
+                                </div>
                             </div>
-                            <br>
-                            <h5 class="m-t-0">Weight for Edges</h5>
-                            <div class="clearfix" id="bs-slider-edge-div">
-                                <input id="bs-slider-edge" type="text" value="" data-slider-min="-1"
-                                       data-slider-max="1"
-                                       data-slider-step="0.1" data-slider-value="[-1,1]">
-                                <b class="pull-xs-left">-1</b>
-                                <b class="pull-xs-right">1</b>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <br>
-                            <h5 class="m-t-0">Time Interval</h5>
-                            <input type="text" id="daterange-1" value="07/01/2017 - 12/01/2017"
-                                   class="form-control">
-                            <br>
-                            <h5 class="m-t-0">Value</h5>
-                            <div class="col-md-6">
-                                <label for="switcher-info" class="switcher switcher-info">
-                                    <input type="checkbox" id="switcher-info">
-                                    <div class="switcher-indicator">
-                                        <div class="switcher-yes"><i class="fa fa-check"></i></div>
-                                        <div class="switcher-no"><i class="fa fa-close"></i></div>
-                                    </div>
-                                    Positive Only
-                                </label>
-                            </div>
-                            <div class="col-md-6">
-                                <label for="switcher-info2" class="switcher switcher-info">
-                                    <input type="checkbox" id="switcher-info2">
-                                    <div class="switcher-indicator">
-                                        <div class="switcher-yes"><i class="fa fa-check"></i></div>
-                                        <div class="switcher-no"><i class="fa fa-close"></i></div>
-                                    </div>
-                                    Negative Only
-                                </label>
+                            <div class="col-md-4">
+                                <br>
+                                <h5 class="m-t-0">Time Interval</h5>
+                                <input type="text" id="daterange-1" value="07/01/2017 - 12/01/2017"
+                                       class="form-control">
+                                <br>
+                                <h5 class="m-t-0">Value</h5>
+                                <div class="col-md-6">
+                                    <label for="switcher-info" class="switcher switcher-info">
+                                        <input type="checkbox" id="switcher-info">
+                                        <div class="switcher-indicator">
+                                            <div class="switcher-yes"><i class="fa fa-check"></i></div>
+                                            <div class="switcher-no"><i class="fa fa-close"></i></div>
+                                        </div>
+                                        Positive Only
+                                    </label>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="switcher-info2" class="switcher switcher-info">
+                                        <input type="checkbox" id="switcher-info2">
+                                        <div class="switcher-indicator">
+                                            <div class="switcher-yes"><i class="fa fa-check"></i></div>
+                                            <div class="switcher-no"><i class="fa fa-close"></i></div>
+                                        </div>
+                                        Negative Only
+                                    </label>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <hr class="page-block m-t-0">
-                <div class="modal-footer">
-                    <button type="button" class="btn" data-dismiss="modal" onclick="$('#filter_button').click();">
-                        Close
-                    </button>
-                    {#                    <button type="button" class="btn btn-info" onclick="get_channels()">Save changes</button>#}
-                </div>
+                    <hr class="page-block m-t-0">
+                    <div class="modal-footer">
+                        <button type="button" class="btn" data-dismiss="modal" onclick="$('#filter_button').click();">
+                            Close
+                        </button>
+                        {#                    <button type="button" class="btn btn-info" onclick="get_channels()">Save changes</button>#}
+                    </div>
 
+                </div>
             </div>
-        </div>
 
+        </div>
     </div>
+
 
     {#    <button type="button" class="btn" data-toggle="sidebar" onclick="open_sidebar('sidebar-edge', 'sidebar-vertex')">#}
     {#        Vertex#}
@@ -325,7 +341,7 @@
                                 {#console.log('Drawed')#}
                             </script>
                             <div class="fixed-bottom" id="piechart">
-                                <div class="col-xs-2 col-sm-1 float-right">
+                                <div class="col-xs-12 col-sm-1 float-right">
                                     <div class="panel box">
                                         <div class="box-row">
                                             <div class="box-cell p-x-2 p-y-1 bg-black text-xs-center font-size-11 font-weight-semibold">
@@ -340,7 +356,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-xs-2 col-sm-1">
+                                <div class="col-xs-12 col-sm-1">
                                     <div class="panel box">
                                         <div class="box-row">
                                             <div class="box-cell p-x-2 p-y-1 bg-black text-xs-center font-size-11 font-weight-semibold">
@@ -1000,14 +1016,11 @@
     $(function () {
 
 
-
-
         var data = [
             pxDemo.getRandomData(1000, 1),
             pxDemo.getRandomData(100, 1),
             pxDemo.getRandomData(64, 1),
         ];
-
 
 
         {#$('#easy-pie-chart-3')#}
