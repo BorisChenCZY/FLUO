@@ -211,14 +211,27 @@ class Database_conductor():
                         select count(*) from (select distinct receiver from mention_based_graph_info where sender = '{}') a
                         """.format(person_id)
         self.cursor.execute(query)
-        return self.cursor.fetchall()[0]
-
+        a = self.cursor.fetchall()[0][0]
+        query = """
+                        select count(*) from (select distinct receiver from mention_based_graph_info where receiver = '{}') a
+                        """.format(person_id)
+        self.cursor.execute(query)
+        # print (self.cursor.fetchall[0])
+        return a + self.cursor.fetchall()[0][0]
 
 if __name__ == '__main__':
     database_conductor = Database_conductor(True)
     from pprint import pprint
+    all_team_number = len(database_conductor.get_teams())
+    for index, team in enumerate(database_conductor.get_teams()):
+        team_id = team[0]
+        print('{}/{} {}'.format(index + 1, all_team_number, team[1]))
+        all_channel_number = len(database_conductor.get_channels_from_team(team_id))
+        for cnt, (_, channel) in enumerate((database_conductor.get_channels_from_team(team_id))):
 
-    for _, channel in (database_conductor.get_channels_from_team('T09NY5SBT')):
-        channel, channel_name = (database_conductor.get_channel_detail(channel)[0])
-        print(channel_name)
-    cnt = 0
+            channel, channel_name = (database_conductor.get_channel_detail(channel)[0])
+            print('{}/{} {}'.format(cnt + 1, all_channel_number, channel_name))
+            print(channel)
+            quit()
+
+

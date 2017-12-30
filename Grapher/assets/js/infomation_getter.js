@@ -162,4 +162,6 @@ function get_graph_xml(team, channel, fn) {
     })
 }
 
+function update_weight_bar(){
 
+}

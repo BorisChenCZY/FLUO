@@ -89,7 +89,7 @@ def convert(team_name, channels_list, graph='mention_based_graph_info', user='re
 
             channel_node = output.addNodeAttribute(force_id="Channel", title="channel", type="String")
             team_node = output.addNodeAttribute(force_id="Team", title="team", type="String")
-            weight_node = output.addNodeAttribute(force_id="Weight", title="weight", type="float")
+            weight_node = output.addNodeAttribute(force_id="weight", title="weight", type="float")
             person_set = set(person_list)
             person_to_channel = []
             for tem_person in person_set:
@@ -119,7 +119,7 @@ def convert(team_name, channels_list, graph='mention_based_graph_info', user='re
                 tmp_node = output.addNode(tem_id, tem_name)
 
                 # calculdate node_weight
-                node_weight = database_conductor.get_person_messages(tem_id)
+                node_weight = database_conductor.get_person_weight(tem_id)
 
                 tmp_node.addAttribute(weight_node, str(node_weight))
                 tem_team_list = set()

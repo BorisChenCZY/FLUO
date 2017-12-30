@@ -16,6 +16,11 @@ var xmlfile;
 var s = "http://www.gephi.org/gexf/1.2draft";
 var dom = document.getElementById("main");
 var myChart = echarts.init(dom);
+var current_graph = {};
+var max_node_weight = 0;
+var max_edge_weight = 1;
+var last_node_number = undefined;
+var last_edge_number = undefined;
 
 myChart.on('click', function (param) {
     var type = param['data'].type;
@@ -33,14 +38,17 @@ myChart.on('click', function (param) {
     }
 })
 
+
 function draws(team, channels) {
     var channel_xmls = [];
-    console.log(team);
-    console.log(channels);
+    // console.log(team);
+    // console.log(channels);
     if (channels.length === 0) {
         myChart.clear();
         $('#easy-pie-chart-1').attr('data-max-value', 0).data('easy-pie-chart').update(0);
         $('#easy-pie-chart-2').attr('data-max-value', 0).data('easy-pie-chart').update(0);
+        last_edge_number = undefined
+        last_node_number = undefined
         return
     }
     myChart.showLoading();
@@ -50,22 +58,23 @@ function draws(team, channels) {
             get_graph_xml(team, channel, function (ret) {
                 loaded_channels[channel] = ret;
                 channel_xmls.push(loaded_channels[channel]);
-                xmlfile = channel_xmls[0].implementation.createDocument(channel_xmls[0].namespaceURI, null, null);
-                var newNode = xmlfile.importNode(channel_xmls[0].documentElement, true);
-                xmlfile.appendChild(newNode);
                 if (channel_xmls.length === channels.length) {
+                    xmlfile = channel_xmls[0].implementation.createDocument(channel_xmls[0].namespaceURI, null, null);
+                    var newNode = xmlfile.importNode(channel_xmls[0].documentElement, true);
+                    xmlfile.appendChild(newNode);
+                    current_graph = merge(channel_xmls)
+                    draw(current_graph, conditions);
 
-                    var obj = {};
-                    obj = filter(merge(channel_xmls), conditions);
-                    draw(obj);
                 }
             });
         } else {
             channel_xmls.push(loaded_channels[channel]);
             if (channel_xmls.length === channels.length) {
-                var obj = {};
-                obj = filter(merge(channel_xmls), conditions);
-                draw(obj);
+                xmlfile = channel_xmls[0].implementation.createDocument(channel_xmls[0].namespaceURI, null, null);
+                var newNode = xmlfile.importNode(channel_xmls[0].documentElement, true);
+                xmlfile.appendChild(newNode);
+                current_graph = merge(channel_xmls)
+                draw(current_graph, conditions);
             }
         }
     }
@@ -76,17 +85,25 @@ function merge(channelxml_Array) {
     var graph = new Graph();
     for (var i = 0; i < channelxml_Array.length; i++) {
         // console.log(channelxml_Array[i])
+        console.log(channelxml_Array[i])
         var channelGraph = createGraph(channelxml_Array[i]);
+
         graph.addGraph(channelGraph);
     }
 
     return graph;
 }
 
-function draw(obj) {
-    var xml = obj.xml;
-    var node_number = obj.node_number;
-    var edge_number = obj.edge_number;
+function draw(current_graph, conditions = '') {
+    var on_draw_graph = filter(current_graph, conditions)
+    var xml = on_draw_graph.xml;
+    var node_number = on_draw_graph.node_number;
+    var edge_number = on_draw_graph.edge_number;
+    console.log('on_draw', xml)
+    if (node_number === last_node_number && edge_number === last_edge_number)
+        return
+    last_edge_number = edge_number
+    last_node_number = node_number
 
     $('#easy-pie-chart-1').attr('data-max-value', node_number).data('easy-pie-chart').update(0);
     $('#easy-pie-chart-1').attr('data-max-value', node_number).data('easy-pie-chart').update(100);
@@ -115,10 +132,17 @@ function draw(obj) {
         node.x = node.y = null;
         node.draggable = true;
         node.type = 'node';
+        if (node.name != 'slackbot' && node.attributes.weight > max_node_weight) {
+            max_node_weight = node.attributes.weight
+            // console.log('updated', max_node_weight)
+            // console.log(node)
+        }
     });
 
     graph.links.forEach(function (edge) {
         edge.type = 'edge';
+        // edge.name = '233'
+        // console.log(edge)
     });
     option = {
         title: {
@@ -162,6 +186,13 @@ function draw(obj) {
     }
     myChart.hideLoading();
 
+
+    $("#bs-slider-edge").slider({min: -1, max: parseInt(max_edge_weight), range: [-1, parseInt(max_edge_weight)]})
+    // $("#bs-slider-edge").slider('setValue', [-1, parseInt(max_edge_weight)])
+    $("#bs-slider-edge-div .pull-xs-right").html(max_edge_weight)
+    $("#bs-slider-node").slider({min: 0, max: parseInt(max_node_weight), range: [0, parseInt(max_node_weight)],})
+    // $("#bs-slider-node").slider('setValue', [-1, parseInt(max_node_weight)])
+    $("#bs-slider-node-div .pull-xs-right").html(max_node_weight)
 }
 
 function changeidNumber(id, number) {
@@ -192,9 +223,12 @@ function createGraph(xmlFile) {
             var node = new Node(nodes[i].getAttribute("id"),   //Node(id, label, team, weight, channel)
                 nodes[i].getAttribute("label"),
                 attvalues[1].getAttribute("value"),
-                attvalues[0].getAttribute("value"),
+                parseInt(attvalues[0].getAttribute("value")),
                 channel);
             graph.addNode(node);
+            // if (node.weight > max_node_weight)
+            //     max_node_weight = node.weight
+            // console.log(node.weight)
             graph.nodesid[i] = node.id;
         }
 
@@ -210,6 +244,9 @@ function createGraph(xmlFile) {
                 attvalues[2].getAttribute("value"),
                 attvalues[0].getAttribute("value"),
                 attvalues[3].getAttribute("value"));
+            if (links[i].getAttribute("weight") > max_edge_weight) {
+                max_edge_weight = links[i].getAttribute("weight");
+            }
             graph.addLink(edge);
         }
     }
@@ -240,22 +277,9 @@ function filter(graph, conditions) {
 
     for (var nodekey in graph.getNodes()) {
         var node = graph.getNodes()[nodekey];
-        // var t = new Boolean();
-        // t = false;
-        //判断在不在channel
-        // for (var channel in node.getchannel()/*graph.nodes[i].channel.length*/) {
-        // var index = $.inArray(node.getchannel()[channel]/*graph.nodes[i].channel[j]*/, channelChoose);
-        //      var index = 1
-        //console.log(j,index);
-        //    if (index != -1) {
-        //        t = true;
-        // console.log(graph.nodes[i].channel[j]);
-        //        break;
-        //    }
-        //  }
         var weight = parseInt(node.weight);
         // console.log(nodekey, weight, t)
-        if (/*(t == true) &&*/ (weight >= nodeWeightDownLimit) && (weight <= nodeWeightUpLimit)) {
+        if ((weight >= nodeWeightDownLimit) && (weight <= nodeWeightUpLimit)) {
             selectNodesid.push(node.id);
         }
 
@@ -271,7 +295,8 @@ function filter(graph, conditions) {
         var date = link.getdate();
         //在不在所属channel
         if ((index2 != -1) && (index3 != -1)) {                                         //源点和目标点是否囊括所筛节点
-            var weight = parseInt(link.getweight());
+            var weight = parseFloat(link.getweight());
+            // console.log('second', weight)
             if ((weight <= edgeWeightUpLimit) && (weight >= edgeWeightDownLimit)) {   //weight范围是否合理
                 if (keywords.length != 0) {
                     for (var j = 0; j < keywords.length; j++) {
@@ -296,65 +321,31 @@ function filter(graph, conditions) {
 
     //替换
     //node
-    // var y = xmlFile.getElementsByTagName("nodes")[0];
-    // y.parentNode.removeChild(y);
-    // var newNodes = xmlFile.createElement("nodes");
-    // for (i = 0; i < selectNodes1.length; i++) {
-    //     var newNode = xmlFile.createElement("node");
-    //     newNode.setAttribute("id", graph.nodes[i].id);
-    //     newNode.setAttribute("label", graph.nodes[i].label);
-    //     newNode.setAttribute("weight", graph.nodes[i].weight);
-    //     var attri = newNode.createElement("attvalues");
-    //     newNode.appendChild(attri);
-    //     newNodes.appendChild(newNode);
-    // }
-
     //edge
-    /*
-    y = xmlFile.getElementsByTagName("edges")[0];
-    y.parentNode.removeChild(y);
-    var newEdges = xmlFile.createElement("edges");
-    for (i = 0; i < selectEdge.length; i++) {
-        var newEdge = xmlFile.createElement("edge");
-        newedge.setAttribute("id", graph.edges[i].id);
-        newedge.setAttribute("source", graph.edges[i].source);
-        newedge.setAttribute("target", graph.edges[i].target);
-        newedge.setAttribute("weight", graph.edges[i].weight);
-        var attri = newEdge.createElement("attvalues");
-        newEdges.appendChild(newNode);
-        //console.log(newEdge);
-    }
-    x.getElementsByTagName("graph")[0].appendChild(newNodes);
-    x.getElementsByTagName("graph")[0].appendChild(newEdges);
-    console.log(time.toLocaleTimeString());*/
 
-
-    //console.log(time.toLocaleTimeString());
     //删除node
     var newNodes = xmlfile.createElement("nodes");
     var y = xmlfile.getElementsByTagName("nodes")[0];
-    // console.log(xmlfile.getElementsByTagName("nodes"));
-    // console.log('new graph', newgraph);
-    // console.log('new graph', newgraph.getNodes());
-    for (var node in newgraph.getNodes()/*i = 0; i < newgraph.nodes.length; i++*/) {
+
+    for (var node in newgraph.getNodes()) {
         newNodes.appendChild(graph.makeNode(newgraph.getNodes()[node]));
     }
     y.parentNode.removeChild(y);
     xmlfile.getElementsByTagName("graph")[0].appendChild(newNodes);
 
-    //console.log(selectEdge);
-    //删除edge
     var newEdges = xmlfile.createElement("edges");
     y = xmlfile.getElementsByTagName("edges")[0];
-    for (var link in newgraph.getLinks()/*i = 0; i < newgraph.links.length; i++*/) {
+    for (var link in newgraph.getLinks()) {
 
-        newEdges.appendChild(graph.makeEdge(newgraph.getLinks()[link]));
-        //console.log(newEdge);
+        var new_edge = graph.makeEdge(newgraph.getLinks()[link])
+        console.log(new_edge.getAttribute('weight'))
+        if (new_edge.getAttribute('weight') >= conditions.edgeWeightDownLimit && new_edge.getAttribute('weight') <= new_edge.getAttribute('weight'))
+            newEdges.appendChild(new_edge);
+
     }
-    y.parentNode.removeChild(y);
+    y.parentNode.removeChild(y)
     xmlfile.getElementsByTagName("graph")[0].appendChild(newEdges);
-    // console.log(time.toLocaleTimeString());
-    // console.log(newgraph);
+
     return {
         xml: xmlfile,
         node_number: newgraph.nodeslength(),
@@ -458,6 +449,7 @@ function Link(id, source, target, weight, channel, date, message, team) {
     this.source = source;
     this.target = target;
     this.weight = weight;
+    // console.log(this.weight)
     this.channel = channel;
     this.date = date;
     this.message = message;

@@ -58,24 +58,38 @@ function init() {
         var endDate = new Date(picker.endDate.format('YYYY-MM-DD'));
         conditions['dateDownLimit'] = startDate.getTime();
         conditions['dateUpLimit'] = endDate.getTime();
+        draw(current_graph, conditions)
     });
 
     $("#bs-slider-node").on('slide', function (num) {
-        console.log(num['value']);
+        var lower_limit = num['value'][0] - 1
+        var upper_limit = num['value'][1] + 1
+        if (conditions['nodeWeightUpLimit'] === upper_limit && conditions['nodeWeightDownLimit'] === lower_limit)
+            return
+        conditions['nodeWeightUpLimit'] = upper_limit;
+        conditions['nodeWeightDownLimit'] = lower_limit;
+        draw(current_graph, conditions)
     })
 
     $("#bs-slider-edge").on('slide', function (num) {
-        console.log(num['value']);
+        var lower_limit = num['value'][0]
+        var upper_limit = num['value'][1]
+        if (conditions['edgeWeightUpLimit'] === upper_limit && conditions['edgeWeightDownLimit'] === lower_limit)
+            return
+        conditions['edgeWeightUpLimit'] = upper_limit;
+        conditions['edgeWeightDownLimit'] = lower_limit;
+        draw(current_graph, conditions)
+        console.log(conditions)
     })
 }
 
 function open_sidebar(open_id, close_id) {
     console.log('open', open_id, 'close', close_id)
-    if (open_id === ''){
+    if (open_id === '') {
         $('#' + close_id).pxSidebar('toggle');
         return;
     }
-    if ($("#" + open_id).attr('class').indexOf('open') !== -1){
+    if ($("#" + open_id).attr('class').indexOf('open') !== -1) {
         return
     }
     if ($("#" + close_id).attr('class').indexOf('open') !== -1) {
