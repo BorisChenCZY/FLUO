@@ -7,6 +7,7 @@ import os
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
+
 # Create your views here.
 def index(request):
     return render(request, 'index.html')
@@ -30,7 +31,8 @@ def xml(request, team, channel):
 
 
 # coding: utf-8
-def convert(team_name,channels_list,graph='mention_based_graph_info',user = 'read_database',pwd = 'FluoBySusTech',port=3306,host = '10.20.13.209',dbname='rowdata'):
+def convert(team_name, channels_list, graph='mention_based_graph_info', user='read_database', pwd='FluoBySusTech',
+            port=3306, host='10.20.13.209', dbname='rowdata'):
     from gexf import Gexf
     from textblob import TextBlob
     import random
@@ -38,18 +40,19 @@ def convert(team_name,channels_list,graph='mention_based_graph_info',user = 'rea
     import pandas as pd
     import networkx as nx
 
-    gexf_dict=dict()
+    database_conductor = Database_conductor(True)
+
+    gexf_dict = dict()
 
     try:
-        con = pymysql.Connect(host=host, port=port,  user=user, passwd=pwd,  db=dbname )
+        con = pymysql.Connect(host=host, port=port, user=user, passwd=pwd, db=dbname)
         cur = con.cursor()
     except pymysql.Error as e:
         print("Error %d: %s" % (e.args[0], e.args[1]))
 
-
     cur.execute('select id,name from people')
     people_id = cur.fetchall()
-    people_id=dict(people_id)
+    people_id = dict(people_id)
 
     cur.execute('select * from team_channel_relation ')
     team_to_channel = cur.fetchall()
@@ -61,19 +64,16 @@ def convert(team_name,channels_list,graph='mention_based_graph_info',user = 'rea
 
     for channel_file in channels_list:
 
-
         gexf = Gexf("Gephi.org", "A Web network")
         output = gexf.addGraph("directed", "static", "A Web network")
         cur.execute('select * from people_channel_relation where channel_id = \'' + channel_file + '\' ')
         person_and_channel = cur.fetchall()
 
-
-        if len(person_and_channel)==0:
+        if len(person_and_channel) == 0:
             print('1')
             gexf_dict[channel_file] = gexf
 
         else:
-
 
             person_and_channel = list(map(list, zip(*person_and_channel)))
             person = person_and_channel[0][:]
@@ -82,8 +82,6 @@ def convert(team_name,channels_list,graph='mention_based_graph_info',user = 'rea
             person_and_channel = pd.DataFrame(person_and_channel)
             del person
             del channel
-
-
 
             person_list = person_and_channel['person']
 
@@ -119,7 +117,11 @@ def convert(team_name,channels_list,graph='mention_based_graph_info',user = 'rea
                 tem_channel_list = set(person_to_channel[person_to_channel['person'] == tem_id]['channel'])
 
                 tmp_node = output.addNode(tem_id, tem_name)
-                tmp_node.addAttribute(weight_node, str(int(100 * random.random())))
+
+                # calculdate node_weight
+                node_weight = database_conductor.get_person_messages(tem_id)
+
+                tmp_node.addAttribute(weight_node, str(node_weight))
                 tem_team_list = set()
                 for tem_channel in tem_channel_list:
                     # cur.execute('select team_id from team_channel_relation where channel_id = \'' + tem_channel + '\'')
@@ -160,7 +162,7 @@ def convert(team_name,channels_list,graph='mention_based_graph_info',user = 'rea
                     tem_edge.addAttribute(team_att, team_id)
                     tem_edge.addAttribute(channel_att, channel_id)
                 except Exception:
-                    receiver=re.findall('\<\@(.*?)\>', text)[0]
+                    receiver = re.findall('\<\@(.*?)\>', text)[0]
                     try:
                         tem_edge = output.addEdge(sender + receiver + str(cc), sender, receiver, weight=weight)
                         cc = cc + 1
@@ -169,7 +171,8 @@ def convert(team_name,channels_list,graph='mention_based_graph_info',user = 'rea
                         tem_edge.addAttribute(date_att, str(ts))
                         tem_edge.addAttribute(team_att, team_id)
                         tem_edge.addAttribute(channel_att, channel_id)
-                    except Exception:pass
+                    except Exception:
+                        pass
 
             # print(channel_file)
             print (team_name, channel_file)
@@ -182,8 +185,8 @@ def convert(team_name,channels_list,graph='mention_based_graph_info',user = 'rea
     return gexf_dict
 
 
-def get_nx_graph(team_name, channels_list,graph='mention_based_graph_info',user = 'read_database',pwd = 'FluoBySusTech',port=3306,host = '10.20.13.209',dbname='rowdata'):
-
+def get_nx_graph(team_name, channels_list, graph='mention_based_graph_info', user='read_database', pwd='FluoBySusTech',
+                 port=3306, host='10.20.13.209', dbname='rowdata'):
     from textblob import TextBlob
     import pymysql
     import networkx as nx
@@ -203,7 +206,7 @@ def get_nx_graph(team_name, channels_list,graph='mention_based_graph_info',user 
 
         cur.execute('select people_id from people_channel_relation where channel_id = \'' + channel_file + '\' ')
         people_id_list = cur.fetchall()
-        print("people_id_list",people_id_list)
+        print("people_id_list", people_id_list)
 
         tem_channel_nx_digraph = nx.DiGraph()
         tem_channel_nx_MultiDiGraph = nx.MultiDiGraph()
@@ -213,7 +216,7 @@ def get_nx_graph(team_name, channels_list,graph='mention_based_graph_info',user 
             networkx_MultiDiGraph_dict[channel_file] = tem_channel_nx_MultiDiGraph
 
         else:
-            person_list = [ i[0] for i in people_id_list]
+            person_list = [i[0] for i in people_id_list]
             tem_channel_nx_digraph.add_nodes_from(person_list)
             tem_channel_nx_MultiDiGraph.add_nodes_from(person_list)
             all_nx_digraph.add_nodes_from(person_list)
@@ -253,51 +256,73 @@ def get_nx_graph(team_name, channels_list,graph='mention_based_graph_info',user 
             networkx_digraph_dict[channel_file] = tem_channel_nx_digraph
             networkx_MultiDiGraph_dict[channel_file] = tem_channel_nx_MultiDiGraph
 
+    return (all_nx_digraph, all_nx_MultiDiGraph, networkx_digraph_dict,
+            networkx_MultiDiGraph_dict)  # 前两个是nx的graph，后面两个是dict()，里面channel name为key，对应各自的nx的graph
 
-    return (all_nx_digraph, all_nx_MultiDiGraph, networkx_digraph_dict, networkx_MultiDiGraph_dict) # 前两个是nx的graph，后面两个是dict()，里面channel name为key，对应各自的nx的graph
+
+def get_nodes_indegree(person_id_list, nx_graph):
+    return [nx_graph.in_degree(i) for i in person_id_list]  # int 的 list
 
 
-def get_nodes_indegree(person_id_list,nx_graph):
-    return [nx_graph.in_degree(i)  for i in person_id_list] #int 的 list
-def get_nodes_outdegree(person_id_list,nx_graph):
-    return [nx_graph.out_degree(i) for i in person_id_list] #int 的 list
+def get_nodes_outdegree(person_id_list, nx_graph):
+    return [nx_graph.out_degree(i) for i in person_id_list]  # int 的 list
+
+
 def get_degree_assortativity_coefficient(nx_graph):
-    return nx.degree_assortativity_coefficient(nx_graph) #float
+    return nx.degree_assortativity_coefficient(nx_graph)  # float
+
+
 def get_degree_centrality(nx_graph):
-    return nx.degree_centrality(nx_graph) #float的字典，person_id是key
+    return nx.degree_centrality(nx_graph)  # float的字典，person_id是key
+
+
 def get_in_degree_centrality(nx_graph):
-    return nx.in_degree_centrality(nx_graph) #float的字典，person_id是key
+    return nx.in_degree_centrality(nx_graph)  # float的字典，person_id是key
+
+
 def get_out_degree_centrality(nx_graph):
-    return nx.out_degree_centrality(nx_graph) #float的字典，person_id是key
+    return nx.out_degree_centrality(nx_graph)  # float的字典，person_id是key
+
 
 def get_closeness_centrality(G):
-    return nx.closeness_centrality(G)#float的字典，person_id是key
+    return nx.closeness_centrality(G)  # float的字典，person_id是key
+
+
 def get_betweenness_centrality(G):
-    return nx.betweenness_centrality(G)#float的字典，person_id是key
+    return nx.betweenness_centrality(G)  # float的字典，person_id是key
 
 
 def get_eigenvector_centrality(G):
-    return nx.eigenvector_centrality(G)#float的字典，person_id是key
+    return nx.eigenvector_centrality(G)  # float的字典，person_id是key
+
+
 def get_load_centrality(G):
-    return nx.load_centrality(G) #float的字典，person_id是key
+    return nx.load_centrality(G)  # float的字典，person_id是key
+
 
 def get_network_density(nx_graph):
-    return nx.density(nx_graph) #float
-def get_shorest_path(src_person_id,end_person_id,nx_digraph):
-    return nx.shortest_path(nx_digraph,source=src_person_id,target=end_person_id) #person_id的list
+    return nx.density(nx_graph)  # float
 
+
+def get_shorest_path(src_person_id, end_person_id, nx_digraph):
+    return nx.shortest_path(nx_digraph, source=src_person_id, target=end_person_id)  # person_id的list
 
 
 ###特殊###
 def get_average_clustering(nx_undirect_graph):
     return nx.average_clustering(nx_undirect_graph)
+
+
 def get_current_flow_betweenness_centrality(G):
     return nx.current_flow_betweenness_centrality(G)
+
+
 def get_current_flow_closeness_centrality(G):
     return nx.current_flow_closeness_centrality(G)
+
+
 def get_network_diameter(nx_graph_with_no_isolate_nodes):
     return nx.diameter(nx_graph_with_no_isolate_nodes)
-
 
 
 def channels(request, team):
@@ -393,5 +418,3 @@ def person(request, id):
 
 def edge(request, node1, node2):
     return JsonResponse(get_edge_info(node1, node2))
-
-

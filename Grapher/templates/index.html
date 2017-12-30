@@ -633,7 +633,7 @@
             <div class="px-sidebar-right" id="sidebar-edge" style="position: absolute; z-index: 10;" data-width="300">
                 <div class="loader invisible"></div>
                 <button type="button" class="close position-relative" aria-label="Close">
-                    <span aria-hidden="true" onclick="open_sidebar('', 'sidebar-vertex')">&times;</span>
+                    <span aria-hidden="true" onclick="open_sidebar('', 'sidebar-edge')">&times;</span>
                 </button>
                 <div class="px-sidebar-content">
                     <div class="panel-heading p-x-1">
@@ -742,123 +742,169 @@
     <br>
 
     <hr class="page-block m-t-0">
-    <div id="owl-carousel-autoplay" class="owl-carousel">
-        <div class="panel box">
-            <div class="box-row">
-                <div class="box-cell p-x-2 p-y-1 bg-black text-xs-center font-size-11 font-weight-semibold">
-                    <i class="fa fa-globe"></i>&nbsp;&nbsp;NODES
+{#    <div id="owl-carousel-autoplay" class="owl-carousel">#}
+{#        <div class="panel box">#}
+{#            <div class="box-row">#}
+{#                <div class="box-cell p-x-2 p-y-1 bg-black text-xs-center font-size-11 font-weight-semibold">#}
+{#                    <i class="fa fa-globe"></i>&nbsp;&nbsp;NODES#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="box-row">#}
+{#                <div class="box-cell p-y-2">#}
+{#                    <div class="easy-pie-chart" style="height: 60px"><span#}
+{#                            class="font-size-24">20</span></div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{##}
+{#        <div class="panel box">#}
+{#            <div class="box-row">#}
+{#                <div class="box-cell p-x-2 p-y-1 bg-black text-xs-center font-size-11 font-weight-semibold">#}
+{#                    <i class="fa fa-flash"></i>&nbsp;&nbsp;LINKS#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="box-row">#}
+{#                <div class="box-cell p-y-2">#}
+{#                    <div class="easy-pie-chart" style="height: 60px"><span#}
+{#                            class="font-size-24">20</span></div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{##}
+{#        <div class="panel box">#}
+{#            <div class="box-row">#}
+{#                <div class="box-cell p-x-2 p-y-1 bg-black text-xs-center font-size-11 font-weight-semibold">#}
+{#                    <i class="fa fa-cloud"></i>&nbsp;&nbsp;SLICES#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="box-row">#}
+{#                <div class="box-cell p-y-2">#}
+{#                    <div class="easy-pie-chart" style="height: 60px"><span#}
+{#                            class="font-size-24">20</span></div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{##}
+{#        <div class="panel box">#}
+{#            <div class="box-row">#}
+{#                <div class="box-cell p-x-2 p-y-1 bg-black text-xs-center font-size-11 font-weight-semibold">#}
+{#                    <i class="fa fa-check-square"></i>&nbsp;&nbsp;CENTRALITY#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="box-row">#}
+{#                <div class="box-cell p-y-2">#}
+{#                    <div class="easy-pie-chart" style="height: 60px"><span#}
+{#                            class="font-size-24 ">20</span></div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{##}
+{#        <div class="panel box">#}
+{#            <div class="box-row">#}
+{#                <div class="box-cell p-x-2 p-y-1 bg-black text-xs-center font-size-11 font-weight-semibold">#}
+{#                    <i class="fa fa-sign-out"></i>&nbsp;&nbsp;GEODESIC#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="box-row">#}
+{#                <div class="box-cell p-y-2">#}
+{#                    <div class="easy-pie-chart" style="height: 60px"><span#}
+{#                            class="font-size-24 ">20</span></div>#}
+{#                </div>#}
+{#            </div>#}
+{##}
+{#        </div>#}
+{##}
+{#        <div class="panel box">#}
+{#            <div class="box-row">#}
+{#                <div class="box-cell p-x-2 p-y-1 bg-black text-xs-center font-size-11 font-weight-semibold">#}
+{#                    <i class="fa fa-refresh"></i>&nbsp;&nbsp;TABLE#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="box-row">#}
+{#                <div class="box-cell p-y-2">#}
+{#                    <div class="easy-pie-chart" style="height: 60px"><span#}
+{#                            class="font-size-24">20</span></div>#}
+{#                </div>#}
+{#            </div>#}
+{##}
+{#        </div>#}
+{##}
+{#        <div class="panel box">#}
+{#            <div class="box-row">#}
+{#                <div class="box-cell p-x-2 p-y-1 bg-black text-xs-center font-size-11 font-weight-semibold">#}
+{#                    <i class="fa fa-shield"></i>&nbsp;&nbsp;DEGREE#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="box-row">#}
+{#                <div class="box-cell p-y-2">#}
+{#                    <div class="easy-pie-chart" style="height: 60px"><span#}
+{#                            class="font-size-24">20</span></div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{##}
+{#        <div class="panel box">#}
+{#            <div class="box-row">#}
+{#                <div class="box-cell p-x-2 p-y-1 bg-black text-xs-center font-size-11 font-weight-semibold">#}
+{#                    <i class="fa fa-user"></i>&nbsp;&nbsp;TENSION#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="box-row">#}
+{#                <div class="box-cell p-y-2">#}
+{#                    <div class="easy-pie-chart" style="height: 60px"><span#}
+{#                            class="font-size-24">20</span></div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{##}
+{#    </div>#}
+     <div class="row" id="piechart">
+        <div class="col-xs-12 col-sm-6">
+            <div class="panel box">
+                <div class="box-row">
+                    <div class="box-cell p-x-2 p-y-1 bg-black text-xs-center font-size-11 font-weight-semibold">
+                        <i class="fa fa-globe"></i>&nbsp;&nbsp;NODES
+                    </div>
                 </div>
-            </div>
-            <div class="box-row">
-                <div class="box-cell p-y-2">
-                    <div class="easy-pie-chart" style="height: 60px"><span
-                            class="font-size-24">20</span></div>
+                <div class="box-row">
+                    <div class="box-cell p-y-2">
+                        <div class="easy-pie-chart" data-suffix="P" id="easy-pie-chart-1"><span
+                                class="font-size-14 font-weight-light"></span></div>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <div class="panel box">
-            <div class="box-row">
-                <div class="box-cell p-x-2 p-y-1 bg-black text-xs-center font-size-11 font-weight-semibold">
-                    <i class="fa fa-flash"></i>&nbsp;&nbsp;LINKS
+        <div class="col-xs-12 col-sm-6">
+            <div class="panel box">
+                <div class="box-row">
+                    <div class="box-cell p-x-2 p-y-1 bg-black text-xs-center font-size-11 font-weight-semibold">
+                        <i class="fa fa-flash"></i>&nbsp;&nbsp;LINKS
+                    </div>
                 </div>
-            </div>
-            <div class="box-row">
-                <div class="box-cell p-y-2">
-                    <div class="easy-pie-chart" style="height: 60px"><span
-                            class="font-size-24">20</span></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="panel box">
-            <div class="box-row">
-                <div class="box-cell p-x-2 p-y-1 bg-black text-xs-center font-size-11 font-weight-semibold">
-                    <i class="fa fa-cloud"></i>&nbsp;&nbsp;SLICES
-                </div>
-            </div>
-            <div class="box-row">
-                <div class="box-cell p-y-2">
-                    <div class="easy-pie-chart" style="height: 60px"><span
-                            class="font-size-24">20</span></div>
+                <div class="box-row">
+                    <div class="box-cell p-y-2">
+                        <div class="easy-pie-chart" data-suffix="L" id="easy-pie-chart-2"><span
+                                class="font-size-14 font-weight-light"></span></div>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <div class="panel box">
-            <div class="box-row">
-                <div class="box-cell p-x-2 p-y-1 bg-black text-xs-center font-size-11 font-weight-semibold">
-                    <i class="fa fa-check-square"></i>&nbsp;&nbsp;CENTRALITY
-                </div>
-            </div>
-            <div class="box-row">
-                <div class="box-cell p-y-2">
-                    <div class="easy-pie-chart" style="height: 60px"><span
-                            class="font-size-24 ">20</span></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="panel box">
-            <div class="box-row">
-                <div class="box-cell p-x-2 p-y-1 bg-black text-xs-center font-size-11 font-weight-semibold">
-                    <i class="fa fa-sign-out"></i>&nbsp;&nbsp;GEODESIC
-                </div>
-            </div>
-            <div class="box-row">
-                <div class="box-cell p-y-2">
-                    <div class="easy-pie-chart" style="height: 60px"><span
-                            class="font-size-24 ">20</span></div>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="panel box">
-            <div class="box-row">
-                <div class="box-cell p-x-2 p-y-1 bg-black text-xs-center font-size-11 font-weight-semibold">
-                    <i class="fa fa-refresh"></i>&nbsp;&nbsp;TABLE
-                </div>
-            </div>
-            <div class="box-row">
-                <div class="box-cell p-y-2">
-                    <div class="easy-pie-chart" style="height: 60px"><span
-                            class="font-size-24">20</span></div>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="panel box">
-            <div class="box-row">
-                <div class="box-cell p-x-2 p-y-1 bg-black text-xs-center font-size-11 font-weight-semibold">
-                    <i class="fa fa-shield"></i>&nbsp;&nbsp;DEGREE
-                </div>
-            </div>
-            <div class="box-row">
-                <div class="box-cell p-y-2">
-                    <div class="easy-pie-chart" style="height: 60px"><span
-                            class="font-size-24">20</span></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="panel box">
-            <div class="box-row">
-                <div class="box-cell p-x-2 p-y-1 bg-black text-xs-center font-size-11 font-weight-semibold">
-                    <i class="fa fa-user"></i>&nbsp;&nbsp;TENSION
-                </div>
-            </div>
-            <div class="box-row">
-                <div class="box-cell p-y-2">
-                    <div class="easy-pie-chart" style="height: 60px"><span
-                            class="font-size-24">20</span></div>
-                </div>
-            </div>
-        </div>
-
+{#        <div class="col-xs-12 col-sm-4">#}
+{#            <div class="panel box">#}
+{#                <div class="box-row">#}
+{#                    <div class="box-cell p-x-2 p-y-1 bg-black text-xs-center font-size-11 font-weight-semibold">#}
+{#                        <i class="fa fa-cloud"></i>&nbsp;&nbsp;MEDIA#}
+{#                    </div>#}
+{#                </div>#}
+{#                <div class="box-row">#}
+{#                    <div class="box-cell p-y-2">#}
+{#                        <div class="easy-pie-chart" data-suffix="M" id="easy-pie-chart-3"><span#}
+{#                                class="font-size-14 font-weight-light"></span></div>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
     </div>
-
     <hr class="page-block m-t-0">
 
     <!--Invisible more things-->
@@ -1157,19 +1203,19 @@
         ];
 
         $('#easy-pie-chart-1')
-            .attr('data-percent', (data[0] / 1000) * 100)
-            .attr('data-max-value', 1000)
+            .attr('data-percent', 100)
+            .attr('data-max-value', 0)
             .easyPieChart($.extend({}, config, {barColor: colors[0]}));
 
         $('#easy-pie-chart-2')
-            .attr('data-percent', (data[1] / 100) * 100)
-            .attr('data-max-value', 100)
+            .attr('data-percent', 100)
+            .attr('data-max-value', 0)
             .easyPieChart($.extend({}, config, {barColor: colors[1]}));
 
-        $('#easy-pie-chart-3')
-            .attr('data-percent', (data[2] / 64) * 100)
-            .attr('data-max-value', 64)
-            .easyPieChart($.extend({}, config, {barColor: colors[2]}));
+        {#$('#easy-pie-chart-3')#}
+        {#    .attr('data-percent', (data[2] / 64) * 100)#}
+        {#    .attr('data-max-value', 64)#}
+        {#    .easyPieChart($.extend({}, config, {barColor: colors[2]}));#}
     });
 
 

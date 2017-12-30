@@ -2,6 +2,7 @@ import pymysql
 import hashlib
 import re
 
+
 class Database_conductor():
     def __init__(self, is_super_user):
         if is_super_user:
@@ -12,11 +13,10 @@ class Database_conductor():
                                              password='super_userOfFluo',
                                              host='10.20.13.209',
                                              database='rowdata',
-                                             use_unicode = True,
+                                             use_unicode=True,
                                              charset="utf8mb4"
                                              )
         self.cursor = self.connector.cursor()
-
 
     def store_channel(self, id, name):
         query = """
@@ -206,10 +206,18 @@ class Database_conductor():
         self.cursor.execute(query)
         return self.cursor.fetchall()
 
+    def get_person_weight(self, person_id):
+        query = """
+                        select count(*) from (select distinct receiver from mention_based_graph_info where sender = '{}') a
+                        """.format(person_id)
+        self.cursor.execute(query)
+        return self.cursor.fetchall()[0]
+
 
 if __name__ == '__main__':
     database_conductor = Database_conductor(True)
     from pprint import pprint
+
     for _, channel in (database_conductor.get_channels_from_team('T09NY5SBT')):
         channel, channel_name = (database_conductor.get_channel_detail(channel)[0])
         print(channel_name)

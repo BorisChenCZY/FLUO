@@ -17,158 +17,84 @@ var s = "http://www.gephi.org/gexf/1.2draft";
 var dom = document.getElementById("main");
 var myChart = echarts.init(dom);
 
-myChart.on('click', function(param){
+myChart.on('click', function (param) {
     var type = param['data'].type;
-    if (type === 'node'){
+    if (type === 'node') {
         var id = param['data'].id;
         get_person(id);
         open_sidebar('sidebar-vertex', 'sidebar-edge');
-    }else {
+        $('#sidebar-vertex').pxSidebar('update');
+    } else {
         var source = param['data'].source;
         var target = param['data'].target;
         get_edge(source, target);
         open_sidebar('sidebar-edge', 'sidebar-vertex')
+        $('#sidebar-edge').pxSidebar('update');
     }
 })
 
 function draws(team, channels) {
     var channel_xmls = [];
-    // console.log(channels.length)
-    console.log(team, channels)
-    if (channels.length === 0){
-        myChart.clear()
+    console.log(team);
+    console.log(channels);
+    if (channels.length === 0) {
+        myChart.clear();
+        $('#easy-pie-chart-1').attr('data-max-value', 0).data('easy-pie-chart').update(0);
+        $('#easy-pie-chart-2').attr('data-max-value', 0).data('easy-pie-chart').update(0);
         return
     }
     myChart.showLoading();
     for (var index = 0; index < channels.length; index++) {
         var channel = channels[index];
-        // console.log(index, channel, channels.valueOf(1))
-        // console.log($.inArray(channel, Object.keys(loaded_channels)))
-        // console.log(channel, Object.keys(loaded_channels))
         if ((jQuery.inArray(channel, Object.keys(loaded_channels))) === -1) {
-            // console.log('inside')
             get_graph_xml(team, channel, function (ret) {
                 loaded_channels[channel] = ret;
-                channel_xmls.push(loaded_channels[channel])
-                if (channel_xmls.length === channels.length){
-                    console.log('finished')
-                    check_and_draw(channel_xmls)
+                channel_xmls.push(loaded_channels[channel]);
+                xmlfile = channel_xmls[0].implementation.createDocument(channel_xmls[0].namespaceURI, null, null);
+                var newNode = xmlfile.importNode(channel_xmls[0].documentElement, true);
+                xmlfile.appendChild(newNode);
+                if (channel_xmls.length === channels.length) {
+
+                    var obj = {};
+                    obj = filter(merge(channel_xmls), conditions);
+                    draw(obj);
                 }
             });
         } else {
-            channel_xmls.push(loaded_channels[channel])
-            if (channel_xmls.length === channels.length){
-                console.log('finished')
-                    check_and_draw(channel_xmls)
+            channel_xmls.push(loaded_channels[channel]);
+            if (channel_xmls.length === channels.length) {
+                var obj = {};
+                obj = filter(merge(channel_xmls), conditions);
+                draw(obj);
             }
         }
     }
-}
-
-function check_and_draw(channel_xmls){
-    var new_xml = merge(channel_xmls);
-    draw(new_xml, conditions)
 }
 
 function merge(channelxml_Array) {
-    // console.log('this is it ', channelxml_Array)
-    var node_list = [];
-    var edge_list = {};
-    // var graph = new Graph();
-    var base_xml = channelxml_Array[0].cloneNode("gexf");
-    var base_nodes = base_xml.getElementsByTagName("nodes")[0];
-    var base_edges = base_xml.getElementsByTagName("edges")[0];
-
-    // init node_list
-    var __nodes = base_xml.getElementsByTagName("node");
-    for (var j = 0; j < __nodes.length; j++){
-        node_list.push(__nodes[j].id);
+    //  console.log('this is it ', channelxml_Array)
+    var graph = new Graph();
+    for (var i = 0; i < channelxml_Array.length; i++) {
+        // console.log(channelxml_Array[i])
+        var channelGraph = createGraph(channelxml_Array[i]);
+        graph.addGraph(channelGraph);
     }
 
-    // init edge_weight
-    var __edges = base_xml.getElementsByTagName("edge");
-    var remove_edges = [];
-    var cnt = 0
-    for (var j = 0; j < __edges.length; j++){
-        var added_edge =  __edges[j];
-        // console.log(added_edge.getElementsByTagName('attvalue')[1])
-        var added_value = added_edge.getElementsByTagName('attvalue')[1].getAttribute("value");
-        var current_value = edge_list[added_edge.getAttribute("source") + '->' + added_edge.getAttribute("target")];
-        // console.log("key", added_edge.getAttribute("source") + '->' + added_edge.getAttribute("target"))
-        // console.log('value', current_value);
-        if (current_value){
-            cnt += 1;
-            edge_list[added_edge.getAttribute("source") + '->' + added_edge.getAttribute("target")] = [parseInt(current_value[0]) + parseInt(added_value), current_value[1] + 1];
-            remove_edges.push(added_edge)
-        }else {
-            edge_list[added_edge.getAttribute("source") + '->' + added_edge.getAttribute("target")] = [added_value, 1];
-
-        }
-    }
-    for (var j = 0; j<remove_edges.length; j++){
-        base_xml.getElementsByTagName("edges")[0].removeChild(remove_edges[j]);
-        // console.log('removed an edge')
-    }
-    // console.log(cnt)
-    // console.log(remove_edges.length)
-
-
-
-    for (var index = 1; index < channelxml_Array.length; index++) {
-        // merge nodes
-        var added_html = channelxml_Array[index];
-        var added_nodes = added_html.getElementsByTagName("node");
-        var added_edges = added_html.getElementsByTagName("edge");
-        for (var j = 0; j < added_nodes.length; j++){
-            var node = added_nodes[j];
-            if (jQuery.inArray(node.id, node_list) !== -1){
-                console.log('skipped', node.id)
-            }else{
-                base_nodes.innerHTML += added_nodes[j].innerHTML;
-            }
-
-        }
-
-        //merge edges
-
-        for (var j = 0; j < added_edges.length; j++){
-            var added_edge =  added_edges[j];
-
-            var current_value = edge_list[added_edge.getAttribute("source") + '->' + added_edge.getAttribute("target")];
-            var added_value = added_edges[j].getElementsByTagName('attvalue')[1].getAttribute("value");
-            if (current_value) {
-                edge_list[added_edge.getAttribute("source") + '->' + added_edge.getAttribute("target")] = [parseInt(current_value[0]) + parseInt(added_value), current_value[1] + 1];
-                continue;
-            }else {
-                base_edges.innerHTML += added_edges[j].innerHTML;
-                edge_list[added_edge.getAttribute("source") + '->' + added_edge.getAttribute("target")] = [added_value, 1];
-            }
-        }
-    }
-
-    // calculate_edge_weight
-
-    var edges = base_xml.getElementsByTagName("edge")
-    for (var j = 0; j < edges.length; j++){
-        var current_edge = edges[j];
-        var calculate_list = edge_list[current_edge.getAttribute("source") + '->' + current_edge.getAttribute("target")]
-        var calculated_value = parseInt(calculate_list[0]) / parseInt(calculate_list[1])
-        edges[j].getElementsByTagName('attvalue')[1].setAttribute("value", calculated_value)
-    }
-
-    return base_xml;
-
-
+    return graph;
 }
 
-function draw(xml, condition) {
-    var node_number = xml.getElementsByTagName('node').length;
-    var edge_number = xml.getElementsByTagName('edge').length;
-    console.log('node', node_number);
-    console.log('edge', edge_number);
-    changeidNumber("#node_number", node_number);
-    changeidNumber("#edge_number", edge_number);
+function draw(obj) {
+    var xml = obj.xml;
+    var node_number = obj.node_number;
+    var edge_number = obj.edge_number;
 
+    $('#easy-pie-chart-1').attr('data-max-value', node_number).data('easy-pie-chart').update(0);
+    $('#easy-pie-chart-1').attr('data-max-value', node_number).data('easy-pie-chart').update(100);
+    $('#easy-pie-chart-2').attr('data-max-value', edge_number).data('easy-pie-chart').update(0);
+    $('#easy-pie-chart-2').attr('data-max-value', edge_number).data('easy-pie-chart').update(100);
+
+    var dom = document.getElementById("main");
+    // myChart = echarts.init(dom);
     var app = {};
     var option = null;
     app.title = 'FLUO';
@@ -234,7 +160,7 @@ function draw(xml, condition) {
     if (option && typeof option === "object") {
         myChart.setOption(option, true);
     }
-    myChart.hideLoading()
+    myChart.hideLoading();
 
 }
 
@@ -249,14 +175,16 @@ function changeidNumber(id, number) {
 //     "channel": [],
 // }
 //filter为一个function，传入一个xml对象以及要筛选条件，返回一个筛选后的xml对象
-function creatGraph(xmlFile) {
-    // console.log(xmlFile)
+
+
+function createGraph(xmlFile) {
+    //console.log(xmlFile)
     var nodes = xmlFile.getElementsByTagName('node');
     var links = xmlFile.getElementsByTagName('edge');
     var graph = new Graph();
 
     for (var i = 0; i < nodes.length; i++) {
-        // console.log(nodes)
+        //    console.log(nodes)
         var channel = new Array();
         var attvalues = nodes[i].getElementsByTagName("attvalue");
         if (attvalues.length != 0) {
@@ -269,6 +197,7 @@ function creatGraph(xmlFile) {
             graph.addNode(node);
             graph.nodesid[i] = node.id;
         }
+
     }
     for (i = 0; i < links.length; i++) {//Edge(id, source, target, weight, channel, date, message)
         var attvalues = links[i].getElementsByTagName("attvalue");
@@ -311,63 +240,56 @@ function filter(graph, conditions) {
 
     for (var nodekey in graph.getNodes()) {
         var node = graph.getNodes()[nodekey];
-        var t = new Boolean();
-        t = false;
+        // var t = new Boolean();
+        // t = false;
         //判断在不在channel
-        for (var channel in node.getchannel()/*graph.nodes[i].channel.length*/) {
-            // var index = $.inArray(node.getchannel()[channel]/*graph.nodes[i].channel[j]*/, channelChoose);
-            var index = 1
-            //console.log(j,index);
-            if (index != -1) {
-                t = true;
-                // console.log(graph.nodes[i].channel[j]);
-                break;
-            }
-        }
+        // for (var channel in node.getchannel()/*graph.nodes[i].channel.length*/) {
+        // var index = $.inArray(node.getchannel()[channel]/*graph.nodes[i].channel[j]*/, channelChoose);
+        //      var index = 1
+        //console.log(j,index);
+        //    if (index != -1) {
+        //        t = true;
+        // console.log(graph.nodes[i].channel[j]);
+        //        break;
+        //    }
+        //  }
         var weight = parseInt(node.weight);
         // console.log(nodekey, weight, t)
-        if ((t == true) && (weight >= nodeWeightDownLimit) && (weight <= nodeWeightUpLimit)) {
+        if (/*(t == true) &&*/ (weight >= nodeWeightDownLimit) && (weight <= nodeWeightUpLimit)) {
             selectNodesid.push(node.id);
         }
 
     }
-    //console.log(selectNodes);
-    //console.log(time.toLocaleTimeString());
+
     //对edge进行筛选
     for (var linkkey in graph.getLinks()) {
         var link = graph.getLinks()[linkkey];
-        var t = new Boolean();
+        var t = new Boolean();//是否包含关键字，t为true时包含
         t = false;
-        var index1 = $.inArray(link.getchannel(), channelChoose);
-        index1 = 1;
         var index2 = $.inArray(link.getsource(), selectNodesid);
         var index3 = $.inArray(link.gettarget(), selectNodesid);
         var date = link.getdate();
-        if (index1 != -1) {
-            //在不在所属channel
-            if ((index2 != -1) || (index3 != -1)) {                                         //源点和目标点是否囊括所筛节点
-                var weight = parseInt(link.getweight());
-                if ((weight <= edgeWeightUpLimit) && (weight >= edgeWeightDownLimit)) {   //weight范围是否合理
-
-                    //if ((date<=dateUpLimit)&&(date>=dateDownLimit)){
-                    if (keywords.length != 0) {
-                        for (var j = 0; j < keywords.length; j++) {
-                            if (link.getmessage().indexOf(keywords[j]) != -1) {           //是否包含关键字
-                                t = true;
-                                break
-                            }
+        //在不在所属channel
+        if ((index2 != -1) && (index3 != -1)) {                                         //源点和目标点是否囊括所筛节点
+            var weight = parseInt(link.getweight());
+            if ((weight <= edgeWeightUpLimit) && (weight >= edgeWeightDownLimit)) {   //weight范围是否合理
+                if (keywords.length != 0) {
+                    for (var j = 0; j < keywords.length; j++) {
+                        if (link.getmessage().indexOf(keywords[j]) != -1) {           //是否包含关键字
+                            t = true;
+                            break
                         }
                     }
-                    if ((keywords.length == 0) || (ifconclude == false && t == false) || (ifconclude == true && t == true)) { //判断是否满足关键词的包含关系
-                        newgraph.addLink(link);
-
-                        if (newgraph.getNodes()[link.gettarget()] == null) newgraph.addNode(graph.getNode(link.gettarget()));
-                        if (newgraph.getNodes()[link.getsource()] == null) newgraph.addNode(graph.getNode(link.getsource()));
-
-                    }
                 }
-                //}
+                if (((keywords.length == 0) || (ifconclude == false && t == false) || (ifconclude == true && t == true)) && (link.getsource() != link.gettarget())) {
+                    if (newgraph.getNodes()[link.gettarget()] == null) newgraph.addNode(graph.getNode(link.gettarget()));
+                    if (newgraph.getNodes()[link.getsource()] == null) newgraph.addNode(graph.getNode(link.getsource()));
+                    newgraph.addLink(link);
+                    //}
+                }
             }
+            //}
+            //  }
         }
     }
     //console.log("newgraph in filter",newgraph);
@@ -415,8 +337,6 @@ function filter(graph, conditions) {
     // console.log('new graph', newgraph);
     // console.log('new graph', newgraph.getNodes());
     for (var node in newgraph.getNodes()/*i = 0; i < newgraph.nodes.length; i++*/) {
-        // console.log('new')
-        // console.log(newNode);
         newNodes.appendChild(graph.makeNode(newgraph.getNodes()[node]));
     }
     y.parentNode.removeChild(y);

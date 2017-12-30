@@ -51,11 +51,13 @@ function init() {
         channel_change();
     });
 
+    // date filter
     $('#daterange-1').on('apply.daterangepicker', function (ev, picker) {
         //do something, like clearing an input
-        console.log(picker.startDate.format('YYYY-MM-DD'));
-        console.log(picker.endDate.format('YYYY-MM-DD'));
-        console.log(picker.startDate)
+        var startDate = new Date((picker.startDate.format('YYYY-MM-DD')));
+        var endDate = new Date(picker.endDate.format('YYYY-MM-DD'));
+        conditions['dateDownLimit'] = startDate.getTime();
+        conditions['dateUpLimit'] = endDate.getTime();
     });
 
     $("#bs-slider-node").on('slide', function (num) {

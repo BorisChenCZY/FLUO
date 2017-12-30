@@ -71,7 +71,7 @@ function get_person(id) {
 
             date = americanDateTime(date);
 
-            messge_list += '<img src="' + image + '" id=\"' + ts +'\"' + '" onerror="standby(\''+ ts +'\')" class="widget-messages-alt-avatar"/>' +
+            messge_list += '<img src="' + image + '" id=\"' + ts + '\"' + '" onerror="standby(\'' + ts + '\')" class="widget-messages-alt-avatar"/>' +
                 "<div>" + text + '</div>' +
                 '<div class="widget-messages-alt-description">from <a href="#">' + channel + '</a></div>' +
                 '<div class="widget-messages-alt-date">' + date + '</div>'
@@ -79,7 +79,9 @@ function get_person(id) {
         }
         $("#person_profile .message_list").html(messge_list);
         $("#person_profile").attr('class', 'col-md-12')
+        $('#sidebar-vertex').pxSidebar('update');
         $(".loader").attr('class', 'loader invisible')
+
     });
 }
 
@@ -133,14 +135,15 @@ function get_edge(node1, node2) {
 
                 date = americanDateTime(date);
 
-                messge_list += '<img src="' + image + '" id=\"' + ts +'\"' + '" onerror="standby(\''+ ts +'\')" class="widget-chat-avatar"/>' +
-                    '<div class="widget-chat-date '+ pull +'">'+ date +'</div>' +
-                    '<div class="widget-chat-heading"><a href="#" title="">' + user_name + '</a></div>'+
+                messge_list += '<img src="' + image + '" id=\"' + ts + '\"' + '" onerror="standby(\'' + ts + '\')" class="widget-chat-avatar"/>' +
+                    '<div class="widget-chat-date ' + pull + '">' + date + '</div>' +
+                    '<div class="widget-chat-heading"><a href="#" title="">' + user_name + '</a></div>' +
                     '<div class="widget-chat-text">' + text + '</div>'
                 messge_list += '</div>'
             }
             $("#edge_profile .message_list").html(messge_list);
             $("#edge_profile").attr('class', 'col-md-12')
+            $('#sidebar-edge').pxSidebar('update');
             $(".loader").attr('class', 'loader invisible')
         }
     )
@@ -155,7 +158,7 @@ function get_graph_xml(team, channel, fn) {
         dataType: 'xml',
         success: function (ret) {
             fn(ret)
-        } ,
+        },
     })
 }
 
