@@ -30,7 +30,7 @@ function get_channels(team_id, team_name, fn) {
         $('#channel_group').append('</optgroup>').trigger('change');
         console.log('refreshed', team_id)
         $('#status_bar').html(team_name);
-        $('#status_bar_large').html(team_name);
+        $('#status_bar_large').html('<i class="page-header-icon fa fa-users"></i>' + team_name);
         current_team = team_id;
         loaded_channels = {};
     })

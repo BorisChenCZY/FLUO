@@ -33,7 +33,7 @@ def xml(request, team, channel):
 # coding: utf-8
 def convert(team_name, channels_list, graph='mention_based_graph_info', user='read_database', pwd='FluoBySusTech',
             port=3306, host='10.20.13.209', dbname='rowdata'):
-    from gexf import Gexf
+    from .gexf import Gexf
     from textblob import TextBlob
     import random
     import pymysql

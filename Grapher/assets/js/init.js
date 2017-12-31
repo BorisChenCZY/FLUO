@@ -16,6 +16,7 @@ var conditions = {
 function init() {
     $.get("/teams", function (ret) {
         console.log(ret)
+        // $('#channel_group').append('<optgroup label="' + 'retriving data, please wait....' + '">').trigger('change');
         for (var key in ret) {
             $("#team_list").append(
                 '<option value="' + key + '">' + ret[key]["name"] + '</option>'

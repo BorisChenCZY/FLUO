@@ -24,7 +24,7 @@ var last_node_number = undefined;
 var last_edge_number = undefined;
 var first_edge_number = undefined;
 var first_node_number = undefined;
-var the_xml
+// var the_xml
 
 myChart.on('click', function (param) {
     var type = param['data'].type;
@@ -83,8 +83,8 @@ function draws(team, channels) {
                     var newNode = xmlfile.importNode(channel_xmls[0].documentElement, true);
                     xmlfile.appendChild(newNode);
                     current_graph = merge(channel_xmls, channels)
-                    draw(current_graph, '', channels);
-
+                    first_edge_number = undefined;
+                    draw(current_graph, conditions, channels);
                 }
             });
         } else {
@@ -94,7 +94,8 @@ function draws(team, channels) {
                 var newNode = xmlfile.importNode(channel_xmls[0].documentElement, true);
                 xmlfile.appendChild(newNode);
                 current_graph = merge(channel_xmls, channels)
-                draw(current_graph, '', channels);
+                first_edge_number = undefined;
+                draw(current_graph, conditions, channels);
             }
         }
     }
@@ -123,23 +124,25 @@ function draw(current_graph, conditions, channels) {
     var node_number = on_draw_graph.node_number;
     var edge_number = on_draw_graph.edge_number;
     console.log('on_draw', xml);
-    if (conditions === ''){
-        first_edge_number = edge_number;
-        first_node_number = node_number;
+    if (first_edge_number === undefined){
+        var tmp_complete_graph = filter(current_graph, '')
+        first_edge_number = tmp_complete_graph.edge_number;
+        first_node_number = tmp_complete_graph.node_number;
         $('#easy-pie-chart-1').attr('data-max-value', first_node_number).data('easy-pie-chart').update(0);
-        $('#easy-pie-chart-1').attr('data-max-value', first_node_number).data('easy-pie-chart').update(100);
+        // $('#easy-pie-chart-1').attr('data-max-value', first_node_number).data('easy-pie-chart').update(100);
         $('#easy-pie-chart-2').attr('data-max-value', first_edge_number).data('easy-pie-chart').update(0);
-        $('#easy-pie-chart-2').attr('data-max-value', first_edge_number).data('easy-pie-chart').update(100);
-    }else {
-        if (node_number === last_node_number && edge_number === last_edge_number)
-            return
-        last_edge_number = edge_number
-        last_node_number = node_number
-        console.log('edge_number', edge_number, last_node_number / first_node_number * 100)
-        console.log('node_number', node_number, last_edge_number / first_edge_number * 100)
-        $('#easy-pie-chart-1').data('easy-pie-chart').update(last_node_number / first_node_number * 100);
-        $('#easy-pie-chart-2').data('easy-pie-chart').update(last_edge_number / first_edge_number * 100);
+        // $('#easy-pie-chart-2').attr('data-max-value', first_edge_number).data('easy-pie-chart').update(100);
     }
+    if (node_number === last_node_number && edge_number === last_edge_number)
+        return
+    else
+    last_edge_number = edge_number
+    last_node_number = node_number
+    console.log('edge_number', edge_number, last_node_number / first_node_number * 100)
+    console.log('node_number', node_number, last_edge_number / first_edge_number * 100)
+    $('#easy-pie-chart-1').data('easy-pie-chart').update(last_node_number / first_node_number * 100);
+    $('#easy-pie-chart-2').data('easy-pie-chart').update(last_edge_number / first_edge_number * 100);
+
     var dom = document.getElementById("main");
     // myChart = echarts.init(dom);
     var app = {};
@@ -228,8 +231,6 @@ function draw(current_graph, conditions, channels) {
     // $("#bs-slider-node").slider('setValue', [-1, parseInt(max_node_weight)])
     $("#bs-slider-node-div .pull-xs-right").html(max_node_weight)
     $('.panel.box').attr('class', 'panel box')
-
-    the_xml = xml
 }
 
 function changeidNumber(id, number) {
