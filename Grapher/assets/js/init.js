@@ -35,13 +35,7 @@ function init() {
     });
 
     function channel_change() {
-        var channels = new Array()
-        var data = $('#channel_group').find(":selected");
-        console.log('data')
-        console.log(data.length);
-        for (var index = 0; index < data.length; index++) {
-            channels.push(data[index].value)
-        }
+        var channels = get_current_selected_channels()
         draws(current_team, channels);
     }
 
@@ -61,7 +55,7 @@ function init() {
         conditions['dateDownLimit'] = startDate.getTime();
         conditions['dateUpLimit'] = endDate.getTime();
         console.log(startDate.getTime(), endDate.getTime())
-        draw(current_graph, conditions)
+        draw(current_graph, conditions, get_current_selected_channels())
     });
 
     $("#bs-slider-node").on('slide', function (num) {
@@ -71,7 +65,7 @@ function init() {
             return
         conditions['nodeWeightUpLimit'] = upper_limit;
         conditions['nodeWeightDownLimit'] = lower_limit;
-        draw(current_graph, conditions)
+        draw(current_graph, conditions, get_current_selected_channels())
     })
 
     $("#bs-slider-edge").on('slide', function (num) {
@@ -81,7 +75,7 @@ function init() {
             return
         conditions['edgeWeightUpLimit'] = upper_limit;
         conditions['edgeWeightDownLimit'] = lower_limit;
-        draw(current_graph, conditions)
+        draw(current_graph, conditions, get_current_selected_channels())
         console.log(conditions)
     })
 
@@ -91,7 +85,7 @@ function init() {
     var colors = pxDemo.getRandomColors();
 
     var config = {
-        animate: 2000,
+        animate: 500,
         scaleColor: false,
         lineWidth: 4,
         lineCap: 'square',
@@ -102,7 +96,7 @@ function init() {
 
             $(this.el)
                 .find('> span')
-                .text(Math.round(value) + $(this.el).attr('data-suffix'));
+                .text(Math.round(value));
         },
     }
 
@@ -125,7 +119,8 @@ function init() {
 function open_sidebar(open_id, close_id) {
     console.log('open', open_id, 'close', close_id)
     if (open_id === '') {
-        $('#' + close_id).pxSidebar('toggle');
+        if ($("#" + close_id).attr('class').indexOf('open') !== -1)
+            $('#' + close_id).pxSidebar('toggle');
         return;
     }
     if ($("#" + open_id).attr('class').indexOf('open') !== -1) {
@@ -142,4 +137,16 @@ function open_sidebar(open_id, close_id) {
 
 function standby(id) {
     document.getElementById(id).src = 'http://www.stallerdental.com/wp-content/uploads/2016/12/user-icon.png'
+}
+
+function get_current_selected_channels() {
+    var channels = new Array()
+    var data = $('#channel_group').find(":selected");
+    console.log('data')
+    console.log(data.length);
+    for (var index = 0; index < data.length; index++) {
+        console.log('put in channels', data[index].innerHTML)
+        channels.push([data[index].value, data[index].innerHTML])
+    }
+    return channels
 }

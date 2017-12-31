@@ -22,6 +22,9 @@ var max_node_weight = 0;
 var max_edge_weight = 1;
 var last_node_number = undefined;
 var last_edge_number = undefined;
+var first_edge_number = undefined;
+var first_node_number = undefined;
+var the_xml
 
 myChart.on('click', function (param) {
     var type = param['data'].type;
@@ -48,22 +51,29 @@ function clear_draw_area() {
     last_node_number = undefined
     $('.panel.box').attr('class', 'panel box invisible')
 
-    $(".slider").slider('disable')
+    $("#bs-slider-node").slider('disable');
+    $("#bs-slider-edge").slider('disable');
+
+    open_sidebar('', 'sidebar-vertex')
+    open_sidebar('', 'sidebar-edge')
 
 }
 
 function draws(team, channels) {
     var channel_xmls = [];
     // console.log(team);
-    // console.log(channels);
+    console.log('channels', channels);
     if (channels.length === 0) {
         clear_draw_area()
         return
     }
     myChart.showLoading();
-    $(".slider").slider('ensable')
+    // enable
+    $("#bs-slider-node").slider('enable');
+    $("#bs-slider-edge").slider('enable');
+
     for (var index = 0; index < channels.length; index++) {
-        var channel = channels[index];
+        var channel = channels[index][0];
         if ((jQuery.inArray(channel, Object.keys(loaded_channels))) === -1) {
             get_graph_xml(team, channel, function (ret) {
                 loaded_channels[channel] = ret;
@@ -72,8 +82,8 @@ function draws(team, channels) {
                     xmlfile = channel_xmls[0].implementation.createDocument(channel_xmls[0].namespaceURI, null, null);
                     var newNode = xmlfile.importNode(channel_xmls[0].documentElement, true);
                     xmlfile.appendChild(newNode);
-                    current_graph = merge(channel_xmls)
-                    draw(current_graph, conditions);
+                    current_graph = merge(channel_xmls, channels)
+                    draw(current_graph, '', channels);
 
                 }
             });
@@ -83,20 +93,20 @@ function draws(team, channels) {
                 xmlfile = channel_xmls[0].implementation.createDocument(channel_xmls[0].namespaceURI, null, null);
                 var newNode = xmlfile.importNode(channel_xmls[0].documentElement, true);
                 xmlfile.appendChild(newNode);
-                current_graph = merge(channel_xmls)
-                draw(current_graph, conditions);
+                current_graph = merge(channel_xmls, channels)
+                draw(current_graph, '', channels);
             }
         }
     }
 }
 
-function merge(channelxml_Array) {
-    //  console.log('this is it ', channelxml_Array)
+function merge(channelxml_Array, channels) {
+     console.log('this is it ', channels)
     var graph = new Graph();
     for (var i = 0; i < channelxml_Array.length; i++) {
         // console.log(channelxml_Array[i])
-        console.log(channelxml_Array[i])
-        var channelGraph = createGraph(channelxml_Array[i]);
+        console.log("channelarray in merge",channelxml_Array[i])
+        var channelGraph = createGraph(channelxml_Array[i], channels[i][1]);
 
         graph.addGraph(channelGraph);
     }
@@ -104,22 +114,32 @@ function merge(channelxml_Array) {
     return graph;
 }
 
-function draw(current_graph, conditions = '') {
+function draw(current_graph, conditions, channels) {
+    conditions = conditions || '';
+    channels = channels || None;
+    console.log('current_graph', current_graph)
     var on_draw_graph = filter(current_graph, conditions)
     var xml = on_draw_graph.xml;
     var node_number = on_draw_graph.node_number;
     var edge_number = on_draw_graph.edge_number;
-    console.log('on_draw', xml)
-    if (node_number === last_node_number && edge_number === last_edge_number)
-        return
-    last_edge_number = edge_number
-    last_node_number = node_number
-
-    $('#easy-pie-chart-1').attr('data-max-value', node_number).data('easy-pie-chart').update(0);
-    $('#easy-pie-chart-1').attr('data-max-value', node_number).data('easy-pie-chart').update(100);
-    $('#easy-pie-chart-2').attr('data-max-value', edge_number).data('easy-pie-chart').update(0);
-    $('#easy-pie-chart-2').attr('data-max-value', edge_number).data('easy-pie-chart').update(100);
-
+    console.log('on_draw', xml);
+    if (conditions === ''){
+        first_edge_number = edge_number;
+        first_node_number = node_number;
+        $('#easy-pie-chart-1').attr('data-max-value', first_node_number).data('easy-pie-chart').update(0);
+        $('#easy-pie-chart-1').attr('data-max-value', first_node_number).data('easy-pie-chart').update(100);
+        $('#easy-pie-chart-2').attr('data-max-value', first_edge_number).data('easy-pie-chart').update(0);
+        $('#easy-pie-chart-2').attr('data-max-value', first_edge_number).data('easy-pie-chart').update(100);
+    }else {
+        if (node_number === last_node_number && edge_number === last_edge_number)
+            return
+        last_edge_number = edge_number
+        last_node_number = node_number
+        console.log('edge_number', edge_number, last_node_number / first_node_number * 100)
+        console.log('node_number', node_number, last_edge_number / first_edge_number * 100)
+        $('#easy-pie-chart-1').data('easy-pie-chart').update(last_node_number / first_node_number * 100);
+        $('#easy-pie-chart-2').data('easy-pie-chart').update(last_edge_number / first_edge_number * 100);
+    }
     var dom = document.getElementById("main");
     // myChart = echarts.init(dom);
     var app = {};
@@ -128,20 +148,23 @@ function draw(current_graph, conditions = '') {
 
     var graph = echarts.dataTool.gexf.parse(xml);
     var categories = [];
-    for (var i = 0; i < 0; i++) {
+    for (var i = 0; i < channels.length; i++) {
         categories[i] = {
-            name: 'Channel ' + i
+            name: channels[i][1]
         };
     }
+    console.log('categories', categories)
     graph.nodes.forEach(function (node) {
+
         node.itemStyle = null;
         node.symbolSize = 10;
-        node.value = 'Channel X';
-        node.category = node.attributes.modularity_class;
+        // node.value = 'Channel X';
+        node.category = node.attributes.Channel;
         // Use random x, y
         node.x = node.y = null;
         node.draggable = true;
         node.type = 'node';
+        // console.log(node, node.channel)
         if (node.name != 'slackbot' && node.attributes.weight > max_node_weight) {
             max_node_weight = node.attributes.weight
             // console.log('updated', max_node_weight)
@@ -174,13 +197,14 @@ function draw(current_graph, conditions = '') {
                 name: '',
                 type: 'graph',
                 layout: 'force',
-                data: graph.nodes,
+                nodes: graph.nodes,
                 links: graph.links,
                 categories: categories,
                 roam: true,
                 label: {
                     normal: {
-                        position: 'right'
+                        position: 'right',
+			
                     }
                 },
                 force: {
@@ -197,13 +221,15 @@ function draw(current_graph, conditions = '') {
     myChart.hideLoading();
 
 
-    $("#bs-slider-edge").slider({min: -1, max: parseInt(max_edge_weight), range: [-1, parseInt(max_edge_weight)]})
+    $("#bs-slider-edge").slider({min: -1, max: parseFloat(max_edge_weight), range: [-1, parseFloat(max_edge_weight)]})
     // $("#bs-slider-edge").slider('setValue', [-1, parseInt(max_edge_weight)])
     $("#bs-slider-edge-div .pull-xs-right").html(max_edge_weight)
-    $("#bs-slider-node").slider({min: 0, max: parseInt(max_node_weight), range: [0, parseInt(max_node_weight)],})
+    $("#bs-slider-node").slider({min: 0, max: parseFloat(max_node_weight), range: [0, parseFloat(max_node_weight)],})
     // $("#bs-slider-node").slider('setValue', [-1, parseInt(max_node_weight)])
     $("#bs-slider-node-div .pull-xs-right").html(max_node_weight)
     $('.panel.box').attr('class', 'panel box')
+
+    the_xml = xml
 }
 
 function changeidNumber(id, number) {
@@ -219,7 +245,7 @@ function changeidNumber(id, number) {
 //filter为一个function，传入一个xml对象以及要筛选条件，返回一个筛选后的xml对象
 
 
-function createGraph(xmlFile) {
+function createGraph(xmlFile, channel_name) {
     //console.log(xmlFile)
     var nodes = xmlFile.getElementsByTagName('node');
     var links = xmlFile.getElementsByTagName('edge');
@@ -234,13 +260,13 @@ function createGraph(xmlFile) {
             var node = new Node(nodes[i].getAttribute("id"),   //Node(id, label, team, weight, channel)
                 nodes[i].getAttribute("label"),
                 attvalues[1].getAttribute("value"),
-                parseInt(attvalues[0].getAttribute("value")),
-                channel);
+                parseFloat(attvalues[0].getAttribute("value")),
+                channel_name);
             graph.addNode(node);
             // if (node.weight > max_node_weight)
             //     max_node_weight = node.weight
             // console.log(node.weight)
-            graph.nodesid[i] = node.id;
+            //graph.nodesid[i] = node.id;
         }
 
     }
@@ -265,20 +291,32 @@ function createGraph(xmlFile) {
 }
 
 function filter(graph, conditions) {
-
+    if(conditions === ''){
+        conditions = {
+                // "channel": ['C4YCQ57CG', 'C6WB33KNJ'],
+                "nodeWeightUpLimit": "1000",
+                "nodeWeightDownLimit": "0",
+                "edgeWeightUpLimit": "1",
+                "edgeWeightDownLimit": "-1",
+                "keywords": [],
+                "dateDownLimit": "0000000000000",
+                "dateUpLimit": "9999999999999",
+                "ifconclude": "0"
+        }
+    }
     //为了把filter写到一个函数里，要筛选的条件集成到一个（ ）的对象里；
     //从map对象里获取要筛选的条件
     // console.log("rawGraph in filter",graph);
     var channelChoose = conditions.channel;
-    var nodeWeightUpLimit = parseInt(conditions.nodeWeightUpLimit);
-    var nodeWeightDownLimit = parseInt(conditions.nodeWeightDownLimit);
-    var edgeWeightUpLimit = parseInt(conditions.edgeWeightUpLimit);
-    var edgeWeightDownLimit = parseInt(conditions.edgeWeightDownLimit);
+    var nodeWeightUpLimit = parseFloat(conditions.nodeWeightUpLimit);
+    var nodeWeightDownLimit = parseFloat(conditions.nodeWeightDownLimit);
+    var edgeWeightUpLimit = parseFloat(conditions.edgeWeightUpLimit);
+    var edgeWeightDownLimit = parseFloat(conditions.edgeWeightDownLimit);
     var keywords = conditions.keywords;
     var ifconclude = new Boolean();//是否包含
     ifconclude = conditions.ifconclude;
-    //var dateDownLimit = new Date(conditions.dateDownLimit);
-    //var dateUpLimit = new Date(conditions.dateUpLimit);
+    var dateDownLimit = conditions.dateDownLimit;
+    var dateUpLimit = conditions.dateUpLimit;
     var newgraph = new Graph;
     //读取
     var selectNodesid = [];
@@ -288,7 +326,8 @@ function filter(graph, conditions) {
 
     for (var nodekey in graph.getNodes()) {
         var node = graph.getNodes()[nodekey];
-        var weight = parseInt(node.weight);
+        var weight = parseFloat(node.weight);
+        console.log('before build node')
         // console.log(nodekey, weight, t)
         if ((weight >= nodeWeightDownLimit) && (weight <= nodeWeightUpLimit)) {
             selectNodesid.push(node.id);
@@ -305,11 +344,13 @@ function filter(graph, conditions) {
         var index3 = $.inArray(link.gettarget(), selectNodesid);
         var date = link.getdate();
         //在不在所属channel
-        if ((index2 != -1) && (index3 != -1)) {                                         //源点和目标点是否囊括所筛节点
+        if ((index2 != -1) && (index3 != -1)) {                                        //源点和目标点是否囊括所筛节点
             var weight = parseFloat(link.getweight());
             // console.log('second', weight)
-            if ((weight <= edgeWeightUpLimit) && (weight >= edgeWeightDownLimit)) {   //weight范围是否合理
-                if (keywords.length != 0) {
+            if ((weight <= edgeWeightUpLimit) && (weight >= edgeWeightDownLimit)) {  //weight范围是否合理
+		if ((date <= dateUpLimit) && (date >= dateDownLimit)){
+                
+		if (keywords.length != 0) {
                     for (var j = 0; j < keywords.length; j++) {
                         if (link.getmessage().indexOf(keywords[j]) != -1) {           //是否包含关键字
                             t = true;
@@ -320,14 +361,16 @@ function filter(graph, conditions) {
                 if (((keywords.length == 0) || (ifconclude == false && t == false) || (ifconclude == true && t == true)) && (link.getsource() != link.gettarget())) {
                     if (newgraph.getNodes()[link.gettarget()] == null) newgraph.addNode(graph.getNode(link.gettarget()));
                     if (newgraph.getNodes()[link.getsource()] == null) newgraph.addNode(graph.getNode(link.getsource()));
-                    newgraph.addLink(link);
+                    newgraph.addLink(link);//可去掉单独的点
                     //}
                 }
             }
             //}
-            //  }
+            }
         }
     }
+	newgraph.mergelinks();
+
     //console.log("newgraph in filter",newgraph);
 
     //替换
@@ -346,9 +389,9 @@ function filter(graph, conditions) {
 
     var newEdges = xmlfile.createElement("edges");
     y = xmlfile.getElementsByTagName("edges")[0];
-    for (var link in newgraph.getLinks()) {
+    for (var link in newgraph.getMergedLinks()) {
 
-        var new_edge = graph.makeEdge(newgraph.getLinks()[link])
+        var new_edge = graph.makemergedEdge(newgraph.getMergedLinks()[link])
         // console.log(new_edge.getAttribute('weight'))
         // if (new_edge.getAttribute('weight') >= conditions.edgeWeightDownLimit && new_edge.getAttribute('weight') <= new_edge.getAttribute('weight'))
         newEdges.appendChild(new_edge);
@@ -356,11 +399,11 @@ function filter(graph, conditions) {
     }
     y.parentNode.removeChild(y)
     xmlfile.getElementsByTagName("graph")[0].appendChild(newEdges);
-
+    // console.log("newgraph",newgraph);
     return {
         xml: xmlfile,
         node_number: newgraph.nodeslength(),
-        edge_number: newgraph.linkslength()
+        edge_number: newgraph.mergedLinkslength()
     }
 }
 
@@ -381,7 +424,9 @@ Array.prototype.remove = function (val) {
 function Graph() {
     this.links = new Object();
     this.nodes = new Object();
-    this.nodesid = [];
+    this.mergedLinks = new Object();
+        
+//this.nodesid = [];
 }
 
 Graph.prototype.getNodes = function () {
@@ -390,12 +435,15 @@ Graph.prototype.getNodes = function () {
 Graph.prototype.getLinks = function () {
     return this.links;
 }
+Graph.prototype.getMergedLinks = function(){
+    return this.mergedLinks;
+}
 Graph.prototype.addLink = function (newLink) {
     this.links[newLink.getid()] = newLink;
 }
 Graph.prototype.addNode = function (newNode) {
     this.nodes[newNode.getid()] = newNode;
-
+    // console.log('on building first graph', newNode)
 }
 Graph.prototype.getNode = function (i) {
     return this.nodes[i];
@@ -404,11 +452,17 @@ Graph.prototype.getNode = function (i) {
 Graph.prototype.getLink = function (i) {
     return this.links[i];
 }
+Graph.prototype.getMergedLink = function (i) {
+    return this.mergedLinks[i];
+}
 Graph.prototype.linkslength = function () {
     return length(this.links);
 }
 Graph.prototype.nodeslength = function () {
     return length(this.nodes);
+}
+Graph.prototype.mergedLinkslength = function () {
+    return length(this.mergedLinks);
 }
 Graph.prototype.isnode = function (id) {
     return (!(this.nodes[id] == null));
@@ -425,6 +479,7 @@ Graph.prototype.addGraph = function (graph) {
     }
 }
 Graph.prototype.makeNode = function (graphnode) {
+    // console.log('inside building nodes', graphnode)
     var newNode = xmlfile.createElement("node");
     newNode.setAttribute("id", graphnode.getid());
     newNode.setAttribute("label", graphnode.getlabel());
@@ -435,17 +490,26 @@ Graph.prototype.makeNode = function (graphnode) {
     attvalue.setAttribute("for", "weight");
     attvalue.setAttribute("value", graphnode.getweight());
     attvalues.appendChild(attvalue);
+    var attvalue = xmlfile.createElement("attvalue");
+    attvalue.setAttribute("for", "Channel");
+    attvalue.setAttribute("value", graphnode.channel);
+    attvalues.appendChild(attvalue);
     newNode.appendChild(attvalues);
+ //    var color = xmlfile.createElement("viz:color");
+ //    color.setAttribute("r",0);
+ // color.setAttribute("g",0);
+ // color.setAttribute("b",255);
+ //    newNode.appendChild(color);
     return newNode;
 }
-Graph.prototype.makeEdge = function (graphedge) {
+Graph.prototype.makemergedEdge = function (graphedge) {
     var newEdge = xmlfile.createElement("edge");
     newEdge.setAttribute("id", graphedge.getid());
     newEdge.setAttribute("xmlns", s);
     newEdge.setAttribute("team", graphedge.getteam());
     newEdge.setAttribute("source", graphedge.getsource());
     newEdge.setAttribute("target", graphedge.gettarget());
-    newEdge.setAttribute("weight", graphedge.getweight());
+    newEdge.setAttribute("weight", graphedge.getweight()/graphedge.getcnt());
     var attvalues = xmlfile.createElement("attvalues");
     var attvalue = xmlfile.createElement("attvalue");
     attvalue.setAttribute("for", "weight");
@@ -453,6 +517,23 @@ Graph.prototype.makeEdge = function (graphedge) {
     attvalues.appendChild(attvalue);
     newEdge.appendChild(attvalues);
     return newEdge;
+}
+Graph.prototype.mergelinks = function (){
+    for(var linkkey in this.getLinks()){
+	var key1 = this.getLinks()[linkkey].getsource()+this.getLinks()[linkkey].gettarget();
+	var key2 = this.getLinks()[linkkey].gettarget()+this.getLinks()[linkkey].getsource();
+	if ((this.mergedLinks[key1]==null)&&(this.mergedLinks[key2]==null)){
+	var mergedlink = new mergeLink(key1,this.getLinks()[linkkey].getsource(),this.getLinks()[linkkey].gettarget(),
+					this.getLinks()[linkkey].getweight(),this.getLinks()[linkkey].getchannel(),
+					this.getLinks()[linkkey].getmessage(),this.getLinks()[linkkey].getteam());
+	this.mergedLinks[key1]=mergedlink;
+}
+else{
+	if (this.mergedLinks[key1]!=null) {this.mergedLinks[key1].cnt++;this.mergedLinks[key1].messages.push(this.getLinks()[linkkey].getmessage());}
+	else{this.mergedLinks[key2].cnt++;this.mergedLinks[key2].messages.push(this.getLinks()[linkkey].getmessage());}
+}
+}
+
 }
 
 function Link(id, source, target, weight, channel, date, message, team) {
@@ -462,9 +543,11 @@ function Link(id, source, target, weight, channel, date, message, team) {
     this.weight = weight;
     // console.log(this.weight)
     this.channel = channel;
-    this.date = date;
+    this.date = parseFloat(date.replace(".","").substring(0,13))
     this.message = message;
     this.team = team;
+    
+	
 }
 
 Link.prototype.getid = function () {
@@ -492,6 +575,44 @@ Link.prototype.getteam = function () {
     return this.team;
 }
 
+function mergeLink(id, source, target, weight, channel, message, team) {
+    this.id = id;
+    this.source = source;
+    this.target = target;
+    this.weight = weight;
+    // console.log(this.weight)
+    this.channel = channel;
+    this.messages = [];
+    this.messages[0]=message;
+    this.team = team;
+    this.cnt=1;
+}
+mergeLink.prototype.getid = function () {
+    return this.id;
+}
+mergeLink.prototype.getsource = function () {
+    return this.source;
+}
+mergeLink.prototype.gettarget = function () {
+    return this.target;
+}
+mergeLink.prototype.getweight = function () {
+    return this.weight;
+}
+mergeLink.prototype.getchannel = function () {
+    return this.channel;
+}
+mergeLink.prototype.getmessages = function () {
+    return this.messages;
+}
+mergeLink.prototype.getteam = function () {
+    return this.team;
+}
+mergeLink.prototype.getcnt = function(){
+    return this.cnt;
+}
+
+
 
 function Node(id, label, team, weight, channel) {
     this.id = id;
@@ -499,6 +620,7 @@ function Node(id, label, team, weight, channel) {
     this.team = team;
     this.weight = weight;
     this.channel = channel;
+    // console.log('on building first node channel', channel)
 }
 
 Node.prototype.getid = function () {

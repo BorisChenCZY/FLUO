@@ -10,7 +10,7 @@ dir_path = os.path.dirname(os.path.realpath(__file__))
 
 # Create your views here.
 def index(request):
-    return render(request, 'index2.html')
+    return render(request, 'index.html')
 
 
 def pic(request, dir):
