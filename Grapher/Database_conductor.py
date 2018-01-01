@@ -9,9 +9,9 @@ class Database_conductor():
             pass
         self.database = 'rowdata'
         if is_super_user:
-            self.connector = pymysql.connect(user='super_user',
-                                             password='super_userOfFluo',
-                                             host='10.20.13.209',
+            self.connector = pymysql.connect(user='root',
+                                             password='Czy19970131.',
+                                             host='localhost',
                                              database='rowdata',
                                              use_unicode=True,
                                              charset="utf8mb4"

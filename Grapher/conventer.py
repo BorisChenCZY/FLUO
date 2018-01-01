@@ -12,8 +12,8 @@ def remove_control_characters(html):
     html = re.sub(u"[\x00-\x08\x0b\x0e-\x1f\x7f]", "", html)
     return html
 
-def convert(team_name, channels_list, graph='mention_based_graph_info', user='read_database', pwd='FluoBySusTech',
-            port=3306, host='10.20.13.209', dbname='rowdata'):
+def convert(team_name, channels_list, graph='mention_based_graph_info', user='root', pwd='Czy19970131.',
+            port=3306, host='localhost', dbname='rowdata'):
     from gexf import Gexf
     from textblob import TextBlob
     import random
