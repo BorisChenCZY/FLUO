@@ -1,0 +1,432 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.gephi.org/gexf/1.2draft" xmlns:ns0="xsi" version="1.2" ns0:schemaLocation="http://www.gephi.org/gexf/1.1draft http://gephi.org/gexf/1.2draft.xsd">
+  <meta lastmodified="2017-12-24">
+    <creator>Gephi.org</creator>
+    <description>A Web network</description>
+  </meta>
+  <graph defaultedgetype="directed" label="A Web network" mode="static" timeformat="double">
+    <attributes class="node" mode="static">
+      <attribute id="Channel" title="channel" type="String"/>
+      <attribute id="Team" title="team" type="String"/>
+      <attribute id="Weight" title="weight" type="float"/>
+    </attributes>
+    <attributes class="edge" mode="static">
+      <attribute id="Channel" title="channel" type="String">
+        <default>None</default>
+      </attribute>
+      <attribute id="Date" title="date" type="float">
+        <default>None</default>
+      </attribute>
+      <attribute id="Message" title="message" type="String">
+        <default>None</default>
+      </attribute>
+      <attribute id="Team" title="team" type="String">
+        <default>None</default>
+      </attribute>
+      <attribute id="Weight" title="weight" type="float">
+        <default>0</default>
+      </attribute>
+    </attributes>
+    <nodes>
+      <node id="U024F567B" label="eisokant">
+        <attvalues>
+          <attvalue for="Weight" value="48"/>
+          <attvalue for="Team" value="T024F5679"/>
+          <attvalue for="Channel" value="C4NNGEVGW"/>
+          <attvalue for="Channel" value="C5JAT7JDR"/>
+        </attvalues>
+      </node>
+      <node id="U04K8G3E6" label="mcuadros">
+        <attvalues>
+          <attvalue for="Weight" value="15"/>
+          <attvalue for="Team" value="T024F5679"/>
+          <attvalue for="Channel" value="C4NNGEVGW"/>
+          <attvalue for="Channel" value="C5JAT7JDR"/>
+        </attvalues>
+      </node>
+      <node id="U04LG906D" label="marge">
+        <attvalues>
+          <attvalue for="Weight" value="72"/>
+          <attvalue for="Team" value="T024F5679"/>
+          <attvalue for="Channel" value="C5JAT7JDR"/>
+        </attvalues>
+      </node>
+      <node id="U08CE0ML3" label="miguel">
+        <attvalues>
+          <attvalue for="Weight" value="3"/>
+          <attvalue for="Team" value="T024F5679"/>
+          <attvalue for="Channel" value="C4NNGEVGW"/>
+          <attvalue for="Channel" value="C5JAT7JDR"/>
+        </attvalues>
+      </node>
+      <node id="U1CNBS8F9" label="vadim">
+        <attvalues>
+          <attvalue for="Weight" value="5"/>
+          <attvalue for="Team" value="T024F5679"/>
+          <attvalue for="Channel" value="C4NNGEVGW"/>
+          <attvalue for="Channel" value="C5JAT7JDR"/>
+        </attvalues>
+      </node>
+      <node id="U1QFXVC57" label="santiago">
+        <attvalues>
+          <attvalue for="Weight" value="81"/>
+          <attvalue for="Team" value="T024F5679"/>
+          <attvalue for="Channel" value="C4NNGEVGW"/>
+          <attvalue for="Channel" value="C5JAT7JDR"/>
+        </attvalues>
+      </node>
+      <node id="U23FS147M" label="david">
+        <attvalues>
+          <attvalue for="Weight" value="41"/>
+          <attvalue for="Team" value="T024F5679"/>
+          <attvalue for="Channel" value="C4NNGEVGW"/>
+          <attvalue for="Channel" value="C5JAT7JDR"/>
+        </attvalues>
+      </node>
+      <node id="U269ZA56V" label="mnovaes">
+        <attvalues>
+          <attvalue for="Weight" value="89"/>
+          <attvalue for="Team" value="T024F5679"/>
+          <attvalue for="Channel" value="C4NNGEVGW"/>
+          <attvalue for="Channel" value="C5JAT7JDR"/>
+        </attvalues>
+      </node>
+      <node id="U2B3QEEMB" label="antonio">
+        <attvalues>
+          <attvalue for="Weight" value="19"/>
+          <attvalue for="Team" value="T024F5679"/>
+          <attvalue for="Channel" value="C5JAT7JDR"/>
+        </attvalues>
+      </node>
+      <node id="U3K4B5KRS" label="sonia">
+        <attvalues>
+          <attvalue for="Weight" value="37"/>
+          <attvalue for="Team" value="T024F5679"/>
+          <attvalue for="Channel" value="C4NNGEVGW"/>
+          <attvalue for="Channel" value="C5JAT7JDR"/>
+        </attvalues>
+      </node>
+      <node id="U3YQYAY0N" label="manuel">
+        <attvalues>
+          <attvalue for="Weight" value="38"/>
+          <attvalue for="Team" value="T024F5679"/>
+          <attvalue for="Channel" value="C4NNGEVGW"/>
+          <attvalue for="Channel" value="C5JAT7JDR"/>
+        </attvalues>
+      </node>
+      <node id="U43SNU7K2" label="juanjo">
+        <attvalues>
+          <attvalue for="Weight" value="73"/>
+          <attvalue for="Team" value="T024F5679"/>
+          <attvalue for="Channel" value="C4NNGEVGW"/>
+          <attvalue for="Channel" value="C5JAT7JDR"/>
+        </attvalues>
+      </node>
+      <node id="U47DW9677" label="egor">
+        <attvalues>
+          <attvalue for="Weight" value="95"/>
+          <attvalue for="Team" value="T024F5679"/>
+          <attvalue for="Channel" value="C4NNGEVGW"/>
+          <attvalue for="Channel" value="C5JAT7JDR"/>
+        </attvalues>
+      </node>
+      <node id="U4KQ10YLT" label="kslavnov">
+        <attvalues>
+          <attvalue for="Weight" value="23"/>
+          <attvalue for="Team" value="T024F5679"/>
+          <attvalue for="Channel" value="C4NNGEVGW"/>
+          <attvalue for="Channel" value="C5JAT7JDR"/>
+        </attvalues>
+      </node>
+      <node id="U4WRS3E0J" label="alex">
+        <attvalues>
+          <attvalue for="Weight" value="50"/>
+          <attvalue for="Team" value="T024F5679"/>
+          <attvalue for="Channel" value="C4NNGEVGW"/>
+          <attvalue for="Channel" value="C5JAT7JDR"/>
+        </attvalues>
+      </node>
+      <node id="U5AM0GBRA" label="warenlong">
+        <attvalues>
+          <attvalue for="Weight" value="76"/>
+          <attvalue for="Team" value="T024F5679"/>
+          <attvalue for="Channel" value="C5JAT7JDR"/>
+        </attvalues>
+      </node>
+      <node id="U5DAEKA1W" label="alfredo">
+        <attvalues>
+          <attvalue for="Weight" value="78"/>
+          <attvalue for="Team" value="T024F5679"/>
+          <attvalue for="Channel" value="C4NNGEVGW"/>
+          <attvalue for="Channel" value="C5JAT7JDR"/>
+        </attvalues>
+      </node>
+      <node id="U63E3H3MZ" label="k">
+        <attvalues>
+          <attvalue for="Weight" value="45"/>
+          <attvalue for="Team" value="T024F5679"/>
+          <attvalue for="Channel" value="C4NNGEVGW"/>
+          <attvalue for="Channel" value="C5JAT7JDR"/>
+        </attvalues>
+      </node>
+      <node id="U63L390UV" label="guillem">
+        <attvalues>
+          <attvalue for="Weight" value="18"/>
+          <attvalue for="Team" value="T024F5679"/>
+          <attvalue for="Channel" value="C5JAT7JDR"/>
+        </attvalues>
+      </node>
+      <node id="U64A7HXAA" label="timofei">
+        <attvalues>
+          <attvalue for="Weight" value="70"/>
+          <attvalue for="Team" value="T024F5679"/>
+          <attvalue for="Channel" value="C4NNGEVGW"/>
+          <attvalue for="Channel" value="C5JAT7JDR"/>
+        </attvalues>
+      </node>
+      <node id="U7TMGQ7K7" label="francesc">
+        <attvalues>
+          <attvalue for="Weight" value="68"/>
+          <attvalue for="Team" value="T024F5679"/>
+          <attvalue for="Channel" value="C5JAT7JDR"/>
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="U04K8G3E6U04K8G3E625" source="U04K8G3E6" target="U04K8G3E6" weight="0.05000000000000002">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U04K8G3E6|mcuadros&gt; set the channel purpose: General channel from source{d} community Slack."/>
+          <attvalue for="Weight" value="0.05000000000000002"/>
+          <attvalue for="Date" value="1495788193.940181"/>
+          <attvalue for="Team" value="T024F5679"/>
+          <attvalue for="Channel" value="C5JAT7JDR"/>
+        </attvalues>
+      </edge>
+      <edge id="U04LG906DU4WRS3E0J17" source="U04LG906D" target="U4WRS3E0J" weight="-0.125">
+        <attvalues>
+          <attvalue for="Message" value="(btw &lt;@U4WRS3E0J&gt; reactions dont travel to the community channel... :disappointed: )"/>
+          <attvalue for="Weight" value="-0.125"/>
+          <attvalue for="Date" value="1497388552.409792"/>
+          <attvalue for="Team" value="T024F5679"/>
+          <attvalue for="Channel" value="C5JAT7JDR"/>
+        </attvalues>
+      </edge>
+      <edge id="U1CNBS8F9U024F567B21" source="U1CNBS8F9" target="U024F567B" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U024F567B&gt; IMHO we can provide a custom memory allocator, say nnmalloc() and nnfree() which are customized using our RNN model and sell it for $$$ to developers in the form of a smartass performance SDK for iOS"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1496768811.660712"/>
+          <attvalue for="Team" value="T024F5679"/>
+          <attvalue for="Channel" value="C5JAT7JDR"/>
+        </attvalues>
+      </edge>
+      <edge id="U1CNBS8F9U024F567B24" source="U1CNBS8F9" target="U024F567B" weight="-0.14285714285714285">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U024F567B&gt; siamese CNN is a conventional approach for similarity embedding"/>
+          <attvalue for="Weight" value="-0.14285714285714285"/>
+          <attvalue for="Date" value="1496156826.810754"/>
+          <attvalue for="Team" value="T024F5679"/>
+          <attvalue for="Channel" value="C5JAT7JDR"/>
+        </attvalues>
+      </edge>
+      <edge id="U1CNBS8F9U024F567B4" source="U1CNBS8F9" target="U024F567B" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;https://chaoss.community&gt; via &lt;@U024F567B&gt; "/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1505462474.000138"/>
+          <attvalue for="Team" value="T024F5679"/>
+          <attvalue for="Channel" value="C5JAT7JDR"/>
+        </attvalues>
+      </edge>
+      <edge id="U1CNBS8F9U024F567B8" source="U1CNBS8F9" target="U024F567B" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="That's why we need &lt;#C04KCLR44|offtopic&gt; &lt;@U024F567B&gt; "/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1501076159.723441"/>
+          <attvalue for="Team" value="T024F5679"/>
+          <attvalue for="Channel" value="C5JAT7JDR"/>
+        </attvalues>
+      </edge>
+      <edge id="U1CNBS8F9U04K8G3E610" source="U1CNBS8F9" target="U04K8G3E6" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U1QFXVC57&gt; &lt;@U04K8G3E6&gt; "/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1500622097.393879"/>
+          <attvalue for="Team" value="T024F5679"/>
+          <attvalue for="Channel" value="C5JAT7JDR"/>
+        </attvalues>
+      </edge>
+      <edge id="U1CNBS8F9U1CNBS8F918" source="U1CNBS8F9" target="U1CNBS8F9" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U1CNBS8F9|vadim&gt; shared a file: &lt;https://src-d.slack.com/files/vadim/F5T2W4T46/linux_hercules.zip|linux_hercules.zip&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1497274898.231991"/>
+          <attvalue for="Team" value="T024F5679"/>
+          <attvalue for="Channel" value="C5JAT7JDR"/>
+        </attvalues>
+      </edge>
+      <edge id="U1CNBS8F9U1CNBS8F919" source="U1CNBS8F9" target="U1CNBS8F9" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U1CNBS8F9|vadim&gt; uploaded a file: &lt;https://src-d.slack.com/files/vadim/F5RJD6BB2/screen_shot_2017-06-12_at_15.29.46.png|This is my OpenSourceFriday&gt; and commented: Linux kernel -&amp;gt; src-d/hercules -files -&amp;gt; combine the lifetime index with the normalized last row -&amp;gt; Tensorflow Projector."/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1497274881.226249"/>
+          <attvalue for="Team" value="T024F5679"/>
+          <attvalue for="Channel" value="C5JAT7JDR"/>
+        </attvalues>
+      </edge>
+      <edge id="U1CNBS8F9U1QFXVC579" source="U1CNBS8F9" target="U1QFXVC57" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U1QFXVC57&gt; &lt;@U04K8G3E6&gt; "/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1500622097.393879"/>
+          <attvalue for="Team" value="T024F5679"/>
+          <attvalue for="Channel" value="C5JAT7JDR"/>
+        </attvalues>
+      </edge>
+      <edge id="U1CNBS8F9U47DW96773" source="U1CNBS8F9" target="U47DW9677" weight="0.3">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U47DW9677&gt; Worth adding to our repo btw"/>
+          <attvalue for="Weight" value="0.3"/>
+          <attvalue for="Date" value="1506608196.000585"/>
+          <attvalue for="Team" value="T024F5679"/>
+          <attvalue for="Channel" value="C5JAT7JDR"/>
+        </attvalues>
+      </edge>
+      <edge id="U1CNBS8F9U5DAEKA1W2" source="U1CNBS8F9" target="U5DAEKA1W" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U5DAEKA1W&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1508416678.000066"/>
+          <attvalue for="Team" value="T024F5679"/>
+          <attvalue for="Channel" value="C5JAT7JDR"/>
+        </attvalues>
+      </edge>
+      <edge id="U1CNBS8F9U63L390UV11" source="U1CNBS8F9" target="U63L390UV" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U63L390UV&gt; ????????! :julio:"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1499855845.487466"/>
+          <attvalue for="Team" value="T024F5679"/>
+          <attvalue for="Channel" value="C5JAT7JDR"/>
+        </attvalues>
+      </edge>
+      <edge id="U1CNBS8F9U63L390UV14" source="U1CNBS8F9" target="U63L390UV" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U63L390UV&gt;  Have just found another manual by our topic modeling, hope you will like it :trollface: &lt;https://github.com/gotgit/gotgit&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1499848735.947122"/>
+          <attvalue for="Team" value="T024F5679"/>
+          <attvalue for="Channel" value="C5JAT7JDR"/>
+        </attvalues>
+      </edge>
+      <edge id="U1CNBS8F9U63L390UV15" source="U1CNBS8F9" target="U63L390UV" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U63L390UV&gt;  &lt;http://vmarkovtsev.github.io/mipt_web_2015/02_git/index.html&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1499705809.90959"/>
+          <attvalue for="Team" value="T024F5679"/>
+          <attvalue for="Channel" value="C5JAT7JDR"/>
+        </attvalues>
+      </edge>
+      <edge id="U1QFXVC57U024F567B22" source="U1QFXVC57" target="U024F567B" weight="0.1">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U024F567B&gt; then direct link"/>
+          <attvalue for="Weight" value="0.1"/>
+          <attvalue for="Date" value="1496333511.041171"/>
+          <attvalue for="Team" value="T024F5679"/>
+          <attvalue for="Channel" value="C5JAT7JDR"/>
+        </attvalues>
+      </edge>
+      <edge id="U1QFXVC57U024F567B23" source="U1QFXVC57" target="U024F567B" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U024F567B&gt; can we use that link on stuff like Babelfish docs? or should we tell people to go to sourced.tech and sign up?"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1496326854.255955"/>
+          <attvalue for="Team" value="T024F5679"/>
+          <attvalue for="Channel" value="C5JAT7JDR"/>
+        </attvalues>
+      </edge>
+      <edge id="U269ZA56VU1CNBS8F90" source="U269ZA56V" target="U1CNBS8F9" weight="0.2955357142857143">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U1CNBS8F9&gt; &lt;http://timvieira.github.io/doc/2017-mapl-dyna.pdf&gt;&#10;&#10;&amp;gt;&amp;gt;&amp;gt; &#10;*Dyna: Toward a Self-Optimizing Declarative Language for Machine Learning Applications*&#10;Abstract&#10;Declarative programming is a paradigm that allows programmers to&#10;specify what they want to compute, leaving how to compute it to a&#10;solver. Our declarative programming language, Dyna, is designed&#10;to compactly specify computations like those that are frequently&#10;encountered in machine learning. As a declarative language, Dynas&#10;solver has a large space of (correct) strategies available to it.&#10;We describe a reinforcement learning framework for adaptively&#10;choosing among these strategies to maximize efficiency for a&#10;given workload. Adaptivity in execution is especially important&#10;for software that will run under a variety of workloads, where no&#10;fixed policy works well. We hope that reinforcement learning will&#10;identify good policies reasonably quicklyoffloading the burden of&#10;writing efficient code from human programmers."/>
+          <attvalue for="Weight" value="0.2955357142857143"/>
+          <attvalue for="Date" value="1512995535.000225"/>
+          <attvalue for="Team" value="T024F5679"/>
+          <attvalue for="Channel" value="C5JAT7JDR"/>
+        </attvalues>
+      </edge>
+      <edge id="U269ZA56VU1CNBS8F91" source="U269ZA56V" target="U1CNBS8F9" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U1CNBS8F9&gt; plus there is a talk soon at Codemotion in Madrid, no?"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1509964669.000039"/>
+          <attvalue for="Team" value="T024F5679"/>
+          <attvalue for="Channel" value="C5JAT7JDR"/>
+        </attvalues>
+      </edge>
+      <edge id="U47DW9677U024F567B5" source="U47DW9677" target="U024F567B" weight="0.07083333333333335">
+        <attvalues>
+          <attvalue for="Message" value="@trishume, thank you again for sharing this approach and  &lt;@U024F567B&gt;  for hackernews link - both are useful)&#10;btw @trishume - I'm not sure if it's you case - but you can try to save a lot of computations if you need to compare many trees  with each other - use Merkle of hash trees - each node will have hash that resents this node and children - you can compute them only once and store with tree. So then you can compare equal subtrees for O(1)"/>
+          <attvalue for="Weight" value="0.07083333333333335"/>
+          <attvalue for="Date" value="1503875755.000065"/>
+          <attvalue for="Team" value="T024F5679"/>
+          <attvalue for="Channel" value="C5JAT7JDR"/>
+        </attvalues>
+      </edge>
+      <edge id="U4WRS3E0JU08CE0ML37" source="U4WRS3E0J" target="U08CE0ML3" weight="0.15000000000000002">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U5DAEKA1W&gt; &lt;@U08CE0ML3&gt; yes, Clojure, ofcourse.. So much for early bird typos :slightly_smiling_face:"/>
+          <attvalue for="Weight" value="0.15000000000000002"/>
+          <attvalue for="Date" value="1501149961.815852"/>
+          <attvalue for="Team" value="T024F5679"/>
+          <attvalue for="Channel" value="C5JAT7JDR"/>
+        </attvalues>
+      </edge>
+      <edge id="U4WRS3E0JU1QFXVC5716" source="U4WRS3E0J" target="U1QFXVC57" weight="0.75">
+        <attvalues>
+          <attvalue for="Message" value="Looks awesome! One more thing that we were pointed out at CurryOn is &lt;https://github.com/JetBrains/intellij-community/tree/master/uast&gt; / &lt;https://github.com/JetBrains/uast&gt; :flushed: &lt;@U1QFXVC57&gt;"/>
+          <attvalue for="Weight" value="0.75"/>
+          <attvalue for="Date" value="1498038452.383154"/>
+          <attvalue for="Team" value="T024F5679"/>
+          <attvalue for="Channel" value="C5JAT7JDR"/>
+        </attvalues>
+      </edge>
+      <edge id="U4WRS3E0JU5DAEKA1W6" source="U4WRS3E0J" target="U5DAEKA1W" weight="0.15000000000000002">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U5DAEKA1W&gt; &lt;@U08CE0ML3&gt; yes, Clojure, ofcourse.. So much for early bird typos :slightly_smiling_face:"/>
+          <attvalue for="Weight" value="0.15000000000000002"/>
+          <attvalue for="Date" value="1501149961.815852"/>
+          <attvalue for="Team" value="T024F5679"/>
+          <attvalue for="Channel" value="C5JAT7JDR"/>
+        </attvalues>
+      </edge>
+      <edge id="U5DAEKA1WU024F567B20" source="U5DAEKA1W" target="U024F567B" weight="0.10714285714285714">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U024F567B&gt; using lambdas would probably be the easiest way to get mostly pure functions in python, since lambda expressions only allow an expression as body"/>
+          <attvalue for="Weight" value="0.10714285714285714"/>
+          <attvalue for="Date" value="1497254974.64543"/>
+          <attvalue for="Team" value="T024F5679"/>
+          <attvalue for="Channel" value="C5JAT7JDR"/>
+        </attvalues>
+      </edge>
+      <edge id="U63L390UVU1CNBS8F912" source="U63L390UV" target="U1CNBS8F9" weight="0.5">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U1CNBS8F9&gt; Are you sure you want me to comment the commits like this guide suggests here? ????????????????????"/>
+          <attvalue for="Weight" value="0.5"/>
+          <attvalue for="Date" value="1499855581.405846"/>
+          <attvalue for="Team" value="T024F5679"/>
+          <attvalue for="Channel" value="C5JAT7JDR"/>
+        </attvalues>
+      </edge>
+      <edge id="U63L390UVU1CNBS8F913" source="U63L390UV" target="U1CNBS8F9" weight="0.75">
+        <attvalues>
+          <attvalue for="Message" value="Nice! Thank you &lt;@U1CNBS8F9&gt; "/>
+          <attvalue for="Weight" value="0.75"/>
+          <attvalue for="Date" value="1499848811.974493"/>
+          <attvalue for="Team" value="T024F5679"/>
+          <attvalue for="Channel" value="C5JAT7JDR"/>
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>
