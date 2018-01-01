@@ -1,5 +1,17 @@
 from Database_conductor import *
 dir_path = './'
+
+import re
+def remove_control_characters(html):
+    def str_to_int(s, default, base=10):
+        if int(s, base) < 0x10000:
+            return chr(int(s, base))
+        return default
+    html = re.sub(u"&#(\d+);?", lambda c: str_to_int(c.group(1), c.group(0)), html)
+    html = re.sub(u"&#[xX]([0-9a-fA-F]+);?", lambda c: str_to_int(c.group(1), c.group(0), base=16), html)
+    html = re.sub(u"[\x00-\x08\x0b\x0e-\x1f\x7f]", "", html)
+    return html
+
 def convert(team_name, channels_list, graph='mention_based_graph_info', user='read_database', pwd='FluoBySusTech',
             port=3306, host='10.20.13.209', dbname='rowdata'):
     from gexf import Gexf
@@ -121,6 +133,7 @@ def convert(team_name, channels_list, graph='mention_based_graph_info', user='re
                 print(cc / numhehe)
                 sender, receiver, text, channel_id, team_id, ts = tem_m
                 blob = TextBlob(text)
+                text = remove_control_characters(text)
                 weight = str(blob.sentiment.polarity)
                 try:
                     tem_edge = output.addEdge(sender + receiver + str(cc), sender, receiver, weight=weight)
@@ -135,6 +148,7 @@ def convert(team_name, channels_list, graph='mention_based_graph_info', user='re
                     try:
                         tem_edge = output.addEdge(sender + receiver + str(cc), sender, receiver, weight=weight)
                         cc = cc + 1
+
                         tem_edge.addAttribute(msg_att, text)
                         tem_edge.addAttribute(weight_att, weight)
                         tem_edge.addAttribute(date_att, str(ts))
@@ -145,13 +159,24 @@ def convert(team_name, channels_list, graph='mention_based_graph_info', user='re
 
             # print(channel_file)
             print (team_name, channel_file)
-            output_file = open(dir_path + "/mention_based/{}_{}.gexf".format(team_name, channel_file), 'wb')
-            gexf.write(output_file)
+            try:
+                output_file = open(dir_path + "/mention_based/{}_{}.gexf".format(team_name, channel_file), 'wb')
+                # output_file=remove_control_characters(output_file)
+                gexf.write(output_file)
+            except Exception:
+                print("Error at writing output_file")
+
+
             # print(gexf)
             # gexf_dict[channel_file]=gexf
             # print('2')
+    try:
+        output_file.close()
+    except Exception:
+        print("Error at diong output_file.close()")
 
     return gexf_dict
+
 
 
 database_conductor = Database_conductor(True)
@@ -162,7 +187,10 @@ for index, team in enumerate(database_conductor.get_teams()):
     print('{}/{} {}'.format(index + 1, all_team_number, team[1]))
     all_channel_number = len(database_conductor.get_channels_from_team(team_id))
     for cnt, (_, channel) in enumerate((database_conductor.get_channels_from_team(team_id))):
-
         channel, channel_name = (database_conductor.get_channel_detail(channel)[0])
         print('\t{}/{} {}'.format(cnt + 1, all_channel_number, channel_name))
         convert(team_id, [channel])
+
+
+
+# T024FJS4U C2H9SBGD7
