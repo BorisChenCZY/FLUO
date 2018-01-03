@@ -1,5 +1,6 @@
 console.log(GLOBAL_PATH)
 
+var graph_inited = false;
 
 var conditions = {
     // "channel": ['C4YCQ57CG', 'C6WB33KNJ'],
@@ -115,6 +116,7 @@ function init() {
     // $('#easy-pie-chart-2').attr('class', )
     $('.panel.box').attr('class', 'panel box invisible')
 
+
 }
 
 function open_sidebar(open_id, close_id) {
@@ -150,4 +152,64 @@ function get_current_selected_channels() {
         channels.push([data[index].value, data[index].innerHTML])
     }
     return channels
+}
+
+function init_graph() {
+    // console.log($("#collapseThree-danger").attr('class').indexOf(("in")))
+    if (graph_inited)
+        return
+
+    // -------------------------------------------------------------------------
+    // Initialize donut chart
+    graph_inited = true
+    $(function () {
+        var data = {
+            columns: [
+                ['data1', pxDemo.getRandomData()],
+                ['data2', pxDemo.getRandomData()],
+                ['data3', pxDemo.getRandomData()],
+                ['data4', pxDemo.getRandomData()],
+                ['data5', pxDemo.getRandomData()],
+            ],
+            type: 'donut',
+        };
+
+        c3.generate({
+            bindto: '#c3-donut',
+            color: {pattern: pxDemo.getRandomColors()},
+            data: data,
+            donut: {title: 'Some title'},
+        });
+    });
+
+    // -------------------------------------------------------------------------
+    // Initialize spline chart
+
+    $(function () {
+        var data = {
+            type: 'spline',
+            columns: [
+                ['data1', pxDemo.getRandomData(), pxDemo.getRandomData(), pxDemo.getRandomData(), pxDemo.getRandomData(), pxDemo.getRandomData(), pxDemo.getRandomData()],
+                ['data2', pxDemo.getRandomData(), pxDemo.getRandomData(), pxDemo.getRandomData(), pxDemo.getRandomData(), pxDemo.getRandomData(), pxDemo.getRandomData()],
+            ],
+        };
+
+        c3.generate({
+            bindto: '#c3-spline',
+            color: {pattern: pxDemo.getRandomColors()},
+            data: data,
+        });
+    });
+
+
+    init_word_cloud()
+}
+
+function init_word_cloud() {
+    $("#vis").html("");
+    w = $("#c3-donut").width();
+    h = $("#c3-donut").height();
+    svg = d3.select("#vis").append("svg").attr("width", w).attr("height", h);
+    background = svg.append("g");
+    vis = svg.append("g").attr("transform", "translate(" + [w >> 1, h >> 1] + ")");
 }

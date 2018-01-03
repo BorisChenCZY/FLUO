@@ -102,7 +102,7 @@ function draws(team, channels) {
 }
 
 function merge(channelxml_Array, channels) {
-     console.log('this is it ', channels)
+    console.log('this is it ', channels)
     var graph = new Graph();
     for (var i = 0; i < channelxml_Array.length; i++) {
         // console.log(channelxml_Array[i])
@@ -136,7 +136,7 @@ function draw(current_graph, conditions, channels) {
     if (node_number === last_node_number && edge_number === last_edge_number)
         return
     else
-    last_edge_number = edge_number
+        last_edge_number = edge_number
     last_node_number = node_number
     console.log('edge_number', edge_number, last_node_number / first_node_number * 100)
     console.log('node_number', node_number, last_edge_number / first_edge_number * 100)
@@ -207,7 +207,7 @@ function draw(current_graph, conditions, channels) {
                 label: {
                     normal: {
                         position: 'right',
-			
+
                     }
                 },
                 force: {
@@ -294,15 +294,15 @@ function createGraph(xmlFile, channel_name) {
 function filter(graph, conditions) {
     if(conditions === ''){
         conditions = {
-                // "channel": ['C4YCQ57CG', 'C6WB33KNJ'],
-                "nodeWeightUpLimit": "1000",
-                "nodeWeightDownLimit": "0",
-                "edgeWeightUpLimit": "1",
-                "edgeWeightDownLimit": "-1",
-                "keywords": [],
-                "dateDownLimit": "0000000000000",
-                "dateUpLimit": "9999999999999",
-                "ifconclude": "0"
+            // "channel": ['C4YCQ57CG', 'C6WB33KNJ'],
+            "nodeWeightUpLimit": "1000",
+            "nodeWeightDownLimit": "0",
+            "edgeWeightUpLimit": "1",
+            "edgeWeightDownLimit": "-1",
+            "keywords": [],
+            "dateDownLimit": "0000000000000",
+            "dateUpLimit": "9999999999999",
+            "ifconclude": "0"
         }
     }
     //为了把filter写到一个函数里，要筛选的条件集成到一个（ ）的对象里；
@@ -349,28 +349,28 @@ function filter(graph, conditions) {
             var weight = parseFloat(link.getweight());
             // console.log('second', weight)
             if ((weight <= edgeWeightUpLimit) && (weight >= edgeWeightDownLimit)) {  //weight范围是否合理
-		if ((date <= dateUpLimit) && (date >= dateDownLimit)){
-                
-		if (keywords.length != 0) {
-                    for (var j = 0; j < keywords.length; j++) {
-                        if (link.getmessage().indexOf(keywords[j]) != -1) {           //是否包含关键字
-                            t = true;
-                            break
+                if ((date <= dateUpLimit) && (date >= dateDownLimit)){
+
+                    if (keywords.length != 0) {
+                        for (var j = 0; j < keywords.length; j++) {
+                            if (link.getmessage().indexOf(keywords[j]) != -1) {           //是否包含关键字
+                                t = true;
+                                break
+                            }
                         }
                     }
+                    if (((keywords.length == 0) || (ifconclude == false && t == false) || (ifconclude == true && t == true)) && (link.getsource() != link.gettarget())) {
+                        if (newgraph.getNodes()[link.gettarget()] == null) newgraph.addNode(graph.getNode(link.gettarget()));
+                        if (newgraph.getNodes()[link.getsource()] == null) newgraph.addNode(graph.getNode(link.getsource()));
+                        newgraph.addLink(link);//可去掉单独的点
+                        //}
+                    }
                 }
-                if (((keywords.length == 0) || (ifconclude == false && t == false) || (ifconclude == true && t == true)) && (link.getsource() != link.gettarget())) {
-                    if (newgraph.getNodes()[link.gettarget()] == null) newgraph.addNode(graph.getNode(link.gettarget()));
-                    if (newgraph.getNodes()[link.getsource()] == null) newgraph.addNode(graph.getNode(link.getsource()));
-                    newgraph.addLink(link);//可去掉单独的点
-                    //}
-                }
-            }
-            //}
+                //}
             }
         }
     }
-	newgraph.mergelinks();
+    newgraph.mergelinks();
 
     //console.log("newgraph in filter",newgraph);
 
@@ -426,7 +426,7 @@ function Graph() {
     this.links = new Object();
     this.nodes = new Object();
     this.mergedLinks = new Object();
-        
+
 //this.nodesid = [];
 }
 
@@ -496,11 +496,11 @@ Graph.prototype.makeNode = function (graphnode) {
     attvalue.setAttribute("value", graphnode.channel);
     attvalues.appendChild(attvalue);
     newNode.appendChild(attvalues);
- //    var color = xmlfile.createElement("viz:color");
- //    color.setAttribute("r",0);
- // color.setAttribute("g",0);
- // color.setAttribute("b",255);
- //    newNode.appendChild(color);
+    //    var color = xmlfile.createElement("viz:color");
+    //    color.setAttribute("r",0);
+    // color.setAttribute("g",0);
+    // color.setAttribute("b",255);
+    //    newNode.appendChild(color);
     return newNode;
 }
 Graph.prototype.makemergedEdge = function (graphedge) {
@@ -521,19 +521,19 @@ Graph.prototype.makemergedEdge = function (graphedge) {
 }
 Graph.prototype.mergelinks = function (){
     for(var linkkey in this.getLinks()){
-	var key1 = this.getLinks()[linkkey].getsource()+this.getLinks()[linkkey].gettarget();
-	var key2 = this.getLinks()[linkkey].gettarget()+this.getLinks()[linkkey].getsource();
-	if ((this.mergedLinks[key1]==null)&&(this.mergedLinks[key2]==null)){
-	var mergedlink = new mergeLink(key1,this.getLinks()[linkkey].getsource(),this.getLinks()[linkkey].gettarget(),
-					this.getLinks()[linkkey].getweight(),this.getLinks()[linkkey].getchannel(),
-					this.getLinks()[linkkey].getmessage(),this.getLinks()[linkkey].getteam());
-	this.mergedLinks[key1]=mergedlink;
-}
-else{
-	if (this.mergedLinks[key1]!=null) {this.mergedLinks[key1].cnt++;this.mergedLinks[key1].messages.push(this.getLinks()[linkkey].getmessage());}
-	else{this.mergedLinks[key2].cnt++;this.mergedLinks[key2].messages.push(this.getLinks()[linkkey].getmessage());}
-}
-}
+        var key1 = this.getLinks()[linkkey].getsource()+this.getLinks()[linkkey].gettarget();
+        var key2 = this.getLinks()[linkkey].gettarget()+this.getLinks()[linkkey].getsource();
+        if ((this.mergedLinks[key1]==null)&&(this.mergedLinks[key2]==null)){
+            var mergedlink = new mergeLink(key1,this.getLinks()[linkkey].getsource(),this.getLinks()[linkkey].gettarget(),
+                this.getLinks()[linkkey].getweight(),this.getLinks()[linkkey].getchannel(),
+                this.getLinks()[linkkey].getmessage(),this.getLinks()[linkkey].getteam());
+            this.mergedLinks[key1]=mergedlink;
+        }
+        else{
+            if (this.mergedLinks[key1]!=null) {this.mergedLinks[key1].cnt++;this.mergedLinks[key1].messages.push(this.getLinks()[linkkey].getmessage());}
+            else{this.mergedLinks[key2].cnt++;this.mergedLinks[key2].messages.push(this.getLinks()[linkkey].getmessage());}
+        }
+    }
 
 }
 
@@ -547,8 +547,8 @@ function Link(id, source, target, weight, channel, date, message, team) {
     this.date = parseFloat(date.replace(".","").substring(0,13))
     this.message = message;
     this.team = team;
-    
-	
+
+
 }
 
 Link.prototype.getid = function () {

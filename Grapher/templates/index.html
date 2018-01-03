@@ -280,19 +280,7 @@
                                 <select id="channel_group" class="form-control select2-info select2-example" multiple
                                         style="width: 100%">
                                     <optgroup label="You need to select a team first">
-                                        {#                                        <option value="c1">Channel1</option>#}
-                                        {#                                        <option value="c2">Channel2</option>#}
-                                        {#                                        <option value="c3" selected>Channel3</option>#}
-                                        {#                                        <option value="c4">Channel4</option>#}
-                                        {#                                        <option value="c5">Channel5</option>#}
                                     </optgroup>
-                                    {#                                    <optgroup label="Pacific Time Zone">#}
-                                    {#                                        <option value="c6">Channel6</option>#}
-                                    {#                                        <option value="c7" selected>Channel7</option>#}
-                                    {#                                        <option value="c8">Channel8</option>#}
-                                    {#                                        <option value="c9">Channel9</option>#}
-                                    {#                                        <option value="c10">Channel10</option>#}
-                                    {#                                    </optgroup>#}
                                 </select>
                             </div>
                             <br>
@@ -363,13 +351,13 @@
 
     </div>
 
-{#    <button type="button" class="btn" data-toggle="sidebar" onclick="open_sidebar('sidebar-edge', 'sidebar-vertex')">#}
-{#        Vertex#}
-{#    </button>#}
-{##}
-{#    <button type="button" class="btn" data-toggle="sidebar" onclick="open_sidebar('sidebar-vertex', 'sidebar-edge')">#}
-{#        Edge#}
-{#    </button>#}
+    {#    <button type="button" class="btn" data-toggle="sidebar" onclick="open_sidebar('sidebar-edge', 'sidebar-vertex')">#}
+    {#        Vertex#}
+    {#    </button>#}
+    {##}
+    {#    <button type="button" class="btn" data-toggle="sidebar" onclick="open_sidebar('sidebar-vertex', 'sidebar-edge')">#}
+    {#        Edge#}
+    {#    </button>#}
 
     <!--Main Frame Nav Bar-->
     <ul class="nav nav-tabs nav-tabs-simple">
@@ -400,165 +388,6 @@
                         </script>
                     </div>
                 </div>
-                {#                <div class="tab-pane fade" id="organized">#}
-                {#                    <div class="row">#}
-                {#                        <div id="mai" style="height: 700px;color: #B3B3B3"></div>#}
-                {#                        <script type="text/javascript">#}
-                {#                            console.log('loaded')#}
-                {#                            var dom1 = document.getElementById("mai");#}
-                {#                            var myChart1 = echarts.init(dom1);#}
-                {#                            var app = {};#}
-                {#                            option = null;#}
-                {#                            app.title = 'MainFrame2';#}
-                {#                            myChart1.showLoading();#}
-                {#                            $.get('/assets/les-miserables.gexf', function (xml) {#}
-                {#                                myChart1.hideLoading();#}
-                {#                                var graph = echarts.dataTool.gexf.parse(xml);#}
-                {#                                var categories = [];#}
-                {#                                for (var i = 0; i < 9; i++) {#}
-                {#                                    categories[i] = {#}
-                {#                                        name: 'Channel' + (i + 1)#}
-                {#                                    };#}
-                {#                                }#}
-                {#                                graph.nodes.forEach(function (node) {#}
-                {#                                    node.itemStyle = null;#}
-                {#                                    node.value = node.symbolSize;#}
-                {#                                    node.symbolSize /= 1.5;#}
-                {#                                    node.label = {#}
-                {#                                        normal: {#}
-                {#                                            show: node.symbolSize > 30#}
-                {#                                        }#}
-                {#                                    };#}
-                {#                                    node.category = node.attributes.modularity_class;#}
-                {#                                });#}
-                {#                                option = {#}
-                {#                                    title: {#}
-                {#                                        top: 'bottom',#}
-                {#                                        left: 'right'#}
-                {#                                    },#}
-                {#                                    tooltip: {},#}
-                {#                                    legend: [{#}
-                {#                                        // selectedMode: 'single',#}
-                {#                                        data: categories.map(function (a) {#}
-                {#                                            return a.name;#}
-                {#                                        })#}
-                {#                                    }],#}
-                {#                                    animationDuration: 1500,#}
-                {#                                    animationEasingUpdate: 'quinticInOut',#}
-                {#                                    series: [#}
-                {#                                        {#}
-                {#                                            name: 'Les Miserables',#}
-                {#                                            type: 'graph',#}
-                {#                                            layout: 'none',#}
-                {#                                            data: graph.nodes,#}
-                {#                                            links: graph.links,#}
-                {#                                            categories: categories,#}
-                {#                                            roam: true,#}
-                {#                                            label: {#}
-                {#                                                normal: {#}
-                {#                                                    position: 'right',#}
-                {#                                                    formatter: '{b}'#}
-                {#                                                }#}
-                {#                                            },#}
-                {#                                            lineStyle: {#}
-                {#                                                normal: {#}
-                {#                                                    color: 'source',#}
-                {#                                                    curveness: 0.3#}
-                {#                                                }#}
-                {#                                            }#}
-                {#                                        }#}
-                {#                                    ]#}
-                {#                                };#}
-                {#                                myChart1.setOption(option);#}
-                {#                            }, 'xml');#}
-                {#                            if (option && typeof option === "object") {#}
-                {#                                myChart1.setOption(option, true);#}
-                {#                            }#}
-                {#                        </script>#}
-                {#                    </div>#}
-                {#                </div>#}
-                {#                <div class="tab-pane fade" id="cir">#}
-                {#                    <div class="row">#}
-                {#                        <div id="ma" style="height: 700px;color: #B3B3B3"></div>#}
-                {#                        <script type="text/javascript">#}
-                {#                            var dom2 = document.getElementById("ma");#}
-                {#                            var myChart2 = echarts.init(dom2);#}
-                {#                            var app = {};#}
-                {#                            option = null;#}
-                {#                            app.title = 'MainFrame';#}
-                {#                            myChart2.showLoading();#}
-                {#                            $.get('/assets/les-miserables.gexf', function (xml) {#}
-                {#                                myChart2.hideLoading();#}
-                {#                                var graph = echarts.dataTool.gexf.parse(xml);#}
-                {#                                var categories = [];#}
-                {#                                for (var i = 0; i < 9; i++) {#}
-                {#                                    categories[i] = {#}
-                {#                                        name: 'Channel ' + (i + 1)#}
-                {#                                    };#}
-                {#                                }#}
-                {#                                graph.nodes.forEach(function (node) {#}
-                {#                                    node.itemStyle = null;#}
-                {#                                    node.value = node.symbolSize;#}
-                {#                                    node.symbolSize /= 1.5;#}
-                {#                                    node.label = {#}
-                {#                                        normal: {#}
-                {#                                            show: node.symbolSize > 10#}
-                {#                                        }#}
-                {#                                    };#}
-                {#                                    node.category = node.attributes.modularity_class;#}
-                {#                                });#}
-                {#                                option = {#}
-                {#                                    title: {#}
-                {#                                        top: 'bottom',#}
-                {#                                        left: 'right'#}
-                {#                                    },#}
-                {#                                    tooltip: {},#}
-                {#                                    legend: [{#}
-                {#                                        // selectedMode: 'single',#}
-                {#                                        data: categories.map(function (a) {#}
-                {#                                            return a.name;#}
-                {#                                        })#}
-                {#                                    }],#}
-                {#                                    animationDurationUpdate: 1500,#}
-                {#                                    animationEasingUpdate: 'quinticInOut',#}
-                {#                                    series: [#}
-                {#                                        {#}
-                {#                                            name: 'Les Miserables',#}
-                {#                                            type: 'graph',#}
-                {#                                            layout: 'circular',#}
-                {#                                            circular: {#}
-                {#                                                rotateLabel: true#}
-                {#                                            },#}
-                {#                                            data: graph.nodes,#}
-                {#                                            links: graph.links,#}
-                {#                                            categories: categories,#}
-                {#                                            roam: true,#}
-                {#                                            label: {#}
-                {#                                                normal: {#}
-                {#                                                    position: 'right',#}
-                {#                                                    formatter: '{b}'#}
-                {#                                                }#}
-                {#                                            },#}
-                {#                                            lineStyle: {#}
-                {#                                                normal: {#}
-                {#                                                    color: 'source',#}
-                {#                                                    curveness: 0.3#}
-                {#                                                }#}
-                {#                                            }#}
-                {#                                        }#}
-                {#                                    ]#}
-                {#                                };#}
-                {#                                myChart2.setOption(option);#}
-                {#                            }, 'xml');#}
-                {#                            if (option && typeof option === "object") {#}
-                {#                                myChart2.setOption(option, true);#}
-                {#                            }#}
-                {##}
-                {##}
-                {##}
-                {#                        </script>#}
-                {#                    </div>#}
-                {#                </div>#}
             </div>
 
 
@@ -624,7 +453,8 @@
                         </div>
                     </div>
                     <div class="p-a-4">
-                        <button type="button" class="btn" data-toggle="sidebar" data-target="#sidebar-vertex" onclick="open_sidebar('', 'sidebar-vertex')">Close
+                        <button type="button" class="btn" data-toggle="sidebar" data-target="#sidebar-vertex"
+                                onclick="open_sidebar('', 'sidebar-vertex')">Close
                         </button>
                     </div>
                 </div>
@@ -731,7 +561,8 @@
                         </div>
                     </div>
                     <div class="p-a-4">
-                        <button type="button" class="btn" data-toggle="sidebar" data-target="#sidebar-edge" onclick="open_sidebar('', 'sidebar-edge')">Close
+                        <button type="button" class="btn" data-toggle="sidebar" data-target="#sidebar-edge"
+                                onclick="open_sidebar('', 'sidebar-edge')">Close
                         </button>
                     </div>
                 </div>
@@ -742,123 +573,8 @@
     <br>
 
     <hr class="page-block m-t-0">
-{#    <div id="owl-carousel-autoplay" class="owl-carousel">#}
-{#        <div class="panel box">#}
-{#            <div class="box-row">#}
-{#                <div class="box-cell p-x-2 p-y-1 bg-black text-xs-center font-size-11 font-weight-semibold">#}
-{#                    <i class="fa fa-globe"></i>&nbsp;&nbsp;NODES#}
-{#                </div>#}
-{#            </div>#}
-{#            <div class="box-row">#}
-{#                <div class="box-cell p-y-2">#}
-{#                    <div class="easy-pie-chart" style="height: 60px"><span#}
-{#                            class="font-size-24">20</span></div>#}
-{#                </div>#}
-{#            </div>#}
-{#        </div>#}
-{##}
-{#        <div class="panel box">#}
-{#            <div class="box-row">#}
-{#                <div class="box-cell p-x-2 p-y-1 bg-black text-xs-center font-size-11 font-weight-semibold">#}
-{#                    <i class="fa fa-flash"></i>&nbsp;&nbsp;LINKS#}
-{#                </div>#}
-{#            </div>#}
-{#            <div class="box-row">#}
-{#                <div class="box-cell p-y-2">#}
-{#                    <div class="easy-pie-chart" style="height: 60px"><span#}
-{#                            class="font-size-24">20</span></div>#}
-{#                </div>#}
-{#            </div>#}
-{#        </div>#}
-{##}
-{#        <div class="panel box">#}
-{#            <div class="box-row">#}
-{#                <div class="box-cell p-x-2 p-y-1 bg-black text-xs-center font-size-11 font-weight-semibold">#}
-{#                    <i class="fa fa-cloud"></i>&nbsp;&nbsp;SLICES#}
-{#                </div>#}
-{#            </div>#}
-{#            <div class="box-row">#}
-{#                <div class="box-cell p-y-2">#}
-{#                    <div class="easy-pie-chart" style="height: 60px"><span#}
-{#                            class="font-size-24">20</span></div>#}
-{#                </div>#}
-{#            </div>#}
-{#        </div>#}
-{##}
-{#        <div class="panel box">#}
-{#            <div class="box-row">#}
-{#                <div class="box-cell p-x-2 p-y-1 bg-black text-xs-center font-size-11 font-weight-semibold">#}
-{#                    <i class="fa fa-check-square"></i>&nbsp;&nbsp;CENTRALITY#}
-{#                </div>#}
-{#            </div>#}
-{#            <div class="box-row">#}
-{#                <div class="box-cell p-y-2">#}
-{#                    <div class="easy-pie-chart" style="height: 60px"><span#}
-{#                            class="font-size-24 ">20</span></div>#}
-{#                </div>#}
-{#            </div>#}
-{#        </div>#}
-{##}
-{#        <div class="panel box">#}
-{#            <div class="box-row">#}
-{#                <div class="box-cell p-x-2 p-y-1 bg-black text-xs-center font-size-11 font-weight-semibold">#}
-{#                    <i class="fa fa-sign-out"></i>&nbsp;&nbsp;GEODESIC#}
-{#                </div>#}
-{#            </div>#}
-{#            <div class="box-row">#}
-{#                <div class="box-cell p-y-2">#}
-{#                    <div class="easy-pie-chart" style="height: 60px"><span#}
-{#                            class="font-size-24 ">20</span></div>#}
-{#                </div>#}
-{#            </div>#}
-{##}
-{#        </div>#}
-{##}
-{#        <div class="panel box">#}
-{#            <div class="box-row">#}
-{#                <div class="box-cell p-x-2 p-y-1 bg-black text-xs-center font-size-11 font-weight-semibold">#}
-{#                    <i class="fa fa-refresh"></i>&nbsp;&nbsp;TABLE#}
-{#                </div>#}
-{#            </div>#}
-{#            <div class="box-row">#}
-{#                <div class="box-cell p-y-2">#}
-{#                    <div class="easy-pie-chart" style="height: 60px"><span#}
-{#                            class="font-size-24">20</span></div>#}
-{#                </div>#}
-{#            </div>#}
-{##}
-{#        </div>#}
-{##}
-{#        <div class="panel box">#}
-{#            <div class="box-row">#}
-{#                <div class="box-cell p-x-2 p-y-1 bg-black text-xs-center font-size-11 font-weight-semibold">#}
-{#                    <i class="fa fa-shield"></i>&nbsp;&nbsp;DEGREE#}
-{#                </div>#}
-{#            </div>#}
-{#            <div class="box-row">#}
-{#                <div class="box-cell p-y-2">#}
-{#                    <div class="easy-pie-chart" style="height: 60px"><span#}
-{#                            class="font-size-24">20</span></div>#}
-{#                </div>#}
-{#            </div>#}
-{#        </div>#}
-{##}
-{#        <div class="panel box">#}
-{#            <div class="box-row">#}
-{#                <div class="box-cell p-x-2 p-y-1 bg-black text-xs-center font-size-11 font-weight-semibold">#}
-{#                    <i class="fa fa-user"></i>&nbsp;&nbsp;TENSION#}
-{#                </div>#}
-{#            </div>#}
-{#            <div class="box-row">#}
-{#                <div class="box-cell p-y-2">#}
-{#                    <div class="easy-pie-chart" style="height: 60px"><span#}
-{#                            class="font-size-24">20</span></div>#}
-{#                </div>#}
-{#            </div>#}
-{#        </div>#}
-{##}
-{#    </div>#}
-     <div class="row" id="piechart">
+
+    <div class="row" id="piechart">
         <div class="col-xs-12 col-sm-6" style="width: 140px;">
             <div class="panel box">
                 <div class="box-row">
@@ -889,24 +605,46 @@
                 </div>
             </div>
         </div>
-{#        <div class="col-xs-12 col-sm-4">#}
-{#            <div class="panel box">#}
-{#                <div class="box-row">#}
-{#                    <div class="box-cell p-x-2 p-y-1 bg-black text-xs-center font-size-11 font-weight-semibold">#}
-{#                        <i class="fa fa-cloud"></i>&nbsp;&nbsp;MEDIA#}
-{#                    </div>#}
-{#                </div>#}
-{#                <div class="box-row">#}
-{#                    <div class="box-cell p-y-2">#}
-{#                        <div class="easy-pie-chart" data-suffix="M" id="easy-pie-chart-3"><span#}
-{#                                class="font-size-14 font-weight-light"></span></div>#}
-{#                    </div>#}
-{#                </div>#}
-{#            </div>#}
-{#        </div>#}
     </div>
     <hr class="page-block m-t-0">
 
+    <div class="panel-group panel-group-danger" id="accordion-example-danger">
+        <div class="panel">
+            <div class="panel-heading" onclick='init_graph()'>
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-example-danger"
+                   href="#collapseThree-danger"> <i class="panel-title-icon fa fa-tasks"></i>
+                    More Graphs
+                </a>
+            </div>
+            <div id="collapseThree-danger" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div class="col-md-4">
+                        <div class="panel-title">Bar</div>
+                        <div id="c3-donut" style="height: 250px"></div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="panel-title">Scatter</div>
+                        <div id="c3-spline" style="height: 250px"></div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="panel-title">Word</div>
+                        <div id="vis"></div>
+{#                        <div class="invisible" >#}
+{#                            <input type="number" value="250" min="1" id="max">#}
+{#                            <input type="checkbox" id="per-line">#}
+{#                            <input type="radio" name="spiral" id="archimedean" value="archimedean" checked="checked">#}
+{#                            <input type="radio" name="scale" id="scale-log" value="log" checked="checked">#}
+{#                            <input type="text" id="font" value="Impact">#}
+{#                        </div>#}
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="page-block m-t-0">
     <!--Invisible more things-->
     <div class="row" id="schedule">
         <div class="col-md-6" data-accent="(panel-group-success)||(panel-group-dark)">
@@ -1115,6 +853,8 @@
 <script src="{% static 'bootstrap.min.js' %}"></script>
 {#<script src="/assets/jquery.min.js"></script>#}
 <script src="{% static 'pixeladmin.min.js' %}"></script>
+<script src="{% static 'd3.min.js' %}"></script>
+<script src="{% static 'cloud.min.js' %}"></script>
 
 
 <script type="text/javascript" src="{% static 'bootstrap.min.js' %}"></script>
@@ -1125,18 +865,9 @@
 <script type="text/javascript" src="{% static 'init.js' %}"></script>
 
 
-{#<script>#}
-{#    // -------------------------------------------------------------------------#}
-{#    // Initialize DEMO sidebar#}
-{##}
-{#    $(function () {#}
-{#        pxDemo.initializeDemoSidebar();#}
-{#        $('#px-demo-sidebar').pxSidebar();#}
-{#        pxDemo.initializeDemo();#}
-{#    });#}
-{#</script>#}
-
 <script type="text/javascript">
+
+
     // -------------------------------------------------------------------------
     // Initialize DEMO
 
@@ -1284,6 +1015,8 @@
     });
 
     init();
+
+
 </script>
 
 {#<script type="text/javascript" src="{% static 'init.js' %}"></script>#}

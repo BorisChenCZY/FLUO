@@ -206,19 +206,7 @@
                                             multiple
                                             style="width: 100%">
                                         <optgroup label="You need to select a team first">
-                                            {#                                        <option value="c1">Channel1</option>#}
-                                            {#                                        <option value="c2">Channel2</option>#}
-                                            {#                                        <option value="c3" selected>Channel3</option>#}
-                                            {#                                        <option value="c4">Channel4</option>#}
-                                            {#                                        <option value="c5">Channel5</option>#}
                                         </optgroup>
-                                        {#                                    <optgroup label="Pacific Time Zone">#}
-                                        {#                                        <option value="c6">Channel6</option>#}
-                                        {#                                        <option value="c7" selected>Channel7</option>#}
-                                        {#                                        <option value="c8">Channel8</option>#}
-                                        {#                                        <option value="c9">Channel9</option>#}
-                                        {#                                        <option value="c10">Channel10</option>#}
-                                        {#                                    </optgroup>#}
                                     </select>
                                 </div>
                                 <br>
@@ -336,416 +324,425 @@
                                                                 <i class="fa fa-globe"></i>&nbsp;&nbsp;NODES
                                                             </div>
                                                         </div>
-                                                        <div class="box-row float-right"">
-                                                            <div class="box-cell p-y-2 ">
-                                                                <div class="easy-pie-chart" data-suffix="P" id="easy-pie-chart-1"><span
-                                                                        class="font-size-14 font-weight-light"></span></div>
-                                                            </div>
+                                                        <div class="box-row float-right"
+                                                        ">
+                                                        <div class="box-cell p-y-2 ">
+                                                            <div class="easy-pie-chart" data-suffix="P"
+                                                                 id="easy-pie-chart-1"><span
+                                                                    class="font-size-14 font-weight-light"></span></div>
                                                         </div>
-                                                    </div>
-                                                </div>
-                                                <div class="pull-right" style="width : 130px; margin-top:540px">
-                                                    <div class="panel box">
-                                                        <div class="box-row">
-                                                            <div class="box-cell p-x-2 p-y-1 bg-black text-xs-center font-size-11 font-weight-semibold">
-                                                                <i class="fa fa-flash"></i>&nbsp;&nbsp;LINKS
-                                                            </div>
-                                                        </div>
-                                                        <div class="box-row">
-                                                            <div class="box-cell p-y-2">
-                                                                <div class="easy-pie-chart" data-suffix="L" id="easy-pie-chart-2"><span
-                                                                        class="font-size-14 font-weight-light"></span></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                {#        <div class="col-xs-12 col-sm-4">#}
-                                                {#            <div class="panel box">#}
-                                                {#                <div class="box-row">#}
-                                                {#                    <div class="box-cell p-x-2 p-y-1 bg-black text-xs-center font-size-11 font-weight-semibold">#}
-                                                {#                        <i class="fa fa-cloud"></i>&nbsp;&nbsp;MEDIA#}
-                                                {#                    </div>#}
-                                                {#                </div>#}
-                                                {#                <div class="box-row">#}
-                                                {#                    <div class="box-cell p-y-2">#}
-                                                {#                        <div class="easy-pie-chart" data-suffix="M" id="easy-pie-chart-3"><span#}
-                                                {#                                class="font-size-14 font-weight-light"></span></div>#}
-                                                {#                    </div>#}
-                                                {#                </div>#}
-                                                {#            </div>#}
-                                                {#        </div>#}
-                                            </div>
-                                        </div>
-                                    </div>
-                                    {#                <div class="tab-pane fade" id="organized">#}
-                                    {#                    <div class="row">#}
-                                    {#                        <div id="mai" style="height: 700px;color: #B3B3B3"></div>#}
-                                    {#                        <script type="text/javascript">#}
-                                    {#                            console.log('loaded')#}
-                                    {#                            var dom1 = document.getElementById("mai");#}
-                                    {#                            var myChart1 = echarts.init(dom1);#}
-                                    {#                            var app = {};#}
-                                    {#                            option = null;#}
-                                    {#                            app.title = 'MainFrame2';#}
-                                    {#                            myChart1.showLoading();#}
-                                    {#                            $.get('/assets/les-miserables.gexf', function (xml) {#}
-                                    {#                                myChart1.hideLoading();#}
-                                    {#                                var graph = echarts.dataTool.gexf.parse(xml);#}
-                                    {#                                var categories = [];#}
-                                    {#                                for (var i = 0; i < 9; i++) {#}
-                                    {#                                    categories[i] = {#}
-                                    {#                                        name: 'Channel' + (i + 1)#}
-                                    {#                                    };#}
-                                    {#                                }#}
-                                    {#                                graph.nodes.forEach(function (node) {#}
-                                    {#                                    node.itemStyle = null;#}
-                                    {#                                    node.value = node.symbolSize;#}
-                                    {#                                    node.symbolSize /= 1.5;#}
-                                    {#                                    node.label = {#}
-                                    {#                                        normal: {#}
-                                    {#                                            show: node.symbolSize > 30#}
-                                    {#                                        }#}
-                                    {#                                    };#}
-                                    {#                                    node.category = node.attributes.modularity_class;#}
-                                    {#                                });#}
-                                    {#                                option = {#}
-                                    {#                                    title: {#}
-                                    {#                                        top: 'bottom',#}
-                                    {#                                        left: 'right'#}
-                                    {#                                    },#}
-                                    {#                                    tooltip: {},#}
-                                    {#                                    legend: [{#}
-                                    {#                                        // selectedMode: 'single',#}
-                                    {#                                        data: categories.map(function (a) {#}
-                                    {#                                            return a.name;#}
-                                    {#                                        })#}
-                                    {#                                    }],#}
-                                    {#                                    animationDuration: 1500,#}
-                                    {#                                    animationEasingUpdate: 'quinticInOut',#}
-                                    {#                                    series: [#}
-                                    {#                                        {#}
-                                    {#                                            name: 'Les Miserables',#}
-                                    {#                                            type: 'graph',#}
-                                    {#                                            layout: 'none',#}
-                                    {#                                            data: graph.nodes,#}
-                                    {#                                            links: graph.links,#}
-                                    {#                                            categories: categories,#}
-                                    {#                                            roam: true,#}
-                                    {#                                            label: {#}
-                                    {#                                                normal: {#}
-                                    {#                                                    position: 'right',#}
-                                    {#                                                    formatter: '{b}'#}
-                                    {#                                                }#}
-                                    {#                                            },#}
-                                    {#                                            lineStyle: {#}
-                                    {#                                                normal: {#}
-                                    {#                                                    color: 'source',#}
-                                    {#                                                    curveness: 0.3#}
-                                    {#                                                }#}
-                                    {#                                            }#}
-                                    {#                                        }#}
-                                    {#                                    ]#}
-                                    {#                                };#}
-                                    {#                                myChart1.setOption(option);#}
-                                    {#                            }, 'xml');#}
-                                    {#                            if (option && typeof option === "object") {#}
-                                    {#                                myChart1.setOption(option, true);#}
-                                    {#                            }#}
-                                    {#                        </script>#}
-                                    {#                    </div>#}
-                                    {#                </div>#}
-                                    {#                <div class="tab-pane fade" id="cir">#}
-                                    {#                    <div class="row">#}
-                                    {#                        <div id="ma" style="height: 700px;color: #B3B3B3"></div>#}
-                                    {#                        <script type="text/javascript">#}
-                                    {#                            var dom2 = document.getElementById("ma");#}
-                                    {#                            var myChart2 = echarts.init(dom2);#}
-                                    {#                            var app = {};#}
-                                    {#                            option = null;#}
-                                    {#                            app.title = 'MainFrame';#}
-                                    {#                            myChart2.showLoading();#}
-                                    {#                            $.get('/assets/les-miserables.gexf', function (xml) {#}
-                                    {#                                myChart2.hideLoading();#}
-                                    {#                                var graph = echarts.dataTool.gexf.parse(xml);#}
-                                    {#                                var categories = [];#}
-                                    {#                                for (var i = 0; i < 9; i++) {#}
-                                    {#                                    categories[i] = {#}
-                                    {#                                        name: 'Channel ' + (i + 1)#}
-                                    {#                                    };#}
-                                    {#                                }#}
-                                    {#                                graph.nodes.forEach(function (node) {#}
-                                    {#                                    node.itemStyle = null;#}
-                                    {#                                    node.value = node.symbolSize;#}
-                                    {#                                    node.symbolSize /= 1.5;#}
-                                    {#                                    node.label = {#}
-                                    {#                                        normal: {#}
-                                    {#                                            show: node.symbolSize > 10#}
-                                    {#                                        }#}
-                                    {#                                    };#}
-                                    {#                                    node.category = node.attributes.modularity_class;#}
-                                    {#                                });#}
-                                    {#                                option = {#}
-                                    {#                                    title: {#}
-                                    {#                                        top: 'bottom',#}
-                                    {#                                        left: 'right'#}
-                                    {#                                    },#}
-                                    {#                                    tooltip: {},#}
-                                    {#                                    legend: [{#}
-                                    {#                                        // selectedMode: 'single',#}
-                                    {#                                        data: categories.map(function (a) {#}
-                                    {#                                            return a.name;#}
-                                    {#                                        })#}
-                                    {#                                    }],#}
-                                    {#                                    animationDurationUpdate: 1500,#}
-                                    {#                                    animationEasingUpdate: 'quinticInOut',#}
-                                    {#                                    series: [#}
-                                    {#                                        {#}
-                                    {#                                            name: 'Les Miserables',#}
-                                    {#                                            type: 'graph',#}
-                                    {#                                            layout: 'circular',#}
-                                    {#                                            circular: {#}
-                                    {#                                                rotateLabel: true#}
-                                    {#                                            },#}
-                                    {#                                            data: graph.nodes,#}
-                                    {#                                            links: graph.links,#}
-                                    {#                                            categories: categories,#}
-                                    {#                                            roam: true,#}
-                                    {#                                            label: {#}
-                                    {#                                                normal: {#}
-                                    {#                                                    position: 'right',#}
-                                    {#                                                    formatter: '{b}'#}
-                                    {#                                                }#}
-                                    {#                                            },#}
-                                    {#                                            lineStyle: {#}
-                                    {#                                                normal: {#}
-                                    {#                                                    color: 'source',#}
-                                    {#                                                    curveness: 0.3#}
-                                    {#                                                }#}
-                                    {#                                            }#}
-                                    {#                                        }#}
-                                    {#                                    ]#}
-                                    {#                                };#}
-                                    {#                                myChart2.setOption(option);#}
-                                    {#                            }, 'xml');#}
-                                    {#                            if (option && typeof option === "object") {#}
-                                    {#                                myChart2.setOption(option, true);#}
-                                    {#                            }#}
-                                    {##}
-                                    {##}
-                                    {##}
-                                    {#                        </script>#}
-                                    {#                    </div>#}
-                                    {#                </div>#}
-                                </div>
-
-
-                                <div class="px-sidebar-right" id="sidebar-vertex" style="position: absolute; z-index: 10;"
-                                     data-width="300">
-
-                                    <button type="button" class="close position-relative" aria-label="Close">
-                                        <span aria-hidden="true" onclick="open_sidebar('', 'sidebar-vertex')">&times;</span>
-                                    </button>
-                                    <div class="px-sidebar-content">
-                                        <div class="loader invisible"></div>
-                                        <div class="panel-heading p-x-1">
-                                            <span class="panel-title">Node Info</span>
-
-                                        </div>
-                                        <div class="col-md-12" id="person_profile">
-                                            <div class="page-profile-v2-subheader page-block p-y-3" style="width:299px;height:299px;">
-                                                <div class="text-xs-center"><img src="{% static '3.png' %}" alt=""
-                                                                                 class="page-profile-v2-avatar border-round image"
-                                                                                 style="width:200px;height:200px;"></div>
-                                                <h1 class="font-size-24 text-xs-center m-y-1 name">Xun Lu</h1>
-                                                <h3 class="m-t-0 m-b-1 text-xs-center text-muted font-weight-normal id">
-                                                    @neversaidthat</h3>
-                                            </div>
-
-                                            <div class="panel panel-transparent">
-                                                <div class="panel-heading p-x-1">
-                                                    <span class="panel-title">Statistics</span>
-                                                </div>
-                                                <div class="list-group m-y-1">
-                                                    <a href="#" class="list-group-item p-x-1 b-a-0 message_number"><strong>126</strong>
-                                                        Messages</a>
-                                                    <a href="#" class="list-group-item p-x-1 b-a-0 weight"><strong>3.75</strong> Weights</a>
-                                                    <a href="#" class="list-group-item p-x-1 b-a-0 mention_number"><strong>73</strong>
-                                                        Mentions</a>
-                                                </div>
-                                            </div>
-
-                                            <div class="panel panel-transparent">
-                                                <div class="panel-heading p-x-1">
-                                                    <span class="panel-title">Posts</span>
-                                                </div>
-                                                <div class="message_list">
-                                                    <div class="widget-messages-alt-item ">
-                                                        <img src="/assets/3.png" alt="" class="widget-messages-alt-avatar">
-                                                        <div>Ok</div>
-                                                        <div class="widget-messages-alt-description">from <a href="#">Xun Lu</a></div>
-                                                        <div class="widget-messages-alt-date">09-02-2017</div>
-                                                    </div>
-
-                                                    <div class="widget-messages-alt-item">
-                                                        <img src="/assets/3.png" alt="" class="widget-messages-alt-avatar">
-                                                        I will finish all the assignments one day before deadline.
-                                                        <div class="widget-messages-alt-description">from <a href="#">Robert Jang</a>
-                                                        </div>
-                                                        <div class="widget-messages-alt-date">08-31-2017</div>
-                                                    </div>
-
-                                                    <div class="widget-messages-alt-item">
-                                                        <img src="/assets/3.png" alt="" class="widget-messages-alt-avatar">
-                                                        I will finish all the assignments one week before deadline.
-                                                        <div class="widget-messages-alt-description">from <a href="#">Robert Jang</a>
-                                                        </div>
-                                                        <div class="widget-messages-alt-date">08-21-2017</div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="p-a-4">
-                                            <button type="button" class="btn" data-toggle="sidebar" data-target="#sidebar-vertex"
-                                                    onclick="open_sidebar('', 'sidebar-vertex')">Close
-                                            </button>
+                                            <div class="pull-right" style="width : 130px; margin-top:540px">
+                                                <div class="panel box">
+                                                    <div class="box-row">
+                                                        <div class="box-cell p-x-2 p-y-1 bg-black text-xs-center font-size-11 font-weight-semibold">
+                                                            <i class="fa fa-flash"></i>&nbsp;&nbsp;LINKS
+                                                        </div>
+                                                    </div>
+                                                    <div class="box-row">
+                                                        <div class="box-cell p-y-2">
+                                                            <div class="easy-pie-chart" data-suffix="L"
+                                                                 id="easy-pie-chart-2"><span
+                                                                    class="font-size-14 font-weight-light"></span></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
                                         </div>
                                     </div>
                                 </div>
+                                {#                <div class="tab-pane fade" id="organized">#}
+                                {#                    <div class="row">#}
+                                {#                        <div id="mai" style="height: 700px;color: #B3B3B3"></div>#}
+                                {#                        <script type="text/javascript">#}
+                                {#                            console.log('loaded')#}
+                                {#                            var dom1 = document.getElementById("mai");#}
+                                {#                            var myChart1 = echarts.init(dom1);#}
+                                {#                            var app = {};#}
+                                {#                            option = null;#}
+                                {#                            app.title = 'MainFrame2';#}
+                                {#                            myChart1.showLoading();#}
+                                {#                            $.get('/assets/les-miserables.gexf', function (xml) {#}
+                                {#                                myChart1.hideLoading();#}
+                                {#                                var graph = echarts.dataTool.gexf.parse(xml);#}
+                                {#                                var categories = [];#}
+                                {#                                for (var i = 0; i < 9; i++) {#}
+                                {#                                    categories[i] = {#}
+                                {#                                        name: 'Channel' + (i + 1)#}
+                                {#                                    };#}
+                                {#                                }#}
+                                {#                                graph.nodes.forEach(function (node) {#}
+                                {#                                    node.itemStyle = null;#}
+                                {#                                    node.value = node.symbolSize;#}
+                                {#                                    node.symbolSize /= 1.5;#}
+                                {#                                    node.label = {#}
+                                {#                                        normal: {#}
+                                {#                                            show: node.symbolSize > 30#}
+                                {#                                        }#}
+                                {#                                    };#}
+                                {#                                    node.category = node.attributes.modularity_class;#}
+                                {#                                });#}
+                                {#                                option = {#}
+                                {#                                    title: {#}
+                                {#                                        top: 'bottom',#}
+                                {#                                        left: 'right'#}
+                                {#                                    },#}
+                                {#                                    tooltip: {},#}
+                                {#                                    legend: [{#}
+                                {#                                        // selectedMode: 'single',#}
+                                {#                                        data: categories.map(function (a) {#}
+                                {#                                            return a.name;#}
+                                {#                                        })#}
+                                {#                                    }],#}
+                                {#                                    animationDuration: 1500,#}
+                                {#                                    animationEasingUpdate: 'quinticInOut',#}
+                                {#                                    series: [#}
+                                {#                                        {#}
+                                {#                                            name: 'Les Miserables',#}
+                                {#                                            type: 'graph',#}
+                                {#                                            layout: 'none',#}
+                                {#                                            data: graph.nodes,#}
+                                {#                                            links: graph.links,#}
+                                {#                                            categories: categories,#}
+                                {#                                            roam: true,#}
+                                {#                                            label: {#}
+                                {#                                                normal: {#}
+                                {#                                                    position: 'right',#}
+                                {#                                                    formatter: '{b}'#}
+                                {#                                                }#}
+                                {#                                            },#}
+                                {#                                            lineStyle: {#}
+                                {#                                                normal: {#}
+                                {#                                                    color: 'source',#}
+                                {#                                                    curveness: 0.3#}
+                                {#                                                }#}
+                                {#                                            }#}
+                                {#                                        }#}
+                                {#                                    ]#}
+                                {#                                };#}
+                                {#                                myChart1.setOption(option);#}
+                                {#                            }, 'xml');#}
+                                {#                            if (option && typeof option === "object") {#}
+                                {#                                myChart1.setOption(option, true);#}
+                                {#                            }#}
+                                {#                        </script>#}
+                                {#                    </div>#}
+                                {#                </div>#}
+                                {#                <div class="tab-pane fade" id="cir">#}
+                                {#                    <div class="row">#}
+                                {#                        <div id="ma" style="height: 700px;color: #B3B3B3"></div>#}
+                                {#                        <script type="text/javascript">#}
+                                {#                            var dom2 = document.getElementById("ma");#}
+                                {#                            var myChart2 = echarts.init(dom2);#}
+                                {#                            var app = {};#}
+                                {#                            option = null;#}
+                                {#                            app.title = 'MainFrame';#}
+                                {#                            myChart2.showLoading();#}
+                                {#                            $.get('/assets/les-miserables.gexf', function (xml) {#}
+                                {#                                myChart2.hideLoading();#}
+                                {#                                var graph = echarts.dataTool.gexf.parse(xml);#}
+                                {#                                var categories = [];#}
+                                {#                                for (var i = 0; i < 9; i++) {#}
+                                {#                                    categories[i] = {#}
+                                {#                                        name: 'Channel ' + (i + 1)#}
+                                {#                                    };#}
+                                {#                                }#}
+                                {#                                graph.nodes.forEach(function (node) {#}
+                                {#                                    node.itemStyle = null;#}
+                                {#                                    node.value = node.symbolSize;#}
+                                {#                                    node.symbolSize /= 1.5;#}
+                                {#                                    node.label = {#}
+                                {#                                        normal: {#}
+                                {#                                            show: node.symbolSize > 10#}
+                                {#                                        }#}
+                                {#                                    };#}
+                                {#                                    node.category = node.attributes.modularity_class;#}
+                                {#                                });#}
+                                {#                                option = {#}
+                                {#                                    title: {#}
+                                {#                                        top: 'bottom',#}
+                                {#                                        left: 'right'#}
+                                {#                                    },#}
+                                {#                                    tooltip: {},#}
+                                {#                                    legend: [{#}
+                                {#                                        // selectedMode: 'single',#}
+                                {#                                        data: categories.map(function (a) {#}
+                                {#                                            return a.name;#}
+                                {#                                        })#}
+                                {#                                    }],#}
+                                {#                                    animationDurationUpdate: 1500,#}
+                                {#                                    animationEasingUpdate: 'quinticInOut',#}
+                                {#                                    series: [#}
+                                {#                                        {#}
+                                {#                                            name: 'Les Miserables',#}
+                                {#                                            type: 'graph',#}
+                                {#                                            layout: 'circular',#}
+                                {#                                            circular: {#}
+                                {#                                                rotateLabel: true#}
+                                {#                                            },#}
+                                {#                                            data: graph.nodes,#}
+                                {#                                            links: graph.links,#}
+                                {#                                            categories: categories,#}
+                                {#                                            roam: true,#}
+                                {#                                            label: {#}
+                                {#                                                normal: {#}
+                                {#                                                    position: 'right',#}
+                                {#                                                    formatter: '{b}'#}
+                                {#                                                }#}
+                                {#                                            },#}
+                                {#                                            lineStyle: {#}
+                                {#                                                normal: {#}
+                                {#                                                    color: 'source',#}
+                                {#                                                    curveness: 0.3#}
+                                {#                                                }#}
+                                {#                                            }#}
+                                {#                                        }#}
+                                {#                                    ]#}
+                                {#                                };#}
+                                {#                                myChart2.setOption(option);#}
+                                {#                            }, 'xml');#}
+                                {#                            if (option && typeof option === "object") {#}
+                                {#                                myChart2.setOption(option, true);#}
+                                {#                            }#}
+                                {##}
+                                {##}
+                                {##}
+                                {#                        </script>#}
+                                {#                    </div>#}
+                                {#                </div>#}
+                            </div>
 
-                                <div class="px-sidebar-right" id="sidebar-edge" style="position: absolute; z-index: 10;"
-                                     data-width="300">
+
+                            <div class="px-sidebar-right" id="sidebar-vertex" style="position: absolute; z-index: 10;"
+                                 data-width="300">
+
+                                <button type="button" class="close position-relative" aria-label="Close">
+                                    <span aria-hidden="true" onclick="open_sidebar('', 'sidebar-vertex')">&times;</span>
+                                </button>
+                                <div class="px-sidebar-content">
                                     <div class="loader invisible"></div>
-                                    <button type="button" class="close position-relative" aria-label="Close">
-                                        <span aria-hidden="true" onclick="open_sidebar('', 'sidebar-edge')">&times;</span>
-                                    </button>
-                                    <div class="px-sidebar-content">
-                                        <div class="panel-heading p-x-1">
-                                            <span class="panel-title">Link Info</span>
+                                    <div class="panel-heading p-x-1">
+                                        <span class="panel-title">Node Info</span>
+
+                                    </div>
+                                    <div class="col-md-12" id="person_profile">
+                                        <div class="page-profile-v2-subheader page-block p-y-3"
+                                             style="width:299px;height:299px;">
+                                            <div class="text-xs-center"><img src="{% static '3.png' %}" alt=""
+                                                                             class="page-profile-v2-avatar border-round image"
+                                                                             style="width:200px;height:200px;"></div>
+                                            <h1 class="font-size-24 text-xs-center m-y-1 name">Xun Lu</h1>
+                                            <h3 class="m-t-0 m-b-1 text-xs-center text-muted font-weight-normal id">
+                                                @neversaidthat</h3>
                                         </div>
-                                        <div class="col-md-12" id="edge_profile">
-                                            <div class="panel panel-transparent">
-                                                <div class="panel-heading p-x-1">
-                                                    <span class="panel-title">Link</span>
+
+                                        <div class="panel panel-transparent">
+                                            <div class="panel-heading p-x-1">
+                                                <span class="panel-title">Statistics</span>
+                                            </div>
+                                            <div class="list-group m-y-1">
+                                                <a href="#" class="list-group-item p-x-1 b-a-0 message_number"><strong>126</strong>
+                                                    Messages</a>
+                                                <a href="#"
+                                                   class="list-group-item p-x-1 b-a-0 weight"><strong>3.75</strong>
+                                                    Weights</a>
+                                                <a href="#" class="list-group-item p-x-1 b-a-0 mention_number"><strong>73</strong>
+                                                    Mentions</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="panel panel-transparent">
+                                            <div class="panel-heading p-x-1">
+                                                <span class="panel-title">Posts</span>
+                                            </div>
+                                            <div class="message_list">
+                                                <div class="widget-messages-alt-item ">
+                                                    <img src="/assets/3.png" alt="" class="widget-messages-alt-avatar">
+                                                    <div>Ok</div>
+                                                    <div class="widget-messages-alt-description">from <a href="#">Xun
+                                                        Lu</a></div>
+                                                    <div class="widget-messages-alt-date">09-02-2017</div>
                                                 </div>
-                                                <br>
-                                                <div class="col-md-6">
-                                                    <div class="panel panel-transparent">
-                                                        <div class="text-xs-center "><img id="node_1_image" src="/assets/1.jpg"
-                                                                                          onerror="standby('node_1_image')"
-                                                                                          class="node1_image page-profile-v2-avatar border-round"
-                                                                                          style="width:100px;height:100px;"
-                                                                                          alt="Picture failed"></div>
-                                                        <h1 class="font-size-18 text-xs-center m-y-1 node1_name">Doge One</h1>
-                                                        <h3 class="node1_id font-size-18 m-t-0 m-b-1 text-xs-center text-muted font-weight-normal">
-                                                            @lookinat</h3>
+
+                                                <div class="widget-messages-alt-item">
+                                                    <img src="/assets/3.png" alt="" class="widget-messages-alt-avatar">
+                                                    I will finish all the assignments one day before deadline.
+                                                    <div class="widget-messages-alt-description">from <a href="#">Robert
+                                                        Jang</a>
                                                     </div>
+                                                    <div class="widget-messages-alt-date">08-31-2017</div>
                                                 </div>
-                                                <div class="col-md-6">
-                                                    <div class="panel panel-transparent">
-                                                        <div class="text-xs-center"><img id="node_2_image" src="/assets/2.jpg"
-                                                                                         onerror="standby('node_2_image')"
-                                                                                         class="node2_image page-profile-v2-avatar border-round"
-                                                                                         style="width:100px;height:100px;"></div>
-                                                        <h1 class="font-size-18 text-xs-center m-y-1 node2_name">Doge two</h1>
-                                                        <h3 class="node2_id font-size-18 m-t-0 m-b-1 text-xs-center text-muted font-weight-normal">
-                                                            @coolestdog</h3>
+
+                                                <div class="widget-messages-alt-item">
+                                                    <img src="/assets/3.png" alt="" class="widget-messages-alt-avatar">
+                                                    I will finish all the assignments one week before deadline.
+                                                    <div class="widget-messages-alt-description">from <a href="#">Robert
+                                                        Jang</a>
                                                     </div>
+                                                    <div class="widget-messages-alt-date">08-21-2017</div>
                                                 </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="p-a-4">
+                                        <button type="button" class="btn" data-toggle="sidebar"
+                                                data-target="#sidebar-vertex"
+                                                onclick="open_sidebar('', 'sidebar-vertex')">Close
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="px-sidebar-right" id="sidebar-edge" style="position: absolute; z-index: 10;"
+                                 data-width="300">
+                                <div class="loader invisible"></div>
+                                <button type="button" class="close position-relative" aria-label="Close">
+                                    <span aria-hidden="true" onclick="open_sidebar('', 'sidebar-edge')">&times;</span>
+                                </button>
+                                <div class="px-sidebar-content">
+                                    <div class="panel-heading p-x-1">
+                                        <span class="panel-title">Link Info</span>
+                                    </div>
+                                    <div class="col-md-12" id="edge_profile">
+                                        <div class="panel panel-transparent">
+                                            <div class="panel-heading p-x-1">
+                                                <span class="panel-title">Link</span>
                                             </div>
                                             <br>
-                                            <div class="panel panel-transparent">
-                                                <div class="panel-heading p-x-1">
-                                                    <span class="panel-title">Statistics</span>
-                                                </div>
-                                                <div class="list-group m-y-1">
-                                                    <a href="#" class="list-group-item p-x-1 b-a-0 message_number"><strong>126</strong>
-                                                        Messages</a>
-                                                    <a href="#" class="list-group-item p-x-1 b-a-0 weight"><strong>3.75</strong> Weights</a>
+                                            <div class="col-md-6">
+                                                <div class="panel panel-transparent">
+                                                    <div class="text-xs-center "><img id="node_1_image"
+                                                                                      src="/assets/1.jpg"
+                                                                                      onerror="standby('node_1_image')"
+                                                                                      class="node1_image page-profile-v2-avatar border-round"
+                                                                                      style="width:100px;height:100px;"
+                                                                                      alt="Picture failed"></div>
+                                                    <h1 class="font-size-18 text-xs-center m-y-1 node1_name">Doge
+                                                        One</h1>
+                                                    <h3 class="node1_id font-size-18 m-t-0 m-b-1 text-xs-center text-muted font-weight-normal">
+                                                        @lookinat</h3>
                                                 </div>
                                             </div>
+                                            <div class="col-md-6">
+                                                <div class="panel panel-transparent">
+                                                    <div class="text-xs-center"><img id="node_2_image"
+                                                                                     src="/assets/2.jpg"
+                                                                                     onerror="standby('node_2_image')"
+                                                                                     class="node2_image page-profile-v2-avatar border-round"
+                                                                                     style="width:100px;height:100px;">
+                                                    </div>
+                                                    <h1 class="font-size-18 text-xs-center m-y-1 node2_name">Doge
+                                                        two</h1>
+                                                    <h3 class="node2_id font-size-18 m-t-0 m-b-1 text-xs-center text-muted font-weight-normal">
+                                                        @coolestdog</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="panel panel-transparent">
+                                            <div class="panel-heading p-x-1">
+                                                <span class="panel-title">Statistics</span>
+                                            </div>
+                                            <div class="list-group m-y-1">
+                                                <a href="#" class="list-group-item p-x-1 b-a-0 message_number"><strong>126</strong>
+                                                    Messages</a>
+                                                <a href="#"
+                                                   class="list-group-item p-x-1 b-a-0 weight"><strong>3.75</strong>
+                                                    Weights</a>
+                                            </div>
+                                        </div>
 
-                                            <div class="panel panel-transparent">
-                                                <div class="panel-heading p-x-1">
-                                                    <span class="panel-title">Posts</span>
+                                        <div class="panel panel-transparent">
+                                            <div class="panel-heading p-x-1">
+                                                <span class="panel-title">Posts</span>
+                                            </div>
+                                            <div class="message_list">
+                                                <div class="widget-chat-item left">
+                                                    <img src="/assets/1.jpg" alt="" class="widget-chat-avatar">
+                                                    <span class="widget-chat-date pull-right">07-24-2017</span>
+                                                    <div class="widget-chat-heading"><a href="#" title="">Doge One</a>
+                                                    </div>
+                                                    <div class="widget-chat-text">
+                                                        Wolf. Wolf. Wolf. Wolf. Wolf.
+                                                    </div>
                                                 </div>
-                                                <div class="message_list">
-                                                    <div class="widget-chat-item left">
-                                                        <img src="/assets/1.jpg" alt="" class="widget-chat-avatar">
-                                                        <span class="widget-chat-date pull-right">07-24-2017</span>
-                                                        <div class="widget-chat-heading"><a href="#" title="">Doge One</a></div>
-                                                        <div class="widget-chat-text">
-                                                            Wolf. Wolf. Wolf. Wolf. Wolf.
-                                                        </div>
+                                                <div class="widget-chat-item right">
+                                                    <img src="/assets/2.jpg" alt="" class="widget-chat-avatar">
+                                                    <span class="widget-chat-date pull-right">07-24-2017</span>
+                                                    <div class="widget-chat-heading"><a href="#" title="">Doge Two</a>
                                                     </div>
-                                                    <div class="widget-chat-item right">
-                                                        <img src="/assets/2.jpg" alt="" class="widget-chat-avatar">
-                                                        <span class="widget-chat-date pull-right">07-24-2017</span>
-                                                        <div class="widget-chat-heading"><a href="#" title="">Doge Two</a></div>
-                                                        <div class="widget-chat-text">
-                                                            Wolf. Wolf. Wolf. Wolf.
-                                                        </div>
+                                                    <div class="widget-chat-text">
+                                                        Wolf. Wolf. Wolf. Wolf.
                                                     </div>
-                                                    <div class="widget-chat-item left">
-                                                        <img src="/assets/1.jpg" alt="" class="widget-chat-avatar">
-                                                        <span class="widget-chat-date pull-right">07-14-2017</span>
-                                                        <div class="widget-chat-heading"><a href="#" title="">Doge One</a></div>
-                                                        <div class="widget-chat-text">
-                                                            Wolf. Wolf. Wolf.
-                                                        </div>
+                                                </div>
+                                                <div class="widget-chat-item left">
+                                                    <img src="/assets/1.jpg" alt="" class="widget-chat-avatar">
+                                                    <span class="widget-chat-date pull-right">07-14-2017</span>
+                                                    <div class="widget-chat-heading"><a href="#" title="">Doge One</a>
                                                     </div>
-                                                    <div class="widget-chat-item right">
-                                                        <img src="/assets/2.jpg" alt="" class="widget-chat-avatar">
-                                                        <span class="widget-chat-date pull-right">07-14-2017</span>
-                                                        <div class="widget-chat-heading"><a href="#" title="">Doge Two 21321 321 3213
-                                                            213
-                                                            213 123 213 12 321 </a></div>
-                                                        <div class="widget-chat-text">
-                                                            Wolf. Wolf.
-                                                        </div>
+                                                    <div class="widget-chat-text">
+                                                        Wolf. Wolf. Wolf.
                                                     </div>
-                                                    <div class="widget-chat-item left">
-                                                        <img src="/assets/1.jpg" alt="" class="widget-chat-avatar">
-                                                        <span class="widget-chat-date pull-right">07-04-2017</span>
-                                                        <div class="widget-chat-heading"><a href="#" title="">Doge One</a></div>
-                                                        <div class="widget-chat-text">
-                                                            Wolf.
-                                                        </div>
+                                                </div>
+                                                <div class="widget-chat-item right">
+                                                    <img src="/assets/2.jpg" alt="" class="widget-chat-avatar">
+                                                    <span class="widget-chat-date pull-right">07-14-2017</span>
+                                                    <div class="widget-chat-heading"><a href="#" title="">Doge Two 21321
+                                                        321 3213
+                                                        213
+                                                        213 123 213 12 321 </a></div>
+                                                    <div class="widget-chat-text">
+                                                        Wolf. Wolf.
+                                                    </div>
+                                                </div>
+                                                <div class="widget-chat-item left">
+                                                    <img src="/assets/1.jpg" alt="" class="widget-chat-avatar">
+                                                    <span class="widget-chat-date pull-right">07-04-2017</span>
+                                                    <div class="widget-chat-heading"><a href="#" title="">Doge One</a>
+                                                    </div>
+                                                    <div class="widget-chat-text">
+                                                        Wolf.
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="p-a-4">
-                                            <button type="button" class="btn" data-toggle="sidebar" data-target="#sidebar-edge"
-                                                    onclick="open_sidebar('', 'sidebar-edge')">Close
-                                            </button>
-                                        </div>
+                                    </div>
+                                    <div class="p-a-4">
+                                        <button type="button" class="btn" data-toggle="sidebar"
+                                                data-target="#sidebar-edge"
+                                                onclick="open_sidebar('', 'sidebar-edge')">Close
+                                        </button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <hr class="page-block m-t-0">
-                    <div class="modal-footer">
-                        <button type="button" class="btn" data-dismiss="modal" onclick="$('#filter_button').click();">
-                            Close
-                        </button>
-                        {#                    <button type="button" class="btn btn-info" onclick="get_channels()">Save changes</button>#}
-                    </div>
-
                 </div>
+                <hr class="page-block m-t-0">
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-dismiss="modal" onclick="$('#filter_button').click();">
+                        Close
+                    </button>
+                    {#                    <button type="button" class="btn btn-info" onclick="get_channels()">Save changes</button>#}
+                </div>
+
             </div>
-
         </div>
-    </div>
-    {#    <button type="button" class="btn" data-toggle="sidebar" onclick="open_sidebar('sidebar-edge', 'sidebar-vertex')">#}
-    {#        Vertex#}
-    {#    </button>#}
-    {##}
-    {#    <button type="button" class="btn" data-toggle="sidebar" onclick="open_sidebar('sidebar-vertex', 'sidebar-edge')">#}
-    {#        Edge#}
-    {#    </button>#}
 
-    <!--Main Frame Nav Bar-->
+    </div>
+</div>
+{#    <button type="button" class="btn" data-toggle="sidebar" onclick="open_sidebar('sidebar-edge', 'sidebar-vertex')">#}
+{#        Vertex#}
+{#    </button>#}
+{##}
+{#    <button type="button" class="btn" data-toggle="sidebar" onclick="open_sidebar('sidebar-vertex', 'sidebar-edge')">#}
+{#        Edge#}
+{#    </button>#}
+
+<!--Main Frame Nav Bar-->
 
 {#    <div id="graph_area">#}
 {##}
@@ -754,166 +751,165 @@
 {#        <!--Main Frame Graphs-->#}
 {##}
 {#    </div>#}
-    <br>
+<br>
 
-    {#    <hr class="page-block m-t-0">#}
+{#    <hr class="page-block m-t-0">#}
 
 
-    <hr class="page-block m-t-0">
+<hr class="page-block m-t-0">
 
-    <!--Invisible more things-->
-    <div class="row" id="schedule">
-        <div class="col-md-6" data-accent="(panel-group-success)||(panel-group-dark)">
-            <div class="panel-group panel-group-success" id="accordion-example-success">
-                <div class="panel">
-                    <div class="panel-heading">
-                        <a class="accordion-toggle collapsed" data-toggle="collapse"
-                           data-parent="#accordion-example-success"
-                           href="#collapseThree-success">
-                            <i class="panel-title-icon fa fa-bullhorn"></i>Update Log
-                        </a>
-                    </div>
-                    <div id="collapseThree-success" class="panel-collapse collapse">
-                        <div id="support-tickets" class="ps-block" style="height: 300px">
-                            <div class="widget-support-tickets-item">
-                                <span class="label label-info pull-right">In Progress</span>
-                                <a href="#" title="" class="widget-support-tickets-title">
-                                    Whole new UI design
-                                </a>
-                                <span class="widget-support-tickets-info">Done by
+<!--Invisible more things-->
+<div class="row" id="schedule">
+    <div class="col-md-6" data-accent="(panel-group-success)||(panel-group-dark)">
+        <div class="panel-group panel-group-success" id="accordion-example-success">
+            <div class="panel">
+                <div class="panel-heading">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse"
+                       data-parent="#accordion-example-success"
+                       href="#collapseThree-success">
+                        <i class="panel-title-icon fa fa-bullhorn"></i>Update Log
+                    </a>
+                </div>
+                <div id="collapseThree-success" class="panel-collapse collapse">
+                    <div id="support-tickets" class="ps-block" style="height: 300px">
+                        <div class="widget-support-tickets-item">
+                            <span class="label label-info pull-right">In Progress</span>
+                            <a href="#" title="" class="widget-support-tickets-title">
+                                Whole new UI design
+                            </a>
+                            <span class="widget-support-tickets-info">Done by
                             <a href="#" title="">Justin</a> in December</span>
-                            </div>
+                        </div>
 
-                            <div class="widget-support-tickets-item">
-                                <span class="label label-success pull-right">Completed</span>
-                                <a href="#" title="" class="widget-support-tickets-title">
-                                    Graph transfer
-                                </a>
-                                <span class="widget-support-tickets-info">Done by <a
-                                        href="#">Justin</a> in November</span>
-                            </div>
+                        <div class="widget-support-tickets-item">
+                            <span class="label label-success pull-right">Completed</span>
+                            <a href="#" title="" class="widget-support-tickets-title">
+                                Graph transfer
+                            </a>
+                            <span class="widget-support-tickets-info">Done by <a
+                                    href="#">Justin</a> in November</span>
+                        </div>
 
-                            <div class="widget-support-tickets-item">
-                                <span class="label label-warning pull-right">Abandoned</span>
-                                <a href="#" title="" class="widget-support-tickets-title">
-                                    Data classified version 3.0
-                                </a>
-                                <span class="widget-support-tickets-info">Done by <a
-                                        href="#">Hall</a> in November</span>
-                            </div>
+                        <div class="widget-support-tickets-item">
+                            <span class="label label-warning pull-right">Abandoned</span>
+                            <a href="#" title="" class="widget-support-tickets-title">
+                                Data classified version 3.0
+                            </a>
+                            <span class="widget-support-tickets-info">Done by <a
+                                    href="#">Hall</a> in November</span>
+                        </div>
 
-                            <div class="widget-support-tickets-item">
-                                <span class="label label-success pull-right">Completed</span>
-                                <a href="#" title="" class="widget-support-tickets-title">
-                                    Server online
-                                </a>
-                                <span class="widget-support-tickets-info">Opened by <a
-                                        href="#">Boris</a> in November</span>
-                            </div>
+                        <div class="widget-support-tickets-item">
+                            <span class="label label-success pull-right">Completed</span>
+                            <a href="#" title="" class="widget-support-tickets-title">
+                                Server online
+                            </a>
+                            <span class="widget-support-tickets-info">Opened by <a
+                                    href="#">Boris</a> in November</span>
+                        </div>
 
-                            <div class="widget-support-tickets-item">
-                                <span class="label label-success pull-right">Completed</span>
-                                <a href="#" title="" class="widget-support-tickets-title">
-                                    Data classified version 2.0
-                                </a>
-                                <span class="widget-support-tickets-info">Done by <a
-                                        href="#">Hall</a> in November</span>
-                            </div>
+                        <div class="widget-support-tickets-item">
+                            <span class="label label-success pull-right">Completed</span>
+                            <a href="#" title="" class="widget-support-tickets-title">
+                                Data classified version 2.0
+                            </a>
+                            <span class="widget-support-tickets-info">Done by <a
+                                    href="#">Hall</a> in November</span>
+                        </div>
 
-                            <div class="widget-support-tickets-item">
-                                <span class="label label-success pull-right">Completed</span>
-                                <a href="#" title="" class="widget-support-tickets-title">
-                                    Data classified version 1.0
-                                </a>
-                                <span class="widget-support-tickets-info">Done by <a
-                                        href="#" title="">Glimer</a> in October</span>
-                            </div>
+                        <div class="widget-support-tickets-item">
+                            <span class="label label-success pull-right">Completed</span>
+                            <a href="#" title="" class="widget-support-tickets-title">
+                                Data classified version 1.0
+                            </a>
+                            <span class="widget-support-tickets-info">Done by <a
+                                    href="#" title="">Glimer</a> in October</span>
+                        </div>
 
-                            <div class="widget-support-tickets-item">
-                                <span class="label label-warning pull-right">Abandoned</span>
-                                <a href="#" title="" class="widget-support-tickets-title">
-                                    Chart customization problem
-                                </a>
-                                <span class="widget-support-tickets-info">Opened by <a
-                                        href="#">Justin</a> in October</span>
-                            </div>
+                        <div class="widget-support-tickets-item">
+                            <span class="label label-warning pull-right">Abandoned</span>
+                            <a href="#" title="" class="widget-support-tickets-title">
+                                Chart customization problem
+                            </a>
+                            <span class="widget-support-tickets-info">Opened by <a
+                                    href="#">Justin</a> in October</span>
+                        </div>
 
-                            <div class="widget-support-tickets-item">
-                                <span class="label label-success pull-right">Completed</span>
-                                <a href="#" title="" class="widget-support-tickets-title">
-                                    <i class="fa fa-warning text-danger"></i> Website version 1.0
-                                </a>
-                                <span class="widget-support-tickets-info">Done by <a
-                                        href="#">Justin</a> in October</span>
-                            </div>
+                        <div class="widget-support-tickets-item">
+                            <span class="label label-success pull-right">Completed</span>
+                            <a href="#" title="" class="widget-support-tickets-title">
+                                <i class="fa fa-warning text-danger"></i> Website version 1.0
+                            </a>
+                            <span class="widget-support-tickets-info">Done by <a
+                                    href="#">Justin</a> in October</span>
+                        </div>
 
-                            <div class="widget-support-tickets-item">
-                                <span class="label label-success pull-right">Completed</span>
-                                <a href="#" title="" class="widget-support-tickets-title">
-                                    Get the raw data
-                                </a>
-                                <span class="widget-support-tickets-info">Done by <a
-                                        href="#">Boris</a> in October</span>
-                            </div>
+                        <div class="widget-support-tickets-item">
+                            <span class="label label-success pull-right">Completed</span>
+                            <a href="#" title="" class="widget-support-tickets-title">
+                                Get the raw data
+                            </a>
+                            <span class="widget-support-tickets-info">Done by <a
+                                    href="#">Boris</a> in October</span>
+                        </div>
 
-                            <div class="widget-support-tickets-item">
-                                <span class="label label-success pull-right">Completed</span>
-                                <a href="#" title="" class="widget-support-tickets-title">
-                                    Project started
-                                </a>
-                                <span class="widget-support-tickets-info">Done by <a
-                                        href="#">Fluo Group</a> in September</span>
-                            </div>
+                        <div class="widget-support-tickets-item">
+                            <span class="label label-success pull-right">Completed</span>
+                            <a href="#" title="" class="widget-support-tickets-title">
+                                Project started
+                            </a>
+                            <span class="widget-support-tickets-info">Done by <a
+                                    href="#">Fluo Group</a> in September</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="col-md-6" data-accent="(panel-group-success)||(panel-group-dark)">
-            <div class="panel-group panel-group-warning" id="accordion-example-success2">
-                <div class="panel">
-                    <div class="panel-heading">
-                        <a class="accordion-toggle collapsed" data-toggle="collapse"
-                           data-parent="#accordion-example-success"
-                           href="#collapseThree-success2">
-                            <i class="panel-title-icon fa fa-fire text-danger"></i>Comments
-                            From Experts
-                        </a>
-                    </div>
-                    <div id="collapseThree-success2" class="panel-collapse collapse">
-                        <div id="comments" class="ps-block tab-pane fade in active" style="height: 300px">
-                            <div class="widget-comments-item">
-                                <img src="/assets/5.png" alt="" class="widget-comments-avatar">
-                                <div class="widget-comments-header">
-                                    <a href="https://twitter.com/realDonaldTrump" title="">Donald Trump</a>
-                                </div>
-                                <div class="widget-comments-text">
-                                    Fluo project is fucking awesome!!!
-                                </div>
-                                <div class="widget-comments-footer">
-                                    2 hours ago
-                                    <div class="pull-right">
-                                        <a href="#"><i class="fa fa-heart"></i>&nbsp;Yay</a>
-                                        <a href="#"><i class="fa fa-times"></i>&nbsp;Nah</a>
-                                    </div>
+    <div class="col-md-6" data-accent="(panel-group-success)||(panel-group-dark)">
+        <div class="panel-group panel-group-warning" id="accordion-example-success2">
+            <div class="panel">
+                <div class="panel-heading">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse"
+                       data-parent="#accordion-example-success"
+                       href="#collapseThree-success2">
+                        <i class="panel-title-icon fa fa-fire text-danger"></i>Comments
+                        From Experts
+                    </a>
+                </div>
+                <div id="collapseThree-success2" class="panel-collapse collapse">
+                    <div id="comments" class="ps-block tab-pane fade in active" style="height: 300px">
+                        <div class="widget-comments-item">
+                            <img src="/assets/5.png" alt="" class="widget-comments-avatar">
+                            <div class="widget-comments-header">
+                                <a href="https://twitter.com/realDonaldTrump" title="">Donald Trump</a>
+                            </div>
+                            <div class="widget-comments-text">
+                                Fluo project is fucking awesome!!!
+                            </div>
+                            <div class="widget-comments-footer">
+                                2 hours ago
+                                <div class="pull-right">
+                                    <a href="#"><i class="fa fa-heart"></i>&nbsp;Yay</a>
+                                    <a href="#"><i class="fa fa-times"></i>&nbsp;Nah</a>
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="widget-comments-item">
-                                <img src="/assets/6.png" alt="" class="widget-comments-avatar">
-                                <div class="widget-comments-header">
-                                    <a href="https://twitter.com/barackobama" title="">Barack Obama</a>
-                                </div>
-                                <div class="widget-comments-text">
-                                    I hate to say this, but this time Trump is right.
-                                </div>
-                                <div class="widget-comments-footer">
-                                    2 hours ago
-                                    <div class="pull-right">
-                                        <a href="#"><i class="fa fa-heart"></i>&nbsp;Yay</a>
-                                        <a href="#"><i class="fa fa-times"></i>&nbsp;Nah</a>
-                                    </div>
+                        <div class="widget-comments-item">
+                            <img src="/assets/6.png" alt="" class="widget-comments-avatar">
+                            <div class="widget-comments-header">
+                                <a href="https://twitter.com/barackobama" title="">Barack Obama</a>
+                            </div>
+                            <div class="widget-comments-text">
+                                I hate to say this, but this time Trump is right.
+                            </div>
+                            <div class="widget-comments-footer">
+                                2 hours ago
+                                <div class="pull-right">
+                                    <a href="#"><i class="fa fa-heart"></i>&nbsp;Yay</a>
+                                    <a href="#"><i class="fa fa-times"></i>&nbsp;Nah</a>
                                 </div>
                             </div>
                         </div>
@@ -922,6 +918,7 @@
             </div>
         </div>
     </div>
+</div>
 </div>
 
 <footer class="px-footer px-footer-bottom p-t-0">
@@ -1124,7 +1121,7 @@
 <script src="https://cdn.rawgit.com/vast-engineering/jquery-popup-overlay/1.7.13/jquery.popupoverlay.js"></script>
 
 <script>
-    $(document).ready(function() {
+    $(document).ready(function () {
 
         // Initialize the plugin
         $('#my_popup').popup();

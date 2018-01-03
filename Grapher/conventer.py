@@ -2,6 +2,7 @@ from Database_conductor import *
 dir_path = './'
 
 import re
+import os
 def remove_control_characters(html):
     def str_to_int(s, default, base=10):
         if int(s, base) < 0x10000:
@@ -12,8 +13,11 @@ def remove_control_characters(html):
     html = re.sub(u"[\x00-\x08\x0b\x0e-\x1f\x7f]", "", html)
     return html
 
-def convert(team_name, channels_list, graph='mention_based_graph_info', user='root', pwd='Czy19970131.',
-            port=3306, host='localhost', dbname='rowdata'):
+def convert(team_name, channels_list, graph='mention_based_graph_info', user='read_database', pwd='FluoBySusTech',
+            port=3306, host='10.20.13.209', dbname='rowdata'):
+    if os.path.isfile(dir_path + "/mention_based/{}_{}.gexf".format(team_name, channels_list[0])):
+        return
+
     from gexf import Gexf
     from textblob import TextBlob
     import random
@@ -173,7 +177,7 @@ def convert(team_name, channels_list, graph='mention_based_graph_info', user='ro
     try:
         output_file.close()
     except Exception:
-        print("Error at diong output_file.close()")
+        print("Error at diong out put_file.close()")
 
     return gexf_dict
 
