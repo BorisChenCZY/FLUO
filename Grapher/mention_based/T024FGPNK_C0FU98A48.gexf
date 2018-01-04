@@ -1,0 +1,350 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.gephi.org/gexf/1.2draft" xmlns:ns0="xsi" version="1.2" ns0:schemaLocation="http://www.gephi.org/gexf/1.1draft http://gephi.org/gexf/1.2draft.xsd">
+  <meta lastmodified="2017-12-31">
+    <creator>Gephi.org</creator>
+    <description>A Web network</description>
+  </meta>
+  <graph defaultedgetype="directed" label="A Web network" mode="static" timeformat="double">
+    <attributes class="node" mode="static">
+      <attribute id="Channel" title="channel" type="String"/>
+      <attribute id="Team" title="team" type="String"/>
+      <attribute id="weight" title="weight" type="float"/>
+    </attributes>
+    <attributes class="edge" mode="static">
+      <attribute id="Channel" title="channel" type="String">
+        <default>None</default>
+      </attribute>
+      <attribute id="Date" title="date" type="float">
+        <default>None</default>
+      </attribute>
+      <attribute id="Message" title="message" type="String">
+        <default>None</default>
+      </attribute>
+      <attribute id="Team" title="team" type="String">
+        <default>None</default>
+      </attribute>
+      <attribute id="Weight" title="weight" type="float">
+        <default>0</default>
+      </attribute>
+    </attributes>
+    <nodes>
+      <node id="U024FGR3T" label="palos">
+        <attvalues>
+          <attvalue for="weight" value="6"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C1NMK697T"/>
+          <attvalue for="Channel" value="C3SLVNTAL"/>
+          <attvalue for="Channel" value="C4F2KTQE9"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+          <attvalue for="Channel" value="C0FU98A48"/>
+          <attvalue for="Channel" value="C024FGQBB"/>
+        </attvalues>
+      </node>
+      <node id="U024FGUSF" label="felipe.itoyama">
+        <attvalues>
+          <attvalue for="weight" value="16"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C1NMK697T"/>
+          <attvalue for="Channel" value="C3SLVNTAL"/>
+          <attvalue for="Channel" value="C4F2KTQE9"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+          <attvalue for="Channel" value="C0FU98A48"/>
+          <attvalue for="Channel" value="C024FGQBB"/>
+        </attvalues>
+      </node>
+      <node id="U024FHW1U" label="ricardosantos">
+        <attvalues>
+          <attvalue for="weight" value="6"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C1NMK697T"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+          <attvalue for="Channel" value="C0FU98A48"/>
+          <attvalue for="Channel" value="C024FGQBB"/>
+        </attvalues>
+      </node>
+      <node id="U09PGTXPY" label="evandropeliciari">
+        <attvalues>
+          <attvalue for="weight" value="11"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C1NMK697T"/>
+          <attvalue for="Channel" value="C3SLVNTAL"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+          <attvalue for="Channel" value="C0FU98A48"/>
+          <attvalue for="Channel" value="C024FGQBB"/>
+        </attvalues>
+      </node>
+      <node id="U09U5TP0U" label="andreia">
+        <attvalues>
+          <attvalue for="weight" value="8"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C1NMK697T"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+          <attvalue for="Channel" value="C0FU98A48"/>
+          <attvalue for="Channel" value="C024FGQBB"/>
+        </attvalues>
+      </node>
+      <node id="U19J6U8EQ" label="adriellyribeiro">
+        <attvalues>
+          <attvalue for="weight" value="18"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C1NMK697T"/>
+          <attvalue for="Channel" value="C4F2KTQE9"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+          <attvalue for="Channel" value="C245W2BE3"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+          <attvalue for="Channel" value="C0FU98A48"/>
+          <attvalue for="Channel" value="C024FGQBB"/>
+        </attvalues>
+      </node>
+      <node id="U1Z5LH5HR" label="fabio_cribeiro">
+        <attvalues>
+          <attvalue for="weight" value="6"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C1NMK697T"/>
+          <attvalue for="Channel" value="C3SLVNTAL"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+          <attvalue for="Channel" value="C245W2BE3"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+          <attvalue for="Channel" value="C0FU98A48"/>
+          <attvalue for="Channel" value="C024FGQBB"/>
+        </attvalues>
+      </node>
+      <node id="U3N0M11EH" label="estevao.andrade">
+        <attvalues>
+          <attvalue for="weight" value="3"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C1NMK697T"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+          <attvalue for="Channel" value="C0FU98A48"/>
+          <attvalue for="Channel" value="C024FGQBB"/>
+        </attvalues>
+      </node>
+      <node id="U3UAJA74N" label="mariano">
+        <attvalues>
+          <attvalue for="weight" value="2"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGQBB"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+          <attvalue for="Channel" value="C0FU98A48"/>
+        </attvalues>
+      </node>
+      <node id="U3UCHJCHE" label="renato.kenji">
+        <attvalues>
+          <attvalue for="weight" value="0"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+          <attvalue for="Channel" value="C0FU98A48"/>
+        </attvalues>
+      </node>
+      <node id="U41CLAYCA" label="rafael.correia">
+        <attvalues>
+          <attvalue for="weight" value="20"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C4H849RQF"/>
+          <attvalue for="Channel" value="C1NMK697T"/>
+          <attvalue for="Channel" value="C0G834D1N"/>
+          <attvalue for="Channel" value="C4F2KTQE9"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+          <attvalue for="Channel" value="C245W2BE3"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+          <attvalue for="Channel" value="C0FU98A48"/>
+          <attvalue for="Channel" value="C024FGQBB"/>
+        </attvalues>
+      </node>
+      <node id="U4PL46RQ9" label="mtoutain">
+        <attvalues>
+          <attvalue for="weight" value="13"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C1NMK697T"/>
+          <attvalue for="Channel" value="C0G834D1N"/>
+          <attvalue for="Channel" value="C4F2KTQE9"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+          <attvalue for="Channel" value="C245W2BE3"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+          <attvalue for="Channel" value="C0FU98A48"/>
+          <attvalue for="Channel" value="C024FGQBB"/>
+        </attvalues>
+      </node>
+      <node id="U4TJAG5CL" label="marinaluizato">
+        <attvalues>
+          <attvalue for="weight" value="2"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+          <attvalue for="Channel" value="C0FU98A48"/>
+          <attvalue for="Channel" value="C4F2KTQE9"/>
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="U024FGUSFU19J6U8EQ12" source="U024FGUSF" target="U19J6U8EQ" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U19J6U8EQ&gt; simone = dimitri, precisa bloquear tb"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1495665865.063849"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0FU98A48"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGUSFU19J6U8EQ3" source="U024FGUSF" target="U19J6U8EQ" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U19J6U8EQ&gt; simone = dimitri, precisa bloquear tb"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1495665865.063849"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0FU98A48"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FHW1UU19J6U8EQ13" source="U024FHW1U" target="U19J6U8EQ" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U19J6U8EQ&gt; a partir de quantos dias de atraso bloqueia?"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1495567410.713454"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0FU98A48"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FHW1UU19J6U8EQ4" source="U024FHW1U" target="U19J6U8EQ" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U19J6U8EQ&gt; a partir de quantos dias de atraso bloqueia?"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1495567410.713454"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0FU98A48"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU024FGR3T11" source="U19J6U8EQ" target="U024FGR3T" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U1Z5LH5HR&gt; &lt;@U09PGTXPY&gt; &lt;@U024FGR3T&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1500485026.647391"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0FU98A48"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU024FGR3T2" source="U19J6U8EQ" target="U024FGR3T" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U1Z5LH5HR&gt; &lt;@U09PGTXPY&gt; &lt;@U024FGR3T&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1500485026.647391"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0FU98A48"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU09PGTXPY1" source="U19J6U8EQ" target="U09PGTXPY" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U1Z5LH5HR&gt; &lt;@U09PGTXPY&gt; &lt;@U024FGR3T&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1500485026.647391"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0FU98A48"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU09PGTXPY10" source="U19J6U8EQ" target="U09PGTXPY" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U1Z5LH5HR&gt; &lt;@U09PGTXPY&gt; &lt;@U024FGR3T&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1500485026.647391"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0FU98A48"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU19J6U8EQ15" source="U19J6U8EQ" target="U19J6U8EQ" weight="0.25">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U19J6U8EQ|adriellyribeiro&gt; uploaded a file: &lt;https://cargobr.slack.com/files/adriellyribeiro/F4N81PV8U/pasted_image_at_2017_03_22_03_28_pm.png|Pasted image at 2017-03-22, 3:28 PM&gt; and commented: 01. ALENA TITARCHUK.........................................R$ 4.635,24&#10;02. ARVEC INDUSTRIA E COMERCIO...............R$ 4.419,73&#10;03. F SOARES PRESTAÇÃO DE SERVIÇO..........R$ 4.166,62&#10;04. KENKORP INDUSTRIA.....................................R$ 2.828,69&#10;05. INTERCAP COMERCIAL...................................R$ 2.650,70&#10;06. L A STOKS............................................................R$ 2.650,21&#10;07. DIMITRI GALLUCCI SIDNEY...........................R$ 2.574,70&#10;08. MAYKON DANILO.............................................R$ 2.560,71&#10;09. REGINALDO CASSIANO MAQUINAS...........R$ 2.485,07&#10;10. WEL PAL COMERCIO........................................R$ 2.483,87&#10;12. ROTO-SG COMERCIO DE PLASTICOS.........R$ 2.475,73&#10;13. ECOTOTAL COLETORES...................................R$ 2.071,97&#10;14. EQUIPASHOP COM DE INST...........................R$ 1.863,84&#10;15. AUTO PECAS LAZINHO.....................................R$ 1.775,22&#10;16. LEANDRO ALMEIDA PINTO.............................R$ 1.714,02&#10;17. ANDRE OLIVEIRA................................................&#10;18. STEP &amp;amp; STOP..........................................................R$ 1.499,97&#10;19. ROBERTA CRISTIANE FRANCO........................&#10;20. FERNANDO HENRIQUE WANKA...................R$ 1.319,32&#10;21. SINTEL COMERCIO DE MAQUINAS..............R$ 1.264,30&#10;22. REBRACO REVENDA..........................................R$ 1.176,11&#10;23. RFS BRASIL............................................................R$ 1.172,63&#10;24. STHEFANIA CAROLINE FREITAS - ME&#10;R$ 1.148,65&#10;INDUSTRIAL E COMERCIAL PRETTY GLASS&#10;R$ 1.134,22&#10;ECOFOUR&#10;R$ 1.010,38&#10;HOT SPEED INDUSTRIA&#10;R$ 942,87&#10;AMS INDUSTRIA&#10;R$ 938,26&#10;COMERCIAL EVOLUTION A.G.R&#10;R$ 924,13&#10;DUBLÕES INSTALAÇÕES COMERCIAIS LTDA - ME&#10;R$ 923,18&#10;ALEXANDRE ANTONIO&#10;R$ 919,29&#10;NOVA DISTRIBUIDORA&#10;R$ 899,07&#10;COMERCIO DE MATERIAIS HOSPITALARES&#10;R$ 872,86&#10;FERNANDA MARIANO&#10;R$ 801,23&#10;FENIX FABRICACAO&#10;R$ 794,92&#10;CITY SELL COMERCIO&#10;R$ 777,45&#10;MORADA DA FLORESTA PRODUTOS&#10;R$ 731,83&#10;RONEI DE OLIVEIRA&#10;R$ 722,72&#10;M &amp;amp; A COMERCIO DE BOMBAS&#10;R$ 705,33"/>
+          <attvalue for="Weight" value="0.25"/>
+          <attvalue for="Date" value="1490207323.988419"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0FU98A48"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU19J6U8EQ16" source="U19J6U8EQ" target="U19J6U8EQ" weight="0.25">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U19J6U8EQ|adriellyribeiro&gt; uploaded a file: &lt;https://cargobr.slack.com/files/adriellyribeiro/F4J153F6D/pasted_image_at_2017_03_15_11_07_am.png|Pasted image at 2017-03-15, 11:07 AM&gt; and commented: CLIENTES BLOQUEADOS - QUARTA-FEIRA (15/03)&#10;____________________________________________________________&#10;&#10;01. PERCIVAL DO AMARAL RAMOS..............................R$ 4.799,72&#10;02. ALENA TITARCHUK........................................................R$ 4.635,24&#10;03. ARVEC INDUSTRIA E COMERCIO............................R$ 4.119,59&#10;04. DIMITRI GALLUCCI SIDNEY........................................R$ 2.909,48&#10;06. MORADA DA FLORESTA PRODUTOS.....................R$ 2.737,43&#10;07. INTERCAP COMERCIAL................................................R$ 2.650,70&#10;08. L A STOKS..............................................................................R$ 2.650,21&#10;09. MAYKON DANILO.............................................................R$ 2.560,71&#10;10. REGINALDO CASSIANO MAQUINAS.......................R$ 2.485,07&#10;11. WEL PAL COMERCIO.......................................................R$ 2.483,87&#10;12. ROTO-SG COMERCIO DE PLASTICOS.....................R$ 2.475,73&#10;13. ECOTOTAL COLETORES..................................................R$ 2.071,97&#10;14. LEANDRO ALMEIDA PINTO...........................................R$ 1.714,02&#10;15. EQUIPASHOP COM DE INST. COM LTDA................R$ 1.700,08&#10;16. ANDRE OLIVEIRA................................................................R$ 1.524,71&#10;17. STEP &amp;amp; STOP...........................................................................R$ 1.499,97&#10;18. ROBERTA CRISTIANE FRANCO....................................R$ 1.459,48&#10;19. AUTO PECAS LAZINHO.....................................................R$ 1.405,68&#10;20. JACYARA MARIA FERREIRA............................................R$ 1.204,07&#10;21. REBRACO REVENDA..........................................................R$ 1.176,11&#10;22. RFS BRASIL..............................................................................R$ 1.172,63&#10;23. ECOFOUR.................................................................................R$ 1.010,38&#10;24. PORTO PORTAS E JANELAS.............................................R$ 942,90&#10;25. HOT SPEED INDUSTRIA.....................................................R$ 942,87&#10;26. COMERCIAL EVOLUTION A.G.R....................................R$ 924,13&#10;27. DUBLÕES INSTALAÇÕES COMERCIAIS.....................R$ 923,18&#10;28. ALEXANDRE ANTONIO......................................................R$ 919,29&#10;29. NOVA DISTRIBUIDORA......................................................R$ 899,07&#10;30. COMERCIO DE MATERIAIS HOSPITALARES............R$ 872,86&#10;31. MARWELL INDUSTRIAL......................................................R$ 838,25&#10;32. FENIX FABRICACAO.............................................................R$ 794,92&#10;33. CITY SELL COMERCIO.........................................................R$ 777,45&#10;34. FERNANDO HENRIQUE WANKA...................................R$ 746,39&#10;35. RONEI DE OLIVEIRA&#10;R$ 722,72&#10;M &amp;amp; A COMERCIO DE BOMBAS&#10;R$ 705,33"/>
+          <attvalue for="Weight" value="0.25"/>
+          <attvalue for="Date" value="1489586874.31761"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0FU98A48"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU19J6U8EQ17" source="U19J6U8EQ" target="U19J6U8EQ" weight="0.25">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U19J6U8EQ|adriellyribeiro&gt; uploaded a file: &lt;https://cargobr.slack.com/files/adriellyribeiro/F4GPXDLBH/pasted_image_at_2017_03_09_01_47_pm.png|Pasted image at 2017-03-09, 1:47 PM&gt; and commented: 01. ALENA TITARCHUK............................R$ 4.635,24&#10;02. ARVEC INDUSTRIA E COMERC....R$ 4.119,59&#10;03. INTERCAP COMERCIAL....................R$ 2.650,70&#10;04. L A STOKS.................................................R$ 2.650,21&#10;05. MAYKON DANILO................................R$ 2.560,71&#10;06. WEL PAL COMERCIO..........................R$ 2.483,87&#10;07. ROTO-SG COMERCIO DE PLAST...R$ 2.475,73&#10;08. PERCIVAL DO AMARAL RAMOS....R$ 2.385,07&#10;09. ECOTOTAL COLETORES.....................R$ 2.071,97&#10;10. DIMITRI GALLUCCI SIDNEY..............R$ 2.019,34&#10;11. MORADA DA FLORESTA PRODU....R$ 2.005,60&#10;12. EQUIPASHOP COM DE INST. ...........R$ 1.982,03&#10;13. LEANDRO ALMEIDA PINTO...............R$ 1.714,02&#10;14. ANDRE OLIVEIRA....................................R$ 1.524,71&#10;15. STEP &amp;amp; STOP................................................R$ 1.499,97&#10;16. ROBERTA CRISTIANE FRANCO&#10;R$ 1.459,48&#10;AUTO PECAS LAZINHO&#10;R$ 1.405,68&#10;REGINALDO CASSIANO MAQUINAS&#10;R$ 1.342,69&#10;Embarcador&#10;R$ 1.241,99&#10;JACYARA MARIA FERREIRA MACHADO BISPO - PECAS - ME&#10;R$ 1.204,07&#10;REBRACO REVENDA&#10;R$ 1.176,11&#10;RFS BRASIL&#10;R$ 1.172,63&#10;ECOFOUR&#10;R$ 1.010,38&#10;COMERCIAL EVOLUTION A.G.R&#10;R$ 924,13&#10;ALEXANDRE ANTONIO&#10;R$ 919,29&#10;NOVA DISTRIBUIDORA&#10;R$ 899,07&#10;COMERCIO DE MATERIAIS HOSPITALARES&#10;R$ 872,86&#10;HOT SPEED INDUSTRIA&#10;R$ 820,68&#10;FENIX FABRICACAO&#10;R$ 794,92&#10;CITY SELL COMERCIO&#10;R$ 777,45&#10;FERNANDO HENRIQUE WANKA&#10;R$ 746,39&#10;RONEI DE OLIVEIRA&#10;R$ 722,72&#10;INDUSTRIAL E COMERCIAL PRETTY GLASS&#10;R$ 709,97&#10;M &amp;amp; A COMERCIO DE BOMBAS&#10;R$ 705,33"/>
+          <attvalue for="Weight" value="0.25"/>
+          <attvalue for="Date" value="1489078075.598498"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0FU98A48"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU19J6U8EQ6" source="U19J6U8EQ" target="U19J6U8EQ" weight="0.25">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U19J6U8EQ|adriellyribeiro&gt; uploaded a file: &lt;https://cargobr.slack.com/files/adriellyribeiro/F4N81PV8U/pasted_image_at_2017_03_22_03_28_pm.png|Pasted image at 2017-03-22, 3:28 PM&gt; and commented: 01. ALENA TITARCHUK.........................................R$ 4.635,24&#10;02. ARVEC INDUSTRIA E COMERCIO...............R$ 4.419,73&#10;03. F SOARES PRESTAÇÃO DE SERVIÇO..........R$ 4.166,62&#10;04. KENKORP INDUSTRIA.....................................R$ 2.828,69&#10;05. INTERCAP COMERCIAL...................................R$ 2.650,70&#10;06. L A STOKS............................................................R$ 2.650,21&#10;07. DIMITRI GALLUCCI SIDNEY...........................R$ 2.574,70&#10;08. MAYKON DANILO.............................................R$ 2.560,71&#10;09. REGINALDO CASSIANO MAQUINAS...........R$ 2.485,07&#10;10. WEL PAL COMERCIO........................................R$ 2.483,87&#10;12. ROTO-SG COMERCIO DE PLASTICOS.........R$ 2.475,73&#10;13. ECOTOTAL COLETORES...................................R$ 2.071,97&#10;14. EQUIPASHOP COM DE INST...........................R$ 1.863,84&#10;15. AUTO PECAS LAZINHO.....................................R$ 1.775,22&#10;16. LEANDRO ALMEIDA PINTO.............................R$ 1.714,02&#10;17. ANDRE OLIVEIRA................................................&#10;18. STEP &amp;amp; STOP..........................................................R$ 1.499,97&#10;19. ROBERTA CRISTIANE FRANCO........................&#10;20. FERNANDO HENRIQUE WANKA...................R$ 1.319,32&#10;21. SINTEL COMERCIO DE MAQUINAS..............R$ 1.264,30&#10;22. REBRACO REVENDA..........................................R$ 1.176,11&#10;23. RFS BRASIL............................................................R$ 1.172,63&#10;24. STHEFANIA CAROLINE FREITAS - ME&#10;R$ 1.148,65&#10;INDUSTRIAL E COMERCIAL PRETTY GLASS&#10;R$ 1.134,22&#10;ECOFOUR&#10;R$ 1.010,38&#10;HOT SPEED INDUSTRIA&#10;R$ 942,87&#10;AMS INDUSTRIA&#10;R$ 938,26&#10;COMERCIAL EVOLUTION A.G.R&#10;R$ 924,13&#10;DUBLÕES INSTALAÇÕES COMERCIAIS LTDA - ME&#10;R$ 923,18&#10;ALEXANDRE ANTONIO&#10;R$ 919,29&#10;NOVA DISTRIBUIDORA&#10;R$ 899,07&#10;COMERCIO DE MATERIAIS HOSPITALARES&#10;R$ 872,86&#10;FERNANDA MARIANO&#10;R$ 801,23&#10;FENIX FABRICACAO&#10;R$ 794,92&#10;CITY SELL COMERCIO&#10;R$ 777,45&#10;MORADA DA FLORESTA PRODUTOS&#10;R$ 731,83&#10;RONEI DE OLIVEIRA&#10;R$ 722,72&#10;M &amp;amp; A COMERCIO DE BOMBAS&#10;R$ 705,33"/>
+          <attvalue for="Weight" value="0.25"/>
+          <attvalue for="Date" value="1490207323.988419"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0FU98A48"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU19J6U8EQ7" source="U19J6U8EQ" target="U19J6U8EQ" weight="0.25">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U19J6U8EQ|adriellyribeiro&gt; uploaded a file: &lt;https://cargobr.slack.com/files/adriellyribeiro/F4J153F6D/pasted_image_at_2017_03_15_11_07_am.png|Pasted image at 2017-03-15, 11:07 AM&gt; and commented: CLIENTES BLOQUEADOS - QUARTA-FEIRA (15/03)&#10;____________________________________________________________&#10;&#10;01. PERCIVAL DO AMARAL RAMOS..............................R$ 4.799,72&#10;02. ALENA TITARCHUK........................................................R$ 4.635,24&#10;03. ARVEC INDUSTRIA E COMERCIO............................R$ 4.119,59&#10;04. DIMITRI GALLUCCI SIDNEY........................................R$ 2.909,48&#10;06. MORADA DA FLORESTA PRODUTOS.....................R$ 2.737,43&#10;07. INTERCAP COMERCIAL................................................R$ 2.650,70&#10;08. L A STOKS..............................................................................R$ 2.650,21&#10;09. MAYKON DANILO.............................................................R$ 2.560,71&#10;10. REGINALDO CASSIANO MAQUINAS.......................R$ 2.485,07&#10;11. WEL PAL COMERCIO.......................................................R$ 2.483,87&#10;12. ROTO-SG COMERCIO DE PLASTICOS.....................R$ 2.475,73&#10;13. ECOTOTAL COLETORES..................................................R$ 2.071,97&#10;14. LEANDRO ALMEIDA PINTO...........................................R$ 1.714,02&#10;15. EQUIPASHOP COM DE INST. COM LTDA................R$ 1.700,08&#10;16. ANDRE OLIVEIRA................................................................R$ 1.524,71&#10;17. STEP &amp;amp; STOP...........................................................................R$ 1.499,97&#10;18. ROBERTA CRISTIANE FRANCO....................................R$ 1.459,48&#10;19. AUTO PECAS LAZINHO.....................................................R$ 1.405,68&#10;20. JACYARA MARIA FERREIRA............................................R$ 1.204,07&#10;21. REBRACO REVENDA..........................................................R$ 1.176,11&#10;22. RFS BRASIL..............................................................................R$ 1.172,63&#10;23. ECOFOUR.................................................................................R$ 1.010,38&#10;24. PORTO PORTAS E JANELAS.............................................R$ 942,90&#10;25. HOT SPEED INDUSTRIA.....................................................R$ 942,87&#10;26. COMERCIAL EVOLUTION A.G.R....................................R$ 924,13&#10;27. DUBLÕES INSTALAÇÕES COMERCIAIS.....................R$ 923,18&#10;28. ALEXANDRE ANTONIO......................................................R$ 919,29&#10;29. NOVA DISTRIBUIDORA......................................................R$ 899,07&#10;30. COMERCIO DE MATERIAIS HOSPITALARES............R$ 872,86&#10;31. MARWELL INDUSTRIAL......................................................R$ 838,25&#10;32. FENIX FABRICACAO.............................................................R$ 794,92&#10;33. CITY SELL COMERCIO.........................................................R$ 777,45&#10;34. FERNANDO HENRIQUE WANKA...................................R$ 746,39&#10;35. RONEI DE OLIVEIRA&#10;R$ 722,72&#10;M &amp;amp; A COMERCIO DE BOMBAS&#10;R$ 705,33"/>
+          <attvalue for="Weight" value="0.25"/>
+          <attvalue for="Date" value="1489586874.31761"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0FU98A48"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU19J6U8EQ8" source="U19J6U8EQ" target="U19J6U8EQ" weight="0.25">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U19J6U8EQ|adriellyribeiro&gt; uploaded a file: &lt;https://cargobr.slack.com/files/adriellyribeiro/F4GPXDLBH/pasted_image_at_2017_03_09_01_47_pm.png|Pasted image at 2017-03-09, 1:47 PM&gt; and commented: 01. ALENA TITARCHUK............................R$ 4.635,24&#10;02. ARVEC INDUSTRIA E COMERC....R$ 4.119,59&#10;03. INTERCAP COMERCIAL....................R$ 2.650,70&#10;04. L A STOKS.................................................R$ 2.650,21&#10;05. MAYKON DANILO................................R$ 2.560,71&#10;06. WEL PAL COMERCIO..........................R$ 2.483,87&#10;07. ROTO-SG COMERCIO DE PLAST...R$ 2.475,73&#10;08. PERCIVAL DO AMARAL RAMOS....R$ 2.385,07&#10;09. ECOTOTAL COLETORES.....................R$ 2.071,97&#10;10. DIMITRI GALLUCCI SIDNEY..............R$ 2.019,34&#10;11. MORADA DA FLORESTA PRODU....R$ 2.005,60&#10;12. EQUIPASHOP COM DE INST. ...........R$ 1.982,03&#10;13. LEANDRO ALMEIDA PINTO...............R$ 1.714,02&#10;14. ANDRE OLIVEIRA....................................R$ 1.524,71&#10;15. STEP &amp;amp; STOP................................................R$ 1.499,97&#10;16. ROBERTA CRISTIANE FRANCO&#10;R$ 1.459,48&#10;AUTO PECAS LAZINHO&#10;R$ 1.405,68&#10;REGINALDO CASSIANO MAQUINAS&#10;R$ 1.342,69&#10;Embarcador&#10;R$ 1.241,99&#10;JACYARA MARIA FERREIRA MACHADO BISPO - PECAS - ME&#10;R$ 1.204,07&#10;REBRACO REVENDA&#10;R$ 1.176,11&#10;RFS BRASIL&#10;R$ 1.172,63&#10;ECOFOUR&#10;R$ 1.010,38&#10;COMERCIAL EVOLUTION A.G.R&#10;R$ 924,13&#10;ALEXANDRE ANTONIO&#10;R$ 919,29&#10;NOVA DISTRIBUIDORA&#10;R$ 899,07&#10;COMERCIO DE MATERIAIS HOSPITALARES&#10;R$ 872,86&#10;HOT SPEED INDUSTRIA&#10;R$ 820,68&#10;FENIX FABRICACAO&#10;R$ 794,92&#10;CITY SELL COMERCIO&#10;R$ 777,45&#10;FERNANDO HENRIQUE WANKA&#10;R$ 746,39&#10;RONEI DE OLIVEIRA&#10;R$ 722,72&#10;INDUSTRIAL E COMERCIAL PRETTY GLASS&#10;R$ 709,97&#10;M &amp;amp; A COMERCIO DE BOMBAS&#10;R$ 705,33"/>
+          <attvalue for="Weight" value="0.25"/>
+          <attvalue for="Date" value="1489078075.598498"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0FU98A48"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU1Z5LH5HR0" source="U19J6U8EQ" target="U1Z5LH5HR" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U1Z5LH5HR&gt; &lt;@U09PGTXPY&gt; &lt;@U024FGR3T&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1500485026.647391"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0FU98A48"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU1Z5LH5HR9" source="U19J6U8EQ" target="U1Z5LH5HR" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U1Z5LH5HR&gt; &lt;@U09PGTXPY&gt; &lt;@U024FGR3T&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1500485026.647391"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0FU98A48"/>
+        </attvalues>
+      </edge>
+      <edge id="U41CLAYCAU4PL46RQ914" source="U41CLAYCA" target="U4PL46RQ9" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U4PL46RQ9&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1495195318.041602"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0FU98A48"/>
+        </attvalues>
+      </edge>
+      <edge id="U41CLAYCAU4PL46RQ95" source="U41CLAYCA" target="U4PL46RQ9" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U4PL46RQ9&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1495195318.041602"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0FU98A48"/>
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

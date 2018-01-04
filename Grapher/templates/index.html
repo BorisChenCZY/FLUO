@@ -2,9 +2,12 @@
 
 <html>
 <head>
-    {% load static %}
+    {% load staticfiles %}
     <script>
-        var GLOBAL_PATH = '{{ STATIC_PATH }}';
+        var GLOBAL_PATH = "/assets/";
+        var current_team;
+        var loaded_channels = {};
+
     </script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -18,6 +21,7 @@
     <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
           integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="{% static 'loader.css' %}" rel="stylesheet">
 
     <!-- DEMO ONLY: Function for the proper stylesheet loading according to the demo settings -->
     <script>function _pxDemo_loadStylesheet(a, b, c) {
@@ -43,7 +47,7 @@
             _pxDemo_loadStylesheet(a + b + ".min.css", "px-demo-stylesheet-theme", b)
         }
 
-        _pxDemo_loadTheme('assets/');
+        _pxDemo_loadTheme(GLOBAL_PATH);
     </script>
 
     <!-- Demo assets -->
@@ -55,9 +59,17 @@
 
     <!-- Pace.js -->
     <script src="/assets/pace.min.js"></script>
+    <script type="text/javascript" src="/assets/jquery.js"></script>
+
+    {#    <script src="{% static 'demo.js' %}"></script>#}
+    {#    <script type="text/javascript" src="{% static 'GraphParser.js' %}"></script>#}
+    {#    <script type="text/javascript" src="{% static 'infomation_getter.js' %}"></script>#}
+    {#    <script type="text/javascript" src="{% static 'init.js' %}"></script>#}
+
 
     <script src="{% static 'demo.js' %}"></script>
-    
+
+
     <!-- Custom styling -->
     <style>
         .page-header-form .input-group-addon,
@@ -225,7 +237,7 @@
     <div class="page-header">
         <div class="row">
             <div class="col-md-4 text-xs-center text-md-left text-nowrap">
-                <h1 id="status_bar_large"><i class="page-header-icon ion-ios-pulse-strong"></i>Stats</h1>
+                <h1 id="status_bar_large"><i class="page-header-icon fa fa-users"></i>Please select a team</h1>
             </div>
 
             <hr class="page-wide-block visible-xs visible-sm">
@@ -291,21 +303,21 @@
                         <div class="col-md-4">
                             <br>
                             <h5 class="m-t-0">Weight for Nodes</h5>
-                            <div class="clearfix">
+                            <div class="clearfix" id="bs-slider-node-div">
                                 <input id="bs-slider-node" type="text" value="" data-slider-min="0"
-                                       data-slider-max="100"
-                                       data-slider-step="1" data-slider-value="[30,70]">
+                                       data-slider-max="1"
+                                       data-slider-step="1" data-slider-value="[0,1]">
                                 <b class="pull-xs-left">0</b>
-                                <b class="pull-xs-right">100</b>
+                                <b class="pull-xs-right">0</b>
                             </div>
                             <br>
                             <h5 class="m-t-0">Weight for Edges</h5>
-                            <div class="clearfix">
-                                <input id="bs-slider-edge" type="text" value="" data-slider-min="0"
-                                       data-slider-max="100"
-                                       data-slider-step="1" data-slider-value="[30,70]">
-                                <b class="pull-xs-left">0</b>
-                                <b class="pull-xs-right">100</b>
+                            <div class="clearfix" id="bs-slider-edge-div">
+                                <input id="bs-slider-edge" type="text" value="" data-slider-min="-1"
+                                       data-slider-max="1"
+                                       data-slider-step="0.1" data-slider-value="[-1,1]">
+                                <b class="pull-xs-left">-1</b>
+                                <b class="pull-xs-right">1</b>
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -351,13 +363,13 @@
 
     </div>
 
-    <button type="button" class="btn" data-toggle="sidebar" onclick="open_sidebar('sidebar-edge', 'sidebar-vertex')">
-        Vertex
-    </button>
-
-    <button type="button" class="btn" data-toggle="sidebar" onclick="open_sidebar('sidebar-vertex', 'sidebar-edge')">
-        Edge
-    </button>
+{#    <button type="button" class="btn" data-toggle="sidebar" onclick="open_sidebar('sidebar-edge', 'sidebar-vertex')">#}
+{#        Vertex#}
+{#    </button>#}
+{##}
+{#    <button type="button" class="btn" data-toggle="sidebar" onclick="open_sidebar('sidebar-vertex', 'sidebar-edge')">#}
+{#        Edge#}
+{#    </button>#}
 
     <!--Main Frame Nav Bar-->
     <ul class="nav nav-tabs nav-tabs-simple">
@@ -551,9 +563,15 @@
 
 
             <div class="px-sidebar-right" id="sidebar-vertex" style="position: absolute; z-index: 10;" data-width="300">
+
+                <button type="button" class="close position-relative" aria-label="Close">
+                    <span aria-hidden="true" onclick="open_sidebar('', 'sidebar-vertex')">&times;</span>
+                </button>
                 <div class="px-sidebar-content">
+                    <div class="loader invisible"></div>
                     <div class="panel-heading p-x-1">
                         <span class="panel-title">Node Info</span>
+
                     </div>
                     <div class="col-md-12" id="person_profile">
                         <div class="page-profile-v2-subheader page-block p-y-3" style="width:299px;height:299px;">
@@ -606,13 +624,17 @@
                         </div>
                     </div>
                     <div class="p-a-4">
-                        <button type="button" class="btn" data-toggle="sidebar" data-target="#sidebar-vertex">Close
+                        <button type="button" class="btn" data-toggle="sidebar" data-target="#sidebar-vertex" onclick="open_sidebar('', 'sidebar-vertex')">Close
                         </button>
                     </div>
                 </div>
             </div>
 
             <div class="px-sidebar-right" id="sidebar-edge" style="position: absolute; z-index: 10;" data-width="300">
+                <div class="loader invisible"></div>
+                <button type="button" class="close position-relative" aria-label="Close">
+                    <span aria-hidden="true" onclick="open_sidebar('', 'sidebar-edge')">&times;</span>
+                </button>
                 <div class="px-sidebar-content">
                     <div class="panel-heading p-x-1">
                         <span class="panel-title">Link Info</span>
@@ -691,7 +713,8 @@
                                 <div class="widget-chat-item right">
                                     <img src="/assets/2.jpg" alt="" class="widget-chat-avatar">
                                     <span class="widget-chat-date pull-right">07-14-2017</span>
-                                    <div class="widget-chat-heading"><a href="#" title="">Doge Two 21321 321 3213 213 213 123 213 12 321 </a></div>
+                                    <div class="widget-chat-heading"><a href="#" title="">Doge Two 21321 321 3213 213
+                                        213 123 213 12 321 </a></div>
                                     <div class="widget-chat-text">
                                         Wolf. Wolf.
                                     </div>
@@ -708,7 +731,7 @@
                         </div>
                     </div>
                     <div class="p-a-4">
-                        <button type="button" class="btn" data-toggle="sidebar" data-target="#sidebar-edge">Close
+                        <button type="button" class="btn" data-toggle="sidebar" data-target="#sidebar-edge" onclick="open_sidebar('', 'sidebar-edge')">Close
                         </button>
                     </div>
                 </div>
@@ -718,126 +741,202 @@
 
     <br>
 
-<hr class="page-block m-t-0">
-    <div id="owl-carousel-autoplay" class="owl-carousel">
-        <div class="panel box">
-            <div class="box-row">
-                <div class="box-cell p-x-2 p-y-1 bg-black text-xs-center font-size-11 font-weight-semibold">
-                    <i class="fa fa-globe"></i>&nbsp;&nbsp;NODES
+    <hr class="page-block m-t-0">
+{#    <div id="owl-carousel-autoplay" class="owl-carousel">#}
+{#        <div class="panel box">#}
+{#            <div class="box-row">#}
+{#                <div class="box-cell p-x-2 p-y-1 bg-black text-xs-center font-size-11 font-weight-semibold">#}
+{#                    <i class="fa fa-globe"></i>&nbsp;&nbsp;NODES#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="box-row">#}
+{#                <div class="box-cell p-y-2">#}
+{#                    <div class="easy-pie-chart" style="height: 60px"><span#}
+{#                            class="font-size-24">20</span></div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{##}
+{#        <div class="panel box">#}
+{#            <div class="box-row">#}
+{#                <div class="box-cell p-x-2 p-y-1 bg-black text-xs-center font-size-11 font-weight-semibold">#}
+{#                    <i class="fa fa-flash"></i>&nbsp;&nbsp;LINKS#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="box-row">#}
+{#                <div class="box-cell p-y-2">#}
+{#                    <div class="easy-pie-chart" style="height: 60px"><span#}
+{#                            class="font-size-24">20</span></div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{##}
+{#        <div class="panel box">#}
+{#            <div class="box-row">#}
+{#                <div class="box-cell p-x-2 p-y-1 bg-black text-xs-center font-size-11 font-weight-semibold">#}
+{#                    <i class="fa fa-cloud"></i>&nbsp;&nbsp;SLICES#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="box-row">#}
+{#                <div class="box-cell p-y-2">#}
+{#                    <div class="easy-pie-chart" style="height: 60px"><span#}
+{#                            class="font-size-24">20</span></div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{##}
+{#        <div class="panel box">#}
+{#            <div class="box-row">#}
+{#                <div class="box-cell p-x-2 p-y-1 bg-black text-xs-center font-size-11 font-weight-semibold">#}
+{#                    <i class="fa fa-check-square"></i>&nbsp;&nbsp;CENTRALITY#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="box-row">#}
+{#                <div class="box-cell p-y-2">#}
+{#                    <div class="easy-pie-chart" style="height: 60px"><span#}
+{#                            class="font-size-24 ">20</span></div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{##}
+{#        <div class="panel box">#}
+{#            <div class="box-row">#}
+{#                <div class="box-cell p-x-2 p-y-1 bg-black text-xs-center font-size-11 font-weight-semibold">#}
+{#                    <i class="fa fa-sign-out"></i>&nbsp;&nbsp;GEODESIC#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="box-row">#}
+{#                <div class="box-cell p-y-2">#}
+{#                    <div class="easy-pie-chart" style="height: 60px"><span#}
+{#                            class="font-size-24 ">20</span></div>#}
+{#                </div>#}
+{#            </div>#}
+{##}
+{#        </div>#}
+{##}
+{#        <div class="panel box">#}
+{#            <div class="box-row">#}
+{#                <div class="box-cell p-x-2 p-y-1 bg-black text-xs-center font-size-11 font-weight-semibold">#}
+{#                    <i class="fa fa-refresh"></i>&nbsp;&nbsp;TABLE#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="box-row">#}
+{#                <div class="box-cell p-y-2">#}
+{#                    <div class="easy-pie-chart" style="height: 60px"><span#}
+{#                            class="font-size-24">20</span></div>#}
+{#                </div>#}
+{#            </div>#}
+{##}
+{#        </div>#}
+{##}
+{#        <div class="panel box">#}
+{#            <div class="box-row">#}
+{#                <div class="box-cell p-x-2 p-y-1 bg-black text-xs-center font-size-11 font-weight-semibold">#}
+{#                    <i class="fa fa-shield"></i>&nbsp;&nbsp;DEGREE#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="box-row">#}
+{#                <div class="box-cell p-y-2">#}
+{#                    <div class="easy-pie-chart" style="height: 60px"><span#}
+{#                            class="font-size-24">20</span></div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{##}
+{#        <div class="panel box">#}
+{#            <div class="box-row">#}
+{#                <div class="box-cell p-x-2 p-y-1 bg-black text-xs-center font-size-11 font-weight-semibold">#}
+{#                    <i class="fa fa-user"></i>&nbsp;&nbsp;TENSION#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="box-row">#}
+{#                <div class="box-cell p-y-2">#}
+{#                    <div class="easy-pie-chart" style="height: 60px"><span#}
+{#                            class="font-size-24">20</span></div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{##}
+{#    </div>#}
+
+     <div class="row" id="piechart">
+        <div class="col-xs-12 col-sm-6" style="width: 140px;">
+            <div class="panel box">
+                <div class="box-row">
+                    <div class="box-cell p-x-2 p-y-1 bg-black text-xs-center font-size-11 font-weight-semibold">
+                        <i class="fa fa-globe"></i>&nbsp;&nbsp;NODES
+                    </div>
                 </div>
-            </div>
-            <div class="box-row">
-                <div class="box-cell p-y-2">
-                    <div class="easy-pie-chart" style="height: 60px"><span
-                            class="font-size-24">20</span></div>
+                <div class="box-row">
+                    <div class="box-cell p-y-2">
+                        <div class="easy-pie-chart" data-suffix="P" id="easy-pie-chart-1"><span
+                                class="font-size-14 font-weight-light"></span></div>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <div class="panel box">
-            <div class="box-row">
-                <div class="box-cell p-x-2 p-y-1 bg-black text-xs-center font-size-11 font-weight-semibold">
-                    <i class="fa fa-flash"></i>&nbsp;&nbsp;LINKS
+        <div class="col-xs-12 col-sm-6" style="width: 140px;">
+            <div class="panel box">
+                <div class="box-row">
+                    <div class="box-cell p-x-2 p-y-1 bg-black text-xs-center font-size-11 font-weight-semibold">
+                        <i class="fa fa-flash"></i>&nbsp;&nbsp;LINKS
+                    </div>
                 </div>
-            </div>
-            <div class="box-row">
-                <div class="box-cell p-y-2">
-                    <div class="easy-pie-chart" style="height: 60px"><span
-                            class="font-size-24">20</span></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="panel box">
-            <div class="box-row">
-                <div class="box-cell p-x-2 p-y-1 bg-black text-xs-center font-size-11 font-weight-semibold">
-                    <i class="fa fa-cloud"></i>&nbsp;&nbsp;SLICES
-                </div>
-            </div>
-            <div class="box-row">
-                <div class="box-cell p-y-2">
-                    <div class="easy-pie-chart" style="height: 60px"><span
-                            class="font-size-24">20</span></div>
+                <div class="box-row">
+                    <div class="box-cell p-y-2">
+                        <div class="easy-pie-chart" data-suffix="L" id="easy-pie-chart-2"><span
+                                class="font-size-14 font-weight-light"></span></div>
+                    </div>
                 </div>
             </div>
         </div>
+{#        <div class="col-xs-12 col-sm-4">#}
+{#            <div class="panel box">#}
+{#                <div class="box-row">#}
+{#                    <div class="box-cell p-x-2 p-y-1 bg-black text-xs-center font-size-11 font-weight-semibold">#}
+{#                        <i class="fa fa-cloud"></i>&nbsp;&nbsp;MEDIA#}
+{#                    </div>#}
+{#                </div>#}
+{#                <div class="box-row">#}
+{#                    <div class="box-cell p-y-2">#}
+{#                        <div class="easy-pie-chart" data-suffix="M" id="easy-pie-chart-3"><span#}
+{#                                class="font-size-14 font-weight-light"></span></div>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+    </div>
+    <hr class="page-block m-t-0">
 
-        <div class="panel box">
-            <div class="box-row">
-                <div class="box-cell p-x-2 p-y-1 bg-black text-xs-center font-size-11 font-weight-semibold">
-                    <i class="fa fa-check-square"></i>&nbsp;&nbsp;CENTRALITY
-                </div>
+    <div class="panel-group panel-group-danger" id="accordion-example-danger">
+        <div class="panel">
+            <div class="panel-heading">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-example-danger"
+                   href="#collapseThree-danger"> <i class="panel-title-icon fa fa-tasks"></i>
+                    More Graphs
+                </a>
             </div>
-            <div class="box-row">
-                <div class="box-cell p-y-2">
-                    <div class="easy-pie-chart" style="height: 60px"><span
-                            class="font-size-24 ">20</span></div>
+            <div id="collapseThree-danger" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div class="col-md-4">
+                        <div class="panel-title">Bar</div>
+                        <div id="c3-donut" style="height: 250px"></div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="panel-title">Scatter</div>
+                        <div id="c3-spline" style="height: 250px"></div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="panel-title">Word</div>
+
+                    </div>
+
                 </div>
             </div>
         </div>
-
-        <div class="panel box">
-            <div class="box-row">
-                <div class="box-cell p-x-2 p-y-1 bg-black text-xs-center font-size-11 font-weight-semibold">
-                    <i class="fa fa-sign-out"></i>&nbsp;&nbsp;GEODESIC
-                </div>
-            </div>
-            <div class="box-row">
-                <div class="box-cell p-y-2">
-                    <div class="easy-pie-chart" style="height: 60px"><span
-                            class="font-size-24 ">20</span></div>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="panel box">
-            <div class="box-row">
-                <div class="box-cell p-x-2 p-y-1 bg-black text-xs-center font-size-11 font-weight-semibold">
-                    <i class="fa fa-refresh"></i>&nbsp;&nbsp;TABLE
-                </div>
-            </div>
-            <div class="box-row">
-                <div class="box-cell p-y-2">
-                    <div class="easy-pie-chart" style="height: 60px"><span
-                            class="font-size-24">20</span></div>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="panel box">
-            <div class="box-row">
-                <div class="box-cell p-x-2 p-y-1 bg-black text-xs-center font-size-11 font-weight-semibold">
-                    <i class="fa fa-shield"></i>&nbsp;&nbsp;DEGREE
-                </div>
-            </div>
-            <div class="box-row">
-                <div class="box-cell p-y-2">
-                    <div class="easy-pie-chart" style="height: 60px"><span
-                            class="font-size-24">20</span></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="panel box">
-            <div class="box-row">
-                <div class="box-cell p-x-2 p-y-1 bg-black text-xs-center font-size-11 font-weight-semibold">
-                    <i class="fa fa-user"></i>&nbsp;&nbsp;TENSION
-                </div>
-            </div>
-            <div class="box-row">
-                <div class="box-cell p-y-2">
-                    <div class="easy-pie-chart" style="height: 60px"><span
-                            class="font-size-24">20</span></div>
-                </div>
-            </div>
-        </div>
-
     </div>
 
     <hr class="page-block m-t-0">
-
     <!--Invisible more things-->
     <div class="row" id="schedule">
         <div class="col-md-6" data-accent="(panel-group-success)||(panel-group-dark)">
@@ -1041,31 +1140,31 @@
 =============================================================================== -->
 
 <!-- jQuery -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+{#<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>#}
 
-<script src="/assets/bootstrap.min.js"></script>
+<script src="{% static 'bootstrap.min.js' %}"></script>
 {#<script src="/assets/jquery.min.js"></script>#}
-<script src="/assets/pixeladmin.min.js"></script>
+<script src="{% static 'pixeladmin.min.js' %}"></script>
 
 
 <script type="text/javascript" src="{% static 'bootstrap.min.js' %}"></script>
-<script type="text/javascript" src="{% static 'jquery.min.js' %}"></script>
+{#<script type="text/javascript" src="{% static 'jquery.min.js' %}"></script>#}
 <script type="text/javascript" src="{% static 'pixeladmin.min.js' %}"></script>
 <script type="text/javascript" src="{% static 'GraphParser.js' %}"></script>
 <script type="text/javascript" src="{% static 'infomation_getter.js' %}"></script>
 <script type="text/javascript" src="{% static 'init.js' %}"></script>
 
-    
-<script>
-    // -------------------------------------------------------------------------
-    // Initialize DEMO sidebar
 
-    $(function () {
-        pxDemo.initializeDemoSidebar();
-        $('#px-demo-sidebar').pxSidebar();
-        pxDemo.initializeDemo();
-    });
-</script>
+{#<script>#}
+{#    // -------------------------------------------------------------------------#}
+{#    // Initialize DEMO sidebar#}
+{##}
+{#    $(function () {#}
+{#        pxDemo.initializeDemoSidebar();#}
+{#        $('#px-demo-sidebar').pxSidebar();#}
+{#        pxDemo.initializeDemo();#}
+{#    });#}
+{#</script>#}
 
 <script type="text/javascript">
     // -------------------------------------------------------------------------
@@ -1134,19 +1233,19 @@
         ];
 
         $('#easy-pie-chart-1')
-            .attr('data-percent', (data[0] / 1000) * 100)
-            .attr('data-max-value', 1000)
+            .attr('data-percent', 100)
+            .attr('data-max-value', 0)
             .easyPieChart($.extend({}, config, {barColor: colors[0]}));
 
         $('#easy-pie-chart-2')
-            .attr('data-percent', (data[1] / 100) * 100)
-            .attr('data-max-value', 100)
+            .attr('data-percent', 100)
+            .attr('data-max-value', 0)
             .easyPieChart($.extend({}, config, {barColor: colors[1]}));
 
-        $('#easy-pie-chart-3')
-            .attr('data-percent', (data[2] / 64) * 100)
-            .attr('data-max-value', 64)
-            .easyPieChart($.extend({}, config, {barColor: colors[2]}));
+        {#$('#easy-pie-chart-3')#}
+        {#    .attr('data-percent', (data[2] / 64) * 100)#}
+        {#    .attr('data-max-value', 64)#}
+        {#    .easyPieChart($.extend({}, config, {barColor: colors[2]}));#}
     });
 
 
@@ -1214,22 +1313,53 @@
         $('#profile-tabs').pxTabResize();
     });
 
-    // -------------------------------------------------------------------------
-    // Initialize auto play
+    init();
+
+
+     // -------------------------------------------------------------------------
+    // Initialize donut chart
 
     $(function () {
-        $('#owl-carousel-autoplay').owlCarousel({
-            items: 4,
-            loop: true,
-            margin: 10,
-            autoplay: true,
-            autoplayTimeout: 2000,
-            rtl: $('html').attr('dir') === 'rtl',
+        var data = {
+            columns: [
+                ['data1', pxDemo.getRandomData()],
+                ['data2', pxDemo.getRandomData()],
+                ['data3', pxDemo.getRandomData()],
+                ['data4', pxDemo.getRandomData()],
+                ['data5', pxDemo.getRandomData()],
+            ],
+            type: 'donut',
+        };
+
+        c3.generate({
+            bindto: '#c3-donut',
+            color: {pattern: pxDemo.getRandomColors()},
+            data: data,
+            donut: {title: 'Some title'},
+        });
+    });
+
+    // -------------------------------------------------------------------------
+    // Initialize spline chart
+
+    $(function () {
+        var data = {
+            type: 'spline',
+            columns: [
+                ['data1', pxDemo.getRandomData(), pxDemo.getRandomData(), pxDemo.getRandomData(), pxDemo.getRandomData(), pxDemo.getRandomData(), pxDemo.getRandomData()],
+                ['data2', pxDemo.getRandomData(), pxDemo.getRandomData(), pxDemo.getRandomData(), pxDemo.getRandomData(), pxDemo.getRandomData(), pxDemo.getRandomData()],
+            ],
+        };
+
+        c3.generate({
+            bindto: '#c3-spline',
+            color: {pattern: pxDemo.getRandomColors()},
+            data: data,
         });
     });
 
 </script>
 
-<script type="text/javascript" src="{% static 'init.js' %}"></script>
+{#<script type="text/javascript" src="{% static 'init.js' %}"></script>#}
 </body>
 </html>

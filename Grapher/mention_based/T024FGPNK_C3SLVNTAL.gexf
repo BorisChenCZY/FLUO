@@ -1,0 +1,306 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.gephi.org/gexf/1.2draft" xmlns:ns0="xsi" version="1.2" ns0:schemaLocation="http://www.gephi.org/gexf/1.1draft http://gephi.org/gexf/1.2draft.xsd">
+  <meta lastmodified="2017-12-31">
+    <creator>Gephi.org</creator>
+    <description>A Web network</description>
+  </meta>
+  <graph defaultedgetype="directed" label="A Web network" mode="static" timeformat="double">
+    <attributes class="node" mode="static">
+      <attribute id="Channel" title="channel" type="String"/>
+      <attribute id="Team" title="team" type="String"/>
+      <attribute id="weight" title="weight" type="float"/>
+    </attributes>
+    <attributes class="edge" mode="static">
+      <attribute id="Channel" title="channel" type="String">
+        <default>None</default>
+      </attribute>
+      <attribute id="Date" title="date" type="float">
+        <default>None</default>
+      </attribute>
+      <attribute id="Message" title="message" type="String">
+        <default>None</default>
+      </attribute>
+      <attribute id="Team" title="team" type="String">
+        <default>None</default>
+      </attribute>
+      <attribute id="Weight" title="weight" type="float">
+        <default>0</default>
+      </attribute>
+    </attributes>
+    <nodes>
+      <node id="U024FGR3T" label="palos">
+        <attvalues>
+          <attvalue for="weight" value="6"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C1NMK697T"/>
+          <attvalue for="Channel" value="C3SLVNTAL"/>
+          <attvalue for="Channel" value="C4F2KTQE9"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+          <attvalue for="Channel" value="C0FU98A48"/>
+          <attvalue for="Channel" value="C024FGQBB"/>
+        </attvalues>
+      </node>
+      <node id="U024FGTL8" label="iguchi">
+        <attvalues>
+          <attvalue for="weight" value="14"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C1NMK697T"/>
+          <attvalue for="Channel" value="C0G834D1N"/>
+          <attvalue for="Channel" value="C3SLVNTAL"/>
+          <attvalue for="Channel" value="C4F2KTQE9"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+          <attvalue for="Channel" value="C245W2BE3"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+          <attvalue for="Channel" value="C024FGQBB"/>
+        </attvalues>
+      </node>
+      <node id="U024FGUSF" label="felipe.itoyama">
+        <attvalues>
+          <attvalue for="weight" value="16"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C1NMK697T"/>
+          <attvalue for="Channel" value="C3SLVNTAL"/>
+          <attvalue for="Channel" value="C4F2KTQE9"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+          <attvalue for="Channel" value="C0FU98A48"/>
+          <attvalue for="Channel" value="C024FGQBB"/>
+        </attvalues>
+      </node>
+      <node id="U09PGTXPY" label="evandropeliciari">
+        <attvalues>
+          <attvalue for="weight" value="11"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C1NMK697T"/>
+          <attvalue for="Channel" value="C3SLVNTAL"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+          <attvalue for="Channel" value="C0FU98A48"/>
+          <attvalue for="Channel" value="C024FGQBB"/>
+        </attvalues>
+      </node>
+      <node id="U1Z5LH5HR" label="fabio_cribeiro">
+        <attvalues>
+          <attvalue for="weight" value="6"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C1NMK697T"/>
+          <attvalue for="Channel" value="C3SLVNTAL"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+          <attvalue for="Channel" value="C245W2BE3"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+          <attvalue for="Channel" value="C0FU98A48"/>
+          <attvalue for="Channel" value="C024FGQBB"/>
+        </attvalues>
+      </node>
+      <node id="U3N8N0D5X" label="mylius">
+        <attvalues>
+          <attvalue for="weight" value="2"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C3SLVNTAL"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="U024FGR3TU024FGR3T10" source="U024FGR3T" target="U024FGR3T" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U024FGR3T|palos&gt; uploaded a file: &lt;https://cargobr.slack.com/files/palos/F48AA6EQY/pasted_image_at_2017_02_22_04_17_pm.png|Pasted image at 2017-02-22, 4:17 PM&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1487791031.809748"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C3SLVNTAL"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGR3TU024FGR3T21" source="U024FGR3T" target="U024FGR3T" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U024FGR3T|palos&gt; uploaded a file: &lt;https://cargobr.slack.com/files/palos/F48AA6EQY/pasted_image_at_2017_02_22_04_17_pm.png|Pasted image at 2017-02-22, 4:17 PM&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1487791031.809748"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C3SLVNTAL"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGTL8U024FGTL815" source="U024FGTL8" target="U024FGTL8" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U024FGTL8|iguchi&gt; uploaded a file: &lt;https://cargobr.slack.com/files/iguchi/F4E65C64C/processo_tecnologia_mar_2017.pptx|Processo_tecnologia_mar_2017.pptx&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1488806953.671199"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C3SLVNTAL"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGTL8U024FGTL816" source="U024FGTL8" target="U024FGTL8" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U024FGTL8|iguchi&gt; uploaded a file: &lt;https://cargobr.slack.com/files/iguchi/F4E51Q6H0/tecnologia_-_2017_-_06.03.2017_v.01.pptx|Untitled&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1488806932.67056"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C3SLVNTAL"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGTL8U024FGTL817" source="U024FGTL8" target="U024FGTL8" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U024FGTL8|iguchi&gt; uploaded a file: &lt;https://cargobr.slack.com/files/iguchi/F4E0LN6J0/pas_2013_v15_pg55.pdf|pas_2013_v15_pg55.pdf&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1488765011.675891"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C3SLVNTAL"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGTL8U024FGTL818" source="U024FGTL8" target="U024FGTL8" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U024FGTL8|iguchi&gt; uploaded a file: &lt;https://cargobr.slack.com/files/iguchi/F4E0LM4KE/pac_2013_v25.pdf|pac_2013_v25.pdf&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1488764999.675578"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C3SLVNTAL"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGTL8U024FGTL819" source="U024FGTL8" target="U024FGTL8" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U024FGTL8|iguchi&gt; uploaded a file: &lt;https://cargobr.slack.com/files/iguchi/F4D8Z3APK/empresometro30092013final2.pdf|EMPRESOMETRO30092013Final2.pdf&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1488764961.674965"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C3SLVNTAL"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGTL8U024FGTL84" source="U024FGTL8" target="U024FGTL8" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U024FGTL8|iguchi&gt; uploaded a file: &lt;https://cargobr.slack.com/files/iguchi/F4E65C64C/processo_tecnologia_mar_2017.pptx|Processo_tecnologia_mar_2017.pptx&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1488806953.671199"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C3SLVNTAL"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGTL8U024FGTL85" source="U024FGTL8" target="U024FGTL8" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U024FGTL8|iguchi&gt; uploaded a file: &lt;https://cargobr.slack.com/files/iguchi/F4E51Q6H0/tecnologia_-_2017_-_06.03.2017_v.01.pptx|Untitled&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1488806932.67056"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C3SLVNTAL"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGTL8U024FGTL86" source="U024FGTL8" target="U024FGTL8" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U024FGTL8|iguchi&gt; uploaded a file: &lt;https://cargobr.slack.com/files/iguchi/F4E0LN6J0/pas_2013_v15_pg55.pdf|pas_2013_v15_pg55.pdf&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1488765011.675891"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C3SLVNTAL"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGTL8U024FGTL87" source="U024FGTL8" target="U024FGTL8" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U024FGTL8|iguchi&gt; uploaded a file: &lt;https://cargobr.slack.com/files/iguchi/F4E0LM4KE/pac_2013_v25.pdf|pac_2013_v25.pdf&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1488764999.675578"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C3SLVNTAL"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGTL8U024FGTL88" source="U024FGTL8" target="U024FGTL8" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U024FGTL8|iguchi&gt; uploaded a file: &lt;https://cargobr.slack.com/files/iguchi/F4D8Z3APK/empresometro30092013final2.pdf|EMPRESOMETRO30092013Final2.pdf&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1488764961.674965"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C3SLVNTAL"/>
+        </attvalues>
+      </edge>
+      <edge id="U09PGTXPYU024FGR3T0" source="U09PGTXPY" target="U024FGR3T" weight="0.5">
+        <attvalues>
+          <attvalue for="Message" value="Hoje as 16:00, ok??? &lt;@U024FGR3T&gt; &lt;@U024FGUSF&gt; &lt;@U024FGTL8&gt; &lt;@U1Z5LH5HR&gt;"/>
+          <attvalue for="Weight" value="0.5"/>
+          <attvalue for="Date" value="1498235147.103077"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C3SLVNTAL"/>
+        </attvalues>
+      </edge>
+      <edge id="U09PGTXPYU024FGR3T11" source="U09PGTXPY" target="U024FGR3T" weight="0.5">
+        <attvalues>
+          <attvalue for="Message" value="Hoje as 16:00, ok??? &lt;@U024FGR3T&gt; &lt;@U024FGUSF&gt; &lt;@U024FGTL8&gt; &lt;@U1Z5LH5HR&gt;"/>
+          <attvalue for="Weight" value="0.5"/>
+          <attvalue for="Date" value="1498235147.103077"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C3SLVNTAL"/>
+        </attvalues>
+      </edge>
+      <edge id="U09PGTXPYU024FGTL813" source="U09PGTXPY" target="U024FGTL8" weight="0.5">
+        <attvalues>
+          <attvalue for="Message" value="Hoje as 16:00, ok??? &lt;@U024FGR3T&gt; &lt;@U024FGUSF&gt; &lt;@U024FGTL8&gt; &lt;@U1Z5LH5HR&gt;"/>
+          <attvalue for="Weight" value="0.5"/>
+          <attvalue for="Date" value="1498235147.103077"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C3SLVNTAL"/>
+        </attvalues>
+      </edge>
+      <edge id="U09PGTXPYU024FGTL82" source="U09PGTXPY" target="U024FGTL8" weight="0.5">
+        <attvalues>
+          <attvalue for="Message" value="Hoje as 16:00, ok??? &lt;@U024FGR3T&gt; &lt;@U024FGUSF&gt; &lt;@U024FGTL8&gt; &lt;@U1Z5LH5HR&gt;"/>
+          <attvalue for="Weight" value="0.5"/>
+          <attvalue for="Date" value="1498235147.103077"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C3SLVNTAL"/>
+        </attvalues>
+      </edge>
+      <edge id="U09PGTXPYU024FGUSF1" source="U09PGTXPY" target="U024FGUSF" weight="0.5">
+        <attvalues>
+          <attvalue for="Message" value="Hoje as 16:00, ok??? &lt;@U024FGR3T&gt; &lt;@U024FGUSF&gt; &lt;@U024FGTL8&gt; &lt;@U1Z5LH5HR&gt;"/>
+          <attvalue for="Weight" value="0.5"/>
+          <attvalue for="Date" value="1498235147.103077"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C3SLVNTAL"/>
+        </attvalues>
+      </edge>
+      <edge id="U09PGTXPYU024FGUSF12" source="U09PGTXPY" target="U024FGUSF" weight="0.5">
+        <attvalues>
+          <attvalue for="Message" value="Hoje as 16:00, ok??? &lt;@U024FGR3T&gt; &lt;@U024FGUSF&gt; &lt;@U024FGTL8&gt; &lt;@U1Z5LH5HR&gt;"/>
+          <attvalue for="Weight" value="0.5"/>
+          <attvalue for="Date" value="1498235147.103077"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C3SLVNTAL"/>
+        </attvalues>
+      </edge>
+      <edge id="U09PGTXPYU1Z5LH5HR14" source="U09PGTXPY" target="U1Z5LH5HR" weight="0.5">
+        <attvalues>
+          <attvalue for="Message" value="Hoje as 16:00, ok??? &lt;@U024FGR3T&gt; &lt;@U024FGUSF&gt; &lt;@U024FGTL8&gt; &lt;@U1Z5LH5HR&gt;"/>
+          <attvalue for="Weight" value="0.5"/>
+          <attvalue for="Date" value="1498235147.103077"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C3SLVNTAL"/>
+        </attvalues>
+      </edge>
+      <edge id="U09PGTXPYU1Z5LH5HR3" source="U09PGTXPY" target="U1Z5LH5HR" weight="0.5">
+        <attvalues>
+          <attvalue for="Message" value="Hoje as 16:00, ok??? &lt;@U024FGR3T&gt; &lt;@U024FGUSF&gt; &lt;@U024FGTL8&gt; &lt;@U1Z5LH5HR&gt;"/>
+          <attvalue for="Weight" value="0.5"/>
+          <attvalue for="Date" value="1498235147.103077"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C3SLVNTAL"/>
+        </attvalues>
+      </edge>
+      <edge id="U3N8N0D5XU3N8N0D5X20" source="U3N8N0D5X" target="U3N8N0D5X" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U3N8N0D5X|mylius&gt; uploaded a file: &lt;https://cargobr.slack.com/files/mylius/F4D20LY13/apresentacao_2016_comercial_atualizada.pptx.pdf|APRESENTACAO 2016 Comercial Atualizada.pptx.pdf&gt; and commented: Neoassist - com telas da aplicação"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1488487714.528812"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C3SLVNTAL"/>
+        </attvalues>
+      </edge>
+      <edge id="U3N8N0D5XU3N8N0D5X9" source="U3N8N0D5X" target="U3N8N0D5X" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U3N8N0D5X|mylius&gt; uploaded a file: &lt;https://cargobr.slack.com/files/mylius/F4D20LY13/apresentacao_2016_comercial_atualizada.pptx.pdf|APRESENTACAO 2016 Comercial Atualizada.pptx.pdf&gt; and commented: Neoassist - com telas da aplicação"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1488487714.528812"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C3SLVNTAL"/>
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

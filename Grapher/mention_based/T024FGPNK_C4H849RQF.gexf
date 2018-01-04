@@ -1,0 +1,312 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.gephi.org/gexf/1.2draft" xmlns:ns0="xsi" version="1.2" ns0:schemaLocation="http://www.gephi.org/gexf/1.1draft http://gephi.org/gexf/1.2draft.xsd">
+  <meta lastmodified="2017-12-31">
+    <creator>Gephi.org</creator>
+    <description>A Web network</description>
+  </meta>
+  <graph defaultedgetype="directed" label="A Web network" mode="static" timeformat="double">
+    <attributes class="node" mode="static">
+      <attribute id="Channel" title="channel" type="String"/>
+      <attribute id="Team" title="team" type="String"/>
+      <attribute id="weight" title="weight" type="float"/>
+    </attributes>
+    <attributes class="edge" mode="static">
+      <attribute id="Channel" title="channel" type="String">
+        <default>None</default>
+      </attribute>
+      <attribute id="Date" title="date" type="float">
+        <default>None</default>
+      </attribute>
+      <attribute id="Message" title="message" type="String">
+        <default>None</default>
+      </attribute>
+      <attribute id="Team" title="team" type="String">
+        <default>None</default>
+      </attribute>
+      <attribute id="Weight" title="weight" type="float">
+        <default>0</default>
+      </attribute>
+    </attributes>
+    <nodes>
+      <node id="U024FGPNM" label="paim">
+        <attvalues>
+          <attvalue for="weight" value="8"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C4H849RQF"/>
+          <attvalue for="Channel" value="C1NMK697T"/>
+          <attvalue for="Channel" value="C0G834D1N"/>
+          <attvalue for="Channel" value="C4F2KTQE9"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+          <attvalue for="Channel" value="C245W2BE3"/>
+          <attvalue for="Channel" value="C024FGQBB"/>
+        </attvalues>
+      </node>
+      <node id="U0D2X5VJR" label="allan.ramos">
+        <attvalues>
+          <attvalue for="weight" value="24"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C4H849RQF"/>
+          <attvalue for="Channel" value="C1NMK697T"/>
+          <attvalue for="Channel" value="C0G834D1N"/>
+          <attvalue for="Channel" value="C4F2KTQE9"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+          <attvalue for="Channel" value="C245W2BE3"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+          <attvalue for="Channel" value="C024FGQBB"/>
+        </attvalues>
+      </node>
+      <node id="U0ZKSC7NE" label="morais90">
+        <attvalues>
+          <attvalue for="weight" value="20"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C4H849RQF"/>
+          <attvalue for="Channel" value="C1NMK697T"/>
+          <attvalue for="Channel" value="C0G834D1N"/>
+          <attvalue for="Channel" value="C4F2KTQE9"/>
+          <attvalue for="Channel" value="C245W2BE3"/>
+          <attvalue for="Channel" value="C024FGQBB"/>
+        </attvalues>
+      </node>
+      <node id="U2MEVL7K7" label="leandrocunha">
+        <attvalues>
+          <attvalue for="weight" value="11"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C4H849RQF"/>
+          <attvalue for="Channel" value="C1NMK697T"/>
+          <attvalue for="Channel" value="C0G834D1N"/>
+          <attvalue for="Channel" value="C4F2KTQE9"/>
+          <attvalue for="Channel" value="C245W2BE3"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+          <attvalue for="Channel" value="C024FGQBB"/>
+        </attvalues>
+      </node>
+      <node id="U3KRDNC92" label="vafleite">
+        <attvalues>
+          <attvalue for="weight" value="13"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C4H849RQF"/>
+          <attvalue for="Channel" value="C1NMK697T"/>
+          <attvalue for="Channel" value="C0G834D1N"/>
+          <attvalue for="Channel" value="C4F2KTQE9"/>
+          <attvalue for="Channel" value="C245W2BE3"/>
+          <attvalue for="Channel" value="C024FGQBB"/>
+        </attvalues>
+      </node>
+      <node id="U41CLAYCA" label="rafael.correia">
+        <attvalues>
+          <attvalue for="weight" value="20"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C4H849RQF"/>
+          <attvalue for="Channel" value="C1NMK697T"/>
+          <attvalue for="Channel" value="C0G834D1N"/>
+          <attvalue for="Channel" value="C4F2KTQE9"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+          <attvalue for="Channel" value="C245W2BE3"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+          <attvalue for="Channel" value="C0FU98A48"/>
+          <attvalue for="Channel" value="C024FGQBB"/>
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="U0ZKSC7NEU2MEVL7K710" source="U0ZKSC7NE" target="U2MEVL7K7" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U2MEVL7K7&gt; dai só com comunicaçao,"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1489156414.94912"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C4H849RQF"/>
+        </attvalues>
+      </edge>
+      <edge id="U0ZKSC7NEU2MEVL7K718" source="U0ZKSC7NE" target="U2MEVL7K7" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U2MEVL7K7&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1489415456.585793"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C4H849RQF"/>
+        </attvalues>
+      </edge>
+      <edge id="U0ZKSC7NEU2MEVL7K719" source="U0ZKSC7NE" target="U2MEVL7K7" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="pode ir &lt;@U2MEVL7K7&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1489412386.304764"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C4H849RQF"/>
+        </attvalues>
+      </edge>
+      <edge id="U0ZKSC7NEU2MEVL7K721" source="U0ZKSC7NE" target="U2MEVL7K7" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U2MEVL7K7&gt; dai só com comunicaçao,"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1489156414.94912"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C4H849RQF"/>
+        </attvalues>
+      </edge>
+      <edge id="U0ZKSC7NEU2MEVL7K77" source="U0ZKSC7NE" target="U2MEVL7K7" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U2MEVL7K7&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1489415456.585793"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C4H849RQF"/>
+        </attvalues>
+      </edge>
+      <edge id="U0ZKSC7NEU2MEVL7K78" source="U0ZKSC7NE" target="U2MEVL7K7" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="pode ir &lt;@U2MEVL7K7&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1489412386.304764"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C4H849RQF"/>
+        </attvalues>
+      </edge>
+      <edge id="U0ZKSC7NEU41CLAYCA16" source="U0ZKSC7NE" target="U41CLAYCA" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="mas acho que vai que entrar &lt;@U41CLAYCA&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1489423918.60002"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C4H849RQF"/>
+        </attvalues>
+      </edge>
+      <edge id="U0ZKSC7NEU41CLAYCA5" source="U0ZKSC7NE" target="U41CLAYCA" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="mas acho que vai que entrar &lt;@U41CLAYCA&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1489423918.60002"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C4H849RQF"/>
+        </attvalues>
+      </edge>
+      <edge id="U2MEVL7K7U2MEVL7K720" source="U2MEVL7K7" target="U2MEVL7K7" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U2MEVL7K7|leandrocunha&gt; uploaded a file: &lt;https://cargobr.slack.com/files/leandrocunha/F4GNJ3JHE/screen_shot_2017-03-13_at_10.37.58.png|Screen Shot 2017-03-13 at 10.37.58.png&gt; and commented: Como vivemos numa democracia a maioria ganhou. Vamos modificar pra esse modelo, se der merde noix ajusta blz?"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1489412360.294974"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C4H849RQF"/>
+        </attvalues>
+      </edge>
+      <edge id="U2MEVL7K7U2MEVL7K79" source="U2MEVL7K7" target="U2MEVL7K7" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U2MEVL7K7|leandrocunha&gt; uploaded a file: &lt;https://cargobr.slack.com/files/leandrocunha/F4GNJ3JHE/screen_shot_2017-03-13_at_10.37.58.png|Screen Shot 2017-03-13 at 10.37.58.png&gt; and commented: Como vivemos numa democracia a maioria ganhou. Vamos modificar pra esse modelo, se der merde noix ajusta blz?"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1489412360.294974"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C4H849RQF"/>
+        </attvalues>
+      </edge>
+      <edge id="U41CLAYCAU0D2X5VJR0" source="U41CLAYCA" target="U0D2X5VJR" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="tag é algo similar ao release &lt;@U0D2X5VJR&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1499177622.083846"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C4H849RQF"/>
+        </attvalues>
+      </edge>
+      <edge id="U41CLAYCAU0D2X5VJR1" source="U41CLAYCA" target="U0D2X5VJR" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="Qual a dúvida &lt;@U0D2X5VJR&gt; !?"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1492613960.289582"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C4H849RQF"/>
+        </attvalues>
+      </edge>
+      <edge id="U41CLAYCAU0D2X5VJR11" source="U41CLAYCA" target="U0D2X5VJR" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="tag é algo similar ao release &lt;@U0D2X5VJR&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1499177622.083846"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C4H849RQF"/>
+        </attvalues>
+      </edge>
+      <edge id="U41CLAYCAU0D2X5VJR12" source="U41CLAYCA" target="U0D2X5VJR" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="Qual a dúvida &lt;@U0D2X5VJR&gt; !?"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1492613960.289582"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C4H849RQF"/>
+        </attvalues>
+      </edge>
+      <edge id="U41CLAYCAU0D2X5VJR14" source="U41CLAYCA" target="U0D2X5VJR" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U2MEVL7K7&gt; &lt;@U0D2X5VJR&gt; gatos"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1492031194.355342"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C4H849RQF"/>
+        </attvalues>
+      </edge>
+      <edge id="U41CLAYCAU0D2X5VJR15" source="U41CLAYCA" target="U0D2X5VJR" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="estava conversando com o &lt;@U0D2X5VJR&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1489424145.706552"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C4H849RQF"/>
+        </attvalues>
+      </edge>
+      <edge id="U41CLAYCAU0D2X5VJR3" source="U41CLAYCA" target="U0D2X5VJR" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U2MEVL7K7&gt; &lt;@U0D2X5VJR&gt; gatos"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1492031194.355342"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C4H849RQF"/>
+        </attvalues>
+      </edge>
+      <edge id="U41CLAYCAU0D2X5VJR4" source="U41CLAYCA" target="U0D2X5VJR" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="estava conversando com o &lt;@U0D2X5VJR&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1489424145.706552"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C4H849RQF"/>
+        </attvalues>
+      </edge>
+      <edge id="U41CLAYCAU2MEVL7K713" source="U41CLAYCA" target="U2MEVL7K7" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U2MEVL7K7&gt; &lt;@U0D2X5VJR&gt; gatos"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1492031194.355342"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C4H849RQF"/>
+        </attvalues>
+      </edge>
+      <edge id="U41CLAYCAU2MEVL7K717" source="U41CLAYCA" target="U2MEVL7K7" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="hotfix não entraria como uma nova task &lt;@U2MEVL7K7&gt; ?"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1489423722.509774"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C4H849RQF"/>
+        </attvalues>
+      </edge>
+      <edge id="U41CLAYCAU2MEVL7K72" source="U41CLAYCA" target="U2MEVL7K7" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U2MEVL7K7&gt; &lt;@U0D2X5VJR&gt; gatos"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1492031194.355342"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C4H849RQF"/>
+        </attvalues>
+      </edge>
+      <edge id="U41CLAYCAU2MEVL7K76" source="U41CLAYCA" target="U2MEVL7K7" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="hotfix não entraria como uma nova task &lt;@U2MEVL7K7&gt; ?"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1489423722.509774"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C4H849RQF"/>
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

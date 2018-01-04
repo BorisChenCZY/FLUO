@@ -1,0 +1,2666 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.gephi.org/gexf/1.2draft" xmlns:ns0="xsi" version="1.2" ns0:schemaLocation="http://www.gephi.org/gexf/1.1draft http://gephi.org/gexf/1.2draft.xsd">
+  <meta lastmodified="2017-12-31">
+    <creator>Gephi.org</creator>
+    <description>A Web network</description>
+  </meta>
+  <graph defaultedgetype="directed" label="A Web network" mode="static" timeformat="double">
+    <attributes class="node" mode="static">
+      <attribute id="Channel" title="channel" type="String"/>
+      <attribute id="Team" title="team" type="String"/>
+      <attribute id="weight" title="weight" type="float"/>
+    </attributes>
+    <attributes class="edge" mode="static">
+      <attribute id="Channel" title="channel" type="String">
+        <default>None</default>
+      </attribute>
+      <attribute id="Date" title="date" type="float">
+        <default>None</default>
+      </attribute>
+      <attribute id="Message" title="message" type="String">
+        <default>None</default>
+      </attribute>
+      <attribute id="Team" title="team" type="String">
+        <default>None</default>
+      </attribute>
+      <attribute id="Weight" title="weight" type="float">
+        <default>0</default>
+      </attribute>
+    </attributes>
+    <nodes>
+      <node id="U024FGR3T" label="palos">
+        <attvalues>
+          <attvalue for="weight" value="6"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C1NMK697T"/>
+          <attvalue for="Channel" value="C3SLVNTAL"/>
+          <attvalue for="Channel" value="C4F2KTQE9"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+          <attvalue for="Channel" value="C0FU98A48"/>
+          <attvalue for="Channel" value="C024FGQBB"/>
+        </attvalues>
+      </node>
+      <node id="U024FGTL8" label="iguchi">
+        <attvalues>
+          <attvalue for="weight" value="14"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C1NMK697T"/>
+          <attvalue for="Channel" value="C0G834D1N"/>
+          <attvalue for="Channel" value="C3SLVNTAL"/>
+          <attvalue for="Channel" value="C4F2KTQE9"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+          <attvalue for="Channel" value="C245W2BE3"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+          <attvalue for="Channel" value="C024FGQBB"/>
+        </attvalues>
+      </node>
+      <node id="U024FGUSF" label="felipe.itoyama">
+        <attvalues>
+          <attvalue for="weight" value="16"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C1NMK697T"/>
+          <attvalue for="Channel" value="C3SLVNTAL"/>
+          <attvalue for="Channel" value="C4F2KTQE9"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+          <attvalue for="Channel" value="C0FU98A48"/>
+          <attvalue for="Channel" value="C024FGQBB"/>
+        </attvalues>
+      </node>
+      <node id="U024FHW1U" label="ricardosantos">
+        <attvalues>
+          <attvalue for="weight" value="6"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C1NMK697T"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+          <attvalue for="Channel" value="C0FU98A48"/>
+          <attvalue for="Channel" value="C024FGQBB"/>
+        </attvalues>
+      </node>
+      <node id="U09PGTXPY" label="evandropeliciari">
+        <attvalues>
+          <attvalue for="weight" value="11"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C1NMK697T"/>
+          <attvalue for="Channel" value="C3SLVNTAL"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+          <attvalue for="Channel" value="C0FU98A48"/>
+          <attvalue for="Channel" value="C024FGQBB"/>
+        </attvalues>
+      </node>
+      <node id="U09U5TP0U" label="andreia">
+        <attvalues>
+          <attvalue for="weight" value="8"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C1NMK697T"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+          <attvalue for="Channel" value="C0FU98A48"/>
+          <attvalue for="Channel" value="C024FGQBB"/>
+        </attvalues>
+      </node>
+      <node id="U0D2X5VJR" label="allan.ramos">
+        <attvalues>
+          <attvalue for="weight" value="24"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C4H849RQF"/>
+          <attvalue for="Channel" value="C1NMK697T"/>
+          <attvalue for="Channel" value="C0G834D1N"/>
+          <attvalue for="Channel" value="C4F2KTQE9"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+          <attvalue for="Channel" value="C245W2BE3"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+          <attvalue for="Channel" value="C024FGQBB"/>
+        </attvalues>
+      </node>
+      <node id="U0S57FJ4E" label="sophia.cavalcante">
+        <attvalues>
+          <attvalue for="weight" value="3"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+          <attvalue for="Channel" value="C024FGQBB"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </node>
+      <node id="U19J6U8EQ" label="adriellyribeiro">
+        <attvalues>
+          <attvalue for="weight" value="18"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C1NMK697T"/>
+          <attvalue for="Channel" value="C4F2KTQE9"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+          <attvalue for="Channel" value="C245W2BE3"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+          <attvalue for="Channel" value="C0FU98A48"/>
+          <attvalue for="Channel" value="C024FGQBB"/>
+        </attvalues>
+      </node>
+      <node id="U1Z5LH5HR" label="fabio_cribeiro">
+        <attvalues>
+          <attvalue for="weight" value="6"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C1NMK697T"/>
+          <attvalue for="Channel" value="C3SLVNTAL"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+          <attvalue for="Channel" value="C245W2BE3"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+          <attvalue for="Channel" value="C0FU98A48"/>
+          <attvalue for="Channel" value="C024FGQBB"/>
+        </attvalues>
+      </node>
+      <node id="U21G8HPP1" label="fabiana.guimaraes">
+        <attvalues>
+          <attvalue for="weight" value="6"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+          <attvalue for="Channel" value="C024FGQBB"/>
+          <attvalue for="Channel" value="C245W2BE3"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </node>
+      <node id="U2G4ACN9G" label="anderson.tavares">
+        <attvalues>
+          <attvalue for="weight" value="2"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C1NMK697T"/>
+          <attvalue for="Channel" value="C024FGQBB"/>
+          <attvalue for="Channel" value="C245W2BE3"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </node>
+      <node id="U2MEVL7K7" label="leandrocunha">
+        <attvalues>
+          <attvalue for="weight" value="11"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C4H849RQF"/>
+          <attvalue for="Channel" value="C1NMK697T"/>
+          <attvalue for="Channel" value="C0G834D1N"/>
+          <attvalue for="Channel" value="C4F2KTQE9"/>
+          <attvalue for="Channel" value="C245W2BE3"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+          <attvalue for="Channel" value="C024FGQBB"/>
+        </attvalues>
+      </node>
+      <node id="U3GDDDB0F" label="fran">
+        <attvalues>
+          <attvalue for="weight" value="3"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C1NMK697T"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </node>
+      <node id="U3N0M11EH" label="estevao.andrade">
+        <attvalues>
+          <attvalue for="weight" value="3"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C1NMK697T"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+          <attvalue for="Channel" value="C0FU98A48"/>
+          <attvalue for="Channel" value="C024FGQBB"/>
+        </attvalues>
+      </node>
+      <node id="U3N8N0D5X" label="mylius">
+        <attvalues>
+          <attvalue for="weight" value="2"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C3SLVNTAL"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </node>
+      <node id="U3UAJA74N" label="mariano">
+        <attvalues>
+          <attvalue for="weight" value="2"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGQBB"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+          <attvalue for="Channel" value="C0FU98A48"/>
+        </attvalues>
+      </node>
+      <node id="U3UCHJCHE" label="renato.kenji">
+        <attvalues>
+          <attvalue for="weight" value="0"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+          <attvalue for="Channel" value="C0FU98A48"/>
+        </attvalues>
+      </node>
+      <node id="U41CLAYCA" label="rafael.correia">
+        <attvalues>
+          <attvalue for="weight" value="20"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C4H849RQF"/>
+          <attvalue for="Channel" value="C1NMK697T"/>
+          <attvalue for="Channel" value="C0G834D1N"/>
+          <attvalue for="Channel" value="C4F2KTQE9"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+          <attvalue for="Channel" value="C245W2BE3"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+          <attvalue for="Channel" value="C0FU98A48"/>
+          <attvalue for="Channel" value="C024FGQBB"/>
+        </attvalues>
+      </node>
+      <node id="U4HRU4LB1" label="patricia.rocha">
+        <attvalues>
+          <attvalue for="weight" value="3"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGQBB"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </node>
+      <node id="U4PL46RQ9" label="mtoutain">
+        <attvalues>
+          <attvalue for="weight" value="13"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C1NMK697T"/>
+          <attvalue for="Channel" value="C0G834D1N"/>
+          <attvalue for="Channel" value="C4F2KTQE9"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+          <attvalue for="Channel" value="C245W2BE3"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+          <attvalue for="Channel" value="C0FU98A48"/>
+          <attvalue for="Channel" value="C024FGQBB"/>
+        </attvalues>
+      </node>
+      <node id="U4TJAG5CL" label="marinaluizato">
+        <attvalues>
+          <attvalue for="weight" value="2"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+          <attvalue for="Channel" value="C0FU98A48"/>
+          <attvalue for="Channel" value="C4F2KTQE9"/>
+        </attvalues>
+      </node>
+      <node id="U5ZJJ5QE5" label="pricilacosta">
+        <attvalues>
+          <attvalue for="weight" value="1"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </node>
+      <node id="U6L6XSHTJ" label="regina">
+        <attvalues>
+          <attvalue for="weight" value="0"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </node>
+      <node id="USLACKBOT" label="slackbot">
+        <attvalues>
+          <attvalue for="weight" value="1182"/>
+          <attvalue for="Team" value="T04F551HP"/>
+          <attvalue for="Team" value="T02LAJBUW"/>
+          <attvalue for="Team" value="T0L97VCSY"/>
+          <attvalue for="Team" value="T085AJH3L"/>
+          <attvalue for="Team" value="T08LT0G0P"/>
+          <attvalue for="Team" value="T1KAWSGKX"/>
+          <attvalue for="Team" value="T03Q82FBZ"/>
+          <attvalue for="Team" value="T0KTMEY1L"/>
+          <attvalue for="Team" value="T02UEP5LH"/>
+          <attvalue for="Team" value="T028S6EMU"/>
+          <attvalue for="Team" value="T1FS9AWTH"/>
+          <attvalue for="Team" value="T0ECA818W"/>
+          <attvalue for="Team" value="T6JM27MLL"/>
+          <attvalue for="Team" value="T0BJN49DK"/>
+          <attvalue for="Team" value="T0J024XGA"/>
+          <attvalue for="Team" value="T0CJ5UNHK"/>
+          <attvalue for="Team" value="T0SGMV69X"/>
+          <attvalue for="Team" value="T0RJSPX1B"/>
+          <attvalue for="Team" value="T1K37FV1P"/>
+          <attvalue for="Team" value="T0H94EMPZ"/>
+          <attvalue for="Team" value="T30C5BURK"/>
+          <attvalue for="Team" value="T20MFA1TQ"/>
+          <attvalue for="Team" value="T06DT9RBM"/>
+          <attvalue for="Team" value="T116JNH46"/>
+          <attvalue for="Team" value="T03E5142L"/>
+          <attvalue for="Team" value="T03EGC8E4"/>
+          <attvalue for="Team" value="T7FCGNJ5N"/>
+          <attvalue for="Team" value="T024HV01E"/>
+          <attvalue for="Team" value="T03786JN7"/>
+          <attvalue for="Team" value="T051ZHHN8"/>
+          <attvalue for="Team" value="T13387PRB"/>
+          <attvalue for="Team" value="T0ABFLVLP"/>
+          <attvalue for="Team" value="T024NR15J"/>
+          <attvalue for="Team" value="T04BJKUMU"/>
+          <attvalue for="Team" value="T0N523ED7"/>
+          <attvalue for="Team" value="T02FQUNN9"/>
+          <attvalue for="Team" value="T43F9UHS5"/>
+          <attvalue for="Team" value="T6BNEDM5M"/>
+          <attvalue for="Team" value="T024F5679"/>
+          <attvalue for="Team" value="T1KDW2X7U"/>
+          <attvalue for="Team" value="T024VA3DC"/>
+          <attvalue for="Team" value="T02EPNETZ"/>
+          <attvalue for="Team" value="T03KJK1KF"/>
+          <attvalue for="Team" value="T08LHBDJT"/>
+          <attvalue for="Team" value="T34CUEQEL"/>
+          <attvalue for="Team" value="T03993J33"/>
+          <attvalue for="Team" value="T0CA29CBT"/>
+          <attvalue for="Team" value="T06N9UTRN"/>
+          <attvalue for="Team" value="T0KM1F7DL"/>
+          <attvalue for="Team" value="T06VBQ8SV"/>
+          <attvalue for="Team" value="T06BETLSC"/>
+          <attvalue for="Team" value="T08NU5TNK"/>
+          <attvalue for="Team" value="T02G1FPFC"/>
+          <attvalue for="Team" value="T100A8CBW"/>
+          <attvalue for="Team" value="T0427B7KT"/>
+          <attvalue for="Team" value="T02SZL924"/>
+          <attvalue for="Team" value="T04UFKFFC"/>
+          <attvalue for="Team" value="T08J10GA2"/>
+          <attvalue for="Team" value="T06GJF21Y"/>
+          <attvalue for="Team" value="T1LTZ0BQV"/>
+          <attvalue for="Team" value="T03RFM8LP"/>
+          <attvalue for="Team" value="T0DAYMVCM"/>
+          <attvalue for="Team" value="T4U0H37RC"/>
+          <attvalue for="Team" value="T0B2963LG"/>
+          <attvalue for="Team" value="T0GBSBVH7"/>
+          <attvalue for="Team" value="T03643FFW"/>
+          <attvalue for="Team" value="T03FS7KF3"/>
+          <attvalue for="Team" value="T5ANWLLVD"/>
+          <attvalue for="Team" value="T0L8RTE6L"/>
+          <attvalue for="Team" value="T0252U6BY"/>
+          <attvalue for="Team" value="T07R5N38A"/>
+          <attvalue for="Team" value="T04U82DQM"/>
+          <attvalue for="Team" value="T07771VDX"/>
+          <attvalue for="Team" value="T2AC8N7RQ"/>
+          <attvalue for="Team" value="T69JLF5NW"/>
+          <attvalue for="Team" value="T0451CN7C"/>
+          <attvalue for="Team" value="T05052K3Q"/>
+          <attvalue for="Team" value="T4U2GGTM3"/>
+          <attvalue for="Team" value="T1EHZQWFR"/>
+          <attvalue for="Team" value="T0G7L0DKP"/>
+          <attvalue for="Team" value="T3TQ45VK2"/>
+          <attvalue for="Team" value="T06H5G7FE"/>
+          <attvalue for="Team" value="T02EW3SC4"/>
+          <attvalue for="Team" value="T1HK52WBA"/>
+          <attvalue for="Team" value="T0LM84J0M"/>
+          <attvalue for="Team" value="T2B07UR7F"/>
+          <attvalue for="Team" value="T06A5J3QA"/>
+          <attvalue for="Team" value="T30U06SU8"/>
+          <attvalue for="Team" value="T1PG59728"/>
+          <attvalue for="Team" value="T032YT3UE"/>
+          <attvalue for="Team" value="T048QAFMD"/>
+          <attvalue for="Team" value="T07MVJNMV"/>
+          <attvalue for="Team" value="T0SF59DMM"/>
+          <attvalue for="Team" value="T04MB1C3V"/>
+          <attvalue for="Team" value="T0T5UKZN3"/>
+          <attvalue for="Team" value="T040F1EUX"/>
+          <attvalue for="Team" value="T0PNLAT9N"/>
+          <attvalue for="Team" value="T068QEXT4"/>
+          <attvalue for="Team" value="T0WHK795K"/>
+          <attvalue for="Team" value="T18JDPH8F"/>
+          <attvalue for="Team" value="T1WRQ7GBH"/>
+          <attvalue for="Team" value="T0F416R34"/>
+          <attvalue for="Team" value="T3SC7PA9G"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Team" value="T0PUQGKL6"/>
+          <attvalue for="Team" value="T0BRFRYBU"/>
+          <attvalue for="Team" value="T509N73NE"/>
+          <attvalue for="Team" value="T052AG7L4"/>
+          <attvalue for="Team" value="T0F4TBPB9"/>
+          <attvalue for="Team" value="T0DBL30AW"/>
+          <attvalue for="Team" value="T037H92J1"/>
+          <attvalue for="Team" value="T091CRSGH"/>
+          <attvalue for="Team" value="T0ELPDTMF"/>
+          <attvalue for="Team" value="T3DCX8URJ"/>
+          <attvalue for="Team" value="T0K447BHQ"/>
+          <attvalue for="Team" value="T0P9DK5V1"/>
+          <attvalue for="Team" value="T47H7EWH0"/>
+          <attvalue for="Team" value="T02ETSG3X"/>
+          <attvalue for="Team" value="T09229ZC6"/>
+          <attvalue for="Team" value="T0714CF1R"/>
+          <attvalue for="Team" value="T76G0F7L2"/>
+          <attvalue for="Team" value="T0EELHTT3"/>
+          <attvalue for="Team" value="T11LU483A"/>
+          <attvalue for="Team" value="T0QS7SGHH"/>
+          <attvalue for="Team" value="T14HDU3BR"/>
+          <attvalue for="Team" value="T0D00AAJW"/>
+          <attvalue for="Team" value="T0XJY6CHY"/>
+          <attvalue for="Team" value="T0337T92Z"/>
+          <attvalue for="Team" value="T032EGXMM"/>
+          <attvalue for="Team" value="T0QSD6PRC"/>
+          <attvalue for="Team" value="T07BB83R9"/>
+          <attvalue for="Team" value="T061N9DTP"/>
+          <attvalue for="Team" value="T07LN9LJX"/>
+          <attvalue for="Team" value="T03ALA7H4"/>
+          <attvalue for="Team" value="T06KV8EN7"/>
+          <attvalue for="Team" value="T0CC7EXH6"/>
+          <attvalue for="Team" value="T4QV53URL"/>
+          <attvalue for="Team" value="T025Q3Y8P"/>
+          <attvalue for="Team" value="T09NY5SBT"/>
+          <attvalue for="Team" value="T024TE61X"/>
+          <attvalue for="Team" value="T08325737"/>
+          <attvalue for="Team" value="T03PSJ0M8"/>
+          <attvalue for="Team" value="T04R1GUPQ"/>
+          <attvalue for="Team" value="T3AFLBR33"/>
+          <attvalue for="Team" value="T2Z29K9DK"/>
+          <attvalue for="Team" value="T0HJCPP9T"/>
+          <attvalue for="Team" value="T2HQV035L"/>
+          <attvalue for="Team" value="T03FAV5N3"/>
+          <attvalue for="Team" value="T3X7NLA57"/>
+          <attvalue for="Team" value="T0AHQ1BPY"/>
+          <attvalue for="Team" value="T04MFL245"/>
+          <attvalue for="Team" value="T4T3HUXH6"/>
+          <attvalue for="Team" value="T02GWQ23X"/>
+          <attvalue for="Team" value="T04U9QBS8"/>
+          <attvalue for="Team" value="T1Z2181B6"/>
+          <attvalue for="Team" value="T03CXB98E"/>
+          <attvalue for="Team" value="T04A5KMTX"/>
+          <attvalue for="Team" value="T300FHLQL"/>
+          <attvalue for="Team" value="T29A3EDK8"/>
+          <attvalue for="Team" value="T03EPRA2X"/>
+          <attvalue for="Team" value="T2BNYK9NF"/>
+          <attvalue for="Team" value="T0JAQ0B6U"/>
+          <attvalue for="Team" value="T03FJ8GH1"/>
+          <attvalue for="Team" value="T1EEDGFJQ"/>
+          <attvalue for="Team" value="T0AKKDZT3"/>
+          <attvalue for="Team" value="T02S1AD11"/>
+          <attvalue for="Team" value="T0292TU1V"/>
+          <attvalue for="Team" value="T0UGVG9MY"/>
+          <attvalue for="Team" value="T33ECA3ST"/>
+          <attvalue for="Team" value="T1RJQ90H4"/>
+          <attvalue for="Team" value="T037Q88QY"/>
+          <attvalue for="Team" value="T02HRSFNQ"/>
+          <attvalue for="Team" value="T1D250YBD"/>
+          <attvalue for="Team" value="T0BRKAS3U"/>
+          <attvalue for="Team" value="T31DBK70S"/>
+          <attvalue for="Team" value="T03BQ3NU9"/>
+          <attvalue for="Team" value="T06RTDEFL"/>
+          <attvalue for="Team" value="T0DND7LJ2"/>
+          <attvalue for="Team" value="T4A8BKJQ7"/>
+          <attvalue for="Team" value="T0MLR79L2"/>
+          <attvalue for="Team" value="T03A23LJR"/>
+          <attvalue for="Team" value="T12F4ST8V"/>
+          <attvalue for="Team" value="T042Q4YNM"/>
+          <attvalue for="Team" value="T03MS9QKY"/>
+          <attvalue for="Team" value="T043SBPTM"/>
+          <attvalue for="Team" value="T024R44D2"/>
+          <attvalue for="Team" value="T0N650MLL"/>
+          <attvalue for="Team" value="T071X9XNE"/>
+          <attvalue for="Team" value="T5DDY7AHF"/>
+          <attvalue for="Team" value="T39RG0MKQ"/>
+          <attvalue for="Team" value="T0BN5JTFT"/>
+          <attvalue for="Team" value="T0NJZESN9"/>
+          <attvalue for="Team" value="T0Z0A0L21"/>
+          <attvalue for="Team" value="T02G2SXKM"/>
+          <attvalue for="Team" value="T1Z37UEAG"/>
+          <attvalue for="Team" value="T0792F0N8"/>
+          <attvalue for="Team" value="T08DURX7B"/>
+          <attvalue for="Team" value="T02LMATJK"/>
+          <attvalue for="Team" value="T0VC3850R"/>
+          <attvalue for="Team" value="T0AV68M8C"/>
+          <attvalue for="Team" value="T2K9N5EKT"/>
+          <attvalue for="Team" value="T03CWQBGL"/>
+          <attvalue for="Team" value="T1CDFK6CU"/>
+          <attvalue for="Team" value="T09Q0HZRU"/>
+          <attvalue for="Team" value="T5EP6GJKS"/>
+          <attvalue for="Team" value="T18HH1BSP"/>
+          <attvalue for="Team" value="T536K2VFE"/>
+          <attvalue for="Team" value="T3TUM6SF6"/>
+          <attvalue for="Team" value="T094H101L"/>
+          <attvalue for="Team" value="T0B5S17V5"/>
+          <attvalue for="Team" value="T0A0T7A5Q"/>
+          <attvalue for="Team" value="T5FT6FLKC"/>
+          <attvalue for="Team" value="T04CSTKMT"/>
+          <attvalue for="Team" value="T0J422BCZ"/>
+          <attvalue for="Team" value="T2ZBGTSLD"/>
+          <attvalue for="Team" value="T3B7E65K2"/>
+          <attvalue for="Team" value="T09MSCUFM"/>
+          <attvalue for="Team" value="T04T6SJE4"/>
+          <attvalue for="Team" value="T2GFWK8EN"/>
+          <attvalue for="Team" value="T06L5802D"/>
+          <attvalue for="Team" value="T03AKDT72"/>
+          <attvalue for="Team" value="T02QYAF62"/>
+          <attvalue for="Team" value="T099289K7"/>
+          <attvalue for="Team" value="T0A819R7T"/>
+          <attvalue for="Team" value="T3X6E2YPJ"/>
+          <attvalue for="Team" value="T0396PBKZ"/>
+          <attvalue for="Team" value="T03JKNG8J"/>
+          <attvalue for="Team" value="T0ZU43YT0"/>
+          <attvalue for="Team" value="T5YK66T5F"/>
+          <attvalue for="Team" value="T51MQBHC3"/>
+          <attvalue for="Team" value="T0FKS9W03"/>
+          <attvalue for="Team" value="T1B7P40LC"/>
+          <attvalue for="Team" value="T0CAQ6CD9"/>
+          <attvalue for="Team" value="T02C5T9ES"/>
+          <attvalue for="Team" value="T0VFKM9MK"/>
+          <attvalue for="Team" value="T0HC4ME77"/>
+          <attvalue for="Team" value="T02JK8728"/>
+          <attvalue for="Team" value="T062L95S6"/>
+          <attvalue for="Team" value="T04AQ6GEY"/>
+          <attvalue for="Team" value="T17LU5R5G"/>
+          <attvalue for="Team" value="T03CVLS0L"/>
+          <attvalue for="Team" value="T17AZGP46"/>
+          <attvalue for="Team" value="T1QRBMXRU"/>
+          <attvalue for="Team" value="T094HDHDX"/>
+          <attvalue for="Team" value="T03RZJAM0"/>
+          <attvalue for="Team" value="T0B0B5269"/>
+          <attvalue for="Team" value="T06LTJ961"/>
+          <attvalue for="Team" value="T04S1P2TM"/>
+          <attvalue for="Team" value="T040C9AJ7"/>
+          <attvalue for="Team" value="T36LJJANT"/>
+          <attvalue for="Team" value="T02K0TNNH"/>
+          <attvalue for="Team" value="T74BCE17C"/>
+          <attvalue for="Team" value="T07RXRUSU"/>
+          <attvalue for="Team" value="T2C358BQR"/>
+          <attvalue for="Team" value="T1EFZN3UZ"/>
+          <attvalue for="Team" value="T0AFFTU95"/>
+          <attvalue for="Team" value="T0JLSTPAR"/>
+          <attvalue for="Team" value="T0N8JJJG4"/>
+          <attvalue for="Team" value="T02KET82S"/>
+          <attvalue for="Team" value="T02B99UJH"/>
+          <attvalue for="Team" value="T03C4RC8V"/>
+          <attvalue for="Team" value="T0JK1PCN6"/>
+          <attvalue for="Team" value="T03TSBF1T"/>
+          <attvalue for="Team" value="T7030KJKE"/>
+          <attvalue for="Team" value="T0BLG2LP2"/>
+          <attvalue for="Team" value="T06HQ8R52"/>
+          <attvalue for="Team" value="T0CV83RCP"/>
+          <attvalue for="Team" value="T0HESEEQL"/>
+          <attvalue for="Team" value="T0JR16PCL"/>
+          <attvalue for="Team" value="T0CAU358S"/>
+          <attvalue for="Team" value="T09SF2V98"/>
+          <attvalue for="Team" value="T70HF4JVC"/>
+          <attvalue for="Team" value="T03HRVCK2"/>
+          <attvalue for="Team" value="T2Z7C0AQJ"/>
+          <attvalue for="Team" value="T1RGWNHB5"/>
+          <attvalue for="Team" value="T0266FRGM"/>
+          <attvalue for="Team" value="T03N0NHSA"/>
+          <attvalue for="Team" value="T02CH2VE7"/>
+          <attvalue for="Team" value="T0M1PBN4E"/>
+          <attvalue for="Team" value="T4APNFSR5"/>
+          <attvalue for="Channel" value="C043SBQ0D"/>
+          <attvalue for="Channel" value="C045BQ4P7"/>
+          <attvalue for="Channel" value="C0ABFKMK3"/>
+          <attvalue for="Channel" value="C69BCA65Q"/>
+          <attvalue for="Channel" value="C0K5RJ7LN"/>
+          <attvalue for="Channel" value="C09HLQRUJ"/>
+          <attvalue for="Channel" value="C051ZHJ00"/>
+          <attvalue for="Channel" value="C2QPJLU2X"/>
+          <attvalue for="Channel" value="C4Q34KE12"/>
+          <attvalue for="Channel" value="C0CMSRPRC"/>
+          <attvalue for="Channel" value="C0CD51UNR"/>
+          <attvalue for="Channel" value="C04BMQE1U"/>
+          <attvalue for="Channel" value="C33ECJK0X"/>
+          <attvalue for="Channel" value="C0NEW3256"/>
+          <attvalue for="Channel" value="C0VT47X7W"/>
+          <attvalue for="Channel" value="C03PSJ0MG"/>
+          <attvalue for="Channel" value="C53A32R61"/>
+          <attvalue for="Channel" value="C222A39HA"/>
+          <attvalue for="Channel" value="C2GA8GU5B"/>
+          <attvalue for="Channel" value="C0K447BJN"/>
+          <attvalue for="Channel" value="C0RH4LM7F"/>
+          <attvalue for="Channel" value="C0AL1CD41"/>
+          <attvalue for="Channel" value="C08LK8A06"/>
+          <attvalue for="Channel" value="C29UWN90Q"/>
+          <attvalue for="Channel" value="C4TD5JJ7R"/>
+          <attvalue for="Channel" value="C04U1FC07"/>
+          <attvalue for="Channel" value="C06L5DV9T"/>
+          <attvalue for="Channel" value="C0KTGHGS1"/>
+          <attvalue for="Channel" value="C30PN0FHP"/>
+          <attvalue for="Channel" value="C337M1R6G"/>
+          <attvalue for="Channel" value="C06A5FLUR"/>
+          <attvalue for="Channel" value="C055273CF"/>
+          <attvalue for="Channel" value="C1CRT6CGY"/>
+          <attvalue for="Channel" value="C2P0GD5TJ"/>
+          <attvalue for="Channel" value="C1H5LDPK5"/>
+          <attvalue for="Channel" value="C0HC37ECC"/>
+          <attvalue for="Channel" value="C0KCM6HA5"/>
+          <attvalue for="Channel" value="C1UU37FBM"/>
+          <attvalue for="Channel" value="C2XA2LZNV"/>
+          <attvalue for="Channel" value="C1LSHE291"/>
+          <attvalue for="Channel" value="C2SC9FULC"/>
+          <attvalue for="Channel" value="C1BCBS8L8"/>
+          <attvalue for="Channel" value="C0777AM5Z"/>
+          <attvalue for="Channel" value="C062LA0HE"/>
+          <attvalue for="Channel" value="C0MDEFFEC"/>
+          <attvalue for="Channel" value="C13LEDNGG"/>
+          <attvalue for="Channel" value="C04F4ES7J"/>
+          <attvalue for="Channel" value="C0266FRGV"/>
+          <attvalue for="Channel" value="C6Z0WJMNG"/>
+          <attvalue for="Channel" value="C20MQR6F9"/>
+          <attvalue for="Channel" value="C03CXB98Q"/>
+          <attvalue for="Channel" value="C6BGAT770"/>
+          <attvalue for="Channel" value="C024VA3DQ"/>
+          <attvalue for="Channel" value="C0WLKVA2D"/>
+          <attvalue for="Channel" value="C1ERHD8JG"/>
+          <attvalue for="Channel" value="C46LQMTSR"/>
+          <attvalue for="Channel" value="C1KR5V24E"/>
+          <attvalue for="Channel" value="C6A0FQFAL"/>
+          <attvalue for="Channel" value="C06LTJ9AR"/>
+          <attvalue for="Channel" value="C18JM8U2Y"/>
+          <attvalue for="Channel" value="C1UGSUNCX"/>
+          <attvalue for="Channel" value="C0B9RJEEP"/>
+          <attvalue for="Channel" value="C29J6STC6"/>
+          <attvalue for="Channel" value="C0RJK7U78"/>
+          <attvalue for="Channel" value="C17GA4Y0J"/>
+          <attvalue for="Channel" value="C1SAZFPA6"/>
+          <attvalue for="Channel" value="C0AHQ9D47"/>
+          <attvalue for="Channel" value="C0CD4P3DM"/>
+          <attvalue for="Channel" value="C0LUAGWRK"/>
+          <attvalue for="Channel" value="C263CKKC3"/>
+          <attvalue for="Channel" value="C03HRVCLL"/>
+          <attvalue for="Channel" value="C4PJ7NLJX"/>
+          <attvalue for="Channel" value="C045C9ABM"/>
+          <attvalue for="Channel" value="C03E5143L"/>
+          <attvalue for="Channel" value="C0KGTKPFA"/>
+          <attvalue for="Channel" value="C0C30TKD5"/>
+          <attvalue for="Channel" value="C1TEEBS2Z"/>
+          <attvalue for="Channel" value="C6MQQM8VA"/>
+          <attvalue for="Channel" value="C35A3990V"/>
+          <attvalue for="Channel" value="C2S1VHFCH"/>
+          <attvalue for="Channel" value="C282KTG6R"/>
+          <attvalue for="Channel" value="C0H959XHN"/>
+          <attvalue for="Channel" value="C5Z4SKH6F"/>
+          <attvalue for="Channel" value="C0BG83QEQ"/>
+          <attvalue for="Channel" value="C1U143G0M"/>
+          <attvalue for="Channel" value="C075GGZRT"/>
+          <attvalue for="Channel" value="C14RP2MM0"/>
+          <attvalue for="Channel" value="C055DCZ2Y"/>
+          <attvalue for="Channel" value="C04TV1J83"/>
+          <attvalue for="Channel" value="C0EER6HA6"/>
+          <attvalue for="Channel" value="C2K9MEA5D"/>
+          <attvalue for="Channel" value="C0CD6DN0N"/>
+          <attvalue for="Channel" value="C0SGQ9M41"/>
+          <attvalue for="Channel" value="C12VD6B27"/>
+          <attvalue for="Channel" value="C2PH45NH0"/>
+          <attvalue for="Channel" value="C49NLBQ02"/>
+          <attvalue for="Channel" value="C3M0GCE2D"/>
+          <attvalue for="Channel" value="C0LDQKR8B"/>
+          <attvalue for="Channel" value="C45BBEUS3"/>
+          <attvalue for="Channel" value="C04UXD4LL"/>
+          <attvalue for="Channel" value="C4W5GDHD5"/>
+          <attvalue for="Channel" value="C03MQLV0V"/>
+          <attvalue for="Channel" value="C04AQ6GH0"/>
+          <attvalue for="Channel" value="C6QU1EMN2"/>
+          <attvalue for="Channel" value="C15E43U9J"/>
+          <attvalue for="Channel" value="C06DTC3J9"/>
+          <attvalue for="Channel" value="C62NY1W82"/>
+          <attvalue for="Channel" value="C052AG7RQ"/>
+          <attvalue for="Channel" value="C0B9C955H"/>
+          <attvalue for="Channel" value="C053GQSJU"/>
+          <attvalue for="Channel" value="C35470318"/>
+          <attvalue for="Channel" value="C6VMWEUBD"/>
+          <attvalue for="Channel" value="C3KFYK5H7"/>
+          <attvalue for="Channel" value="C0LAZ3TC3"/>
+          <attvalue for="Channel" value="C0QSA6NBH"/>
+          <attvalue for="Channel" value="C66TL2SN4"/>
+          <attvalue for="Channel" value="C0A9R96UV"/>
+          <attvalue for="Channel" value="C17M0CJK1"/>
+          <attvalue for="Channel" value="C6NQMTB2B"/>
+          <attvalue for="Channel" value="C04CA2079"/>
+          <attvalue for="Channel" value="C0K8VHA6B"/>
+          <attvalue for="Channel" value="C1K2TAJ1L"/>
+          <attvalue for="Channel" value="C2QPV7RJ9"/>
+          <attvalue for="Channel" value="C30NVUJAD"/>
+          <attvalue for="Channel" value="C3UMKBMAQ"/>
+          <attvalue for="Channel" value="C6P6326JU"/>
+          <attvalue for="Channel" value="C0FKS9W59"/>
+          <attvalue for="Channel" value="C1AJYCM4P"/>
+          <attvalue for="Channel" value="C5DUGLQKV"/>
+          <attvalue for="Channel" value="C04CGLNP9"/>
+          <attvalue for="Channel" value="C0ES9LDMH"/>
+          <attvalue for="Channel" value="C0C9VV0TW"/>
+          <attvalue for="Channel" value="C0DCUUH7E"/>
+          <attvalue for="Channel" value="C19UR0VLN"/>
+          <attvalue for="Channel" value="C2LEHUL78"/>
+          <attvalue for="Channel" value="C0FLFR09Y"/>
+          <attvalue for="Channel" value="C29GDT351"/>
+          <attvalue for="Channel" value="C29HR0BFG"/>
+          <attvalue for="Channel" value="C0X8JTD1P"/>
+          <attvalue for="Channel" value="C0NGP1U00"/>
+          <attvalue for="Channel" value="C0F4TBRN3"/>
+          <attvalue for="Channel" value="C0P9F48LU"/>
+          <attvalue for="Channel" value="C044TFKJC"/>
+          <attvalue for="Channel" value="C0P9DK7U3"/>
+          <attvalue for="Channel" value="C2J4C3ZGX"/>
+          <attvalue for="Channel" value="C0HE28YSF"/>
+          <attvalue for="Channel" value="C3NDNQ7K9"/>
+          <attvalue for="Channel" value="C09KA60BU"/>
+          <attvalue for="Channel" value="C4NNGEVGW"/>
+          <attvalue for="Channel" value="C02B99UJT"/>
+          <attvalue for="Channel" value="C04T79XAG"/>
+          <attvalue for="Channel" value="C4PSJ02RE"/>
+          <attvalue for="Channel" value="C5QUHCYFJ"/>
+          <attvalue for="Channel" value="C1EFJB9V2"/>
+          <attvalue for="Channel" value="C1MTSQ5QT"/>
+          <attvalue for="Channel" value="C050FHCE7"/>
+          <attvalue for="Channel" value="C2YURE3PH"/>
+          <attvalue for="Channel" value="C4TT9H5LK"/>
+          <attvalue for="Channel" value="C66P31K89"/>
+          <attvalue for="Channel" value="C055SB03E"/>
+          <attvalue for="Channel" value="C15FGKBBP"/>
+          <attvalue for="Channel" value="C2C2JM29M"/>
+          <attvalue for="Channel" value="C2XT7DLV9"/>
+          <attvalue for="Channel" value="C0FM3AEFL"/>
+          <attvalue for="Channel" value="C0J42JBK9"/>
+          <attvalue for="Channel" value="C1753690X"/>
+          <attvalue for="Channel" value="C4RM5735Y"/>
+          <attvalue for="Channel" value="C0252U6C6"/>
+          <attvalue for="Channel" value="C0D9E3EPR"/>
+          <attvalue for="Channel" value="C0KD7H2RX"/>
+          <attvalue for="Channel" value="C0JUASM4Z"/>
+          <attvalue for="Channel" value="C4ES88PKR"/>
+          <attvalue for="Channel" value="C281H7SHX"/>
+          <attvalue for="Channel" value="C2GA4NJCV"/>
+          <attvalue for="Channel" value="C04KG57CF"/>
+          <attvalue for="Channel" value="C3UFLHJP4"/>
+          <attvalue for="Channel" value="C0HJC3GFQ"/>
+          <attvalue for="Channel" value="C197SL7GT"/>
+          <attvalue for="Channel" value="C65BCFX9T"/>
+          <attvalue for="Channel" value="C04VBBZS8"/>
+          <attvalue for="Channel" value="C2P1FULFR"/>
+          <attvalue for="Channel" value="C04406G4L"/>
+          <attvalue for="Channel" value="C0792F0PN"/>
+          <attvalue for="Channel" value="C04VB7QRX"/>
+          <attvalue for="Channel" value="C12KMAYJX"/>
+          <attvalue for="Channel" value="C2U8UANQN"/>
+          <attvalue for="Channel" value="C0N8M5JDT"/>
+          <attvalue for="Channel" value="C2JJVAGTV"/>
+          <attvalue for="Channel" value="C03643FG4"/>
+          <attvalue for="Channel" value="C0ZBG5329"/>
+          <attvalue for="Channel" value="C0SP19AMA"/>
+          <attvalue for="Channel" value="C06H5GWJ1"/>
+          <attvalue for="Channel" value="C0CAQ5D4N"/>
+          <attvalue for="Channel" value="C0D8P5JNL"/>
+          <attvalue for="Channel" value="C298P0BCK"/>
+          <attvalue for="Channel" value="C2PF41T7V"/>
+          <attvalue for="Channel" value="C6FEC3620"/>
+          <attvalue for="Channel" value="C4JVCGPKR"/>
+          <attvalue for="Channel" value="C6Q3YN0GH"/>
+          <attvalue for="Channel" value="C3P818VEC"/>
+          <attvalue for="Channel" value="C0HTWD05C"/>
+          <attvalue for="Channel" value="C04R1GUUL"/>
+          <attvalue for="Channel" value="C297CFM7C"/>
+          <attvalue for="Channel" value="C37DRK3LK"/>
+          <attvalue for="Channel" value="C0F2GS35Z"/>
+          <attvalue for="Channel" value="C3BJBV5NU"/>
+          <attvalue for="Channel" value="C50AP8USG"/>
+          <attvalue for="Channel" value="C067Y5FN1"/>
+          <attvalue for="Channel" value="C0T2ARHAT"/>
+          <attvalue for="Channel" value="C0DNF95U0"/>
+          <attvalue for="Channel" value="C0KTM4JEB"/>
+          <attvalue for="Channel" value="C6B1QMYAE"/>
+          <attvalue for="Channel" value="C2K2RJNAC"/>
+          <attvalue for="Channel" value="C36LJJF9V"/>
+          <attvalue for="Channel" value="C048QAFMP"/>
+          <attvalue for="Channel" value="C09APTTT6"/>
+          <attvalue for="Channel" value="C0SG7MRC4"/>
+          <attvalue for="Channel" value="C1L0ZEEHM"/>
+          <attvalue for="Channel" value="C1RSHE4P8"/>
+          <attvalue for="Channel" value="C29J1BPM3"/>
+          <attvalue for="Channel" value="C29V6BUSK"/>
+          <attvalue for="Channel" value="C0CD678MB"/>
+          <attvalue for="Channel" value="C1TCPE29J"/>
+          <attvalue for="Channel" value="C2ABJT2BD"/>
+          <attvalue for="Channel" value="C0K5X30LW"/>
+          <attvalue for="Channel" value="C1RMSJ6PK"/>
+          <attvalue for="Channel" value="C2J9Z9KRP"/>
+          <attvalue for="Channel" value="C1CE2SWQ2"/>
+          <attvalue for="Channel" value="C0HJDRRJ7"/>
+          <attvalue for="Channel" value="C2DQFCVU5"/>
+          <attvalue for="Channel" value="C0AHQ9D3R"/>
+          <attvalue for="Channel" value="C1M2WEASG"/>
+          <attvalue for="Channel" value="C0L8M4D0V"/>
+          <attvalue for="Channel" value="C1NMK697T"/>
+          <attvalue for="Channel" value="C2P1JHS2E"/>
+          <attvalue for="Channel" value="C3CKTKZE1"/>
+          <attvalue for="Channel" value="C0E18AW6R"/>
+          <attvalue for="Channel" value="C0H94EM0A"/>
+          <attvalue for="Channel" value="C0ELQ03PH"/>
+          <attvalue for="Channel" value="C08DFAYV6"/>
+          <attvalue for="Channel" value="C21ME7RU4"/>
+          <attvalue for="Channel" value="C2Q159XJ4"/>
+          <attvalue for="Channel" value="C0NJEK631"/>
+          <attvalue for="Channel" value="C1CHDCTFT"/>
+          <attvalue for="Channel" value="C024TE623"/>
+          <attvalue for="Channel" value="C1R7S9P8U"/>
+          <attvalue for="Channel" value="C2QJL1YB1"/>
+          <attvalue for="Channel" value="C2LNCAKU2"/>
+          <attvalue for="Channel" value="C08LKJK09"/>
+          <attvalue for="Channel" value="C2HPCCQFM"/>
+          <attvalue for="Channel" value="C03KJK1L3"/>
+          <attvalue for="Channel" value="C1FVC4P5Y"/>
+          <attvalue for="Channel" value="C3858HH2B"/>
+          <attvalue for="Channel" value="C0UGBAR1U"/>
+          <attvalue for="Channel" value="C3L8PV50F"/>
+          <attvalue for="Channel" value="C06H7D6N5"/>
+          <attvalue for="Channel" value="C30JDMGS3"/>
+          <attvalue for="Channel" value="C0HDKEYCA"/>
+          <attvalue for="Channel" value="C074S3B8S"/>
+          <attvalue for="Channel" value="C4X18KS6P"/>
+          <attvalue for="Channel" value="C0R9AK3D1"/>
+          <attvalue for="Channel" value="C17LWTKQU"/>
+          <attvalue for="Channel" value="C1XBZCJ06"/>
+          <attvalue for="Channel" value="C174QU598"/>
+          <attvalue for="Channel" value="C78HB7PRQ"/>
+          <attvalue for="Channel" value="C0292TU21"/>
+          <attvalue for="Channel" value="C0XV3T5K6"/>
+          <attvalue for="Channel" value="C24GZ0Y10"/>
+          <attvalue for="Channel" value="C0WFJHSK1"/>
+          <attvalue for="Channel" value="C0CLGCMMF"/>
+          <attvalue for="Channel" value="C2C79046P"/>
+          <attvalue for="Channel" value="C34TYDRNH"/>
+          <attvalue for="Channel" value="C16T9EHT7"/>
+          <attvalue for="Channel" value="C17ELU8PN"/>
+          <attvalue for="Channel" value="C0NNLR4DD"/>
+          <attvalue for="Channel" value="C32MKLPGB"/>
+          <attvalue for="Channel" value="C5SMKUZT2"/>
+          <attvalue for="Channel" value="C64BW2L9X"/>
+          <attvalue for="Channel" value="C2A1ZEMF0"/>
+          <attvalue for="Channel" value="C3F0578Q3"/>
+          <attvalue for="Channel" value="C3WUKFWJ1"/>
+          <attvalue for="Channel" value="C4Z9BGHPZ"/>
+          <attvalue for="Channel" value="C04F551LP"/>
+          <attvalue for="Channel" value="C04FK5JQ2"/>
+          <attvalue for="Channel" value="C08TEK1JN"/>
+          <attvalue for="Channel" value="C12444MGW"/>
+          <attvalue for="Channel" value="C0XJBC5V2"/>
+          <attvalue for="Channel" value="C20D3RS2G"/>
+          <attvalue for="Channel" value="C544CLFFH"/>
+          <attvalue for="Channel" value="C5H7PFUS2"/>
+          <attvalue for="Channel" value="C5FUMCS76"/>
+          <attvalue for="Channel" value="C380HDA78"/>
+          <attvalue for="Channel" value="C58CCA6EN"/>
+          <attvalue for="Channel" value="C087B66BY"/>
+          <attvalue for="Channel" value="C0AM28XNU"/>
+          <attvalue for="Channel" value="C0BRGLG5N"/>
+          <attvalue for="Channel" value="C72BYP5RP"/>
+          <attvalue for="Channel" value="C2G0PG1M5"/>
+          <attvalue for="Channel" value="C0VBY57UP"/>
+          <attvalue for="Channel" value="C52EW973J"/>
+          <attvalue for="Channel" value="C15GZUFHV"/>
+          <attvalue for="Channel" value="C84DEK4UV"/>
+          <attvalue for="Channel" value="C0R0RE0GG"/>
+          <attvalue for="Channel" value="C08CV2Y1M"/>
+          <attvalue for="Channel" value="C2VTLBG5T"/>
+          <attvalue for="Channel" value="C03RZJAM8"/>
+          <attvalue for="Channel" value="C12J44CFK"/>
+          <attvalue for="Channel" value="C0VBAN5PV"/>
+          <attvalue for="Channel" value="C19BZ1M88"/>
+          <attvalue for="Channel" value="C04T6SJH6"/>
+          <attvalue for="Channel" value="C32BRUCF8"/>
+          <attvalue for="Channel" value="C5Z8EADPW"/>
+          <attvalue for="Channel" value="C02HRSFP0"/>
+          <attvalue for="Channel" value="C69GG8AEP"/>
+          <attvalue for="Channel" value="C03NH0CTH"/>
+          <attvalue for="Channel" value="C0NLYJWSZ"/>
+          <attvalue for="Channel" value="C3KNP59SB"/>
+          <attvalue for="Channel" value="C03HVEEH6"/>
+          <attvalue for="Channel" value="C03H1AYPV"/>
+          <attvalue for="Channel" value="C08J16D7C"/>
+          <attvalue for="Channel" value="C042Q4YS7"/>
+          <attvalue for="Channel" value="C3T6JRAJV"/>
+          <attvalue for="Channel" value="C0FLRDD7T"/>
+          <attvalue for="Channel" value="C02GXPS3Q"/>
+          <attvalue for="Channel" value="C0483520N"/>
+          <attvalue for="Channel" value="C48KDM7QX"/>
+          <attvalue for="Channel" value="C14TA19MY"/>
+          <attvalue for="Channel" value="C1EF0FULS"/>
+          <attvalue for="Channel" value="C1Z2B1G6R"/>
+          <attvalue for="Channel" value="C520WPXBL"/>
+          <attvalue for="Channel" value="C13A8QSCQ"/>
+          <attvalue for="Channel" value="C23MLMN82"/>
+          <attvalue for="Channel" value="C77GCPHMW"/>
+          <attvalue for="Channel" value="C4APNFYDD"/>
+          <attvalue for="Channel" value="C0PU4N7FA"/>
+          <attvalue for="Channel" value="C0FSEQJAX"/>
+          <attvalue for="Channel" value="C5G0RG5PD"/>
+          <attvalue for="Channel" value="C051G28F4"/>
+          <attvalue for="Channel" value="C5WAGGB7X"/>
+          <attvalue for="Channel" value="C1D395HB6"/>
+          <attvalue for="Channel" value="C0ZSX4X8B"/>
+          <attvalue for="Channel" value="C25CGPRSN"/>
+          <attvalue for="Channel" value="C0MF3BQ7K"/>
+          <attvalue for="Channel" value="C094GL7ME"/>
+          <attvalue for="Channel" value="C0CV88A83"/>
+          <attvalue for="Channel" value="C04MB1CAH"/>
+          <attvalue for="Channel" value="C12DJH0JW"/>
+          <attvalue for="Channel" value="C34SVE4MR"/>
+          <attvalue for="Channel" value="C3FBJTSP6"/>
+          <attvalue for="Channel" value="C0J02NU1E"/>
+          <attvalue for="Channel" value="C15GQLKB3"/>
+          <attvalue for="Channel" value="C5UNK7WAV"/>
+          <attvalue for="Channel" value="C02EW3SCQ"/>
+          <attvalue for="Channel" value="C6W6F8S64"/>
+          <attvalue for="Channel" value="C6WN8CJP5"/>
+          <attvalue for="Channel" value="C02LAJBV4"/>
+          <attvalue for="Channel" value="C0KE9N1DX"/>
+          <attvalue for="Channel" value="C39NVTQNQ"/>
+          <attvalue for="Channel" value="C5JN29NTC"/>
+          <attvalue for="Channel" value="C0JN5275F"/>
+          <attvalue for="Channel" value="C0C4FLCQZ"/>
+          <attvalue for="Channel" value="C0P7ALLNT"/>
+          <attvalue for="Channel" value="C5B2QTMHD"/>
+          <attvalue for="Channel" value="C0451CN7N"/>
+          <attvalue for="Channel" value="C0BUC9YTT"/>
+          <attvalue for="Channel" value="C02HTSLKD"/>
+          <attvalue for="Channel" value="C03FJ8GJ7"/>
+          <attvalue for="Channel" value="C04BMQ5NN"/>
+          <attvalue for="Channel" value="C04QFTM1T"/>
+          <attvalue for="Channel" value="C4F9NBLR1"/>
+          <attvalue for="Channel" value="C5H7PGGRL"/>
+          <attvalue for="Channel" value="C5Q6L92P4"/>
+          <attvalue for="Channel" value="C0TG21RPW"/>
+          <attvalue for="Channel" value="C17B72VDM"/>
+          <attvalue for="Channel" value="C1YGYRU1E"/>
+          <attvalue for="Channel" value="C0KDETX9U"/>
+          <attvalue for="Channel" value="C0LMF04VD"/>
+          <attvalue for="Channel" value="C1JRBB77W"/>
+          <attvalue for="Channel" value="C2KSU1E31"/>
+          <attvalue for="Channel" value="C09MSJL84"/>
+          <attvalue for="Channel" value="C4CPA2HCK"/>
+          <attvalue for="Channel" value="C08C4GYQ0"/>
+          <attvalue for="Channel" value="C6MPQ23HS"/>
+          <attvalue for="Channel" value="C0G6QSZ9N"/>
+          <attvalue for="Channel" value="C074L9QQG"/>
+          <attvalue for="Channel" value="C0ELXUSNA"/>
+          <attvalue for="Channel" value="C6021Q6T1"/>
+          <attvalue for="Channel" value="C6JM27NJG"/>
+          <attvalue for="Channel" value="C045SED6C"/>
+          <attvalue for="Channel" value="C1Z0PMZQB"/>
+          <attvalue for="Channel" value="C4F2KTQE9"/>
+          <attvalue for="Channel" value="C06SDM8Q2"/>
+          <attvalue for="Channel" value="C0FQJ5S5R"/>
+          <attvalue for="Channel" value="C050ALW13"/>
+          <attvalue for="Channel" value="C0HF32SSZ"/>
+          <attvalue for="Channel" value="C192T0Q1E"/>
+          <attvalue for="Channel" value="C40SNS37B"/>
+          <attvalue for="Channel" value="C429DN28J"/>
+          <attvalue for="Channel" value="C0NEJNXPB"/>
+          <attvalue for="Channel" value="C0MLQNYGH"/>
+          <attvalue for="Channel" value="C03T9CWMM"/>
+          <attvalue for="Channel" value="C1AN04P6C"/>
+          <attvalue for="Channel" value="C51PVBNLA"/>
+          <attvalue for="Channel" value="C07D6FWHY"/>
+          <attvalue for="Channel" value="C3B43A0MR"/>
+          <attvalue for="Channel" value="C08LTADT7"/>
+          <attvalue for="Channel" value="C02K0TNNT"/>
+          <attvalue for="Channel" value="C037Q88RU"/>
+          <attvalue for="Channel" value="C1U2PLFE2"/>
+          <attvalue for="Channel" value="C5F7JJKB2"/>
+          <attvalue for="Channel" value="C5EP6GLBS"/>
+          <attvalue for="Channel" value="C0P9AR3D2"/>
+          <attvalue for="Channel" value="C04UL6TQN"/>
+          <attvalue for="Channel" value="C2PGY0YB1"/>
+          <attvalue for="Channel" value="C513AGGKA"/>
+          <attvalue for="Channel" value="C58LKEKJP"/>
+          <attvalue for="Channel" value="C341195FG"/>
+          <attvalue for="Channel" value="C5YGW90RE"/>
+          <attvalue for="Channel" value="C64NGEGN4"/>
+          <attvalue for="Channel" value="C0CVALTLN"/>
+          <attvalue for="Channel" value="C03993J3K"/>
+          <attvalue for="Channel" value="C74BCE2EN"/>
+          <attvalue for="Channel" value="C2TCFSFDX"/>
+          <attvalue for="Channel" value="C0HHMDL15"/>
+          <attvalue for="Channel" value="C1W2WL80P"/>
+          <attvalue for="Channel" value="C0L9EEURY"/>
+          <attvalue for="Channel" value="C4UMVU4QZ"/>
+          <attvalue for="Channel" value="C5DA3L1GS"/>
+          <attvalue for="Channel" value="C046BC4EH"/>
+          <attvalue for="Channel" value="C07773B09"/>
+          <attvalue for="Channel" value="C07RY25QF"/>
+          <attvalue for="Channel" value="C0CUJSEPM"/>
+          <attvalue for="Channel" value="C07BB0C6T"/>
+          <attvalue for="Channel" value="C06TNPYN9"/>
+          <attvalue for="Channel" value="C0ZL4EM88"/>
+          <attvalue for="Channel" value="C025Q3Y91"/>
+          <attvalue for="Channel" value="C4K3R2KA6"/>
+          <attvalue for="Channel" value="C0292TU23"/>
+          <attvalue for="Channel" value="C0777962F"/>
+          <attvalue for="Channel" value="C07Q9CH1P"/>
+          <attvalue for="Channel" value="C0LRMHZ1T"/>
+          <attvalue for="Channel" value="C42JX79UZ"/>
+          <attvalue for="Channel" value="C2AQ48NQL"/>
+          <attvalue for="Channel" value="C04TEMD64"/>
+          <attvalue for="Channel" value="C31JAHQR5"/>
+          <attvalue for="Channel" value="C045YSXTK"/>
+          <attvalue for="Channel" value="C04GKR85M"/>
+          <attvalue for="Channel" value="C0QK5QGL8"/>
+          <attvalue for="Channel" value="C1MNGMHPU"/>
+          <attvalue for="Channel" value="C2W0GGWD8"/>
+          <attvalue for="Channel" value="C4PF5Q17W"/>
+          <attvalue for="Channel" value="C6UJNMY67"/>
+          <attvalue for="Channel" value="C760STEJD"/>
+          <attvalue for="Channel" value="C1EBEBL8Y"/>
+          <attvalue for="Channel" value="C3S3R162X"/>
+          <attvalue for="Channel" value="C07H3N1V2"/>
+          <attvalue for="Channel" value="C0EN96KUY"/>
+          <attvalue for="Channel" value="C4UD4LJSF"/>
+          <attvalue for="Channel" value="C07R5USHK"/>
+          <attvalue for="Channel" value="C074LC7RC"/>
+          <attvalue for="Channel" value="C1EHVV2DN"/>
+          <attvalue for="Channel" value="C6M8EUL9X"/>
+          <attvalue for="Channel" value="C0F1Y1QLS"/>
+          <attvalue for="Channel" value="C0Z6KM7HR"/>
+          <attvalue for="Channel" value="C3UFLKW2W"/>
+          <attvalue for="Channel" value="C3K8FGJA0"/>
+          <attvalue for="Channel" value="C2SH2KXS9"/>
+          <attvalue for="Channel" value="C091CCWRJ"/>
+          <attvalue for="Channel" value="C0CAU35B4"/>
+          <attvalue for="Channel" value="C0ZJR7GSF"/>
+          <attvalue for="Channel" value="C04BRN86J"/>
+          <attvalue for="Channel" value="C6ZJGC9GT"/>
+          <attvalue for="Channel" value="C0P787NKZ"/>
+          <attvalue for="Channel" value="C0TKZJVLH"/>
+          <attvalue for="Channel" value="C22937G30"/>
+          <attvalue for="Channel" value="C6X92BJ5P"/>
+          <attvalue for="Channel" value="C0PACRHQ9"/>
+          <attvalue for="Channel" value="C0VF9BNJ0"/>
+          <attvalue for="Channel" value="C08TFS6L8"/>
+          <attvalue for="Channel" value="C1EEKRKCG"/>
+          <attvalue for="Channel" value="C1AHS4DFF"/>
+          <attvalue for="Channel" value="C26Q22DAS"/>
+          <attvalue for="Channel" value="C2AUK4UG7"/>
+          <attvalue for="Channel" value="C0FLS18TH"/>
+          <attvalue for="Channel" value="C12FG0DAM"/>
+          <attvalue for="Channel" value="C1FV3B76Y"/>
+          <attvalue for="Channel" value="C0EEMR6SU"/>
+          <attvalue for="Channel" value="C3RLPPW2G"/>
+          <attvalue for="Channel" value="C03CXB98N"/>
+          <attvalue for="Channel" value="C2AU0ER99"/>
+          <attvalue for="Channel" value="C1T3CHT38"/>
+          <attvalue for="Channel" value="C0266FRGT"/>
+          <attvalue for="Channel" value="C3TQB8FBM"/>
+          <attvalue for="Channel" value="C0SGW1EJE"/>
+          <attvalue for="Channel" value="C1E5QEKT7"/>
+          <attvalue for="Channel" value="C04T79Y6Y"/>
+          <attvalue for="Channel" value="C26613YVD"/>
+          <attvalue for="Channel" value="C0828G690"/>
+          <attvalue for="Channel" value="C0CD0UVS8"/>
+          <attvalue for="Channel" value="C0F895287"/>
+          <attvalue for="Channel" value="C024FGQBB"/>
+          <attvalue for="Channel" value="C04SKL9UM"/>
+          <attvalue for="Channel" value="C094H2SAK"/>
+          <attvalue for="Channel" value="C0N6BDJHL"/>
+          <attvalue for="Channel" value="C06QHUFUL"/>
+          <attvalue for="Channel" value="C0HE19LCX"/>
+          <attvalue for="Channel" value="C0HA3CHJ7"/>
+          <attvalue for="Channel" value="C06JXEHU7"/>
+          <attvalue for="Channel" value="C0EH8LXR8"/>
+          <attvalue for="Channel" value="C16CFL5UP"/>
+          <attvalue for="Channel" value="C2L1BBJUR"/>
+          <attvalue for="Channel" value="C32435TC7"/>
+          <attvalue for="Channel" value="C4CLHQ3RN"/>
+          <attvalue for="Channel" value="C3TQ7PL56"/>
+          <attvalue for="Channel" value="C03A23LKM"/>
+          <attvalue for="Channel" value="C0SCWGSGH"/>
+          <attvalue for="Channel" value="C0991QQF4"/>
+          <attvalue for="Channel" value="C2F82JX0Q"/>
+          <attvalue for="Channel" value="C0CJ671HU"/>
+          <attvalue for="Channel" value="C0BMZ2RLL"/>
+          <attvalue for="Channel" value="C36G4U1B9"/>
+          <attvalue for="Channel" value="C0440U794"/>
+          <attvalue for="Channel" value="C85DVTDGT"/>
+          <attvalue for="Channel" value="C03TSBF33"/>
+          <attvalue for="Channel" value="C0BRBHQSZ"/>
+          <attvalue for="Channel" value="C03FL04JE"/>
+          <attvalue for="Channel" value="C4JKU950V"/>
+          <attvalue for="Channel" value="C1U4PMFTJ"/>
+          <attvalue for="Channel" value="C12UPBVK8"/>
+          <attvalue for="Channel" value="C0MU81TEC"/>
+          <attvalue for="Channel" value="C62AL8KEZ"/>
+          <attvalue for="Channel" value="C051ZHJ0G"/>
+          <attvalue for="Channel" value="C072GLBGU"/>
+          <attvalue for="Channel" value="C13H80AS2"/>
+          <attvalue for="Channel" value="C3484LK0R"/>
+          <attvalue for="Channel" value="C0CHR7KE0"/>
+          <attvalue for="Channel" value="C4UF8RT3R"/>
+          <attvalue for="Channel" value="C0G1771BK"/>
+          <attvalue for="Channel" value="C5ADZPDK5"/>
+          <attvalue for="Channel" value="C801TEZ6D"/>
+          <attvalue for="Channel" value="C0VTA9PA9"/>
+          <attvalue for="Channel" value="C08LK14DV"/>
+          <attvalue for="Channel" value="C0SCG9RV2"/>
+          <attvalue for="Channel" value="C03MYTRUL"/>
+          <attvalue for="Channel" value="C0B27DPAS"/>
+          <attvalue for="Channel" value="C3ZR935KJ"/>
+          <attvalue for="Channel" value="C0B8936UF"/>
+          <attvalue for="Channel" value="C03LSFQBH"/>
+          <attvalue for="Channel" value="C2DN6MUCX"/>
+          <attvalue for="Channel" value="C024NR15Q"/>
+          <attvalue for="Channel" value="C12JXQ2HW"/>
+          <attvalue for="Channel" value="C0N7M5D5J"/>
+          <attvalue for="Channel" value="C4TNYTR28"/>
+          <attvalue for="Channel" value="C280J8E6A"/>
+          <attvalue for="Channel" value="C081J4150"/>
+          <attvalue for="Channel" value="C0C78SG9L"/>
+          <attvalue for="Channel" value="C0JR86S2U"/>
+          <attvalue for="Channel" value="C1QG6LLL8"/>
+          <attvalue for="Channel" value="C0CJZD07K"/>
+          <attvalue for="Channel" value="C3EJ852JD"/>
+          <attvalue for="Channel" value="C1EFUH55K"/>
+          <attvalue for="Channel" value="C0ELEGEG2"/>
+          <attvalue for="Channel" value="C053GRE0B"/>
+          <attvalue for="Channel" value="C0FKR5YDT"/>
+          <attvalue for="Channel" value="C07MCL9KQ"/>
+          <attvalue for="Channel" value="C12DRJC21"/>
+          <attvalue for="Channel" value="C1EBJ5NAH"/>
+          <attvalue for="Channel" value="C0SFG37EW"/>
+          <attvalue for="Channel" value="C0BJKPU4U"/>
+          <attvalue for="Channel" value="C36ETE3DK"/>
+          <attvalue for="Channel" value="C3LRAHWEA"/>
+          <attvalue for="Channel" value="C7CA4EVAA"/>
+          <attvalue for="Channel" value="C2DC5PTNZ"/>
+          <attvalue for="Channel" value="C1PRS37BJ"/>
+          <attvalue for="Channel" value="C1QRX1LD8"/>
+          <attvalue for="Channel" value="C07LRKFHV"/>
+          <attvalue for="Channel" value="C06N9UWRW"/>
+          <attvalue for="Channel" value="C0CD4FXCY"/>
+          <attvalue for="Channel" value="C0AHPSC8Y"/>
+          <attvalue for="Channel" value="C3BSX4PBR"/>
+          <attvalue for="Channel" value="C0N4WE1M2"/>
+          <attvalue for="Channel" value="C03BQ3NUX"/>
+          <attvalue for="Channel" value="C06HQ8518"/>
+          <attvalue for="Channel" value="C1EEKCA11"/>
+          <attvalue for="Channel" value="C122VQC3D"/>
+          <attvalue for="Channel" value="C047TM0DS"/>
+          <attvalue for="Channel" value="C03N2AC1C"/>
+          <attvalue for="Channel" value="C0NDN674Y"/>
+          <attvalue for="Channel" value="C024HV01L"/>
+          <attvalue for="Channel" value="C15HQF6MT"/>
+          <attvalue for="Channel" value="C2B7WT70T"/>
+          <attvalue for="Channel" value="C0B5W77LJ"/>
+          <attvalue for="Channel" value="C04U04JNP"/>
+          <attvalue for="Channel" value="C63UAJEBB"/>
+          <attvalue for="Channel" value="C0DAHDN9E"/>
+          <attvalue for="Channel" value="C044J69B4"/>
+          <attvalue for="Channel" value="C3783KFEX"/>
+          <attvalue for="Channel" value="C2R0SKZMW"/>
+          <attvalue for="Channel" value="C49L0V3L7"/>
+          <attvalue for="Channel" value="C183XCF1R"/>
+          <attvalue for="Channel" value="C3B9F2QM8"/>
+          <attvalue for="Channel" value="C02G1FPFN"/>
+          <attvalue for="Channel" value="C09QFGBKM"/>
+          <attvalue for="Channel" value="C0YQUC476"/>
+          <attvalue for="Channel" value="C1B9E0E1G"/>
+          <attvalue for="Channel" value="C0U24M4AZ"/>
+          <attvalue for="Channel" value="C1CEFATP0"/>
+          <attvalue for="Channel" value="C4SJH791N"/>
+          <attvalue for="Channel" value="C5EPG66FQ"/>
+          <attvalue for="Channel" value="C0H9TKT28"/>
+          <attvalue for="Channel" value="C03PTV5LN"/>
+          <attvalue for="Channel" value="C3E0LJU3D"/>
+          <attvalue for="Channel" value="C0VT2PJBA"/>
+          <attvalue for="Channel" value="C02JK872G"/>
+          <attvalue for="Channel" value="C07E3TZ5M"/>
+          <attvalue for="Channel" value="C0Z788NEL"/>
+          <attvalue for="Channel" value="C0HBKP3GB"/>
+          <attvalue for="Channel" value="C0HEWSTEZ"/>
+          <attvalue for="Channel" value="C0VFW0Q6N"/>
+          <attvalue for="Channel" value="C03DT49AX"/>
+          <attvalue for="Channel" value="C2A35TA3U"/>
+          <attvalue for="Channel" value="C4DQAFG8N"/>
+          <attvalue for="Channel" value="C0KSBS51C"/>
+          <attvalue for="Channel" value="C0C35HU57"/>
+          <attvalue for="Channel" value="C0G0C5215"/>
+          <attvalue for="Channel" value="C0N8M5JAH"/>
+          <attvalue for="Channel" value="C1MJP41JR"/>
+          <attvalue for="Channel" value="C04MFL2B9"/>
+          <attvalue for="Channel" value="C5WG66R39"/>
+          <attvalue for="Channel" value="C2GHJQB0U"/>
+          <attvalue for="Channel" value="C0BJPTNHK"/>
+          <attvalue for="Channel" value="C23M3KSBS"/>
+          <attvalue for="Channel" value="C0ABFLVMM"/>
+          <attvalue for="Channel" value="C0D4RA5HV"/>
+          <attvalue for="Channel" value="C0B14FZPA"/>
+          <attvalue for="Channel" value="C0XARCT0A"/>
+          <attvalue for="Channel" value="C35SXSXP1"/>
+          <attvalue for="Channel" value="C3LRKH7U0"/>
+          <attvalue for="Channel" value="C08LP557U"/>
+          <attvalue for="Channel" value="C69JYKF19"/>
+          <attvalue for="Channel" value="C395LF7FC"/>
+          <attvalue for="Channel" value="C077733GS"/>
+          <attvalue for="Channel" value="C0JTUQT60"/>
+          <attvalue for="Channel" value="C0F2Y27SP"/>
+          <attvalue for="Channel" value="C07MVJNSK"/>
+          <attvalue for="Channel" value="C0HEGFEGL"/>
+          <attvalue for="Channel" value="C1KDKQS6T"/>
+          <attvalue for="Channel" value="C18NZM5K9"/>
+          <attvalue for="Channel" value="C0F9JQJDQ"/>
+          <attvalue for="Channel" value="C06BT162D"/>
+          <attvalue for="Channel" value="C0HJBT90E"/>
+          <attvalue for="Channel" value="C092LSF24"/>
+          <attvalue for="Channel" value="C0AV8UTLM"/>
+          <attvalue for="Channel" value="C3NKX1P1B"/>
+          <attvalue for="Channel" value="C0B17NZ5H"/>
+          <attvalue for="Channel" value="C0AHP471R"/>
+          <attvalue for="Channel" value="C1750T716"/>
+          <attvalue for="Channel" value="C3V62DAJ2"/>
+          <attvalue for="Channel" value="C1V1AAMK6"/>
+          <attvalue for="Channel" value="C02GWQ247"/>
+          <attvalue for="Channel" value="C1SPRT733"/>
+          <attvalue for="Channel" value="C04AUE126"/>
+          <attvalue for="Channel" value="C2FV010AD"/>
+          <attvalue for="Channel" value="C5GJQTQPJ"/>
+          <attvalue for="Channel" value="C6YDBHCCW"/>
+          <attvalue for="Channel" value="C0A2TH221"/>
+          <attvalue for="Channel" value="C2J6AVC5V"/>
+          <attvalue for="Channel" value="C0QSDASKT"/>
+          <attvalue for="Channel" value="C2LV9RXK2"/>
+          <attvalue for="Channel" value="C0BJKPTTN"/>
+          <attvalue for="Channel" value="C0DTYAQF9"/>
+          <attvalue for="Channel" value="C4B1KPGSU"/>
+          <attvalue for="Channel" value="C09MSS9U1"/>
+          <attvalue for="Channel" value="C03RFM8MZ"/>
+          <attvalue for="Channel" value="C0E7KRR6Z"/>
+          <attvalue for="Channel" value="C41D9J7PA"/>
+          <attvalue for="Channel" value="C4Q8R9FBL"/>
+          <attvalue for="Channel" value="C5D72JNCD"/>
+          <attvalue for="Channel" value="C0HU1N8L8"/>
+          <attvalue for="Channel" value="C342J1RNV"/>
+          <attvalue for="Channel" value="C0DKJBMNW"/>
+          <attvalue for="Channel" value="C0B73GW77"/>
+          <attvalue for="Channel" value="C06RTP2N9"/>
+          <attvalue for="Channel" value="C19HHECEL"/>
+          <attvalue for="Channel" value="C07F4L4SH"/>
+          <attvalue for="Channel" value="C3UA8S02G"/>
+          <attvalue for="Channel" value="C3WQ1KAKW"/>
+          <attvalue for="Channel" value="C42BCUDN0"/>
+          <attvalue for="Channel" value="C04J3EGR8"/>
+          <attvalue for="Channel" value="C0HH2U7DM"/>
+          <attvalue for="Channel" value="C0G834D1N"/>
+          <attvalue for="Channel" value="C11N4S6QK"/>
+          <attvalue for="Channel" value="C6CKF6BHB"/>
+          <attvalue for="Channel" value="C1ZK17DJL"/>
+          <attvalue for="Channel" value="C4EG03WQH"/>
+          <attvalue for="Channel" value="C2DMQ0BGE"/>
+          <attvalue for="Channel" value="C310153D4"/>
+          <attvalue for="Channel" value="C2PMXV2VA"/>
+          <attvalue for="Channel" value="C068QCLRW"/>
+          <attvalue for="Channel" value="C6BE6PYKH"/>
+          <attvalue for="Channel" value="C1G5FH6NR"/>
+          <attvalue for="Channel" value="C6AAK350D"/>
+          <attvalue for="Channel" value="C071X14U8"/>
+          <attvalue for="Channel" value="C0T5UNSRK"/>
+          <attvalue for="Channel" value="C04TV1KAR"/>
+          <attvalue for="Channel" value="C4QBQUEG5"/>
+          <attvalue for="Channel" value="C6AM7CUB0"/>
+          <attvalue for="Channel" value="C038SE87L"/>
+          <attvalue for="Channel" value="C0WHBNKSA"/>
+          <attvalue for="Channel" value="C037JMG46"/>
+          <attvalue for="Channel" value="C1B7ZBNCF"/>
+          <attvalue for="Channel" value="C2H29UZ7A"/>
+          <attvalue for="Channel" value="C3X6E301E"/>
+          <attvalue for="Channel" value="C0956SHRQ"/>
+          <attvalue for="Channel" value="C11M6SA9G"/>
+          <attvalue for="Channel" value="C155WG83H"/>
+          <attvalue for="Channel" value="C1Q5TK3DK"/>
+          <attvalue for="Channel" value="C2J2V5T5Y"/>
+          <attvalue for="Channel" value="C2WF40GDD"/>
+          <attvalue for="Channel" value="C5NKQH4KE"/>
+          <attvalue for="Channel" value="C0D15RNBZ"/>
+          <attvalue for="Channel" value="C02S3KKRN"/>
+          <attvalue for="Channel" value="C1QP4304S"/>
+          <attvalue for="Channel" value="C1NV8BF1C"/>
+          <attvalue for="Channel" value="C0JEED9V4"/>
+          <attvalue for="Channel" value="C07LRL8S3"/>
+          <attvalue for="Channel" value="C0JSP5L57"/>
+          <attvalue for="Channel" value="C0JUWR67K"/>
+          <attvalue for="Channel" value="C0EN99E64"/>
+          <attvalue for="Channel" value="C2PRYR5A8"/>
+          <attvalue for="Channel" value="C53N236A1"/>
+          <attvalue for="Channel" value="C07QPN6SV"/>
+          <attvalue for="Channel" value="C032YT3UN"/>
+          <attvalue for="Channel" value="C13EJCQBH"/>
+          <attvalue for="Channel" value="C32FSR3C2"/>
+          <attvalue for="Channel" value="C045GP88M"/>
+          <attvalue for="Channel" value="C3N6U1TT6"/>
+          <attvalue for="Channel" value="C06ND10V9"/>
+          <attvalue for="Channel" value="C07775F4L"/>
+          <attvalue for="Channel" value="C2PV4BV4M"/>
+          <attvalue for="Channel" value="C4RKGMRA7"/>
+          <attvalue for="Channel" value="C5E1U3E6A"/>
+          <attvalue for="Channel" value="C21KQB0BB"/>
+          <attvalue for="Channel" value="C2TECFZ97"/>
+          <attvalue for="Channel" value="C12CZQSQL"/>
+          <attvalue for="Channel" value="C1AMGDN1H"/>
+          <attvalue for="Channel" value="C0H91NH3M"/>
+          <attvalue for="Channel" value="C09222272"/>
+          <attvalue for="Channel" value="C175349JT"/>
+          <attvalue for="Channel" value="C13FQDL0Z"/>
+          <attvalue for="Channel" value="C3F073TBR"/>
+          <attvalue for="Channel" value="C1WS1MREE"/>
+          <attvalue for="Channel" value="C0K2SQB6G"/>
+          <attvalue for="Channel" value="C4DFRDZ8D"/>
+          <attvalue for="Channel" value="C09T266FJ"/>
+          <attvalue for="Channel" value="C4ZFZJ4RX"/>
+          <attvalue for="Channel" value="C48QMDHL4"/>
+          <attvalue for="Channel" value="C03EPRA3B"/>
+          <attvalue for="Channel" value="C3F2QR9N3"/>
+          <attvalue for="Channel" value="C08LKDDLH"/>
+          <attvalue for="Channel" value="C0337T937"/>
+          <attvalue for="Channel" value="C0CV83RDM"/>
+          <attvalue for="Channel" value="C0JUB9C1L"/>
+          <attvalue for="Channel" value="C1FNB1DB8"/>
+          <attvalue for="Channel" value="C0QCHTAQP"/>
+          <attvalue for="Channel" value="C0NHKRXFC"/>
+          <attvalue for="Channel" value="C0EH5KVJ8"/>
+          <attvalue for="Channel" value="C6AJUE3FD"/>
+          <attvalue for="Channel" value="C75FWQD35"/>
+          <attvalue for="Channel" value="C03V7VCTS"/>
+          <attvalue for="Channel" value="C35A34ESH"/>
+          <attvalue for="Channel" value="C0JL6A13R"/>
+          <attvalue for="Channel" value="C0JUBBPDM"/>
+          <attvalue for="Channel" value="C0K384K4Y"/>
+          <attvalue for="Channel" value="C69J9MUTF"/>
+          <attvalue for="Channel" value="C0KE30D0U"/>
+          <attvalue for="Channel" value="C0C32GKJL"/>
+          <attvalue for="Channel" value="C0K5BSF36"/>
+          <attvalue for="Channel" value="C4JHZF9AA"/>
+          <attvalue for="Channel" value="C0H42GMEE"/>
+          <attvalue for="Channel" value="C2NAVLESY"/>
+          <attvalue for="Channel" value="C3FKL0A8H"/>
+          <attvalue for="Channel" value="C02KET830"/>
+          <attvalue for="Channel" value="C0MLK9Z6Y"/>
+          <attvalue for="Channel" value="C6JL5HJFM"/>
+          <attvalue for="Channel" value="C06TNG9EY"/>
+          <attvalue for="Channel" value="C0AFFUGF7"/>
+          <attvalue for="Channel" value="C6Y90HWBX"/>
+          <attvalue for="Channel" value="C03S0KDQ4"/>
+          <attvalue for="Channel" value="C07SU52MR"/>
+          <attvalue for="Channel" value="C117503H8"/>
+          <attvalue for="Channel" value="C08V5STK5"/>
+          <attvalue for="Channel" value="C2KS8F7TJ"/>
+          <attvalue for="Channel" value="C828MC0TX"/>
+          <attvalue for="Channel" value="C0N8UPLNS"/>
+          <attvalue for="Channel" value="C04TCC1DG"/>
+          <attvalue for="Channel" value="C2UPSBS6S"/>
+          <attvalue for="Channel" value="C466X49JB"/>
+          <attvalue for="Channel" value="C280JBS6A"/>
+          <attvalue for="Channel" value="C2G78H2BU"/>
+          <attvalue for="Channel" value="C0HEX82NR"/>
+          <attvalue for="Channel" value="C03PNS2JA"/>
+          <attvalue for="Channel" value="C0D4T0K8V"/>
+          <attvalue for="Channel" value="C0Z78Q804"/>
+          <attvalue for="Channel" value="C27K2UWH2"/>
+          <attvalue for="Channel" value="C0KTK0RPA"/>
+          <attvalue for="Channel" value="C03CVQX2A"/>
+          <attvalue for="Channel" value="C2Y8CJ6HW"/>
+          <attvalue for="Channel" value="C36T9T693"/>
+          <attvalue for="Channel" value="C06U7L43A"/>
+          <attvalue for="Channel" value="C086Z7KU2"/>
+          <attvalue for="Channel" value="C0C4F10AG"/>
+          <attvalue for="Channel" value="C03ALA7L2"/>
+          <attvalue for="Channel" value="C03FJ8GJ3"/>
+          <attvalue for="Channel" value="C04CA26H9"/>
+          <attvalue for="Channel" value="C0562QEG2"/>
+          <attvalue for="Channel" value="C5X3TBK1B"/>
+          <attvalue for="Channel" value="C0542JUP8"/>
+          <attvalue for="Channel" value="C1MJLBAAD"/>
+          <attvalue for="Channel" value="C02EW4SDY"/>
+          <attvalue for="Channel" value="C0MNG7D6F"/>
+          <attvalue for="Channel" value="C0ZV3NE7M"/>
+          <attvalue for="Channel" value="C0DQE8VSQ"/>
+          <attvalue for="Channel" value="C1L7X2M08"/>
+          <attvalue for="Channel" value="C354J4ZTJ"/>
+          <attvalue for="Channel" value="C3W56ML5N"/>
+          <attvalue for="Channel" value="C4TPN8ZT6"/>
+          <attvalue for="Channel" value="C050EES2L"/>
+          <attvalue for="Channel" value="C6AMBSBTN"/>
+          <attvalue for="Channel" value="C0J9QC9M3"/>
+          <attvalue for="Channel" value="C0K447BKL"/>
+          <attvalue for="Channel" value="C0TEFH0UU"/>
+          <attvalue for="Channel" value="C049M3YGC"/>
+          <attvalue for="Channel" value="C08SY49K7"/>
+          <attvalue for="Channel" value="C0KLY4X7V"/>
+          <attvalue for="Channel" value="C06NA4F36"/>
+          <attvalue for="Channel" value="C0TL5J5EZ"/>
+          <attvalue for="Channel" value="C1EF162E7"/>
+          <attvalue for="Channel" value="C03BQ3NV3"/>
+          <attvalue for="Channel" value="C0VNNUD39"/>
+          <attvalue for="Channel" value="C22NDKQHW"/>
+          <attvalue for="Channel" value="C82JPQQT0"/>
+          <attvalue for="Channel" value="C04T6SJH2"/>
+          <attvalue for="Channel" value="C245W2BE3"/>
+          <attvalue for="Channel" value="C1R77DHJS"/>
+          <attvalue for="Channel" value="C67FA78G5"/>
+          <attvalue for="Channel" value="C0DPVDMQE"/>
+          <attvalue for="Channel" value="C0KSS1G5T"/>
+          <attvalue for="Channel" value="C04MF5G1C"/>
+          <attvalue for="Channel" value="C27P2V35M"/>
+          <attvalue for="Channel" value="C0XP71MBL"/>
+          <attvalue for="Channel" value="C06A5HZE3"/>
+          <attvalue for="Channel" value="C0N8TU9T3"/>
+          <attvalue for="Channel" value="C6B64429G"/>
+          <attvalue for="Channel" value="C0M2W80J1"/>
+          <attvalue for="Channel" value="C1ZGN3Q0P"/>
+          <attvalue for="Channel" value="C3H3B1FQQ"/>
+          <attvalue for="Channel" value="C0C9ZR7U6"/>
+          <attvalue for="Channel" value="C037J4MQP"/>
+          <attvalue for="Channel" value="C0CAU2N9W"/>
+          <attvalue for="Channel" value="C0HM2458Q"/>
+          <attvalue for="Channel" value="C0VH8EX7F"/>
+          <attvalue for="Channel" value="C1FJDUA92"/>
+          <attvalue for="Channel" value="C29HKGM6J"/>
+          <attvalue for="Channel" value="C1Q4MDMPB"/>
+          <attvalue for="Channel" value="C04DKNTLB"/>
+          <attvalue for="Channel" value="C6RS71HPD"/>
+          <attvalue for="Channel" value="C0DAWP7SQ"/>
+          <attvalue for="Channel" value="C0EU5PQ1L"/>
+          <attvalue for="Channel" value="C043SBQ07"/>
+          <attvalue for="Channel" value="C06N9SQBH"/>
+          <attvalue for="Channel" value="C0DN7A0JG"/>
+          <attvalue for="Channel" value="C0333LAST"/>
+          <attvalue for="Channel" value="C06NA3DGW"/>
+          <attvalue for="Channel" value="C06MC4CG6"/>
+          <attvalue for="Channel" value="C07LSA4F5"/>
+          <attvalue for="Channel" value="C0FQMABML"/>
+          <attvalue for="Channel" value="C2KSYLS1Z"/>
+          <attvalue for="Channel" value="C094H861L"/>
+          <attvalue for="Channel" value="C03UA3W1K"/>
+          <attvalue for="Channel" value="C11B3MMGX"/>
+          <attvalue for="Channel" value="C1X2NGV8V"/>
+          <attvalue for="Channel" value="C0F7ST3CY"/>
+          <attvalue for="Channel" value="C19UR38TW"/>
+          <attvalue for="Channel" value="C0MAEFZD0"/>
+          <attvalue for="Channel" value="C0KEBH086"/>
+          <attvalue for="Channel" value="C07LRVD7X"/>
+          <attvalue for="Channel" value="C2HPD4CR1"/>
+          <attvalue for="Channel" value="C09SEKZGQ"/>
+          <attvalue for="Channel" value="C4W4QQP8W"/>
+          <attvalue for="Channel" value="C03AKDT7A"/>
+          <attvalue for="Channel" value="C02TQ5UUT"/>
+          <attvalue for="Channel" value="C02PFUPPQ"/>
+          <attvalue for="Channel" value="C04CA208R"/>
+          <attvalue for="Channel" value="C0FL0BE3A"/>
+          <attvalue for="Channel" value="C5F0P8K0X"/>
+          <attvalue for="Channel" value="C04S4TP49"/>
+          <attvalue for="Channel" value="C27UQBXGT"/>
+          <attvalue for="Channel" value="C0LNH7LMB"/>
+          <attvalue for="Channel" value="C04PGAP4T"/>
+          <attvalue for="Channel" value="C0SVCSBHN"/>
+          <attvalue for="Channel" value="C2Q9V8K8S"/>
+          <attvalue for="Channel" value="C084MTKEW"/>
+          <attvalue for="Channel" value="C03UG231L"/>
+          <attvalue for="Channel" value="C0HDK376D"/>
+          <attvalue for="Channel" value="C3C9RSHL1"/>
+          <attvalue for="Channel" value="C04A5KN4K"/>
+          <attvalue for="Channel" value="C3CK05VJB"/>
+          <attvalue for="Channel" value="C09VC06F2"/>
+          <attvalue for="Channel" value="C032HMW6X"/>
+          <attvalue for="Channel" value="C0ECQV71N"/>
+          <attvalue for="Channel" value="C0CRP360G"/>
+          <attvalue for="Channel" value="C0HJVT881"/>
+          <attvalue for="Channel" value="C0831U16J"/>
+          <attvalue for="Channel" value="C50QFMRC2"/>
+          <attvalue for="Channel" value="C3TQ7TA8Y"/>
+          <attvalue for="Channel" value="C2TMCHZ5X"/>
+          <attvalue for="Channel" value="C0JAP6MGS"/>
+          <attvalue for="Channel" value="C045B3F2K"/>
+          <attvalue for="Channel" value="C1EM0R71T"/>
+          <attvalue for="Channel" value="C2B5X6SJH"/>
+          <attvalue for="Channel" value="C3CEPT86R"/>
+          <attvalue for="Channel" value="C03QQCV4H"/>
+          <attvalue for="Channel" value="C123VSE7P"/>
+          <attvalue for="Channel" value="C81E3P5RT"/>
+          <attvalue for="Channel" value="C0JLXJK9N"/>
+          <attvalue for="Channel" value="C20MD6MGU"/>
+          <attvalue for="Channel" value="C0459493L"/>
+          <attvalue for="Channel" value="C1KR1PRP1"/>
+          <attvalue for="Channel" value="C3B4W723A"/>
+          <attvalue for="Channel" value="C04U82E0H"/>
+          <attvalue for="Channel" value="C18FTTUKB"/>
+          <attvalue for="Channel" value="C4P5WBF6C"/>
+          <attvalue for="Channel" value="C491TL3CG"/>
+          <attvalue for="Channel" value="C5EJ9N6BT"/>
+          <attvalue for="Channel" value="C89J6P2GP"/>
+          <attvalue for="Channel" value="C30TUASAX"/>
+          <attvalue for="Channel" value="C3LR37S1E"/>
+          <attvalue for="Channel" value="C04C6V0JH"/>
+          <attvalue for="Channel" value="C06JZTUE7"/>
+          <attvalue for="Channel" value="C13J86Z63"/>
+          <attvalue for="Channel" value="C084Z7BS7"/>
+          <attvalue for="Channel" value="C0C358Q8N"/>
+          <attvalue for="Channel" value="C2SUECK8C"/>
+          <attvalue for="Channel" value="C07TM0PSM"/>
+          <attvalue for="Channel" value="C116QHW3S"/>
+          <attvalue for="Channel" value="C0GL5RP3L"/>
+          <attvalue for="Channel" value="C0DNE3SR0"/>
+          <attvalue for="Channel" value="C045BNHAP"/>
+          <attvalue for="Channel" value="C0VU49V42"/>
+          <attvalue for="Channel" value="C1FSEU5KK"/>
+          <attvalue for="Channel" value="C03Q82FDR"/>
+          <attvalue for="Channel" value="C1QV0E9H6"/>
+          <attvalue for="Channel" value="C03EZ55NG"/>
+          <attvalue for="Channel" value="C0777DQJ1"/>
+          <attvalue for="Channel" value="C08DUMNP5"/>
+          <attvalue for="Channel" value="C0NK061N0"/>
+          <attvalue for="Channel" value="C1LESC9T8"/>
+          <attvalue for="Channel" value="C0H91U9CK"/>
+          <attvalue for="Channel" value="C107SM535"/>
+          <attvalue for="Channel" value="C0T2B3VJR"/>
+          <attvalue for="Channel" value="C625TDZFA"/>
+          <attvalue for="Channel" value="C06HQ7H96"/>
+          <attvalue for="Channel" value="C5ZAV0ZA5"/>
+          <attvalue for="Channel" value="C04AABKNL"/>
+          <attvalue for="Channel" value="C2MPU0N72"/>
+          <attvalue for="Channel" value="C6V7ZT63E"/>
+          <attvalue for="Channel" value="C03QRK5M3"/>
+          <attvalue for="Channel" value="C3H4AFL3G"/>
+          <attvalue for="Channel" value="C47KZP5JN"/>
+          <attvalue for="Channel" value="C06FJH212"/>
+          <attvalue for="Channel" value="C0CV7TBB6"/>
+          <attvalue for="Channel" value="C1G2W2ENR"/>
+          <attvalue for="Channel" value="C3YBRLG8H"/>
+          <attvalue for="Channel" value="C5D2P1UA0"/>
+          <attvalue for="Channel" value="C0G5Q922V"/>
+          <attvalue for="Channel" value="C0JAZQRCL"/>
+          <attvalue for="Channel" value="C2RKQ2CM9"/>
+          <attvalue for="Channel" value="C0FD5CYSD"/>
+          <attvalue for="Channel" value="C0ZU0SXD2"/>
+          <attvalue for="Channel" value="C02SZL92C"/>
+          <attvalue for="Channel" value="C028S6ENA"/>
+          <attvalue for="Channel" value="C03DS1R1T"/>
+          <attvalue for="Channel" value="C07CL2DK7"/>
+          <attvalue for="Channel" value="C0CAFSP7G"/>
+          <attvalue for="Channel" value="C0HD4R0LT"/>
+          <attvalue for="Channel" value="C425URBU2"/>
+          <attvalue for="Channel" value="C13L7S5GR"/>
+          <attvalue for="Channel" value="C0PJ0FQUA"/>
+          <attvalue for="Channel" value="C1LC7DS6S"/>
+          <attvalue for="Channel" value="C69NFPJAH"/>
+          <attvalue for="Channel" value="C22TX36BD"/>
+          <attvalue for="Channel" value="C6PLF83H9"/>
+          <attvalue for="Channel" value="C02QYAF6L"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+          <attvalue for="Channel" value="C0714BWMS"/>
+          <attvalue for="Channel" value="C29EUD3QF"/>
+          <attvalue for="Channel" value="C0L4WMY9X"/>
+          <attvalue for="Channel" value="C02FQUNP1"/>
+          <attvalue for="Channel" value="C03UP6SLX"/>
+          <attvalue for="Channel" value="C179QNDLZ"/>
+          <attvalue for="Channel" value="C2BKCBL00"/>
+          <attvalue for="Channel" value="C5QGNK2N4"/>
+          <attvalue for="Channel" value="C20U72TNJ"/>
+          <attvalue for="Channel" value="C4D5PV411"/>
+          <attvalue for="Channel" value="C2MFMKHDX"/>
+          <attvalue for="Channel" value="C06BF20AH"/>
+          <attvalue for="Channel" value="C0HFMRA85"/>
+          <attvalue for="Channel" value="C07PP8Z0X"/>
+          <attvalue for="Channel" value="C3U2E3JRX"/>
+          <attvalue for="Channel" value="C12JVQX4P"/>
+          <attvalue for="Channel" value="C1RJTLP2N"/>
+          <attvalue for="Channel" value="C09R1TL6A"/>
+          <attvalue for="Channel" value="C04838KDQ"/>
+          <attvalue for="Channel" value="C1H1XBCSK"/>
+          <attvalue for="Channel" value="C071B9S66"/>
+          <attvalue for="Channel" value="C0KE0EZK7"/>
+          <attvalue for="Channel" value="C2HQUQN80"/>
+          <attvalue for="Channel" value="C1SS4N5TP"/>
+          <attvalue for="Channel" value="C302TRJAV"/>
+          <attvalue for="Channel" value="C2UQ1TZ7B"/>
+          <attvalue for="Channel" value="C0DMBNECC"/>
+          <attvalue for="Channel" value="C061N8YCE"/>
+          <attvalue for="Channel" value="C02G2SXKX"/>
+          <attvalue for="Channel" value="C2UPJPN69"/>
+          <attvalue for="Channel" value="C2Z8YG2Q2"/>
+          <attvalue for="Channel" value="C0M3Z10AV"/>
+          <attvalue for="Channel" value="C0JHGLC8N"/>
+          <attvalue for="Channel" value="C110SQ9GQ"/>
+          <attvalue for="Channel" value="C3GLXNYM6"/>
+          <attvalue for="Channel" value="C0F4P3FFF"/>
+          <attvalue for="Channel" value="C0TFY5LHF"/>
+          <attvalue for="Channel" value="C0538B2H7"/>
+          <attvalue for="Channel" value="C0BN1C3EZ"/>
+          <attvalue for="Channel" value="C3XRH3PHC"/>
+          <attvalue for="Channel" value="C04UK2R5H"/>
+          <attvalue for="Channel" value="C16R4U2D6"/>
+          <attvalue for="Channel" value="C03A3033G"/>
+          <attvalue for="Channel" value="C1E616ZSQ"/>
+          <attvalue for="Channel" value="C2NCV5S9J"/>
+          <attvalue for="Channel" value="C0451CN7Q"/>
+          <attvalue for="Channel" value="C07142H32"/>
+          <attvalue for="Channel" value="C07T40GS3"/>
+          <attvalue for="Channel" value="C16RUGXU1"/>
+          <attvalue for="Channel" value="C0Z6YR1B8"/>
+          <attvalue for="Channel" value="C1RAZB24S"/>
+          <attvalue for="Channel" value="C33LCNQAC"/>
+          <attvalue for="Channel" value="C0HC986SU"/>
+          <attvalue for="Channel" value="C1L1HT9L2"/>
+          <attvalue for="Channel" value="C1R8CM674"/>
+          <attvalue for="Channel" value="C4GLA0NFL"/>
+          <attvalue for="Channel" value="C1SF2P40Y"/>
+          <attvalue for="Channel" value="C04K4SH6T"/>
+          <attvalue for="Channel" value="C39FET0QP"/>
+          <attvalue for="Channel" value="C1MS1RA4B"/>
+          <attvalue for="Channel" value="C6AFF9AKG"/>
+          <attvalue for="Channel" value="C08LKASCR"/>
+          <attvalue for="Channel" value="C1EJBERL2"/>
+          <attvalue for="Channel" value="C1RJGK5EZ"/>
+          <attvalue for="Channel" value="C1CE2SWHG"/>
+          <attvalue for="Channel" value="C1UT4E66B"/>
+          <attvalue for="Channel" value="C5EU9PAGP"/>
+          <attvalue for="Channel" value="C024R44D8"/>
+          <attvalue for="Channel" value="C0NFH4WRY"/>
+          <attvalue for="Channel" value="C1RFZ64QN"/>
+          <attvalue for="Channel" value="C03CVLS0U"/>
+          <attvalue for="Channel" value="C5GF04J9J"/>
+          <attvalue for="Channel" value="C0CJ3SBBM"/>
+          <attvalue for="Channel" value="C052LMP0E"/>
+          <attvalue for="Channel" value="C0805679T"/>
+          <attvalue for="Channel" value="C0BRD6TDE"/>
+          <attvalue for="Channel" value="C19BTG95H"/>
+          <attvalue for="Channel" value="C0JR4J5NF"/>
+          <attvalue for="Channel" value="C03N0NHTG"/>
+          <attvalue for="Channel" value="C36U3BDHN"/>
+          <attvalue for="Channel" value="C620UT1A5"/>
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="U024FGTL8U21G8HPP1104" source="U024FGTL8" target="U21G8HPP1" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U21G8HPP1&gt; pode checar, por favor?"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1490118318.452572"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGTL8U21G8HPP148" source="U024FGTL8" target="U21G8HPP1" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U21G8HPP1&gt; pode checar, por favor?"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1490118318.452572"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGUSFU024FGR3T107" source="U024FGUSF" target="U024FGR3T" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U09U5TP0U&gt; &lt;@U024FGR3T&gt; &lt;@U3N8N0D5X&gt; resumo de 1 dia de ligações:&#10;Nº ligações totais&#9;129&#10;Embarcador&#9;65&#10;Feita&#9;5&#10;Recebida&#9;60&#10;Transportadora&#9;64&#10;Feita&#9;56&#10;Recebida&#9;8&#10;Tempo total&#9;10:21:00&#10;Embarcador&#9;04:47:00&#10;Feita&#9;00:31:00&#10;Recebida&#9;04:16:00&#10;Transportadora&#9;05:34:00&#10;Feita&#9;05:20:00&#10;Recebida&#9;00:14:00"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1489094530.255045"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGUSFU024FGR3T51" source="U024FGUSF" target="U024FGR3T" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U09U5TP0U&gt; &lt;@U024FGR3T&gt; &lt;@U3N8N0D5X&gt; resumo de 1 dia de ligações:&#10;Nº ligações totais&#9;129&#10;Embarcador&#9;65&#10;Feita&#9;5&#10;Recebida&#9;60&#10;Transportadora&#9;64&#10;Feita&#9;56&#10;Recebida&#9;8&#10;Tempo total&#9;10:21:00&#10;Embarcador&#9;04:47:00&#10;Feita&#9;00:31:00&#10;Recebida&#9;04:16:00&#10;Transportadora&#9;05:34:00&#10;Feita&#9;05:20:00&#10;Recebida&#9;00:14:00"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1489094530.255045"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGUSFU024FGUSF3" source="U024FGUSF" target="U024FGUSF" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U024FGUSF&gt; uploaded a file: &lt;https://cargobr.slack.com/files/U024FGUSF/F72F8RH3N/pasted_image_at_2017_09_13_10_14_am.png|Pasted image at 2017-09-13, 10:14 AM&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1505308485.000273"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGUSFU024FGUSF59" source="U024FGUSF" target="U024FGUSF" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U024FGUSF&gt; uploaded a file: &lt;https://cargobr.slack.com/files/U024FGUSF/F72F8RH3N/pasted_image_at_2017_09_13_10_14_am.png|Pasted image at 2017-09-13, 10:14 AM&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1505308485.000273"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGUSFU09U5TP0U106" source="U024FGUSF" target="U09U5TP0U" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U09U5TP0U&gt; &lt;@U024FGR3T&gt; &lt;@U3N8N0D5X&gt; resumo de 1 dia de ligações:&#10;Nº ligações totais&#9;129&#10;Embarcador&#9;65&#10;Feita&#9;5&#10;Recebida&#9;60&#10;Transportadora&#9;64&#10;Feita&#9;56&#10;Recebida&#9;8&#10;Tempo total&#9;10:21:00&#10;Embarcador&#9;04:47:00&#10;Feita&#9;00:31:00&#10;Recebida&#9;04:16:00&#10;Transportadora&#9;05:34:00&#10;Feita&#9;05:20:00&#10;Recebida&#9;00:14:00"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1489094530.255045"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGUSFU09U5TP0U50" source="U024FGUSF" target="U09U5TP0U" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U09U5TP0U&gt; &lt;@U024FGR3T&gt; &lt;@U3N8N0D5X&gt; resumo de 1 dia de ligações:&#10;Nº ligações totais&#9;129&#10;Embarcador&#9;65&#10;Feita&#9;5&#10;Recebida&#9;60&#10;Transportadora&#9;64&#10;Feita&#9;56&#10;Recebida&#9;8&#10;Tempo total&#9;10:21:00&#10;Embarcador&#9;04:47:00&#10;Feita&#9;00:31:00&#10;Recebida&#9;04:16:00&#10;Transportadora&#9;05:34:00&#10;Feita&#9;05:20:00&#10;Recebida&#9;00:14:00"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1489094530.255045"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGUSFU19J6U8EQ0" source="U024FGUSF" target="U19J6U8EQ" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U19J6U8EQ&gt; você não tem acesso aos tickets no octa?"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1505480040.000158"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGUSFU19J6U8EQ56" source="U024FGUSF" target="U19J6U8EQ" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U19J6U8EQ&gt; você não tem acesso aos tickets no octa?"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1505480040.000158"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGUSFU21G8HPP11" source="U024FGUSF" target="U21G8HPP1" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U21G8HPP1&gt; &lt;@U3UAJA74N&gt; atenção especial pra carga OOI2I4, tá atrasada, o cara tá enviando o termo de isenção, quer a coleta pra hoje"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1505479702.000093"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGUSFU21G8HPP1102" source="U024FGUSF" target="U21G8HPP1" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U3UAJA74N&gt; &lt;@U21G8HPP1&gt; cancelar a coleta PBCJY2 caso não tenha sido feita, cliente bloqueado"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1491915399.643475"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGUSFU21G8HPP122" source="U024FGUSF" target="U21G8HPP1" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="H4CGJP &lt;@U3UAJA74N&gt; &lt;@U21G8HPP1&gt; por favor verificar esse agendamento e retornar para o cliente"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1500468686.35038"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGUSFU21G8HPP135" source="U024FGUSF" target="U21G8HPP1" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="CTQOTZ &lt;@U21G8HPP1&gt; &lt;@U3UAJA74N&gt; FOB pago dia 26, ainda sem coleta agendada"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1493388802.505173"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGUSFU21G8HPP143" source="U024FGUSF" target="U21G8HPP1" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U21G8HPP1&gt; por favor cancelar 4I7H3S, material não está pronto"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1492432966.146305"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGUSFU21G8HPP146" source="U024FGUSF" target="U21G8HPP1" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U3UAJA74N&gt; &lt;@U21G8HPP1&gt; cancelar a coleta PBCJY2 caso não tenha sido feita, cliente bloqueado"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1491915399.643475"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGUSFU21G8HPP157" source="U024FGUSF" target="U21G8HPP1" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U21G8HPP1&gt; &lt;@U3UAJA74N&gt; atenção especial pra carga OOI2I4, tá atrasada, o cara tá enviando o termo de isenção, quer a coleta pra hoje"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1505479702.000093"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGUSFU21G8HPP178" source="U024FGUSF" target="U21G8HPP1" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="H4CGJP &lt;@U3UAJA74N&gt; &lt;@U21G8HPP1&gt; por favor verificar esse agendamento e retornar para o cliente"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1500468686.35038"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGUSFU21G8HPP191" source="U024FGUSF" target="U21G8HPP1" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="CTQOTZ &lt;@U21G8HPP1&gt; &lt;@U3UAJA74N&gt; FOB pago dia 26, ainda sem coleta agendada"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1493388802.505173"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGUSFU21G8HPP199" source="U024FGUSF" target="U21G8HPP1" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U21G8HPP1&gt; por favor cancelar 4I7H3S, material não está pronto"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1492432966.146305"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGUSFU3N8N0D5X108" source="U024FGUSF" target="U3N8N0D5X" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U09U5TP0U&gt; &lt;@U024FGR3T&gt; &lt;@U3N8N0D5X&gt; resumo de 1 dia de ligações:&#10;Nº ligações totais&#9;129&#10;Embarcador&#9;65&#10;Feita&#9;5&#10;Recebida&#9;60&#10;Transportadora&#9;64&#10;Feita&#9;56&#10;Recebida&#9;8&#10;Tempo total&#9;10:21:00&#10;Embarcador&#9;04:47:00&#10;Feita&#9;00:31:00&#10;Recebida&#9;04:16:00&#10;Transportadora&#9;05:34:00&#10;Feita&#9;05:20:00&#10;Recebida&#9;00:14:00"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1489094530.255045"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGUSFU3N8N0D5X52" source="U024FGUSF" target="U3N8N0D5X" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U09U5TP0U&gt; &lt;@U024FGR3T&gt; &lt;@U3N8N0D5X&gt; resumo de 1 dia de ligações:&#10;Nº ligações totais&#9;129&#10;Embarcador&#9;65&#10;Feita&#9;5&#10;Recebida&#9;60&#10;Transportadora&#9;64&#10;Feita&#9;56&#10;Recebida&#9;8&#10;Tempo total&#9;10:21:00&#10;Embarcador&#9;04:47:00&#10;Feita&#9;00:31:00&#10;Recebida&#9;04:16:00&#10;Transportadora&#9;05:34:00&#10;Feita&#9;05:20:00&#10;Recebida&#9;00:14:00"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1489094530.255045"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGUSFU3UAJA74N100" source="U024FGUSF" target="U3UAJA74N" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U3UAJA74N&gt; por favor verificar QTT5OY, coleta está atrasada há 3 dias"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1492432951.144833"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGUSFU3UAJA74N101" source="U024FGUSF" target="U3UAJA74N" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U3UAJA74N&gt; &lt;@U21G8HPP1&gt; cancelar a coleta PBCJY2 caso não tenha sido feita, cliente bloqueado"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1491915399.643475"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGUSFU3UAJA74N2" source="U024FGUSF" target="U3UAJA74N" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U21G8HPP1&gt; &lt;@U3UAJA74N&gt; atenção especial pra carga OOI2I4, tá atrasada, o cara tá enviando o termo de isenção, quer a coleta pra hoje"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1505479702.000093"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGUSFU3UAJA74N21" source="U024FGUSF" target="U3UAJA74N" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="H4CGJP &lt;@U3UAJA74N&gt; &lt;@U21G8HPP1&gt; por favor verificar esse agendamento e retornar para o cliente"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1500468686.35038"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGUSFU3UAJA74N36" source="U024FGUSF" target="U3UAJA74N" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="CTQOTZ &lt;@U21G8HPP1&gt; &lt;@U3UAJA74N&gt; FOB pago dia 26, ainda sem coleta agendada"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1493388802.505173"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGUSFU3UAJA74N44" source="U024FGUSF" target="U3UAJA74N" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U3UAJA74N&gt; por favor verificar QTT5OY, coleta está atrasada há 3 dias"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1492432951.144833"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGUSFU3UAJA74N45" source="U024FGUSF" target="U3UAJA74N" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U3UAJA74N&gt; &lt;@U21G8HPP1&gt; cancelar a coleta PBCJY2 caso não tenha sido feita, cliente bloqueado"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1491915399.643475"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGUSFU3UAJA74N58" source="U024FGUSF" target="U3UAJA74N" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U21G8HPP1&gt; &lt;@U3UAJA74N&gt; atenção especial pra carga OOI2I4, tá atrasada, o cara tá enviando o termo de isenção, quer a coleta pra hoje"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1505479702.000093"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGUSFU3UAJA74N77" source="U024FGUSF" target="U3UAJA74N" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="H4CGJP &lt;@U3UAJA74N&gt; &lt;@U21G8HPP1&gt; por favor verificar esse agendamento e retornar para o cliente"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1500468686.35038"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGUSFU3UAJA74N92" source="U024FGUSF" target="U3UAJA74N" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="CTQOTZ &lt;@U21G8HPP1&gt; &lt;@U3UAJA74N&gt; FOB pago dia 26, ainda sem coleta agendada"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1493388802.505173"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U09U5TP0UU09U5TP0U31" source="U09U5TP0U" target="U09U5TP0U" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U09U5TP0U|andreia&gt; uploaded a file: &lt;https://cargobr.slack.com/files/andreia/F59HF6KLL/comprovante_pgto_cargo.jpg|Untitled&gt; and commented: Dri, o cliente enviou o comprovante de pagamento ao Evandro"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1494013582.529135"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U09U5TP0UU09U5TP0U87" source="U09U5TP0U" target="U09U5TP0U" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U09U5TP0U|andreia&gt; uploaded a file: &lt;https://cargobr.slack.com/files/andreia/F59HF6KLL/comprovante_pgto_cargo.jpg|Untitled&gt; and commented: Dri, o cliente enviou o comprovante de pagamento ao Evandro"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1494013582.529135"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U09U5TP0UU0D2X5VJR110" source="U09U5TP0U" target="U0D2X5VJR" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U0D2X5VJR&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1488398936.328584"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U09U5TP0UU0D2X5VJR54" source="U09U5TP0U" target="U0D2X5VJR" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U0D2X5VJR&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1488398936.328584"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U0D2X5VJRU09PGTXPY42" source="U0D2X5VJR" target="U09PGTXPY" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="Pessoas lindas. Alguém selecionou na mão a transportadora do pedido #J7Q4UU ? &lt;@U1Z5LH5HR&gt; &lt;@U09PGTXPY&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1492546869.200687"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U0D2X5VJRU09PGTXPY98" source="U0D2X5VJR" target="U09PGTXPY" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="Pessoas lindas. Alguém selecionou na mão a transportadora do pedido #J7Q4UU ? &lt;@U1Z5LH5HR&gt; &lt;@U09PGTXPY&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1492546869.200687"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U0D2X5VJRU09U5TP0U109" source="U0D2X5VJR" target="U09U5TP0U" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="Vlw &lt;@U09U5TP0U&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1488399002.333055"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U0D2X5VJRU09U5TP0U53" source="U0D2X5VJR" target="U09U5TP0U" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="Vlw &lt;@U09U5TP0U&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1488399002.333055"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U0D2X5VJRU1Z5LH5HR39" source="U0D2X5VJR" target="U1Z5LH5HR" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="Já ví isso aí &lt;@U1Z5LH5HR&gt;. Vlw !"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1492611929.517792"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U0D2X5VJRU1Z5LH5HR41" source="U0D2X5VJR" target="U1Z5LH5HR" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="Pessoas lindas. Alguém selecionou na mão a transportadora do pedido #J7Q4UU ? &lt;@U1Z5LH5HR&gt; &lt;@U09PGTXPY&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1492546869.200687"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U0D2X5VJRU1Z5LH5HR95" source="U0D2X5VJR" target="U1Z5LH5HR" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="Já ví isso aí &lt;@U1Z5LH5HR&gt;. Vlw !"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1492611929.517792"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U0D2X5VJRU1Z5LH5HR97" source="U0D2X5VJR" target="U1Z5LH5HR" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="Pessoas lindas. Alguém selecionou na mão a transportadora do pedido #J7Q4UU ? &lt;@U1Z5LH5HR&gt; &lt;@U09PGTXPY&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1492546869.200687"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U0S57FJ4EU09U5TP0U23" source="U0S57FJ4E" target="U09U5TP0U" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U09U5TP0U&gt; cuidando"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1497038779.812676"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U0S57FJ4EU09U5TP0U79" source="U0S57FJ4E" target="U09U5TP0U" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U09U5TP0U&gt; cuidando"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1497038779.812676"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU024FGUSF111" source="U19J6U8EQ" target="U024FGUSF" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U024FGUSF&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1488397373.216611"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU024FGUSF55" source="U19J6U8EQ" target="U024FGUSF" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U024FGUSF&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1488397373.216611"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU09U5TP0U11" source="U19J6U8EQ" target="U09U5TP0U" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U21G8HPP1&gt; &lt;@U3UAJA74N&gt; &lt;@U09U5TP0U&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1502413034.345306"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU09U5TP0U16" source="U19J6U8EQ" target="U09U5TP0U" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U09U5TP0U&gt; Esse case aqui veio ao financeiro semana passada. Encaminhei ao sac."/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1501525260.879346"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU09U5TP0U32" source="U19J6U8EQ" target="U09U5TP0U" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="Ele tinha que estar no status, aguardando pagamento primeiro?! &lt;@U09U5TP0U&gt; &lt;@U0S57FJ4E&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1494013181.433508"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU09U5TP0U64" source="U19J6U8EQ" target="U09U5TP0U" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="BHARS PESQUISA &lt;@U09U5TP0U&gt; Este cliente informou que há uma tratativa com vc, referente ao cancelamento de pedido/devolução.&#10;Pode verificar e me avisar, pfv? Preciso atualizar o boleto em atraso do mesmo."/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1502728199.888554"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU09U5TP0U67" source="U19J6U8EQ" target="U09U5TP0U" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U21G8HPP1&gt; &lt;@U3UAJA74N&gt; &lt;@U09U5TP0U&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1502413034.345306"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU09U5TP0U72" source="U19J6U8EQ" target="U09U5TP0U" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U09U5TP0U&gt; Esse case aqui veio ao financeiro semana passada. Encaminhei ao sac."/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1501525260.879346"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU09U5TP0U8" source="U19J6U8EQ" target="U09U5TP0U" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="BHARS PESQUISA &lt;@U09U5TP0U&gt; Este cliente informou que há uma tratativa com vc, referente ao cancelamento de pedido/devolução.&#10;Pode verificar e me avisar, pfv? Preciso atualizar o boleto em atraso do mesmo."/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1502728199.888554"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU09U5TP0U88" source="U19J6U8EQ" target="U09U5TP0U" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="Ele tinha que estar no status, aguardando pagamento primeiro?! &lt;@U09U5TP0U&gt; &lt;@U0S57FJ4E&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1494013181.433508"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU0S57FJ4E33" source="U19J6U8EQ" target="U0S57FJ4E" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="Ele tinha que estar no status, aguardando pagamento primeiro?! &lt;@U09U5TP0U&gt; &lt;@U0S57FJ4E&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1494013181.433508"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU0S57FJ4E89" source="U19J6U8EQ" target="U0S57FJ4E" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="Ele tinha que estar no status, aguardando pagamento primeiro?! &lt;@U09U5TP0U&gt; &lt;@U0S57FJ4E&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1494013181.433508"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU19J6U8EQ30" source="U19J6U8EQ" target="U19J6U8EQ" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U19J6U8EQ|adriellyribeiro&gt; shared a file: &lt;https://cargobr.slack.com/files/andreia/F59HF6KLL/comprovante_pgto_cargo.jpg|Untitled&gt; and commented: Dri, o cliente enviou o comprovante de pagamento ao Evandro"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1494013646.544303"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU19J6U8EQ86" source="U19J6U8EQ" target="U19J6U8EQ" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U19J6U8EQ|adriellyribeiro&gt; shared a file: &lt;https://cargobr.slack.com/files/andreia/F59HF6KLL/comprovante_pgto_cargo.jpg|Untitled&gt; and commented: Dri, o cliente enviou o comprovante de pagamento ao Evandro"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1494013646.544303"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU21G8HPP117" source="U19J6U8EQ" target="U21G8HPP1" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U21G8HPP1&gt; 56LMTN - cancelar esta coleta, cliente desistiu da compra."/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1501008652.717507"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU21G8HPP118" source="U19J6U8EQ" target="U21G8HPP1" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="7GXID2 - O cliente esta na linha informando que foi coletado 21/07, no nosso sistema nem consta essa informação. &#10;O destinatário ligou aqui e foi informado que a carga nao tinha sido coletada ainda, pode verificar?&#10;&lt;@U21G8HPP1&gt; &lt;@U3UAJA74N&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1500926322.79046"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU21G8HPP134" source="U19J6U8EQ" target="U21G8HPP1" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U21G8HPP1&gt; a Generoso coletou a NF 260."/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1493393360.981949"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU21G8HPP138" source="U19J6U8EQ" target="U21G8HPP1" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="NS6RTJ  - &lt;@U3UAJA74N&gt; &lt;@U21G8HPP1&gt; está autorizado fazer o agendamento da coleta deste pedido. Abs"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1493315773.868325"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU21G8HPP165" source="U19J6U8EQ" target="U21G8HPP1" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U21G8HPP1&gt; &lt;@U3UAJA74N&gt; &lt;@U09U5TP0U&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1502413034.345306"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU21G8HPP173" source="U19J6U8EQ" target="U21G8HPP1" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U21G8HPP1&gt; 56LMTN - cancelar esta coleta, cliente desistiu da compra."/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1501008652.717507"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU21G8HPP174" source="U19J6U8EQ" target="U21G8HPP1" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="7GXID2 - O cliente esta na linha informando que foi coletado 21/07, no nosso sistema nem consta essa informação. &#10;O destinatário ligou aqui e foi informado que a carga nao tinha sido coletada ainda, pode verificar?&#10;&lt;@U21G8HPP1&gt; &lt;@U3UAJA74N&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1500926322.79046"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU21G8HPP19" source="U19J6U8EQ" target="U21G8HPP1" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U21G8HPP1&gt; &lt;@U3UAJA74N&gt; &lt;@U09U5TP0U&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1502413034.345306"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU21G8HPP190" source="U19J6U8EQ" target="U21G8HPP1" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U21G8HPP1&gt; a Generoso coletou a NF 260."/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1493393360.981949"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU21G8HPP194" source="U19J6U8EQ" target="U21G8HPP1" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="NS6RTJ  - &lt;@U3UAJA74N&gt; &lt;@U21G8HPP1&gt; está autorizado fazer o agendamento da coleta deste pedido. Abs"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1493315773.868325"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU3UAJA74N10" source="U19J6U8EQ" target="U3UAJA74N" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U21G8HPP1&gt; &lt;@U3UAJA74N&gt; &lt;@U09U5TP0U&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1502413034.345306"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU3UAJA74N19" source="U19J6U8EQ" target="U3UAJA74N" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="7GXID2 - O cliente esta na linha informando que foi coletado 21/07, no nosso sistema nem consta essa informação. &#10;O destinatário ligou aqui e foi informado que a carga nao tinha sido coletada ainda, pode verificar?&#10;&lt;@U21G8HPP1&gt; &lt;@U3UAJA74N&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1500926322.79046"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU3UAJA74N20" source="U19J6U8EQ" target="U3UAJA74N" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U3UAJA74N&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1500906490.433797"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU3UAJA74N37" source="U19J6U8EQ" target="U3UAJA74N" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="NS6RTJ  - &lt;@U3UAJA74N&gt; &lt;@U21G8HPP1&gt; está autorizado fazer o agendamento da coleta deste pedido. Abs"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1493315773.868325"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU3UAJA74N5" source="U19J6U8EQ" target="U3UAJA74N" weight="0.5">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U3UAJA74N&gt; verificar se a carta de correção está correta. =]"/>
+          <attvalue for="Weight" value="0.5"/>
+          <attvalue for="Date" value="1504102913.000646"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU3UAJA74N6" source="U19J6U8EQ" target="U3UAJA74N" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U3UAJA74N&gt; Subi o XML nesse carga q vc solicitou. :smiley:&#10;Anotação feita no octa e ticket finalizado."/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1502908542.000458"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU3UAJA74N61" source="U19J6U8EQ" target="U3UAJA74N" weight="0.5">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U3UAJA74N&gt; verificar se a carta de correção está correta. =]"/>
+          <attvalue for="Weight" value="0.5"/>
+          <attvalue for="Date" value="1504102913.000646"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU3UAJA74N62" source="U19J6U8EQ" target="U3UAJA74N" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U3UAJA74N&gt; Subi o XML nesse carga q vc solicitou. :smiley:&#10;Anotação feita no octa e ticket finalizado."/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1502908542.000458"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU3UAJA74N66" source="U19J6U8EQ" target="U3UAJA74N" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U21G8HPP1&gt; &lt;@U3UAJA74N&gt; &lt;@U09U5TP0U&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1502413034.345306"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU3UAJA74N75" source="U19J6U8EQ" target="U3UAJA74N" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="7GXID2 - O cliente esta na linha informando que foi coletado 21/07, no nosso sistema nem consta essa informação. &#10;O destinatário ligou aqui e foi informado que a carga nao tinha sido coletada ainda, pode verificar?&#10;&lt;@U21G8HPP1&gt; &lt;@U3UAJA74N&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1500926322.79046"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU3UAJA74N76" source="U19J6U8EQ" target="U3UAJA74N" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U3UAJA74N&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1500906490.433797"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU3UAJA74N93" source="U19J6U8EQ" target="U3UAJA74N" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="NS6RTJ  - &lt;@U3UAJA74N&gt; &lt;@U21G8HPP1&gt; está autorizado fazer o agendamento da coleta deste pedido. Abs"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1493315773.868325"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU5ZJJ5QE54" source="U19J6U8EQ" target="U5ZJJ5QE5" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="ARKK4G -  Falei com o Thiago, ele informou que a mercadoria ainda está com a transportadora e que sofreu algum tipo de avaria. &#10;O destinatário desistiu da compra. &lt;@U5ZJJ5QE5&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1504634578.000207"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU5ZJJ5QE560" source="U19J6U8EQ" target="U5ZJJ5QE5" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="ARKK4G -  Falei com o Thiago, ele informou que a mercadoria ainda está com a transportadora e que sofreu algum tipo de avaria. &#10;O destinatário desistiu da compra. &lt;@U5ZJJ5QE5&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1504634578.000207"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U1Z5LH5HRU0D2X5VJR40" source="U1Z5LH5HR" target="U0D2X5VJR" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U0D2X5VJR&gt;, eu não"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1492611907.51038"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U1Z5LH5HRU0D2X5VJR96" source="U1Z5LH5HR" target="U0D2X5VJR" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U0D2X5VJR&gt;, eu não"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1492611907.51038"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U21G8HPP1U09U5TP0U15" source="U21G8HPP1" target="U09U5TP0U" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U3UAJA74N&gt; &lt;@U5ZJJ5QE5&gt; &lt;@U3N0M11EH&gt; &lt;@U09U5TP0U&gt;, nosso contato na Buslog será o SR. Rafael, para rastreio e coletas. Contato: 2633-8146/rastreamento@buslog.com.br"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1501874113.11676"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U21G8HPP1U09U5TP0U71" source="U21G8HPP1" target="U09U5TP0U" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U3UAJA74N&gt; &lt;@U5ZJJ5QE5&gt; &lt;@U3N0M11EH&gt; &lt;@U09U5TP0U&gt;, nosso contato na Buslog será o SR. Rafael, para rastreio e coletas. Contato: 2633-8146/rastreamento@buslog.com.br"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1501874113.11676"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U21G8HPP1U3N0M11EH14" source="U21G8HPP1" target="U3N0M11EH" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U3UAJA74N&gt; &lt;@U5ZJJ5QE5&gt; &lt;@U3N0M11EH&gt; &lt;@U09U5TP0U&gt;, nosso contato na Buslog será o SR. Rafael, para rastreio e coletas. Contato: 2633-8146/rastreamento@buslog.com.br"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1501874113.11676"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U21G8HPP1U3N0M11EH70" source="U21G8HPP1" target="U3N0M11EH" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U3UAJA74N&gt; &lt;@U5ZJJ5QE5&gt; &lt;@U3N0M11EH&gt; &lt;@U09U5TP0U&gt;, nosso contato na Buslog será o SR. Rafael, para rastreio e coletas. Contato: 2633-8146/rastreamento@buslog.com.br"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1501874113.11676"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U21G8HPP1U3UAJA74N12" source="U21G8HPP1" target="U3UAJA74N" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U3UAJA74N&gt; &lt;@U5ZJJ5QE5&gt; &lt;@U3N0M11EH&gt; &lt;@U09U5TP0U&gt;, nosso contato na Buslog será o SR. Rafael, para rastreio e coletas. Contato: 2633-8146/rastreamento@buslog.com.br"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1501874113.11676"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U21G8HPP1U3UAJA74N68" source="U21G8HPP1" target="U3UAJA74N" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U3UAJA74N&gt; &lt;@U5ZJJ5QE5&gt; &lt;@U3N0M11EH&gt; &lt;@U09U5TP0U&gt;, nosso contato na Buslog será o SR. Rafael, para rastreio e coletas. Contato: 2633-8146/rastreamento@buslog.com.br"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1501874113.11676"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U21G8HPP1U5ZJJ5QE513" source="U21G8HPP1" target="U5ZJJ5QE5" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U3UAJA74N&gt; &lt;@U5ZJJ5QE5&gt; &lt;@U3N0M11EH&gt; &lt;@U09U5TP0U&gt;, nosso contato na Buslog será o SR. Rafael, para rastreio e coletas. Contato: 2633-8146/rastreamento@buslog.com.br"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1501874113.11676"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U21G8HPP1U5ZJJ5QE569" source="U21G8HPP1" target="U5ZJJ5QE5" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U3UAJA74N&gt; &lt;@U5ZJJ5QE5&gt; &lt;@U3N0M11EH&gt; &lt;@U09U5TP0U&gt;, nosso contato na Buslog será o SR. Rafael, para rastreio e coletas. Contato: 2633-8146/rastreamento@buslog.com.br"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1501874113.11676"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U3GDDDB0FU3GDDDB0F103" source="U3GDDDB0F" target="U3GDDDB0F" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U3GDDDB0F|fran&gt; uploaded a file: &lt;https://cargobr.slack.com/files/fran/F4NAM8J0P/screenshot_2017-03-21-17-12-29.png|Slack for Android Upload&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1490127181.042659"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U3GDDDB0FU3GDDDB0F105" source="U3GDDDB0F" target="U3GDDDB0F" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U3GDDDB0F|fran&gt; uploaded a file: &lt;https://cargobr.slack.com/files/fran/F4N73P9UP/screenshot_2017-03-21-14-13-43.png|Slack for Android Upload&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1490116486.867742"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U3GDDDB0FU3GDDDB0F47" source="U3GDDDB0F" target="U3GDDDB0F" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U3GDDDB0F|fran&gt; uploaded a file: &lt;https://cargobr.slack.com/files/fran/F4NAM8J0P/screenshot_2017-03-21-17-12-29.png|Slack for Android Upload&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1490127181.042659"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U3GDDDB0FU3GDDDB0F49" source="U3GDDDB0F" target="U3GDDDB0F" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U3GDDDB0F|fran&gt; uploaded a file: &lt;https://cargobr.slack.com/files/fran/F4N73P9UP/screenshot_2017-03-21-14-13-43.png|Slack for Android Upload&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1490116486.867742"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U3N0M11EHU4TJAG5CL24" source="U3N0M11EH" target="U4TJAG5CL" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="Valeu &lt;@U4TJAG5CL&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1496752416.401008"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U3N0M11EHU4TJAG5CL80" source="U3N0M11EH" target="U4TJAG5CL" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="Valeu &lt;@U4TJAG5CL&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1496752416.401008"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U41CLAYCAU09U5TP0U63" source="U41CLAYCA" target="U09U5TP0U" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U09U5TP0U&gt; vou criar um ticket"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1502889597.000064"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="U41CLAYCAU09U5TP0U7" source="U41CLAYCA" target="U09U5TP0U" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U09U5TP0U&gt; vou criar um ticket"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1502889597.000064"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="USLACKBOTU09U5TP0U25" source="USLACKBOT" target="U09U5TP0U" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U09U5TP0U|andreia&gt; &lt;@U3N0M11EH|estevao.andrade&gt; &lt;@U3UAJA74N|mariano&gt; &lt;@U21G8HPP1|fabiana.guimaraes&gt; &lt;@U0S57FJ4E|sophia.cavalcante&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1494254047.24837"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="USLACKBOTU09U5TP0U81" source="USLACKBOT" target="U09U5TP0U" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U09U5TP0U|andreia&gt; &lt;@U3N0M11EH|estevao.andrade&gt; &lt;@U3UAJA74N|mariano&gt; &lt;@U21G8HPP1|fabiana.guimaraes&gt; &lt;@U0S57FJ4E|sophia.cavalcante&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1494254047.24837"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="USLACKBOTU0S57FJ4E29" source="USLACKBOT" target="U0S57FJ4E" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U09U5TP0U|andreia&gt; &lt;@U3N0M11EH|estevao.andrade&gt; &lt;@U3UAJA74N|mariano&gt; &lt;@U21G8HPP1|fabiana.guimaraes&gt; &lt;@U0S57FJ4E|sophia.cavalcante&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1494254047.24837"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="USLACKBOTU0S57FJ4E85" source="USLACKBOT" target="U0S57FJ4E" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U09U5TP0U|andreia&gt; &lt;@U3N0M11EH|estevao.andrade&gt; &lt;@U3UAJA74N|mariano&gt; &lt;@U21G8HPP1|fabiana.guimaraes&gt; &lt;@U0S57FJ4E|sophia.cavalcante&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1494254047.24837"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="USLACKBOTU21G8HPP128" source="USLACKBOT" target="U21G8HPP1" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U09U5TP0U|andreia&gt; &lt;@U3N0M11EH|estevao.andrade&gt; &lt;@U3UAJA74N|mariano&gt; &lt;@U21G8HPP1|fabiana.guimaraes&gt; &lt;@U0S57FJ4E|sophia.cavalcante&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1494254047.24837"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="USLACKBOTU21G8HPP184" source="USLACKBOT" target="U21G8HPP1" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U09U5TP0U|andreia&gt; &lt;@U3N0M11EH|estevao.andrade&gt; &lt;@U3UAJA74N|mariano&gt; &lt;@U21G8HPP1|fabiana.guimaraes&gt; &lt;@U0S57FJ4E|sophia.cavalcante&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1494254047.24837"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="USLACKBOTU3N0M11EH26" source="USLACKBOT" target="U3N0M11EH" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U09U5TP0U|andreia&gt; &lt;@U3N0M11EH|estevao.andrade&gt; &lt;@U3UAJA74N|mariano&gt; &lt;@U21G8HPP1|fabiana.guimaraes&gt; &lt;@U0S57FJ4E|sophia.cavalcante&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1494254047.24837"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="USLACKBOTU3N0M11EH82" source="USLACKBOT" target="U3N0M11EH" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U09U5TP0U|andreia&gt; &lt;@U3N0M11EH|estevao.andrade&gt; &lt;@U3UAJA74N|mariano&gt; &lt;@U21G8HPP1|fabiana.guimaraes&gt; &lt;@U0S57FJ4E|sophia.cavalcante&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1494254047.24837"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="USLACKBOTU3UAJA74N27" source="USLACKBOT" target="U3UAJA74N" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U09U5TP0U|andreia&gt; &lt;@U3N0M11EH|estevao.andrade&gt; &lt;@U3UAJA74N|mariano&gt; &lt;@U21G8HPP1|fabiana.guimaraes&gt; &lt;@U0S57FJ4E|sophia.cavalcante&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1494254047.24837"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+      <edge id="USLACKBOTU3UAJA74N83" source="USLACKBOT" target="U3UAJA74N" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U09U5TP0U|andreia&gt; &lt;@U3N0M11EH|estevao.andrade&gt; &lt;@U3UAJA74N|mariano&gt; &lt;@U21G8HPP1|fabiana.guimaraes&gt; &lt;@U0S57FJ4E|sophia.cavalcante&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1494254047.24837"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

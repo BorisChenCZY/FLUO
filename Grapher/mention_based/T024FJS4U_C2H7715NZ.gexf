@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.gephi.org/gexf/1.2draft" xmlns:ns0="xsi" version="1.2" ns0:schemaLocation="http://www.gephi.org/gexf/1.1draft http://gephi.org/gexf/1.2draft.xsd">
+  <meta lastmodified="2017-12-31">
+    <creator>Gephi.org</creator>
+    <description>A Web network</description>
+  </meta>
+  <graph defaultedgetype="directed" label="A Web network" mode="static" timeformat="double">
+    <attributes class="node" mode="static">
+      <attribute id="Channel" title="channel" type="String"/>
+      <attribute id="Team" title="team" type="String"/>
+      <attribute id="weight" title="weight" type="float"/>
+    </attributes>
+    <attributes class="edge" mode="static">
+      <attribute id="Channel" title="channel" type="String">
+        <default>None</default>
+      </attribute>
+      <attribute id="Date" title="date" type="float">
+        <default>None</default>
+      </attribute>
+      <attribute id="Message" title="message" type="String">
+        <default>None</default>
+      </attribute>
+      <attribute id="Team" title="team" type="String">
+        <default>None</default>
+      </attribute>
+      <attribute id="Weight" title="weight" type="float">
+        <default>0</default>
+      </attribute>
+    </attributes>
+    <nodes>
+      <node id="U2H98C468" label="katzueno">
+        <attvalues>
+          <attvalue for="weight" value="20"/>
+          <attvalue for="Team" value="T024FJS4U"/>
+          <attvalue for="Channel" value="C2J9Q7ML4"/>
+          <attvalue for="Channel" value="C2H9SBGD7"/>
+          <attvalue for="Channel" value="C2HPZAKNG"/>
+          <attvalue for="Channel" value="C024FJS50"/>
+          <attvalue for="Channel" value="C2H7715NZ"/>
+          <attvalue for="Channel" value="C2H9SG5MF"/>
+          <attvalue for="Channel" value="C2N3FLUBW"/>
+        </attvalues>
+      </node>
+      <node id="U2HC3MMKJ" label="mrkdilkington">
+        <attvalues>
+          <attvalue for="weight" value="53"/>
+          <attvalue for="Team" value="T024FJS4U"/>
+          <attvalue for="Channel" value="C2JTKUE5A"/>
+          <attvalue for="Channel" value="C41NQ9BHC"/>
+          <attvalue for="Channel" value="C2TRFJKA8"/>
+          <attvalue for="Channel" value="C36JSUK7F"/>
+          <attvalue for="Channel" value="C463R1N1K"/>
+          <attvalue for="Channel" value="C2J9Q7ML4"/>
+          <attvalue for="Channel" value="C2K1Z6W2F"/>
+          <attvalue for="Channel" value="C2Q0DT1ND"/>
+          <attvalue for="Channel" value="C5RN3MSEN"/>
+          <attvalue for="Channel" value="C6P2PL03A"/>
+          <attvalue for="Channel" value="C6PM5PNN8"/>
+          <attvalue for="Channel" value="C3N0FPMRU"/>
+          <attvalue for="Channel" value="C024FJS50"/>
+          <attvalue for="Channel" value="C2KBETN12"/>
+          <attvalue for="Channel" value="C2N2WS3QX"/>
+          <attvalue for="Channel" value="C2H6RGBV2"/>
+          <attvalue for="Channel" value="C87AHE3G8"/>
+          <attvalue for="Channel" value="C2H7715NZ"/>
+          <attvalue for="Channel" value="C7BAJL0J1"/>
+          <attvalue for="Channel" value="C2N3FLUBW"/>
+        </attvalues>
+      </node>
+      <node id="U7U90S1UN" label="info906">
+        <attvalues>
+          <attvalue for="weight" value="10"/>
+          <attvalue for="Team" value="T024FJS4U"/>
+          <attvalue for="Channel" value="C2H7715NZ"/>
+          <attvalue for="Channel" value="C024FJS50"/>
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="U2H98C468U7U90S1UN0" source="U2H98C468" target="U7U90S1UN" weight="0.26666666666666666">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U7U90S1UN&gt; this is the channel to discuss social media presence of concrete5 CMS, more promotional end."/>
+          <attvalue for="Weight" value="0.26666666666666666"/>
+          <attvalue for="Date" value="1510498490.000022"/>
+          <attvalue for="Team" value="T024FJS4U"/>
+          <attvalue for="Channel" value="C2H7715NZ"/>
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

@@ -1,0 +1,325 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.gephi.org/gexf/1.2draft" xmlns:ns0="xsi" version="1.2" ns0:schemaLocation="http://www.gephi.org/gexf/1.1draft http://gephi.org/gexf/1.2draft.xsd">
+  <meta lastmodified="2017-12-31">
+    <creator>Gephi.org</creator>
+    <description>A Web network</description>
+  </meta>
+  <graph defaultedgetype="directed" label="A Web network" mode="static" timeformat="double">
+    <attributes class="node" mode="static">
+      <attribute id="Channel" title="channel" type="String"/>
+      <attribute id="Team" title="team" type="String"/>
+      <attribute id="weight" title="weight" type="float"/>
+    </attributes>
+    <attributes class="edge" mode="static">
+      <attribute id="Channel" title="channel" type="String">
+        <default>None</default>
+      </attribute>
+      <attribute id="Date" title="date" type="float">
+        <default>None</default>
+      </attribute>
+      <attribute id="Message" title="message" type="String">
+        <default>None</default>
+      </attribute>
+      <attribute id="Team" title="team" type="String">
+        <default>None</default>
+      </attribute>
+      <attribute id="Weight" title="weight" type="float">
+        <default>0</default>
+      </attribute>
+    </attributes>
+    <nodes>
+      <node id="U2H5AQC03" label="a3020">
+        <attvalues>
+          <attvalue for="weight" value="27"/>
+          <attvalue for="Team" value="T024FJS4U"/>
+          <attvalue for="Channel" value="C2TRFJKA8"/>
+          <attvalue for="Channel" value="C36JSUK7F"/>
+          <attvalue for="Channel" value="C2J9Q7ML4"/>
+          <attvalue for="Channel" value="C2Q0DT1ND"/>
+          <attvalue for="Channel" value="C024FJS50"/>
+          <attvalue for="Channel" value="C2N2WS3QX"/>
+          <attvalue for="Channel" value="C2KBETN12"/>
+          <attvalue for="Channel" value="C2H6RGBV2"/>
+          <attvalue for="Channel" value="C41NQ9BHC"/>
+          <attvalue for="Channel" value="C2N3FLUBW"/>
+        </attvalues>
+      </node>
+      <node id="U2H6KAASC" label="mlocati">
+        <attvalues>
+          <attvalue for="weight" value="61"/>
+          <attvalue for="Team" value="T024FJS4U"/>
+          <attvalue for="Channel" value="C2TRFJKA8"/>
+          <attvalue for="Channel" value="C36JSUK7F"/>
+          <attvalue for="Channel" value="C463R1N1K"/>
+          <attvalue for="Channel" value="C2J9Q7ML4"/>
+          <attvalue for="Channel" value="C2Q0DT1ND"/>
+          <attvalue for="Channel" value="C6PM5PNN8"/>
+          <attvalue for="Channel" value="C3N0FPMRU"/>
+          <attvalue for="Channel" value="C024FJS50"/>
+          <attvalue for="Channel" value="C2N2WS3QX"/>
+          <attvalue for="Channel" value="C2H6RGBV2"/>
+          <attvalue for="Channel" value="C41NQ9BHC"/>
+          <attvalue for="Channel" value="C7BAJL0J1"/>
+          <attvalue for="Channel" value="C2N3FLUBW"/>
+        </attvalues>
+      </node>
+      <node id="U2H9BHHKN" label="hissy">
+        <attvalues>
+          <attvalue for="weight" value="8"/>
+          <attvalue for="Team" value="T024FJS4U"/>
+          <attvalue for="Channel" value="C36JSUK7F"/>
+          <attvalue for="Channel" value="C2J9Q7ML4"/>
+          <attvalue for="Channel" value="C2H9SBGD7"/>
+          <attvalue for="Channel" value="C2HPZAKNG"/>
+          <attvalue for="Channel" value="C024FJS50"/>
+          <attvalue for="Channel" value="C2KBETN12"/>
+          <attvalue for="Channel" value="C2N2WS3QX"/>
+          <attvalue for="Channel" value="C2H6RGBV2"/>
+          <attvalue for="Channel" value="C41NQ9BHC"/>
+          <attvalue for="Channel" value="C2H9SG5MF"/>
+          <attvalue for="Channel" value="C2N3FLUBW"/>
+        </attvalues>
+      </node>
+      <node id="U2HC3MMKJ" label="mrkdilkington">
+        <attvalues>
+          <attvalue for="weight" value="53"/>
+          <attvalue for="Team" value="T024FJS4U"/>
+          <attvalue for="Channel" value="C2JTKUE5A"/>
+          <attvalue for="Channel" value="C41NQ9BHC"/>
+          <attvalue for="Channel" value="C2TRFJKA8"/>
+          <attvalue for="Channel" value="C36JSUK7F"/>
+          <attvalue for="Channel" value="C463R1N1K"/>
+          <attvalue for="Channel" value="C2J9Q7ML4"/>
+          <attvalue for="Channel" value="C2K1Z6W2F"/>
+          <attvalue for="Channel" value="C2Q0DT1ND"/>
+          <attvalue for="Channel" value="C5RN3MSEN"/>
+          <attvalue for="Channel" value="C6P2PL03A"/>
+          <attvalue for="Channel" value="C6PM5PNN8"/>
+          <attvalue for="Channel" value="C3N0FPMRU"/>
+          <attvalue for="Channel" value="C024FJS50"/>
+          <attvalue for="Channel" value="C2KBETN12"/>
+          <attvalue for="Channel" value="C2N2WS3QX"/>
+          <attvalue for="Channel" value="C2H6RGBV2"/>
+          <attvalue for="Channel" value="C87AHE3G8"/>
+          <attvalue for="Channel" value="C2H7715NZ"/>
+          <attvalue for="Channel" value="C7BAJL0J1"/>
+          <attvalue for="Channel" value="C2N3FLUBW"/>
+        </attvalues>
+      </node>
+      <node id="U2J9NH3M5" label="typoman76">
+        <attvalues>
+          <attvalue for="weight" value="8"/>
+          <attvalue for="Team" value="T024FJS4U"/>
+          <attvalue for="Channel" value="C3N0FPMRU"/>
+          <attvalue for="Channel" value="C2H6RGBV2"/>
+          <attvalue for="Channel" value="C2N3FLUBW"/>
+          <attvalue for="Channel" value="C024FJS50"/>
+        </attvalues>
+      </node>
+      <node id="U2JBKS89Y" label="herent">
+        <attvalues>
+          <attvalue for="weight" value="24"/>
+          <attvalue for="Team" value="T024FJS4U"/>
+          <attvalue for="Channel" value="C2JTKUE5A"/>
+          <attvalue for="Channel" value="C2TRFJKA8"/>
+          <attvalue for="Channel" value="C36JSUK7F"/>
+          <attvalue for="Channel" value="C2Q0DT1ND"/>
+          <attvalue for="Channel" value="C6PM5PNN8"/>
+          <attvalue for="Channel" value="C87TX6ETE"/>
+          <attvalue for="Channel" value="C3N0FPMRU"/>
+          <attvalue for="Channel" value="C024FJS50"/>
+          <attvalue for="Channel" value="C2KBETN12"/>
+          <attvalue for="Channel" value="C2N2WS3QX"/>
+          <attvalue for="Channel" value="C2H6RGBV2"/>
+          <attvalue for="Channel" value="C41NQ9BHC"/>
+          <attvalue for="Channel" value="C7BAJL0J1"/>
+          <attvalue for="Channel" value="C2N3FLUBW"/>
+        </attvalues>
+      </node>
+      <node id="U5DNL6DLZ" label="hutman_ashley">
+        <attvalues>
+          <attvalue for="weight" value="7"/>
+          <attvalue for="Team" value="T024FJS4U"/>
+          <attvalue for="Channel" value="C2N2WS3QX"/>
+          <attvalue for="Channel" value="C2H6RGBV2"/>
+          <attvalue for="Channel" value="C024FJS50"/>
+        </attvalues>
+      </node>
+      <node id="U74QC1AU9" label="john">
+        <attvalues>
+          <attvalue for="weight" value="3"/>
+          <attvalue for="Team" value="T024FJS4U"/>
+          <attvalue for="Channel" value="C2TRFJKA8"/>
+          <attvalue for="Channel" value="C2Q0DT1ND"/>
+          <attvalue for="Channel" value="C3N0FPMRU"/>
+          <attvalue for="Channel" value="C024FJS50"/>
+          <attvalue for="Channel" value="C2N2WS3QX"/>
+          <attvalue for="Channel" value="C2H6RGBV2"/>
+          <attvalue for="Channel" value="C2N3FLUBW"/>
+        </attvalues>
+      </node>
+      <node id="U78LB677A" label="jsunico">
+        <attvalues>
+          <attvalue for="weight" value="3"/>
+          <attvalue for="Team" value="T024FJS4U"/>
+          <attvalue for="Channel" value="C2H6RGBV2"/>
+          <attvalue for="Channel" value="C2N3FLUBW"/>
+        </attvalues>
+      </node>
+      <node id="U7B9JUUVD" label="stephencumminsdesign">
+        <attvalues>
+          <attvalue for="weight" value="3"/>
+          <attvalue for="Team" value="T024FJS4U"/>
+          <attvalue for="Channel" value="C2H6RGBV2"/>
+          <attvalue for="Channel" value="C3N0FPMRU"/>
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="U2H5AQC03U2H5AQC037" source="U2H5AQC03" target="U2H5AQC03" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U2H5AQC03&gt; set the channel topic: :spaghetti: channel"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1506959768.000256"/>
+          <attvalue for="Team" value="T024FJS4U"/>
+          <attvalue for="Channel" value="C2H6RGBV2"/>
+        </attvalues>
+      </edge>
+      <edge id="U2H5AQC03U2H6KAASC13" source="U2H5AQC03" target="U2H6KAASC" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U2H6KAASC&gt; I'm trying to test your PR. How does it work with `mysql_connect`? Do I need to change a config setting?"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1504961508.000023"/>
+          <attvalue for="Team" value="T024FJS4U"/>
+          <attvalue for="Channel" value="C2H6RGBV2"/>
+        </attvalues>
+      </edge>
+      <edge id="U2H5AQC03U2H6KAASC15" source="U2H5AQC03" target="U2H6KAASC" weight="0.6">
+        <attvalues>
+          <attvalue for="Message" value="really nice &lt;@U2H6KAASC&gt;"/>
+          <attvalue for="Weight" value="0.6"/>
+          <attvalue for="Date" value="1504894493.000125"/>
+          <attvalue for="Team" value="T024FJS4U"/>
+          <attvalue for="Channel" value="C2H6RGBV2"/>
+        </attvalues>
+      </edge>
+      <edge id="U2H5AQC03U78LB677A2" source="U2H5AQC03" target="U78LB677A" weight="0.13636363636363635">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U78LB677A&gt; `throw new \Exception()`?"/>
+          <attvalue for="Weight" value="0.13636363636363635"/>
+          <attvalue for="Date" value="1511791212.000189"/>
+          <attvalue for="Team" value="T024FJS4U"/>
+          <attvalue for="Channel" value="C2H6RGBV2"/>
+        </attvalues>
+      </edge>
+      <edge id="U2H6KAASCU2H5AQC0310" source="U2H6KAASC" target="U2H5AQC03" weight="-0.16666666666666666">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U2H5AQC03&gt; Nope: it relies on a (odd and deprecated) feature of PHP."/>
+          <attvalue for="Weight" value="-0.16666666666666666"/>
+          <attvalue for="Date" value="1505120634.000136"/>
+          <attvalue for="Team" value="T024FJS4U"/>
+          <attvalue for="Channel" value="C2H6RGBV2"/>
+        </attvalues>
+      </edge>
+      <edge id="U2H6KAASCU2H5AQC0312" source="U2H6KAASC" target="U2H5AQC03" weight="0.225">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U2H5AQC03&gt;  I'm not in front of a PC atm. You may try to check the files inside the config directory, and replace mysql with mysqli or mysqlt (But I really don't remember exactly)"/>
+          <attvalue for="Weight" value="0.225"/>
+          <attvalue for="Date" value="1504965628.000024"/>
+          <attvalue for="Team" value="T024FJS4U"/>
+          <attvalue for="Channel" value="C2H6RGBV2"/>
+        </attvalues>
+      </edge>
+      <edge id="U2H6KAASCU2H5AQC038" source="U2H6KAASC" target="U2H5AQC03" weight="0.4">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U2H5AQC03&gt; I nowadays use all the development versions of concrete5 available on github, both for legacy (`master` branch) and 8.x (`develop` branch)"/>
+          <attvalue for="Weight" value="0.4"/>
+          <attvalue for="Date" value="1506615113.000469"/>
+          <attvalue for="Team" value="T024FJS4U"/>
+          <attvalue for="Channel" value="C2H6RGBV2"/>
+        </attvalues>
+      </edge>
+      <edge id="U2H6KAASCU2H5AQC039" source="U2H6KAASC" target="U2H5AQC03" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U2H5AQC03&gt; It's already on GitHub"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1506065261.000279"/>
+          <attvalue for="Team" value="T024FJS4U"/>
+          <attvalue for="Channel" value="C2H6RGBV2"/>
+        </attvalues>
+      </edge>
+      <edge id="U2H6KAASCU2HC3MMKJ11" source="U2H6KAASC" target="U2HC3MMKJ" weight="0.25">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U2HC3MMKJ&gt; thanks for adding this channel to &lt;http://slackarchive.io|slackarchive.io&gt;!"/>
+          <attvalue for="Weight" value="0.25"/>
+          <attvalue for="Date" value="1504995952.000071"/>
+          <attvalue for="Team" value="T024FJS4U"/>
+          <attvalue for="Channel" value="C2H6RGBV2"/>
+        </attvalues>
+      </edge>
+      <edge id="U2H6KAASCU2JBKS89Y5" source="U2H6KAASC" target="U2JBKS89Y" weight="0.45">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U2JBKS89Y&gt;  I don't think that the core team will work on the legacy version, so what's on github is what should be considered as the latest available official version..."/>
+          <attvalue for="Weight" value="0.45"/>
+          <attvalue for="Date" value="1510179700.000532"/>
+          <attvalue for="Team" value="T024FJS4U"/>
+          <attvalue for="Channel" value="C2H6RGBV2"/>
+        </attvalues>
+      </edge>
+      <edge id="U2J9NH3M5U2H6KAASC14" source="U2J9NH3M5" target="U2H6KAASC" weight="0.55">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U2H6KAASC&gt; wow that sounds awesome! Mille grazie!!"/>
+          <attvalue for="Weight" value="0.55"/>
+          <attvalue for="Date" value="1504938709.000029"/>
+          <attvalue for="Team" value="T024FJS4U"/>
+          <attvalue for="Channel" value="C2H6RGBV2"/>
+        </attvalues>
+      </edge>
+      <edge id="U2JBKS89YU2H6KAASC6" source="U2JBKS89Y" target="U2H6KAASC" weight="0.12878787878787878">
+        <attvalues>
+          <attvalue for="Message" value="Is there an ETA on an official new release of the legacy codebase? Mostly wondering for getting the PHP 7.2.0 support. I could use the github version but not sure if I want to have the client on an unofficial release. Hows the update been working for you, &lt;@U2H6KAASC&gt;?"/>
+          <attvalue for="Weight" value="0.12878787878787878"/>
+          <attvalue for="Date" value="1510178839.000609"/>
+          <attvalue for="Team" value="T024FJS4U"/>
+          <attvalue for="Channel" value="C2H6RGBV2"/>
+        </attvalues>
+      </edge>
+      <edge id="U5DNL6DLZU2H6KAASC3" source="U5DNL6DLZ" target="U2H6KAASC" weight="-0.125">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U2H6KAASC&gt; The person I'm trying to help has a site that's 5.6.0.2, in the past I have always had to upgrade to 5.6.3 then up from there, do you think the core on &lt;https://github.com/concrete5/concrete5-legacy&gt; would upgrade properly from 5.6.0.2?"/>
+          <attvalue for="Weight" value="-0.125"/>
+          <attvalue for="Date" value="1511386718.000213"/>
+          <attvalue for="Team" value="T024FJS4U"/>
+          <attvalue for="Channel" value="C2H6RGBV2"/>
+        </attvalues>
+      </edge>
+      <edge id="U74QC1AU9U2H6KAASC4" source="U74QC1AU9" target="U2H6KAASC" weight="0.5">
+        <attvalues>
+          <attvalue for="Message" value="I expect there would be more experimentation/testing of &lt;@U2H6KAASC&gt;'s legacy update if it could be downloaded pre-built as an install-able zip."/>
+          <attvalue for="Weight" value="0.5"/>
+          <attvalue for="Date" value="1510410092.000033"/>
+          <attvalue for="Team" value="T024FJS4U"/>
+          <attvalue for="Channel" value="C2H6RGBV2"/>
+        </attvalues>
+      </edge>
+      <edge id="U78LB677AU2H5AQC031" source="U78LB677A" target="U2H5AQC03" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U2H5AQC03&gt; Uhm no,  I'm looking for a way to return a JSON response and not continue with the controller."/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1511828792.000352"/>
+          <attvalue for="Team" value="T024FJS4U"/>
+          <attvalue for="Channel" value="C2H6RGBV2"/>
+        </attvalues>
+      </edge>
+      <edge id="U78LB677AU74QC1AU90" source="U78LB677A" target="U74QC1AU9" weight="0.2">
+        <attvalues>
+          <attvalue for="Message" value="Thanks &lt;@U74QC1AU9&gt;. Ill have a look."/>
+          <attvalue for="Weight" value="0.2"/>
+          <attvalue for="Date" value="1511927135.000095"/>
+          <attvalue for="Team" value="T024FJS4U"/>
+          <attvalue for="Channel" value="C2H6RGBV2"/>
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

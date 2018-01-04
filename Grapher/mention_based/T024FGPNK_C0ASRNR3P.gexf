@@ -1,0 +1,1193 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.gephi.org/gexf/1.2draft" xmlns:ns0="xsi" version="1.2" ns0:schemaLocation="http://www.gephi.org/gexf/1.1draft http://gephi.org/gexf/1.2draft.xsd">
+  <meta lastmodified="2017-12-31">
+    <creator>Gephi.org</creator>
+    <description>A Web network</description>
+  </meta>
+  <graph defaultedgetype="directed" label="A Web network" mode="static" timeformat="double">
+    <attributes class="node" mode="static">
+      <attribute id="Channel" title="channel" type="String"/>
+      <attribute id="Team" title="team" type="String"/>
+      <attribute id="weight" title="weight" type="float"/>
+    </attributes>
+    <attributes class="edge" mode="static">
+      <attribute id="Channel" title="channel" type="String">
+        <default>None</default>
+      </attribute>
+      <attribute id="Date" title="date" type="float">
+        <default>None</default>
+      </attribute>
+      <attribute id="Message" title="message" type="String">
+        <default>None</default>
+      </attribute>
+      <attribute id="Team" title="team" type="String">
+        <default>None</default>
+      </attribute>
+      <attribute id="Weight" title="weight" type="float">
+        <default>0</default>
+      </attribute>
+    </attributes>
+    <nodes>
+      <node id="U024FGPNM" label="paim">
+        <attvalues>
+          <attvalue for="weight" value="8"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C4H849RQF"/>
+          <attvalue for="Channel" value="C1NMK697T"/>
+          <attvalue for="Channel" value="C0G834D1N"/>
+          <attvalue for="Channel" value="C4F2KTQE9"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+          <attvalue for="Channel" value="C245W2BE3"/>
+          <attvalue for="Channel" value="C024FGQBB"/>
+        </attvalues>
+      </node>
+      <node id="U024FGR3T" label="palos">
+        <attvalues>
+          <attvalue for="weight" value="6"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C1NMK697T"/>
+          <attvalue for="Channel" value="C3SLVNTAL"/>
+          <attvalue for="Channel" value="C4F2KTQE9"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+          <attvalue for="Channel" value="C0FU98A48"/>
+          <attvalue for="Channel" value="C024FGQBB"/>
+        </attvalues>
+      </node>
+      <node id="U024FGTL8" label="iguchi">
+        <attvalues>
+          <attvalue for="weight" value="14"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C1NMK697T"/>
+          <attvalue for="Channel" value="C0G834D1N"/>
+          <attvalue for="Channel" value="C3SLVNTAL"/>
+          <attvalue for="Channel" value="C4F2KTQE9"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+          <attvalue for="Channel" value="C245W2BE3"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+          <attvalue for="Channel" value="C024FGQBB"/>
+        </attvalues>
+      </node>
+      <node id="U024FGUSF" label="felipe.itoyama">
+        <attvalues>
+          <attvalue for="weight" value="16"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C1NMK697T"/>
+          <attvalue for="Channel" value="C3SLVNTAL"/>
+          <attvalue for="Channel" value="C4F2KTQE9"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+          <attvalue for="Channel" value="C0FU98A48"/>
+          <attvalue for="Channel" value="C024FGQBB"/>
+        </attvalues>
+      </node>
+      <node id="U024FHW1U" label="ricardosantos">
+        <attvalues>
+          <attvalue for="weight" value="6"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C1NMK697T"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+          <attvalue for="Channel" value="C0FU98A48"/>
+          <attvalue for="Channel" value="C024FGQBB"/>
+        </attvalues>
+      </node>
+      <node id="U09PGTXPY" label="evandropeliciari">
+        <attvalues>
+          <attvalue for="weight" value="11"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C1NMK697T"/>
+          <attvalue for="Channel" value="C3SLVNTAL"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+          <attvalue for="Channel" value="C0FU98A48"/>
+          <attvalue for="Channel" value="C024FGQBB"/>
+        </attvalues>
+      </node>
+      <node id="U09U5TP0U" label="andreia">
+        <attvalues>
+          <attvalue for="weight" value="8"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C1NMK697T"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+          <attvalue for="Channel" value="C0FU98A48"/>
+          <attvalue for="Channel" value="C024FGQBB"/>
+        </attvalues>
+      </node>
+      <node id="U0D2X5VJR" label="allan.ramos">
+        <attvalues>
+          <attvalue for="weight" value="24"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C4H849RQF"/>
+          <attvalue for="Channel" value="C1NMK697T"/>
+          <attvalue for="Channel" value="C0G834D1N"/>
+          <attvalue for="Channel" value="C4F2KTQE9"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+          <attvalue for="Channel" value="C245W2BE3"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+          <attvalue for="Channel" value="C024FGQBB"/>
+        </attvalues>
+      </node>
+      <node id="U0S57FJ4E" label="sophia.cavalcante">
+        <attvalues>
+          <attvalue for="weight" value="3"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+          <attvalue for="Channel" value="C024FGQBB"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </node>
+      <node id="U19J6U8EQ" label="adriellyribeiro">
+        <attvalues>
+          <attvalue for="weight" value="18"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C1NMK697T"/>
+          <attvalue for="Channel" value="C4F2KTQE9"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+          <attvalue for="Channel" value="C245W2BE3"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+          <attvalue for="Channel" value="C0FU98A48"/>
+          <attvalue for="Channel" value="C024FGQBB"/>
+        </attvalues>
+      </node>
+      <node id="U1Z5LH5HR" label="fabio_cribeiro">
+        <attvalues>
+          <attvalue for="weight" value="6"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C1NMK697T"/>
+          <attvalue for="Channel" value="C3SLVNTAL"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+          <attvalue for="Channel" value="C245W2BE3"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+          <attvalue for="Channel" value="C0FU98A48"/>
+          <attvalue for="Channel" value="C024FGQBB"/>
+        </attvalues>
+      </node>
+      <node id="U21G8HPP1" label="fabiana.guimaraes">
+        <attvalues>
+          <attvalue for="weight" value="6"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+          <attvalue for="Channel" value="C024FGQBB"/>
+          <attvalue for="Channel" value="C245W2BE3"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </node>
+      <node id="U3N0M11EH" label="estevao.andrade">
+        <attvalues>
+          <attvalue for="weight" value="3"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C1NMK697T"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+          <attvalue for="Channel" value="C0FU98A48"/>
+          <attvalue for="Channel" value="C024FGQBB"/>
+        </attvalues>
+      </node>
+      <node id="U41CLAYCA" label="rafael.correia">
+        <attvalues>
+          <attvalue for="weight" value="20"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C4H849RQF"/>
+          <attvalue for="Channel" value="C1NMK697T"/>
+          <attvalue for="Channel" value="C0G834D1N"/>
+          <attvalue for="Channel" value="C4F2KTQE9"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+          <attvalue for="Channel" value="C245W2BE3"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+          <attvalue for="Channel" value="C0FU98A48"/>
+          <attvalue for="Channel" value="C024FGQBB"/>
+        </attvalues>
+      </node>
+      <node id="U4PL46RQ9" label="mtoutain">
+        <attvalues>
+          <attvalue for="weight" value="13"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C1NMK697T"/>
+          <attvalue for="Channel" value="C0G834D1N"/>
+          <attvalue for="Channel" value="C4F2KTQE9"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+          <attvalue for="Channel" value="C245W2BE3"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+          <attvalue for="Channel" value="C0FU98A48"/>
+          <attvalue for="Channel" value="C024FGQBB"/>
+        </attvalues>
+      </node>
+      <node id="U4TJAG5CL" label="marinaluizato">
+        <attvalues>
+          <attvalue for="weight" value="2"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+          <attvalue for="Channel" value="C0FU98A48"/>
+          <attvalue for="Channel" value="C4F2KTQE9"/>
+        </attvalues>
+      </node>
+      <node id="U5ZJJ5QE5" label="pricilacosta">
+        <attvalues>
+          <attvalue for="weight" value="1"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+          <attvalue for="Channel" value="C024FGPNT"/>
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="U024FGR3TU024FGR3T3" source="U024FGR3T" target="U024FGR3T" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U024FGR3T|palos&gt; uploaded a file: &lt;https://cargobr.slack.com/files/palos/F6TC9GLQZ/comprovante_fedex_116350.pdf|COMPROVANTE FEDEX 116350.pdf&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1503687200.000118"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGR3TU024FGR3T4" source="U024FGR3T" target="U024FGR3T" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U024FGR3T|palos&gt; uploaded a file: &lt;https://cargobr.slack.com/files/palos/F6TTX2UCA/comprovante_fedex_118203.pdf|COMPROVANTE FEDEX 118203.pdf&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1503687198.000262"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGR3TU024FGR3T46" source="U024FGR3T" target="U024FGR3T" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U024FGR3T|palos&gt; uploaded a file: &lt;https://cargobr.slack.com/files/palos/F598L5KGB/relat__rio_de_atividades_05052017.pdf|RELATÓRIO DE ATIVIDADES 05052017.pdf&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1493996664.288696"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGR3TU024FGR3T56" source="U024FGR3T" target="U024FGR3T" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U024FGR3T|palos&gt; uploaded a file: &lt;https://cargobr.slack.com/files/palos/F6TC9GLQZ/comprovante_fedex_116350.pdf|COMPROVANTE FEDEX 116350.pdf&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1503687200.000118"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGR3TU024FGR3T57" source="U024FGR3T" target="U024FGR3T" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U024FGR3T|palos&gt; uploaded a file: &lt;https://cargobr.slack.com/files/palos/F6TTX2UCA/comprovante_fedex_118203.pdf|COMPROVANTE FEDEX 118203.pdf&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1503687198.000262"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGR3TU024FGR3T99" source="U024FGR3T" target="U024FGR3T" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U024FGR3T|palos&gt; uploaded a file: &lt;https://cargobr.slack.com/files/palos/F598L5KGB/relat__rio_de_atividades_05052017.pdf|RELATÓRIO DE ATIVIDADES 05052017.pdf&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1493996664.288696"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGR3TU024FGUSF5" source="U024FGR3T" target="U024FGUSF" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U024FGUSF&gt; e essas?&#10;CHDVDQ&#10;DHZYML&#10;UASX3F&#10;MLESJC"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1503603538.000099"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGR3TU024FGUSF58" source="U024FGR3T" target="U024FGUSF" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U024FGUSF&gt; e essas?&#10;CHDVDQ&#10;DHZYML&#10;UASX3F&#10;MLESJC"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1503603538.000099"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGR3TU09U5TP0U26" source="U024FGR3T" target="U09U5TP0U" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="não caiu nada &lt;@U09U5TP0U&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1498242773.251915"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGR3TU09U5TP0U79" source="U024FGR3T" target="U09U5TP0U" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="não caiu nada &lt;@U09U5TP0U&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1498242773.251915"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGR3TU4TJAG5CL30" source="U024FGR3T" target="U4TJAG5CL" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="Deixa a baixa comigo hoje. &lt;@U4TJAG5CL&gt; a Adrielly limpou a lista de cobrança ontem, começa pelo meio até eu dar baixa pf."/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1495023260.373077"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGR3TU4TJAG5CL83" source="U024FGR3T" target="U4TJAG5CL" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="Deixa a baixa comigo hoje. &lt;@U4TJAG5CL&gt; a Adrielly limpou a lista de cobrança ontem, começa pelo meio até eu dar baixa pf."/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1495023260.373077"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGTL8U024FHW1U28" source="U024FGTL8" target="U024FHW1U" weight="0.5">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U024FHW1U&gt; :top:"/>
+          <attvalue for="Weight" value="0.5"/>
+          <attvalue for="Date" value="1495202854.938845"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGTL8U024FHW1U81" source="U024FGTL8" target="U024FHW1U" weight="0.5">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U024FHW1U&gt; :top:"/>
+          <attvalue for="Weight" value="0.5"/>
+          <attvalue for="Date" value="1495202854.938845"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGUSFU024FGR3T1" source="U024FGUSF" target="U024FGR3T" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U024FGR3T&gt; X4MNWK, IBGNCN, VD6VLG, H2GEPV, 37ARQP, 2DVJAP, UZ7HVV, L5HULR, TE2DU2, CT2OKQ"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1504014839.000217"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGUSFU024FGR3T10" source="U024FGUSF" target="U024FGR3T" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U024FGR3T&gt; 2BARCS fatto a mano"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1503431275.00059"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGUSFU024FGR3T11" source="U024FGUSF" target="U024FGR3T" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U024FGR3T&gt; IV4ETI handmade"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1503431261.000583"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGUSFU024FGR3T12" source="U024FGUSF" target="U024FGR3T" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U024FGR3T&gt; PUXN3U creado en la mano"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1503350484.000261"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGUSFU024FGR3T13" source="U024FGUSF" target="U024FGR3T" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U024FGR3T&gt; TBYF3W criado na mão"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1503324437.000341"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGUSFU024FGR3T14" source="U024FGUSF" target="U024FGR3T" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U024FGR3T&gt; CAO6T7 criado na mão"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1503324211.000197"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGUSFU024FGR3T15" source="U024FGUSF" target="U024FGR3T" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U024FGR3T&gt; DO3A5S pedido criado na mão"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1503323701.000196"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGUSFU024FGR3T35" source="U024FGUSF" target="U024FGR3T" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U4TJAG5CL&gt; &lt;@U19J6U8EQ&gt; &lt;@U024FGR3T&gt; enviar 2ª via do boleto LDKBUT, &lt;mailto:luciananegreiros@wizsolucoes.com.br|luciananegreiros@wizsolucoes.com.br&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1494353599.98617"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGUSFU024FGR3T54" source="U024FGUSF" target="U024FGR3T" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U024FGR3T&gt; X4MNWK, IBGNCN, VD6VLG, H2GEPV, 37ARQP, 2DVJAP, UZ7HVV, L5HULR, TE2DU2, CT2OKQ"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1504014839.000217"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGUSFU024FGR3T59" source="U024FGUSF" target="U024FGR3T" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U024FGR3T&gt; 5K3BUZ, PB42SM, 7F53GC, TKJVNI, QZJAUN"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1503603086.000469"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGUSFU024FGR3T6" source="U024FGUSF" target="U024FGR3T" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U024FGR3T&gt; 5K3BUZ, PB42SM, 7F53GC, TKJVNI, QZJAUN"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1503603086.000469"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGUSFU024FGR3T60" source="U024FGUSF" target="U024FGR3T" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U024FGR3T&gt; YDOCG4 handgemaakt"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1503437951.000087"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGUSFU024FGR3T61" source="U024FGUSF" target="U024FGR3T" weight="0.16666666666666666">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U024FGR3T&gt; YHVJRS fait a la main"/>
+          <attvalue for="Weight" value="0.16666666666666666"/>
+          <attvalue for="Date" value="1503437013.000027"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGUSFU024FGR3T62" source="U024FGUSF" target="U024FGR3T" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U024FGR3T&gt; 3PQSNDHandgefertigt"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1503436261.000345"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGUSFU024FGR3T63" source="U024FGUSF" target="U024FGR3T" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U024FGR3T&gt; 2BARCS fatto a mano"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1503431275.00059"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGUSFU024FGR3T64" source="U024FGUSF" target="U024FGR3T" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U024FGR3T&gt; IV4ETI handmade"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1503431261.000583"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGUSFU024FGR3T65" source="U024FGUSF" target="U024FGR3T" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U024FGR3T&gt; PUXN3U creado en la mano"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1503350484.000261"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGUSFU024FGR3T66" source="U024FGUSF" target="U024FGR3T" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U024FGR3T&gt; TBYF3W criado na mão"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1503324437.000341"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGUSFU024FGR3T67" source="U024FGUSF" target="U024FGR3T" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U024FGR3T&gt; CAO6T7 criado na mão"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1503324211.000197"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGUSFU024FGR3T68" source="U024FGUSF" target="U024FGR3T" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U024FGR3T&gt; DO3A5S pedido criado na mão"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1503323701.000196"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGUSFU024FGR3T7" source="U024FGUSF" target="U024FGR3T" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U024FGR3T&gt; YDOCG4 handgemaakt"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1503437951.000087"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGUSFU024FGR3T8" source="U024FGUSF" target="U024FGR3T" weight="0.16666666666666666">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U024FGR3T&gt; YHVJRS fait a la main"/>
+          <attvalue for="Weight" value="0.16666666666666666"/>
+          <attvalue for="Date" value="1503437013.000027"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGUSFU024FGR3T88" source="U024FGUSF" target="U024FGR3T" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U4TJAG5CL&gt; &lt;@U19J6U8EQ&gt; &lt;@U024FGR3T&gt; enviar 2ª via do boleto LDKBUT, &lt;mailto:luciananegreiros@wizsolucoes.com.br|luciananegreiros@wizsolucoes.com.br&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1494353599.98617"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGUSFU024FGR3T9" source="U024FGUSF" target="U024FGR3T" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U024FGR3T&gt; 3PQSNDHandgefertigt"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1503436261.000345"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGUSFU19J6U8EQ34" source="U024FGUSF" target="U19J6U8EQ" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U4TJAG5CL&gt; &lt;@U19J6U8EQ&gt; &lt;@U024FGR3T&gt; enviar 2ª via do boleto LDKBUT, &lt;mailto:luciananegreiros@wizsolucoes.com.br|luciananegreiros@wizsolucoes.com.br&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1494353599.98617"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGUSFU19J6U8EQ87" source="U024FGUSF" target="U19J6U8EQ" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U4TJAG5CL&gt; &lt;@U19J6U8EQ&gt; &lt;@U024FGR3T&gt; enviar 2ª via do boleto LDKBUT, &lt;mailto:luciananegreiros@wizsolucoes.com.br|luciananegreiros@wizsolucoes.com.br&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1494353599.98617"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGUSFU4TJAG5CL33" source="U024FGUSF" target="U4TJAG5CL" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U4TJAG5CL&gt; &lt;@U19J6U8EQ&gt; &lt;@U024FGR3T&gt; enviar 2ª via do boleto LDKBUT, &lt;mailto:luciananegreiros@wizsolucoes.com.br|luciananegreiros@wizsolucoes.com.br&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1494353599.98617"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U024FGUSFU4TJAG5CL86" source="U024FGUSF" target="U4TJAG5CL" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U4TJAG5CL&gt; &lt;@U19J6U8EQ&gt; &lt;@U024FGR3T&gt; enviar 2ª via do boleto LDKBUT, &lt;mailto:luciananegreiros@wizsolucoes.com.br|luciananegreiros@wizsolucoes.com.br&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1494353599.98617"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U09PGTXPYU19J6U8EQ18" source="U09PGTXPY" target="U19J6U8EQ" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U19J6U8EQ&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1501607665.954026"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U09PGTXPYU19J6U8EQ20" source="U09PGTXPY" target="U19J6U8EQ" weight="-0.06666666666666665">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U19J6U8EQ&gt; Dry pode enviar nf de serviços para este cliente #W2EDTF"/>
+          <attvalue for="Weight" value="-0.06666666666666665"/>
+          <attvalue for="Date" value="1501011942.22006"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U09PGTXPYU19J6U8EQ21" source="U09PGTXPY" target="U19J6U8EQ" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U19J6U8EQ&gt; JX2PPD"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1500388680.547057"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U09PGTXPYU19J6U8EQ22" source="U09PGTXPY" target="U19J6U8EQ" weight="-0.08333333333333331">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U19J6U8EQ&gt; Dry. bom dia! Poderia enviar este boleto sem juros para o cliente?&#10;Venceu a poucos dias e é um cliente novo, por deslize deixou passar, mas disse que paga hoje.&#10;Pode ser?"/>
+          <attvalue for="Weight" value="-0.08333333333333331"/>
+          <attvalue for="Date" value="1500387369.665564"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U09PGTXPYU19J6U8EQ23" source="U09PGTXPY" target="U19J6U8EQ" weight="-0.08333333333333331">
+        <attvalues>
+          <attvalue for="Message" value="OP4YGF  &lt;@U19J6U8EQ&gt; Dry, pode gerar esse boletinho, please?! Cliente quer pagar antes."/>
+          <attvalue for="Weight" value="-0.08333333333333331"/>
+          <attvalue for="Date" value="1500310308.135489"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U09PGTXPYU19J6U8EQ71" source="U09PGTXPY" target="U19J6U8EQ" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U19J6U8EQ&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1501607665.954026"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U09PGTXPYU19J6U8EQ73" source="U09PGTXPY" target="U19J6U8EQ" weight="-0.06666666666666665">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U19J6U8EQ&gt; Dry pode enviar nf de serviços para este cliente #W2EDTF"/>
+          <attvalue for="Weight" value="-0.06666666666666665"/>
+          <attvalue for="Date" value="1501011942.22006"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U09PGTXPYU19J6U8EQ74" source="U09PGTXPY" target="U19J6U8EQ" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U19J6U8EQ&gt; JX2PPD"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1500388680.547057"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U09PGTXPYU19J6U8EQ75" source="U09PGTXPY" target="U19J6U8EQ" weight="-0.08333333333333331">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U19J6U8EQ&gt; Dry. bom dia! Poderia enviar este boleto sem juros para o cliente?&#10;Venceu a poucos dias e é um cliente novo, por deslize deixou passar, mas disse que paga hoje.&#10;Pode ser?"/>
+          <attvalue for="Weight" value="-0.08333333333333331"/>
+          <attvalue for="Date" value="1500387369.665564"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U09PGTXPYU19J6U8EQ76" source="U09PGTXPY" target="U19J6U8EQ" weight="-0.08333333333333331">
+        <attvalues>
+          <attvalue for="Message" value="OP4YGF  &lt;@U19J6U8EQ&gt; Dry, pode gerar esse boletinho, please?! Cliente quer pagar antes."/>
+          <attvalue for="Weight" value="-0.08333333333333331"/>
+          <attvalue for="Date" value="1500310308.135489"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U09U5TP0UU09U5TP0U25" source="U09U5TP0U" target="U09U5TP0U" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U09U5TP0U|andreia&gt; uploaded a file: &lt;https://cargobr.slack.com/files/andreia/F5Z5E3K7B/comprovante_cargobr_.pdf|Comprovante CargoBR .pdf&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1498503693.617486"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U09U5TP0UU09U5TP0U78" source="U09U5TP0U" target="U09U5TP0U" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U09U5TP0U|andreia&gt; uploaded a file: &lt;https://cargobr.slack.com/files/andreia/F5Z5E3K7B/comprovante_cargobr_.pdf|Comprovante CargoBR .pdf&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1498503693.617486"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U09U5TP0UU19J6U8EQ101" source="U09U5TP0U" target="U19J6U8EQ" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U19J6U8EQ&gt;  os BLOQUEADOS tbm estão nesta planilha :slightly_smiling_face:"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1493829767.10396"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U09U5TP0UU19J6U8EQ48" source="U09U5TP0U" target="U19J6U8EQ" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U19J6U8EQ&gt;  os BLOQUEADOS tbm estão nesta planilha :slightly_smiling_face:"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1493829767.10396"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U0D2X5VJRU024FGR3T100" source="U0D2X5VJR" target="U024FGR3T" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U024FGR3T&gt; :point_up::skin-tone-4:"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1493845838.277686"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U0D2X5VJRU024FGR3T47" source="U0D2X5VJR" target="U024FGR3T" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U024FGR3T&gt; :point_up::skin-tone-4:"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1493845838.277686"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU024FGR3T104" source="U19J6U8EQ" target="U024FGR3T" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U4TJAG5CL&gt; &lt;@U024FGUSF&gt; &lt;@U024FGR3T&gt; &#10;A Andreia encaminhou um e-mail no financeiro com uma planilha para cancelamentos de pedidos, todo e qualquer pedido CANCELADO, deve ser anotado lá também.&#10;Não esqueçam que sempre que cancelar pedidos que geraram boletos/faturas, deve ser informado ao financeiro para que possamos cancelar as cobranças e anotar no ZP.&#10;Encontrei alguns casos de pedidos cancelados que não foi passado."/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1493823101.393366"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU024FGR3T24" source="U19J6U8EQ" target="U024FGR3T" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U024FGR3T&gt; &amp;gt; 19/06 - R$ 1.318,99&#10;Confirma, pfv!"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1498581212.610951"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU024FGR3T27" source="U19J6U8EQ" target="U024FGR3T" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U024FGR3T&gt; Verifica, pfv?!"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1498242277.067612"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU024FGR3T36" source="U19J6U8EQ" target="U024FGR3T" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U024FGR3T&gt; &lt;@U024FGUSF&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1494011296.893822"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU024FGR3T51" source="U19J6U8EQ" target="U024FGR3T" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U4TJAG5CL&gt; &lt;@U024FGUSF&gt; &lt;@U024FGR3T&gt; &#10;A Andreia encaminhou um e-mail no financeiro com uma planilha para cancelamentos de pedidos, todo e qualquer pedido CANCELADO, deve ser anotado lá também.&#10;Não esqueçam que sempre que cancelar pedidos que geraram boletos/faturas, deve ser informado ao financeiro para que possamos cancelar as cobranças e anotar no ZP.&#10;Encontrei alguns casos de pedidos cancelados que não foi passado."/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1493823101.393366"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU024FGR3T77" source="U19J6U8EQ" target="U024FGR3T" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U024FGR3T&gt; &amp;gt; 19/06 - R$ 1.318,99&#10;Confirma, pfv!"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1498581212.610951"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU024FGR3T80" source="U19J6U8EQ" target="U024FGR3T" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U024FGR3T&gt; Verifica, pfv?!"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1498242277.067612"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU024FGR3T89" source="U19J6U8EQ" target="U024FGR3T" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U024FGR3T&gt; &lt;@U024FGUSF&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1494011296.893822"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU024FGUSF103" source="U19J6U8EQ" target="U024FGUSF" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U4TJAG5CL&gt; &lt;@U024FGUSF&gt; &lt;@U024FGR3T&gt; &#10;A Andreia encaminhou um e-mail no financeiro com uma planilha para cancelamentos de pedidos, todo e qualquer pedido CANCELADO, deve ser anotado lá também.&#10;Não esqueçam que sempre que cancelar pedidos que geraram boletos/faturas, deve ser informado ao financeiro para que possamos cancelar as cobranças e anotar no ZP.&#10;Encontrei alguns casos de pedidos cancelados que não foi passado."/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1493823101.393366"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU024FGUSF37" source="U19J6U8EQ" target="U024FGUSF" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U024FGR3T&gt; &lt;@U024FGUSF&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1494011296.893822"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU024FGUSF50" source="U19J6U8EQ" target="U024FGUSF" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U4TJAG5CL&gt; &lt;@U024FGUSF&gt; &lt;@U024FGR3T&gt; &#10;A Andreia encaminhou um e-mail no financeiro com uma planilha para cancelamentos de pedidos, todo e qualquer pedido CANCELADO, deve ser anotado lá também.&#10;Não esqueçam que sempre que cancelar pedidos que geraram boletos/faturas, deve ser informado ao financeiro para que possamos cancelar as cobranças e anotar no ZP.&#10;Encontrei alguns casos de pedidos cancelados que não foi passado."/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1493823101.393366"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU024FGUSF90" source="U19J6U8EQ" target="U024FGUSF" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U024FGR3T&gt; &lt;@U024FGUSF&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1494011296.893822"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU024FHW1U29" source="U19J6U8EQ" target="U024FHW1U" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="Esse e-mail já foi repassado para o &lt;@U024FHW1U&gt; resolver."/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1495202561.789443"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU024FHW1U82" source="U19J6U8EQ" target="U024FHW1U" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="Esse e-mail já foi repassado para o &lt;@U024FHW1U&gt; resolver."/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1495202561.789443"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU09PGTXPY105" source="U19J6U8EQ" target="U09PGTXPY" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="Todos verificados. :v: &lt;@U09PGTXPY&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1488550547.960028"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU09PGTXPY31" source="U19J6U8EQ" target="U09PGTXPY" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="KJOSSW - &lt;@U09PGTXPY&gt; , este pedido 1º frete."/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1494855837.317745"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU09PGTXPY52" source="U19J6U8EQ" target="U09PGTXPY" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="Todos verificados. :v: &lt;@U09PGTXPY&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1488550547.960028"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU09PGTXPY84" source="U19J6U8EQ" target="U09PGTXPY" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="KJOSSW - &lt;@U09PGTXPY&gt; , este pedido 1º frete."/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1494855837.317745"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU19J6U8EQ16" source="U19J6U8EQ" target="U19J6U8EQ" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U19J6U8EQ|adriellyribeiro&gt; uploaded a file: &lt;https://cargobr.slack.com/files/adriellyribeiro/F6NDUNTHU/image.png|image.png&gt; and commented: Problema ZP. &#10;Para gravar [AR]."/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1502474186.752904"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU19J6U8EQ69" source="U19J6U8EQ" target="U19J6U8EQ" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U19J6U8EQ|adriellyribeiro&gt; uploaded a file: &lt;https://cargobr.slack.com/files/adriellyribeiro/F6NDUNTHU/image.png|image.png&gt; and commented: Problema ZP. &#10;Para gravar [AR]."/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1502474186.752904"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU21G8HPP12" source="U19J6U8EQ" target="U21G8HPP1" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U21G8HPP1&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1503689882.000593"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU21G8HPP155" source="U19J6U8EQ" target="U21G8HPP1" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U21G8HPP1&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1503689882.000593"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU4PL46RQ941" source="U19J6U8EQ" target="U4PL46RQ9" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U4PL46RQ9&gt; peguei um caso assim&amp;gt;&#10;Cliente fecha o primeiro frete na modalidade CIF-FOB&#10;O segundo frete dele: CIF-CIF, porém isso é faturado automaticamente, só que isso não pode ocorrer, deve ser considerado 1º frete tb, e deve ser pago à vista."/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1494006359.29128"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU4PL46RQ994" source="U19J6U8EQ" target="U4PL46RQ9" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U4PL46RQ9&gt; peguei um caso assim&amp;gt;&#10;Cliente fecha o primeiro frete na modalidade CIF-FOB&#10;O segundo frete dele: CIF-CIF, porém isso é faturado automaticamente, só que isso não pode ocorrer, deve ser considerado 1º frete tb, e deve ser pago à vista."/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1494006359.29128"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU4TJAG5CL102" source="U19J6U8EQ" target="U4TJAG5CL" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U4TJAG5CL&gt; &lt;@U024FGUSF&gt; &lt;@U024FGR3T&gt; &#10;A Andreia encaminhou um e-mail no financeiro com uma planilha para cancelamentos de pedidos, todo e qualquer pedido CANCELADO, deve ser anotado lá também.&#10;Não esqueçam que sempre que cancelar pedidos que geraram boletos/faturas, deve ser informado ao financeiro para que possamos cancelar as cobranças e anotar no ZP.&#10;Encontrei alguns casos de pedidos cancelados que não foi passado."/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1493823101.393366"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU4TJAG5CL49" source="U19J6U8EQ" target="U4TJAG5CL" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U4TJAG5CL&gt; &lt;@U024FGUSF&gt; &lt;@U024FGR3T&gt; &#10;A Andreia encaminhou um e-mail no financeiro com uma planilha para cancelamentos de pedidos, todo e qualquer pedido CANCELADO, deve ser anotado lá também.&#10;Não esqueçam que sempre que cancelar pedidos que geraram boletos/faturas, deve ser informado ao financeiro para que possamos cancelar as cobranças e anotar no ZP.&#10;Encontrei alguns casos de pedidos cancelados que não foi passado."/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1493823101.393366"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU5ZJJ5QE50" source="U19J6U8EQ" target="U5ZJJ5QE5" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U5ZJJ5QE5&gt; Caso da (Jenifer) BJ já resolvi. :the_horns:"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1504104728.000436"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U19J6U8EQU5ZJJ5QE553" source="U19J6U8EQ" target="U5ZJJ5QE5" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U5ZJJ5QE5&gt; Caso da (Jenifer) BJ já resolvi. :the_horns:"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1504104728.000436"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U1Z5LH5HRU19J6U8EQ17" source="U1Z5LH5HR" target="U19J6U8EQ" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U19J6U8EQ&gt; embarcador quer pagar o pedido antecipado"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1502113109.829094"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U1Z5LH5HRU19J6U8EQ70" source="U1Z5LH5HR" target="U19J6U8EQ" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U19J6U8EQ&gt; embarcador quer pagar o pedido antecipado"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1502113109.829094"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U1Z5LH5HRU1Z5LH5HR19" source="U1Z5LH5HR" target="U1Z5LH5HR" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U1Z5LH5HR|fabio_cribeiro&gt; uploaded a file: &lt;https://cargobr.slack.com/files/fabio_cribeiro/F6DJHTCQH/logo_shot_sem-fundo.png|Logo_Shot_Sem-Fundo.png&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1501100814.796198"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U1Z5LH5HRU1Z5LH5HR72" source="U1Z5LH5HR" target="U1Z5LH5HR" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U1Z5LH5HR|fabio_cribeiro&gt; uploaded a file: &lt;https://cargobr.slack.com/files/fabio_cribeiro/F6DJHTCQH/logo_shot_sem-fundo.png|Logo_Shot_Sem-Fundo.png&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1501100814.796198"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U41CLAYCAU4PL46RQ945" source="U41CLAYCA" target="U4PL46RQ9" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="vc que fez &lt;@U4PL46RQ9&gt; !?"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1493996769.346126"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U41CLAYCAU4PL46RQ998" source="U41CLAYCA" target="U4PL46RQ9" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="vc que fez &lt;@U4PL46RQ9&gt; !?"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1493996769.346126"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U4PL46RQ9U19J6U8EQ38" source="U4PL46RQ9" target="U19J6U8EQ" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U19J6U8EQ&gt; criando card"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1494007019.665057"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U4PL46RQ9U19J6U8EQ39" source="U4PL46RQ9" target="U19J6U8EQ" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U19J6U8EQ&gt; que dia aconteceu isso?"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1494006715.492476"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U4PL46RQ9U19J6U8EQ40" source="U4PL46RQ9" target="U19J6U8EQ" weight="0.5">
+        <attvalues>
+          <attvalue for="Message" value="ok, &lt;@U19J6U8EQ&gt; , obrigada por avisar, vou passar para os meninos."/>
+          <attvalue for="Weight" value="0.5"/>
+          <attvalue for="Date" value="1494006436.333877"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U4PL46RQ9U19J6U8EQ42" source="U4PL46RQ9" target="U19J6U8EQ" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="Pronto, arrumado. foi problema na hora de mesclar a tabela no word. Erro meu.&#10;&lt;@U19J6U8EQ&gt; essas melhorias são da semana inteira. Portanto, algumas vcs já devem ter notado no começo da semana que estão funcionando."/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1494004908.483871"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U4PL46RQ9U19J6U8EQ91" source="U4PL46RQ9" target="U19J6U8EQ" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U19J6U8EQ&gt; criando card"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1494007019.665057"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U4PL46RQ9U19J6U8EQ92" source="U4PL46RQ9" target="U19J6U8EQ" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U19J6U8EQ&gt; que dia aconteceu isso?"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1494006715.492476"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U4PL46RQ9U19J6U8EQ93" source="U4PL46RQ9" target="U19J6U8EQ" weight="0.5">
+        <attvalues>
+          <attvalue for="Message" value="ok, &lt;@U19J6U8EQ&gt; , obrigada por avisar, vou passar para os meninos."/>
+          <attvalue for="Weight" value="0.5"/>
+          <attvalue for="Date" value="1494006436.333877"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U4PL46RQ9U19J6U8EQ95" source="U4PL46RQ9" target="U19J6U8EQ" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="Pronto, arrumado. foi problema na hora de mesclar a tabela no word. Erro meu.&#10;&lt;@U19J6U8EQ&gt; essas melhorias são da semana inteira. Portanto, algumas vcs já devem ter notado no começo da semana que estão funcionando."/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1494004908.483871"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U4PL46RQ9U41CLAYCA44" source="U4PL46RQ9" target="U41CLAYCA" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="sim, &lt;@U41CLAYCA&gt; vamos fazer esse relatório toda semana."/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1493996809.367441"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U4PL46RQ9U41CLAYCA97" source="U4PL46RQ9" target="U41CLAYCA" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="sim, &lt;@U41CLAYCA&gt; vamos fazer esse relatório toda semana."/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1493996809.367441"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U4PL46RQ9U4PL46RQ932" source="U4PL46RQ9" target="U4PL46RQ9" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U4PL46RQ9|mtoutain&gt; uploaded a file: &lt;https://cargobr.slack.com/files/mtoutain/F5DMEH3AS/relat__rio_de_atividades_12052017.pdf|RELATÓRIO DE ATIVIDADES 12052017.pdf&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1494614779.619206"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U4PL46RQ9U4PL46RQ943" source="U4PL46RQ9" target="U4PL46RQ9" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U4PL46RQ9|mtoutain&gt; uploaded a file: &lt;https://cargobr.slack.com/files/mtoutain/F5A83K23H/relat__rio_de_atividades_05052017.pdf|RELATÓRIO DE ATIVIDADES 05052017.pdf&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1494004849.451691"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U4PL46RQ9U4PL46RQ985" source="U4PL46RQ9" target="U4PL46RQ9" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U4PL46RQ9|mtoutain&gt; uploaded a file: &lt;https://cargobr.slack.com/files/mtoutain/F5DMEH3AS/relat__rio_de_atividades_12052017.pdf|RELATÓRIO DE ATIVIDADES 12052017.pdf&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1494614779.619206"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+      <edge id="U4PL46RQ9U4PL46RQ996" source="U4PL46RQ9" target="U4PL46RQ9" weight="0.0">
+        <attvalues>
+          <attvalue for="Message" value="&lt;@U4PL46RQ9|mtoutain&gt; uploaded a file: &lt;https://cargobr.slack.com/files/mtoutain/F5A83K23H/relat__rio_de_atividades_05052017.pdf|RELATÓRIO DE ATIVIDADES 05052017.pdf&gt;"/>
+          <attvalue for="Weight" value="0.0"/>
+          <attvalue for="Date" value="1494004849.451691"/>
+          <attvalue for="Team" value="T024FGPNK"/>
+          <attvalue for="Channel" value="C0ASRNR3P"/>
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>
