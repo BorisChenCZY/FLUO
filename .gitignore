@@ -1,4 +1,5 @@
 .idea
 *.pyc
 *.gexf
+.DS_Store
 venv
